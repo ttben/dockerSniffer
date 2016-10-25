@@ -4,9 +4,12 @@ import fr.unice.i3s.sparks.docker.conflicts.commands.ENVCommand;
 import fr.unice.i3s.sparks.docker.conflicts.commands.FROMCommand;
 import fr.unice.i3s.sparks.docker.conflicts.commands.RUNCommand;
 import fr.unice.i3s.sparks.docker.conflicts.dsl.DSL;
+import fr.unice.i3s.sparks.docker.conflicts.dsl.Pair;
+import fr.unice.i3s.sparks.docker.conflicts.dsl.That;
 import fr.unice.i3s.sparks.docker.conflicts.env.ENVConflictSniffer;
 
 import java.util.Arrays;
+import java.util.HashSet;
 
 import static fr.unice.i3s.sparks.docker.conflicts.dsl.DSL.itExists;
 
@@ -97,8 +100,15 @@ public class Main {
         );
 
 
-        itExists.aCouple.that().haveTypeOf(ENVCommand.class).and().haveTheSame("key").and().haveDifferent("value").applyOn(Arrays.asList(new ENVCommand("ja", "a"), new RUNCommand()));
+        //  FIXME hasTypeOf must be executed before aCouple, since we first want to filter other command
+        That aRequest = itExists.aCouple.that().haveTypeOf(ENVCommand.class).haveTheSame("key").haveDifferent("value");
+        Object result = aRequest.applyOn(Arrays.asList(new ENVCommand("ja", "a"), new RUNCommand()));
 
+        System.out.println(result.getClass().getSimpleName());
+
+        for(Pair pair : (HashSet<Pair>)result) {
+            System.out.println("Conflict between:" + pair.getFirst() + " and " + pair.getSecond());
+        }
         //Sniffer.analyze(root1, image11, image12, image111, image112, image21, image211, image212, root2);
     }
 }

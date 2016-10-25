@@ -9,11 +9,12 @@ public class ACouple extends Filter {
 
     public ACouple() {
         Function<Stream, Stream> function = stream -> {
+            System.out.println("Applying acouple");
             Stream<Pair> pairs = StreamEx.of(stream).pairMap(Pair::new);
             return pairs;
         };
 
-        functions.add(function);
+        functions.addLast(function);
     }
 
     public That that() {

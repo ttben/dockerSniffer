@@ -1,11 +1,12 @@
 package fr.unice.i3s.sparks.docker.conflicts.env;
 
 import fr.unice.i3s.sparks.docker.conflicts.Image;
-import fr.unice.i3s.sparks.docker.conflicts.ImageTree;
 import fr.unice.i3s.sparks.docker.conflicts.commands.Command;
 import fr.unice.i3s.sparks.docker.conflicts.commands.ENVCommand;
 
-import java.util.*;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
 import java.util.stream.Collectors;
 
 public class ENVConflictSniffer {
