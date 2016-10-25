@@ -20,10 +20,13 @@ public class Sniffer {
 
         for (List<Image> imageList : pathsToAnalyze) {
             ENVConflictMap conflict = ENVConflictSniffer.conflict(imageList);
-            envConflictMapSet.add(conflict);
+            if(conflict != null) envConflictMapSet.add(conflict);
         }
 
-        System.out.println(envConflictMapSet);
+        System.out.println("Conflict map:");
+        for(ENVConflictMap envConflictMap : envConflictMapSet) {
+            System.out.println(envConflictMap);
+        }
     }
 
     private static Set<List<Image>> getListOfImagesToAnalyze(ImageTree imageTree) {

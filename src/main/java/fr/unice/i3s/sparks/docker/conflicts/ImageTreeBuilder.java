@@ -58,7 +58,7 @@ public class ImageTreeBuilder {
         FROMCommand fromCommand = fromCommandsArray[0];
 
         if (fromCommandsArray.length == 0 || fromCommand == null) {
-            System.out.printf("Image:%s has no parent\n", image.getImageID());
+            //System.out.printf("Image:%s has no parent\n", image.getImageID());
             throw new IllegalStateException("Can not get parent: does not have FROM close.");
         }
 

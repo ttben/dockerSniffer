@@ -23,11 +23,11 @@ public class DepthFirstSearch {
     }
 
     private void traverse(Image currentNode, LinkedList<Image> path) {
-        System.out.println("Traversing node:"+ currentNode.getImageID());
+        //System.out.println("Traversing node:"+ currentNode.getImageID());
         path.add(currentNode);
         //  Leaf
         if (currentNode.getChildren().isEmpty()) {
-            System.out.println("Leaf reached!");
+            //System.out.println("Leaf reached!");
             paths.add(path);
             return;
         }
