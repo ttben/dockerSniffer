@@ -1,20 +1,29 @@
 package fr.unice.i3s.sparks.docker.conflicts.dsl;
 
-import java.util.ArrayList;
-import java.util.List;
+public class That extends Filter {
 
-public class That {
-    private List<Have> haveList = new ArrayList<>();
-
-    public static HaveSame haveTheSame(String attributeName) {
-        return new HaveSame(attributeName);
+    public That() {
     }
 
-    public static HaveTypeOf haveTypeOf(Class clazz) {
-        return new HaveTypeOf(clazz);
+    public That(ACouple aCouple) {
+        functions.addAll(aCouple.getFunctions());
     }
 
-    public static HaveDifferent haveDifferent(String attributeName) {
-        return new HaveDifferent(attributeName);
+    public HaveSame haveTheSame(String attributeName) {
+        HaveSame haveSame = new HaveSame(attributeName);
+        functions.addAll(haveSame.getFunctions());
+        return haveSame;
+    }
+
+    public HaveTypeOf haveTypeOf(Class clazz) {
+        HaveTypeOf haveTypeOf = new HaveTypeOf(clazz);
+        functions.addAll(haveTypeOf.getFunctions());
+        return haveTypeOf;
+    }
+
+    public HaveDifferent haveDifferent(String attributeName) {
+        HaveDifferent haveDifferent = new HaveDifferent(attributeName);
+        functions.addAll(haveDifferent.getFunctions());
+        return haveDifferent;
     }
 }

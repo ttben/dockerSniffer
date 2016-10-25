@@ -20,5 +20,12 @@
         </plugins>
     </build>
 
+    <dependencies>
+        <dependency>
+            <groupId>one.util</groupId>
+            <artifactId>streamex</artifactId>
+            <version>0.6.2</version>
+        </dependency>
+    </dependencies>
 
 </project>

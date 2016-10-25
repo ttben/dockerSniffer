@@ -3,12 +3,16 @@ package fr.unice.i3s.sparks.docker.conflicts;
 import fr.unice.i3s.sparks.docker.conflicts.commands.ENVCommand;
 import fr.unice.i3s.sparks.docker.conflicts.commands.FROMCommand;
 import fr.unice.i3s.sparks.docker.conflicts.commands.RUNCommand;
+import fr.unice.i3s.sparks.docker.conflicts.dsl.DSL;
 import fr.unice.i3s.sparks.docker.conflicts.env.ENVConflictSniffer;
 
 import java.util.Arrays;
 
+import static fr.unice.i3s.sparks.docker.conflicts.dsl.DSL.itExists;
+
 public class Main {
     public static void main(String[] args) throws MalFormedImageException {
+
 
         Image root1 = new Image(
                 new ImageID("root1"),
@@ -93,7 +97,8 @@ public class Main {
         );
 
 
+        itExists.aCouple.that().haveTypeOf(ENVCommand.class).and().haveTheSame("key").and().haveDifferent("value").applyOn(Arrays.asList(new ENVCommand("ja", "a"), new RUNCommand()));
 
-        Sniffer.analyze(root1, image11, image12, image111, image112, image21, image211, image212, root2);
+        //Sniffer.analyze(root1, image11, image12, image111, image112, image21, image211, image212, root2);
     }
 }
