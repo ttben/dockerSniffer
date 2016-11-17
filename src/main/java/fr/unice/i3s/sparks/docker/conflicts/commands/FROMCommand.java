@@ -1,6 +1,6 @@
 package fr.unice.i3s.sparks.docker.conflicts.commands;
 
-import fr.unice.i3s.sparks.docker.conflicts.ImageID;
+import fr.unice.i3s.sparks.docker.core.ImageID;
 
 public class FROMCommand extends Command {
     private ImageID parent;

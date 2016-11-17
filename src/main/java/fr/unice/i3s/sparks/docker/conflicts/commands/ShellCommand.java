@@ -2,7 +2,7 @@ package fr.unice.i3s.sparks.docker.conflicts.commands;
 
 import java.util.List;
 
-public class ShellCommand {
+public class ShellCommand extends Command {
     private List<String> body;
 
     public ShellCommand(List<String> body) {

@@ -1,4 +1,4 @@
-package fr.unice.i3s.sparks.docker.conflicts;
+package fr.unice.i3s.sparks.docker.core;
 
 public class ImageID {
     private final String digest;

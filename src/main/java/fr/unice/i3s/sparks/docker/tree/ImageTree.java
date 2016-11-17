@@ -1,4 +1,7 @@
-package fr.unice.i3s.sparks.docker.conflicts;
+package fr.unice.i3s.sparks.docker.tree;
+
+import fr.unice.i3s.sparks.docker.core.Image;
+import fr.unice.i3s.sparks.docker.core.ImageID;
 
 import java.util.Map;
 import java.util.Set;

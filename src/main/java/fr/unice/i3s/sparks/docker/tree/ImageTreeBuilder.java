@@ -1,5 +1,8 @@
-package fr.unice.i3s.sparks.docker.conflicts;
+package fr.unice.i3s.sparks.docker.tree;
 
+import fr.unice.i3s.sparks.docker.core.Image;
+import fr.unice.i3s.sparks.docker.core.ImageID;
+import fr.unice.i3s.sparks.docker.conflicts.MalFormedImageException;
 import fr.unice.i3s.sparks.docker.conflicts.commands.Command;
 import fr.unice.i3s.sparks.docker.conflicts.commands.FROMCommand;
 

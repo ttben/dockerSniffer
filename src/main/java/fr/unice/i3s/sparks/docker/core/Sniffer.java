@@ -1,7 +1,11 @@
-package fr.unice.i3s.sparks.docker.conflicts;
+package fr.unice.i3s.sparks.docker.core;
 
+import fr.unice.i3s.sparks.docker.conflicts.MalFormedImageException;
 import fr.unice.i3s.sparks.docker.conflicts.env.ENVConflictMap;
 import fr.unice.i3s.sparks.docker.conflicts.env.ENVConflictSniffer;
+import fr.unice.i3s.sparks.docker.tree.DepthFirstSearch;
+import fr.unice.i3s.sparks.docker.tree.ImageTree;
+import fr.unice.i3s.sparks.docker.tree.ImageTreeBuilder;
 
 import java.util.Arrays;
 import java.util.HashSet;

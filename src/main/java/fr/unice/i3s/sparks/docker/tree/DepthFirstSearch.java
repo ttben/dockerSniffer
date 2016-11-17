@@ -1,6 +1,6 @@
-package fr.unice.i3s.sparks.docker.conflicts;
+package fr.unice.i3s.sparks.docker.tree;
 
-import fr.unice.i3s.sparks.docker.conflicts.env.ENVConflictMap;
+import fr.unice.i3s.sparks.docker.core.Image;
 
 import java.util.HashSet;
 import java.util.LinkedList;

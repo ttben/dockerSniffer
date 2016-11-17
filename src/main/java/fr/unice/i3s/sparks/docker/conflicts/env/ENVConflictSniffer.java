@@ -1,7 +1,6 @@
 package fr.unice.i3s.sparks.docker.conflicts.env;
 
-import fr.unice.i3s.sparks.docker.conflicts.Image;
-import fr.unice.i3s.sparks.docker.conflicts.ImageTree;
+import fr.unice.i3s.sparks.docker.core.Image;
 import fr.unice.i3s.sparks.docker.conflicts.commands.Command;
 import fr.unice.i3s.sparks.docker.conflicts.commands.ENVCommand;
 

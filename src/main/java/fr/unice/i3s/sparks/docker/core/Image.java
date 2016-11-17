@@ -1,4 +1,4 @@
-package fr.unice.i3s.sparks.docker.conflicts;
+package fr.unice.i3s.sparks.docker.core;
 
 import fr.unice.i3s.sparks.docker.conflicts.commands.Command;
 

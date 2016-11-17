@@ -1,9 +1,9 @@
 package fr.unice.i3s.sparks.docker.conflicts;
 
-import fr.unice.i3s.sparks.docker.DockerFile;
+import fr.unice.i3s.sparks.docker.Enricher;
+import fr.unice.i3s.sparks.docker.core.DockerFile;
 import fr.unice.i3s.sparks.docker.DockerfileLexer;
 import fr.unice.i3s.sparks.docker.DockerfileParser;
-import fr.unice.i3s.sparks.docker.conflicts.commands.Command;
 import fr.unice.i3s.sparks.docker.conflicts.run.RUNComflictSniffer;
 import fr.unice.i3s.sparks.docker.conflicts.run.RUNConcflict;
 import fr.unice.i3s.sparks.docker.grammar.*;
@@ -35,7 +35,7 @@ public class Main {
             }
         };
 
-        File folder = new File("/Users/benjaminbenni/Work/githug.dk.crawler/dockerfiles");
+        File folder = new File("/Users/benjaminbenni/Work/githug.dk.crawler/test_dockerfiles");
 
         File[] files = folder.listFiles(textFilter);
         for(File f : files) {
@@ -67,17 +67,26 @@ public class Main {
             walker.walk(listener, drinkSentenceContext);
 
             DockerFile dockerFile = listener.getDockerfile();
-            dockerfiles.add(dockerFile);
+
+            DockerFile enrichedDockerfile = Enricher.enrich(dockerFile);
+            dockerfiles.add(enrichedDockerfile);
+
+            System.out.println(enrichedDockerfile);
+
+            RUNComflictSniffer runComflictSniffer = new RUNComflictSniffer();
+            runComflictSniffer.conflict(enrichedDockerfile);
         }
 
 
         System.out.println(files.length + " dockerfiles handled.");
         System.out.println(dockerfiles.size() + " dockerfiles parsed into model.");
 
+        /*
         dockerfiles.forEach(dockerFile -> {
             List<RUNConcflict> conflict = new RUNComflictSniffer().conflict(dockerFile);
             System.out.println(conflict);
         });
+        */
 
         /*
         Image root1 = new Image(

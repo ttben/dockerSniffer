@@ -1,7 +1,7 @@
 package fr.unice.i3s.sparks.docker.grammar;
 
 import com.github.dockerjava.core.dockerfile.Dockerfile;
-import fr.unice.i3s.sparks.docker.DockerFile;
+import fr.unice.i3s.sparks.docker.core.DockerFile;
 import fr.unice.i3s.sparks.docker.DockerfileBaseListener;
 import fr.unice.i3s.sparks.docker.DockerfileParser;
 import fr.unice.i3s.sparks.docker.conflicts.commands.Command;

@@ -1,4 +1,4 @@
-package fr.unice.i3s.sparks.docker;
+package fr.unice.i3s.sparks.docker.core;
 
 import fr.unice.i3s.sparks.docker.conflicts.commands.Command;
 
@@ -14,5 +14,13 @@ public class DockerFile {
 
     public List<Command> getListOfCommand() {
         return listOfCommand;
+    }
+
+    @Override
+    public String toString() {
+        final StringBuffer sb = new StringBuffer("DockerFile{");
+        sb.append("listOfCommand=").append(listOfCommand);
+        sb.append('}');
+        return sb.toString();
     }
 }
