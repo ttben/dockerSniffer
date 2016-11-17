@@ -1,5 +1,7 @@
 package fr.unice.i3s.sparks.docker.grammar;
 
+import com.github.dockerjava.core.dockerfile.Dockerfile;
+import fr.unice.i3s.sparks.docker.DockerFile;
 import fr.unice.i3s.sparks.docker.DockerfileBaseListener;
 import fr.unice.i3s.sparks.docker.DockerfileParser;
 import fr.unice.i3s.sparks.docker.conflicts.commands.Command;
@@ -12,14 +14,17 @@ import java.util.List;
 
 public class AntLRDockerListener extends DockerfileBaseListener {
 
-    List<Command> list = new ArrayList<>();
+    List<Dockerfile> listDockerFile = new ArrayList<>();
 
-    public List<Command> getList() {
-        return list;
+    List<Command> listOfCommand = new ArrayList<>();
+    private DockerFile dockerfile;
+
+    public List<Command> getListOfCommand() {
+        return listOfCommand;
     }
 
-    public void setList(List<Command> list) {
-        this.list = list;
+    public void setListOfCommand(List<Command> listOfCommand) {
+        this.listOfCommand = listOfCommand;
     }
 
     @Override
@@ -38,17 +43,22 @@ public class AntLRDockerListener extends DockerfileBaseListener {
             runCommand.add(shellCommand);
         });
 
-        list.add(runCommand);
+        listOfCommand.add(runCommand);
     }
 
     @Override
     public void exitDockerfile(DockerfileParser.DockerfileContext ctx) {
-        //System.out.println(list);
+        this.dockerfile = new DockerFile(listOfCommand);
+        //System.out.println(listOfCommand);
     }
 
     @Override
     public void visitErrorNode(ErrorNode node) {
         System.err.println("loooo");
         super.visitErrorNode(node);
+    }
+
+    public DockerFile getDockerfile() {
+        return dockerfile;
     }
 }

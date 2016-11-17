@@ -1,13 +1,11 @@
 package fr.unice.i3s.sparks.docker.conflicts;
 
-import com.github.dockerjava.core.dockerfile.Dockerfile;
+import fr.unice.i3s.sparks.docker.DockerFile;
 import fr.unice.i3s.sparks.docker.DockerfileLexer;
 import fr.unice.i3s.sparks.docker.DockerfileParser;
 import fr.unice.i3s.sparks.docker.conflicts.commands.Command;
-import fr.unice.i3s.sparks.docker.conflicts.commands.ENVCommand;
-import fr.unice.i3s.sparks.docker.conflicts.commands.FROMCommand;
-import fr.unice.i3s.sparks.docker.conflicts.commands.RUNCommand;
-import fr.unice.i3s.sparks.docker.conflicts.env.ENVConflictSniffer;
+import fr.unice.i3s.sparks.docker.conflicts.run.RUNComflictSniffer;
+import fr.unice.i3s.sparks.docker.conflicts.run.RUNConcflict;
 import fr.unice.i3s.sparks.docker.grammar.*;
 import org.antlr.v4.runtime.ANTLRInputStream;
 import org.antlr.v4.runtime.CommonTokenStream;
@@ -23,7 +21,7 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) throws MalFormedImageException, IOException {
 
-        List<List<Command>> dockerfiles = new ArrayList<>();
+        List<DockerFile> dockerfiles = new ArrayList<>();
 
 
         FilenameFilter textFilter = new FilenameFilter() {
@@ -65,14 +63,21 @@ public class Main {
             // Walk it and attach our listener
             ParseTreeWalker walker = new ParseTreeWalker();
             AntLRDockerListener listener = new AntLRDockerListener();
-            List<Command> list = listener.getList();
-            dockerfiles.add(list);
 
             walker.walk(listener, drinkSentenceContext);
+
+            DockerFile dockerFile = listener.getDockerfile();
+            dockerfiles.add(dockerFile);
         }
 
 
         System.out.println(files.length + " dockerfiles handled.");
+        System.out.println(dockerfiles.size() + " dockerfiles parsed into model.");
+
+        dockerfiles.forEach(dockerFile -> {
+            List<RUNConcflict> conflict = new RUNComflictSniffer().conflict(dockerFile);
+            System.out.println(conflict);
+        });
 
         /*
         Image root1 = new Image(
