@@ -106,10 +106,16 @@ public class Main {
         double percentageOfDockerfileQWithRunInstallOrUpdate= (nbOfDockerFilesThatContainsRunInstallOrUpdate * 100.0) / (double) dockerfiles.size();
         System.out.println(df.format(percentageOfDockerfileQWithRunInstallOrUpdate) + "% of files contained a RUN command that update or install (" + nbOfDockerFilesThatContainsRunInstallOrUpdate + ")");
 
+
+
+        double percentageRunSniffedOnDockerfileThatContainsRunInstallOrUpdate = (conflicts.size() * 100.0) / (double) nbOfDockerFilesThatContainsRun;
+        System.out.println(df.format(percentageRunSniffedOnDockerfileThatContainsRunInstallOrUpdate )+ "% of files that contains a RUN command  and have a RUN issue (" + nbOfDockerFilesThatContainsRun + ")");
+
+        double percentageRunSniffedOnDockerfileThatContainsRum = (conflicts.size() * 100.0) / (double) nbOfDockerFilesThatContainsRunInstallOrUpdate;
+        System.out.println(df.format(percentageRunSniffedOnDockerfileThatContainsRum )+ "% of files that contains a RUN command (that update or install) and have a RUN issue (" + nbOfDockerFilesThatContainsRunInstallOrUpdate + ")");
+
         double percentageRunSniffed = (conflicts.size() * 100.0) / (double) dockerfiles.size();
         System.out.println(df.format(percentageRunSniffed) + "% of files contained a RUN issue (" + conflicts.size() + ")");
 
-        double percentageRunSniffedOnDockerfileThatContainsRum = (conflicts.size() * 100.0) / (double) nbOfDockerFilesThatContainsRunInstallOrUpdate;
-        System.out.println(df.format(percentageRunSniffedOnDockerfileThatContainsRum )+ "% of files that contains a RUN command (that update or install) and have a RUN issue (" + conflicts.size() + ")");
     }
 }
