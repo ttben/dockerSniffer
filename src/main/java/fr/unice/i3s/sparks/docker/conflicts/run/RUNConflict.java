@@ -4,10 +4,10 @@ import fr.unice.i3s.sparks.docker.conflicts.commands.RUNCommand;
 
 import java.util.LinkedList;
 
-public class RUNConcflict {
+public class RUNConflict {
     private LinkedList<RUNCommand> conflictingRUNCommand;
 
-    public RUNConcflict(LinkedList<RUNCommand> conflictingRUNCommand) {
+    public RUNConflict(LinkedList<RUNCommand> conflictingRUNCommand) {
 
         this.conflictingRUNCommand = conflictingRUNCommand;
     }
@@ -22,7 +22,7 @@ public class RUNConcflict {
 
     @Override
     public String toString() {
-        final StringBuffer sb = new StringBuffer("RUNConcflict{");
+        final StringBuffer sb = new StringBuffer("RUNConflict{");
         sb.append("conflictingRUNCommand=").append(conflictingRUNCommand);
         sb.append('}');
         return sb.toString();

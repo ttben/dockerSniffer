@@ -11,8 +11,8 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class RUNComflictSniffer {
-    public RUNConcflict conflict(DockerFile dockerFiles) {
+public class RUNConflictSniffer {
+    public RUNConflict conflict(DockerFile dockerFiles) {
 
         ArrayList<RUNCommand> runCommands = dockerFiles.getListOfCommand()
                 .stream()
@@ -20,11 +20,11 @@ public class RUNComflictSniffer {
                 .map(RUNCommand.class::cast)
                 .collect(Collectors.toCollection(ArrayList::new));
 
-        System.err.println("Remaining Run commands:" + runCommands);
+        //System.err.println("Remaining Run commands:" + runCommands);
 
         int index = findFirstUpdate(runCommands);
 
-        System.err.println(index);
+        //System.err.println(index);
 
         if (index == -1) {
             return null;
@@ -46,28 +46,28 @@ public class RUNComflictSniffer {
         if (!conflictingRUNCommand.isEmpty()) {
             conflictingRUNCommand.addFirst(runCommands.get(index));
         }
-        RUNConcflict runConcflict = new RUNConcflict(conflictingRUNCommand);
+        RUNConflict runConflict = new RUNConflict(conflictingRUNCommand);
 
-        System.err.println("CONFLICT:" + conflictingRUNCommand);
+        //System.err.println("CONFLICT:" + conflictingRUNCommand);
 
-        return runConcflict;
+        return runConflict;
     }
 
     private int findFirstUpdate(ArrayList<RUNCommand> runCommands) {
-        System.err.println("Find first update...");
+        //System.err.println("Find first update...");
         int index = -1;
         for (int i = 0; i < runCommands.size(); i++) {
             RUNCommand runCommand = runCommands.get(i);
 
-            System.err.println("FFU: analysing..." + runCommand);
+            //System.err.println("FFU: analysing..." + runCommand);
 
             List<ShellCommand> body = runCommand.getBody();
 
-            System.err.println("Body contains>" + body);
+            //System.err.println("Body contains>" + body);
 
             for (int j = 0; j < body.size(); j++) {
                 ShellCommand shellCommand = body.get(j);
-                System.err.println(shellCommand);
+                //System.err.println(shellCommand);
                 if (shellCommand instanceof Update) {
                     index = i;
                     return index;
