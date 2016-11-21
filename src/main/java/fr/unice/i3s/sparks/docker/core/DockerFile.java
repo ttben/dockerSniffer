@@ -1,5 +1,6 @@
 package fr.unice.i3s.sparks.docker.core;
 
+import edu.emory.mathcs.backport.java.util.Arrays;
 import fr.unice.i3s.sparks.docker.conflicts.commands.Command;
 
 import java.util.List;
@@ -12,8 +13,22 @@ public class DockerFile {
         this.listOfCommand = listOfCommand;
     }
 
+    public DockerFile(Command... commands) {
+        this.listOfCommand = Arrays.asList(commands);
+    }
+
     public List<Command> getListOfCommand() {
         return listOfCommand;
+    }
+
+    public boolean contains(Class<?extends Command> commandClass) {
+        for(Command command : listOfCommand) {
+            if(command.getClass().isAssignableFrom(commandClass)) {
+                return true;
+            }
+        }
+
+        return false;
     }
 
     @Override

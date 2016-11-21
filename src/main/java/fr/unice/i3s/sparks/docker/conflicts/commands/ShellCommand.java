@@ -1,5 +1,7 @@
 package fr.unice.i3s.sparks.docker.conflicts.commands;
 
+import edu.emory.mathcs.backport.java.util.Arrays;
+
 import java.util.List;
 
 public class ShellCommand extends Command {
@@ -7,6 +9,9 @@ public class ShellCommand extends Command {
 
     public ShellCommand(List<String> body) {
         this.body = body;
+    }
+    public ShellCommand(String... body) {
+        this.body = Arrays.asList(body);
     }
 
     public List<String> getBody() {
