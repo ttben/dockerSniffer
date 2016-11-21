@@ -22,6 +22,7 @@ public class Main {
     public static void main(String[] args) throws MalFormedImageException, IOException {
 
         List<DockerFile> dockerfiles = new ArrayList<>();
+        List<RUNConcflict> conflicts = new ArrayList<>();
 
 
         FilenameFilter textFilter = new FilenameFilter() {
@@ -35,7 +36,7 @@ public class Main {
             }
         };
 
-        File folder = new File("/Users/benjaminbenni/Work/githug.dk.crawler/test_dockerfiles");
+        File folder = new File("/Users/benjaminbenni/Work/githug.dk.crawler/dockerfiles");
 
         File[] files = folder.listFiles(textFilter);
         for(File f : files) {
@@ -71,15 +72,18 @@ public class Main {
             DockerFile enrichedDockerfile = Enricher.enrich(dockerFile);
             dockerfiles.add(enrichedDockerfile);
 
-            System.out.println(enrichedDockerfile);
+            System.err.println(enrichedDockerfile);
 
             RUNComflictSniffer runComflictSniffer = new RUNComflictSniffer();
-            runComflictSniffer.conflict(enrichedDockerfile);
+            RUNConcflict conflict = runComflictSniffer.conflict(enrichedDockerfile);
+            if(conflict != null && !conflict.isEmpty()) {
+                conflicts.add(conflict);
+            }
         }
-
 
         System.out.println(files.length + " dockerfiles handled.");
         System.out.println(dockerfiles.size() + " dockerfiles parsed into model.");
+        System.out.println(conflicts.size() + " run conflicts found.");
 
         /*
         dockerfiles.forEach(dockerFile -> {

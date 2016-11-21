@@ -42,18 +42,20 @@ public class Enricher {
             RUNCommand runCommand = (RUNCommand) command;
             List<ShellCommand> body = runCommand.getBody();
 
+            RUNCommand newRunCommand = new RUNCommand();
             for(ShellCommand shellCommand : body) {
                 if(shellCommand.getBody().contains("install")) {
                     Install install = new Install(shellCommand.getBody());
-                    newListOfCommand.add(install);
+                    newRunCommand.add(install);
                 }
                 else if(shellCommand.getBody().contains("update")) {
                     Update update = new Update(shellCommand.getBody());
-                    newListOfCommand.add(update);
+                    newRunCommand.add(update);
                 } else {
-                    newListOfCommand.add(shellCommand);
+                    newRunCommand.add(shellCommand);
                 }
             }
+            newListOfCommand.add(newRunCommand);
         }
         return newListOfCommand;
     }
