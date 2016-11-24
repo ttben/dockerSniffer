@@ -1,0 +1,4 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/kgsuzuki/octo-tatertot/9b8f236942199474d06fb9330a03e0ace48a62ad/Dockerfile
+FROM ioft/armhf-ubuntu
+RUN sudo apt-get update && sudo apt-get install -y golang

@@ -11,6 +11,8 @@ import org.apache.http.impl.client.HttpClients;
 
 import java.io.*;
 import java.net.URL;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 
 public class Handler {
     private URL pathToFile;
@@ -21,6 +23,8 @@ public class Handler {
     }
 
     public void start() throws IOException {
+
+        String folderThatWillContainsDockerfiles = "./src/main/resources/dockerfiles";
 
         Reader in = new FileReader(pathToFile.getPath());
         Iterable<CSVRecord> records = CSVFormat.EXCEL.withSkipHeaderRecord()
@@ -39,7 +43,7 @@ public class Handler {
             fileName = fileName.replace(":", "-");
             fileName = fileName.replace("%", "__");
 
-            File f = new File("dockerfiles/" + fileName + "-dockerfile");
+            File f = new File(folderThatWillContainsDockerfiles + "/" + fileName + "-dockerfile");
             if(f.exists()) {
                 continue;
             }
@@ -90,7 +94,7 @@ public class Handler {
     }
 
     public static void main(String[] args) throws IOException {
-        Handler handler = new Handler(Handler.class.getClassLoader().getResource("github_docker_21-11-16_4.csv"));
+        Handler handler = new Handler(Handler.class.getClassLoader().getResource("github_docker_24-11-16.csv"));
         handler.start();
     }
 }

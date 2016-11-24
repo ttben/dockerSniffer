@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/roberth/docker-hub-hello/a66146d6781992628e2cc885ba7bb1a7df03f995/Dockerfile
+FROM ubuntu:latest
+RUN apt-get update
+RUN apt-get install hello

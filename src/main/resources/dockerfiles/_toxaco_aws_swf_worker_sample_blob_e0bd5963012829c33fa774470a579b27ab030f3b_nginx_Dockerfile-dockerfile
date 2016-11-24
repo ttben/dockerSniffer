@@ -1,0 +1,4 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/toxaco/aws_swf_worker_sample/e0bd5963012829c33fa774470a579b27ab030f3b/nginx/Dockerfile
+FROM nginx
+RUN apt-get update && apt-get install -y vim

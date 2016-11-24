@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/jfcoz/debian-gdebi/8a34acd02891c8f916b1ab52efd33a6b0a4c5e0e/Dockerfile
+FROM debian:latest
+RUN apt-get update \
+ && apt-get install -y gdebi-core \
+ && apt-get clean

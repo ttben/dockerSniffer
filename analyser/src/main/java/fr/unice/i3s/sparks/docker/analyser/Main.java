@@ -40,7 +40,8 @@ public class Main {
             }
         };
 
-        File folder = new File("/Users/benjaminbenni/Work/githug.dk.crawler/dockerfiles");
+        String folderThatContainsDockerfiles = "./src/main/resources/dockerfiles";
+        File folder = new File(folderThatContainsDockerfiles);
 
         File[] files = folder.listFiles(textFilter);
         int nbOfDockerFilesThatContainsRunInstallOrUpdate = 0;
