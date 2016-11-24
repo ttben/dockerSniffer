@@ -1,0 +1,7 @@
+#  Dockerfile retrieved from:
+#    Repository: jamesmoey/backblaze-browser
+#    Dockerfile: http://raw.githubusercontent.com/jamesmoey/backblaze-browser/006591a9fa43876528fe80504bcb6e5ea9497dc5/Dockerfile
+FROM node:latest
+
+RUN apt-get update && \
+    apt-get install graphicsmagick

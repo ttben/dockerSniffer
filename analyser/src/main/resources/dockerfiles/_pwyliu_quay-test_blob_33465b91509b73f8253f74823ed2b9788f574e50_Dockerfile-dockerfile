@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Repository: pwyliu/quay-test
+#    Dockerfile: http://raw.githubusercontent.com/pwyliu/quay-test/33465b91509b73f8253f74823ed2b9788f574e50/Dockerfile
+FROM redis:latest
+RUN apt-get -qq update && apt-get -qq install curl

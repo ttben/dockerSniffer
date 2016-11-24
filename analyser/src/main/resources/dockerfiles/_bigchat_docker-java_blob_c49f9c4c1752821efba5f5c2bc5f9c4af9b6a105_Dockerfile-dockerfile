@@ -1,0 +1,13 @@
+#  Dockerfile retrieved from:
+#    Repository: bigchat/docker-java
+#    Dockerfile: http://raw.githubusercontent.com/bigchat/docker-java/c49f9c4c1752821efba5f5c2bc5f9c4af9b6a105/Dockerfile
+FROM library/ubuntu:vivid
+
+RUN \
+	apt-get update && \
+	DEBIAN_FRONTEND=noninteractive \
+		apt-get -y install openjdk-8-jre-headless \
+	&& \
+	apt-get autoremove && \
+	apt-get autoclean && \
+	apt-get clean

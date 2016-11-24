@@ -1,0 +1,9 @@
+#  Dockerfile retrieved from:
+#    Repository: agnsal/docker-apaphpy
+#    Dockerfile: http://raw.githubusercontent.com/agnsal/docker-apaphpy/8921c9906c6e8911cd0afba399044741e8aaf2b6/Dockerfile
+FROM tutum/apache-php
+
+MAINTAINER Agnese Salutari
+
+RUN apt-get update
+RUN apt-get -y upgrade

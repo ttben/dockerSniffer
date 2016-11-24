@@ -1,0 +1,7 @@
+#  Dockerfile retrieved from:
+#    Repository: benwiz/docker
+#    Dockerfile: http://raw.githubusercontent.com/benwiz/docker/ed087580d214d0c0375336831b10f5313a6423b7/media-converters/Dockerfile
+FROM ubuntu:latest
+# install libav
+
+RUN apt-get update && apt-get install -y libav-tools imagemagick

@@ -1,0 +1,8 @@
+#  Dockerfile retrieved from:
+#    Repository: osterzel/docker-landscape-server
+#    Dockerfile: http://raw.githubusercontent.com/osterzel/docker-landscape-server/f9f206b315cc32d976d7ee05ca20e10283bf778d/plpostgres/Dockerfile
+FROM postgres:9.4
+
+RUN apt-get update
+RUN apt-get install -fy postgresql-plpython-9.4 postgresql-9.4-debversion 
+

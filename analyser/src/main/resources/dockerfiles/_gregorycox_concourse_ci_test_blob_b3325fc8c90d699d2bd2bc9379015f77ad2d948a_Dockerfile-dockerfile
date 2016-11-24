@@ -1,0 +1,9 @@
+#  Dockerfile retrieved from:
+#    Repository: gregorycox/concourse_ci_test
+#    Dockerfile: http://raw.githubusercontent.com/gregorycox/concourse_ci_test/b3325fc8c90d699d2bd2bc9379015f77ad2d948a/Dockerfile
+FROM ubuntu:latest
+
+RUN \
+  apt-get update && \
+    apt-get install -y golang
+

@@ -1,0 +1,8 @@
+#  Dockerfile retrieved from:
+#    Repository: aaronpederson/docker-zeromq
+#    Dockerfile: http://raw.githubusercontent.com/aaronpederson/docker-zeromq/0a106cc001fdf01524b3868d2e669014c23065b9/release/Dockerfile
+FROM aaronpederson/ubuntu
+
+RUN apt-get update
+RUN yes | apt-get install apt-utils
+RUN yes | apt-get install libzmq5

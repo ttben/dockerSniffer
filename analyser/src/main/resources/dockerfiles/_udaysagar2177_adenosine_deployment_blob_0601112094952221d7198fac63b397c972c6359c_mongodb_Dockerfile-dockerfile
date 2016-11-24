@@ -1,0 +1,10 @@
+#  Dockerfile retrieved from:
+#    Repository: udaysagar2177/adenosine_deployment
+#    Dockerfile: http://raw.githubusercontent.com/udaysagar2177/adenosine_deployment/0601112094952221d7198fac63b397c972c6359c/mongodb/Dockerfile
+From mongo
+
+RUN apt-get update
+RUN apt-get install -y curl
+ADD run.sh /run.sh
+
+CMD /run.sh

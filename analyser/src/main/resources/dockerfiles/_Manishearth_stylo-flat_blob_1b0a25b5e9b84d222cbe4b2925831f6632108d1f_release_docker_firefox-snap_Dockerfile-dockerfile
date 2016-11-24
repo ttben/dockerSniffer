@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Repository: Manishearth/stylo-flat
+#    Dockerfile: http://raw.githubusercontent.com/Manishearth/stylo-flat/1b0a25b5e9b84d222cbe4b2925831f6632108d1f/release/docker/firefox-snap/Dockerfile
+FROM ubuntu:16.04
+
+RUN apt-get update && apt-get install -qy snapcraft bzip2 curl && apt-get clean

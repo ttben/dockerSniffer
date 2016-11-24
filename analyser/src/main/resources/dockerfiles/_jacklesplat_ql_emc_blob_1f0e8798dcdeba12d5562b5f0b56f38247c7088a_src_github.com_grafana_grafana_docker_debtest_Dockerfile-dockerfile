@@ -1,0 +1,9 @@
+#  Dockerfile retrieved from:
+#    Repository: jacklesplat/ql_emc
+#    Dockerfile: http://raw.githubusercontent.com/jacklesplat/ql_emc/1f0e8798dcdeba12d5562b5f0b56f38247c7088a/src/github.com/grafana/grafana/docker/debtest/Dockerfile
+FROM debian:jessie
+
+RUN apt-get update && apt-get install -y vim
+
+ADD *.deb /tmp/
+

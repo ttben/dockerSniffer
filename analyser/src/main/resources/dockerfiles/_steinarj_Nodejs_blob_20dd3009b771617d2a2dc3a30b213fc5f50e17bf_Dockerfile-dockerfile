@@ -1,0 +1,7 @@
+#  Dockerfile retrieved from:
+#    Repository: steinarj/Nodejs
+#    Dockerfile: http://raw.githubusercontent.com/steinarj/Nodejs/20dd3009b771617d2a2dc3a30b213fc5f50e17bf/Dockerfile
+FROM ubuntu:latest
+RUN apt-get update
+RUN apt-get install -y nodejs
+RUN apt-get install -y npm

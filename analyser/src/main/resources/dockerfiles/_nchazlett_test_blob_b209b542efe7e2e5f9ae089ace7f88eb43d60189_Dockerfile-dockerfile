@@ -1,0 +1,7 @@
+#  Dockerfile retrieved from:
+#    Repository: nchazlett/test
+#    Dockerfile: http://raw.githubusercontent.com/nchazlett/test/b209b542efe7e2e5f9ae089ace7f88eb43d60189/Dockerfile
+FROM ruby:2.2
+
+RUN apt-get update -qq && apt-get install -y build-essential libmysqlclient-dev
+RUN apt-get update -qq && apt-get install -y imagemagick

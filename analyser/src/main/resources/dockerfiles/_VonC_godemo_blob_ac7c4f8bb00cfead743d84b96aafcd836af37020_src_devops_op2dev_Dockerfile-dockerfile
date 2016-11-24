@@ -1,0 +1,7 @@
+#  Dockerfile retrieved from:
+#    Repository: VonC/godemo
+#    Dockerfile: http://raw.githubusercontent.com/VonC/godemo/ac7c4f8bb00cfead743d84b96aafcd836af37020/src/devops/op2dev/Dockerfile
+FROM debian
+RUN apt-get update
+RUN apt-get install -qqy x11-apps
+CMD xeyes

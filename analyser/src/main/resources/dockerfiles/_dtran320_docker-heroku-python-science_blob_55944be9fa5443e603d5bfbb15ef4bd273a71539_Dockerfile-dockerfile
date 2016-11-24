@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Repository: dtran320/docker-heroku-python-science
+#    Dockerfile: http://raw.githubusercontent.com/dtran320/docker-heroku-python-science/55944be9fa5443e603d5bfbb15ef4bd273a71539/Dockerfile
+FROM heroku/python
+
+RUN apt-get update && apt-get install -y python-numpy python-scipy

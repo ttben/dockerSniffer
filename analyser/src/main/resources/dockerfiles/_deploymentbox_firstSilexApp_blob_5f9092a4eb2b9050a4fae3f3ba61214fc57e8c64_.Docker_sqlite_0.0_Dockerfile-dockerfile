@@ -1,0 +1,7 @@
+#  Dockerfile retrieved from:
+#    Repository: deploymentbox/firstSilexApp
+#    Dockerfile: http://raw.githubusercontent.com/deploymentbox/firstSilexApp/5f9092a4eb2b9050a4fae3f3ba61214fc57e8c64/.Docker/sqlite/0.0/Dockerfile
+FROM debian
+RUN apt-get update
+RUN apt-get -y install rlwrap sqlite socat
+EXPOSE 12345

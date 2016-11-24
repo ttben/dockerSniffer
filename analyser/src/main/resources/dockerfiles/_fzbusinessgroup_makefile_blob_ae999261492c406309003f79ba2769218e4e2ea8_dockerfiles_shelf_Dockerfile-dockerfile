@@ -1,0 +1,7 @@
+#  Dockerfile retrieved from:
+#    Repository: fzbusinessgroup/makefile
+#    Dockerfile: http://raw.githubusercontent.com/fzbusinessgroup/makefile/ae999261492c406309003f79ba2769218e4e2ea8/dockerfiles/shelf/Dockerfile
+FROM ubuntu:16.04
+
+RUN apt-get update && apt-get install -y supervisor
+

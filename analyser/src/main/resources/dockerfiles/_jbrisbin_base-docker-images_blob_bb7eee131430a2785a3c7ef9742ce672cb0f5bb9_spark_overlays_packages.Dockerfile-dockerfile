@@ -1,0 +1,7 @@
+#  Dockerfile retrieved from:
+#    Repository: jbrisbin/base-docker-images
+#    Dockerfile: http://raw.githubusercontent.com/jbrisbin/base-docker-images/bb7eee131430a2785a3c7ef9742ce672cb0f5bb9/spark/overlays/packages.Dockerfile
+RUN \
+  apt-get update && \
+  apt-get install -q -y curl && \
+  rm -Rf /var/cache/apt/*

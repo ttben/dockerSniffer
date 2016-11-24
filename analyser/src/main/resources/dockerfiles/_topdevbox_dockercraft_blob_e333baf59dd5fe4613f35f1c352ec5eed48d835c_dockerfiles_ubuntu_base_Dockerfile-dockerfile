@@ -1,0 +1,11 @@
+#  Dockerfile retrieved from:
+#    Repository: topdevbox/dockercraft
+#    Dockerfile: http://raw.githubusercontent.com/topdevbox/dockercraft/e333baf59dd5fe4613f35f1c352ec5eed48d835c/dockerfiles/ubuntu/base/Dockerfile
+FROM ubuntu:latest
+MAINTAINER Daniel <daniel@topdevbox.com>
+
+RUN apt-get update && \
+	apt-get upgrade -y && \
+	apt-get autoclean && \
+	apt-get autoremove && \
+    apt-get clean

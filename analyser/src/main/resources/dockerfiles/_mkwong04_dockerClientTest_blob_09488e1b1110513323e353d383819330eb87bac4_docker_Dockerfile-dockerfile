@@ -1,0 +1,9 @@
+#  Dockerfile retrieved from:
+#    Repository: mkwong04/dockerClientTest
+#    Dockerfile: http://raw.githubusercontent.com/mkwong04/dockerClientTest/09488e1b1110513323e353d383819330eb87bac4/docker/Dockerfile
+FROM ubuntu:latest
+RUN apt-get update && apt-get install -y \
+      git \
+      maven \
+      openjdk-8-jdk-headless \
+

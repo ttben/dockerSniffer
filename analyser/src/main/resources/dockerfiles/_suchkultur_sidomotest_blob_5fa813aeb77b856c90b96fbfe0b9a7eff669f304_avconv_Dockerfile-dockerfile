@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Repository: suchkultur/sidomotest
+#    Dockerfile: http://raw.githubusercontent.com/suchkultur/sidomotest/5fa813aeb77b856c90b96fbfe0b9a7eff669f304/avconv/Dockerfile
+FROM ubuntu
+RUN apt-get update && apt-get install -y libav-tools libavcodec-extra wget

@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Repository: HEG-Arc/paleo-2015-gestionair-web
+#    Dockerfile: http://raw.githubusercontent.com/HEG-Arc/paleo-2015-gestionair-web/8ca446581778bd875f47066175045f054b76d525/docker/postgres/Dockerfile
+FROM postgres:9.4
+#RUN apt-get update && apt-get -y install skytools3 postgresql-9.4-pgq3

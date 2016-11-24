@@ -1,0 +1,8 @@
+#  Dockerfile retrieved from:
+#    Repository: gregarmer/python-ldap-docker
+#    Dockerfile: http://raw.githubusercontent.com/gregarmer/python-ldap-docker/38a77583c2189c2c298f3d96391f9253211f0d91/Dockerfile
+FROM python:2.7
+
+RUN apt-get update && apt-get install -y libldap2-dev libsasl2-dev
+
+ENV PYTHONUNBUFFERED 1

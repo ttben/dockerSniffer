@@ -1,0 +1,9 @@
+#  Dockerfile retrieved from:
+#    Repository: progress-linux/cairon-backports_grafana
+#    Dockerfile: http://raw.githubusercontent.com/progress-linux/cairon-backports_grafana/617e1ca420f1f4e288ebcd4af9882c6eea9e79d7/docker/debtest/Dockerfile
+FROM debian:jessie
+
+RUN apt-get update && apt-get install -y vim
+
+ADD *.deb /tmp/
+

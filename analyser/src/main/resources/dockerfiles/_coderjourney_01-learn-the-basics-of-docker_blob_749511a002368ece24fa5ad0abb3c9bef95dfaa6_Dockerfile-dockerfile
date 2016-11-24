@@ -1,0 +1,8 @@
+#  Dockerfile retrieved from:
+#    Repository: coderjourney/01-learn-the-basics-of-docker
+#    Dockerfile: http://raw.githubusercontent.com/coderjourney/01-learn-the-basics-of-docker/749511a002368ece24fa5ad0abb3c9bef95dfaa6/Dockerfile
+FROM ubuntu
+
+RUN apt-get update -yqq && apt-get install -yqq wget
+
+CMD bash

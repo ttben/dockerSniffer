@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Repository: smlsunxie/dockers
+#    Dockerfile: http://raw.githubusercontent.com/smlsunxie/dockers/df0b001feeeb90b3ad89ebe2cc494adb977407f3/contpub-env/Dockerfile
+FROM ubuntu:trusty
+RUN apt-get update -qq -y
+RUN apt-get install texlive-full -y

@@ -1,0 +1,10 @@
+#  Dockerfile retrieved from:
+#    Repository: balanceit/travis-docker-postgres
+#    Dockerfile: http://raw.githubusercontent.com/balanceit/travis-docker-postgres/2ad5bd7b8e5621d435cf3acc9638a40d4b448005/Dockerfile
+FROM ubuntu
+RUN apt-get update && apt-get install -y postgresql-client
+RUN apt-get install -y net-tools
+RUN apt-get install -y traceroute
+RUN apt-get install -y telnet
+ADD ./run.sh ./run.sh
+CMD ["./run.sh"]

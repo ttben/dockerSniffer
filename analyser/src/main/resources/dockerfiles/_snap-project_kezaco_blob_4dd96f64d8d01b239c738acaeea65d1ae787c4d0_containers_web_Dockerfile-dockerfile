@@ -1,0 +1,7 @@
+#  Dockerfile retrieved from:
+#    Repository: snap-project/kezaco
+#    Dockerfile: http://raw.githubusercontent.com/snap-project/kezaco/4dd96f64d8d01b239c738acaeea65d1ae787c4d0/containers/web/Dockerfile
+FROM dgraziotin/lamp
+
+RUN apt-get update &&\
+    apt-get install -y php5-curl

@@ -1,0 +1,7 @@
+#  Dockerfile retrieved from:
+#    Repository: lamproae/kemu
+#    Dockerfile: http://raw.githubusercontent.com/lamproae/kemu/28b3d25d807923cfdc85c4637bf20610482c328f/qemu/Dockerfile
+FROM buildpack-deps:jessie
+
+RUN apt-get update
+RUN apt-get -y install qemu

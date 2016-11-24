@@ -1,0 +1,7 @@
+#  Dockerfile retrieved from:
+#    Repository: zerotrustnetworks/ipsec_examples
+#    Dockerfile: http://raw.githubusercontent.com/zerotrustnetworks/ipsec_examples/01cf9d5498adb68cc77266b5147b3e61143b4665/Dockerfile
+FROM ubuntu:trusty
+
+RUN apt-get update && \
+  apt-get install -y strongswan

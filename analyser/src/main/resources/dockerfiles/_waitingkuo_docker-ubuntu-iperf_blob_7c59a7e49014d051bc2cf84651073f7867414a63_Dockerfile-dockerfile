@@ -1,0 +1,7 @@
+#  Dockerfile retrieved from:
+#    Repository: waitingkuo/docker-ubuntu-iperf
+#    Dockerfile: http://raw.githubusercontent.com/waitingkuo/docker-ubuntu-iperf/7c59a7e49014d051bc2cf84651073f7867414a63/Dockerfile
+FROM ubuntu
+
+RUN apt-get update -y
+RUN apt-get install iperf -y

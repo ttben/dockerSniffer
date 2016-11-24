@@ -1,0 +1,7 @@
+#  Dockerfile retrieved from:
+#    Repository: isthari/docker-java-7-base
+#    Dockerfile: http://raw.githubusercontent.com/isthari/docker-java-7-base/de662fefcee61f4fe3f16b299d48afc120484bcf/Dockerfile
+FROM debian:jessie
+
+RUN apt-get update
+RUN apt-get -y install wget openjdk-7-jdk

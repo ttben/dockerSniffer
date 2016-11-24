@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Repository: boblefrag/docker_fun
+#    Dockerfile: http://raw.githubusercontent.com/boblefrag/docker_fun/86ec870b4d003f92d726dc3907bfdc38b94177b9/python_qpid/Dockerfile
+FROM debian:latest
+RUN apt-get update
+RUN apt-get install python-qpid -y

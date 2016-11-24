@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Repository: dsw88/docker-images
+#    Dockerfile: http://raw.githubusercontent.com/dsw88/docker-images/fd3cf3b56e39b7b2cccee9d6ccde7f055da4ba44/java7/Dockerfile
+FROM dsw88/debian7
+
+RUN apt-get update && apt-get -y install openjdk-7-jdk

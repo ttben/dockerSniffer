@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Repository: JohnMorales/docker-diff-image
+#    Dockerfile: http://raw.githubusercontent.com/JohnMorales/docker-diff-image/4fc50af867751ceceaeec2f03f76454550c8aaf8/Dockerfile
+from ubuntu:latest
+run apt-get update && apt-get install -y imagemagick

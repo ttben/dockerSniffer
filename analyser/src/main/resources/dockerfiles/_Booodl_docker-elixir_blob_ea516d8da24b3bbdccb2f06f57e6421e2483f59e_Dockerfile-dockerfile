@@ -1,0 +1,9 @@
+#  Dockerfile retrieved from:
+#    Repository: Booodl/docker-elixir
+#    Dockerfile: http://raw.githubusercontent.com/Booodl/docker-elixir/ea516d8da24b3bbdccb2f06f57e6421e2483f59e/Dockerfile
+FROM elixir:1.2.3
+
+RUN apt-get update \
+    && apt-get install -y git
+
+CMD ["iex"]

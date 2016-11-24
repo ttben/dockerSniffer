@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Repository: Daxten/git-client
+#    Dockerfile: http://raw.githubusercontent.com/Daxten/git-client/5b6b48bb4e9f0a0dbac22c5fbf07d4d2a384a856/Dockerfile
+FROM ubuntu:latest
+RUN apt-get -y update && apt-get install -y git

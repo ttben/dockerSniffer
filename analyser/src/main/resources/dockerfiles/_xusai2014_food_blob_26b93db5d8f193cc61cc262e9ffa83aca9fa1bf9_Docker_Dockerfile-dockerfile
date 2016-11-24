@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Repository: xusai2014/food
+#    Dockerfile: http://raw.githubusercontent.com/xusai2014/food/26b93db5d8f193cc61cc262e9ffa83aca9fa1bf9/Docker/Dockerfile
+FROM meteorhacks/meteord:onbuild
+RUN apt-get -qq update && apt-get install -qq -y \
+  graphicsmagick

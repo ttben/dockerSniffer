@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Repository: zubbat/base-debian
+#    Dockerfile: http://raw.githubusercontent.com/zubbat/base-debian/67eddd291f39e738a5169346a73213bcb803d731/Dockerfile
+From debian:8.6
+RUN apt-get update

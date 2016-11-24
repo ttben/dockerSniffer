@@ -1,0 +1,8 @@
+#  Dockerfile retrieved from:
+#    Repository: SviataslauDauhuchyts/testrepo
+#    Dockerfile: http://raw.githubusercontent.com/SviataslauDauhuchyts/testrepo/111b798530444a6db4711d8e4d7dfb49ed2fb6d0/Dockerfile
+FROM ubuntu:14.04
+RUN apt-get update && apt-get install -y curl \
+vim
+
+CMD echo "S u c c e s s !"

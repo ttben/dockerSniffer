@@ -1,0 +1,8 @@
+#  Dockerfile retrieved from:
+#    Repository: oldhill/dockerfiles
+#    Dockerfile: http://raw.githubusercontent.com/oldhill/dockerfiles/521ce54a91ae3b6aaacf8579459b6211861cd915/apache-bench/Dockerfile
+FROM debian:latest
+
+RUN apt-get update && apt-get install apache2-utils
+
+CMD ["ls -al"]

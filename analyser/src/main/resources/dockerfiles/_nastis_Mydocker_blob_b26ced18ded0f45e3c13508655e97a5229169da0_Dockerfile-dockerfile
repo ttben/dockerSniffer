@@ -1,0 +1,9 @@
+#  Dockerfile retrieved from:
+#    Repository: nastis/Mydocker
+#    Dockerfile: http://raw.githubusercontent.com/nastis/Mydocker/b26ced18ded0f45e3c13508655e97a5229169da0/Dockerfile
+FROM ubuntu
+RUN apt-get update && apt-get install git
+RUN apt-get update && apt-get install curl php5-curl
+
+
+

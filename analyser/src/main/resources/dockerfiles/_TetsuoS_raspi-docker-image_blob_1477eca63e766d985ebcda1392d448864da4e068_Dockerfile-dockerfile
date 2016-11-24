@@ -1,0 +1,9 @@
+#  Dockerfile retrieved from:
+#    Repository: TetsuoS/raspi-docker-image
+#    Dockerfile: http://raw.githubusercontent.com/TetsuoS/raspi-docker-image/1477eca63e766d985ebcda1392d448864da4e068/Dockerfile
+FROM hypriot/rpi-python
+RUN apt-get update
+RUN apt-get install -y samba
+RUN apt-get install -y samba-common-bin
+RUN apt-get install -y nano
+

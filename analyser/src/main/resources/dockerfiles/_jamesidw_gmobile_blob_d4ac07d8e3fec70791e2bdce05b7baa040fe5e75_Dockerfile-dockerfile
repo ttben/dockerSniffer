@@ -1,0 +1,10 @@
+#  Dockerfile retrieved from:
+#    Repository: jamesidw/gmobile
+#    Dockerfile: http://raw.githubusercontent.com/jamesidw/gmobile/d4ac07d8e3fec70791e2bdce05b7baa040fe5e75/Dockerfile
+FROM ubuntu:16.04
+RUN apt-get update && apt-get install -y \
+    wget \
+    curl \
+    git \
+    gcc \
+    

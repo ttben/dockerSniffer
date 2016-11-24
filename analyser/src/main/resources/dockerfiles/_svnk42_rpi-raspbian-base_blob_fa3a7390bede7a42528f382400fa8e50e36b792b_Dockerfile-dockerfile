@@ -1,0 +1,11 @@
+#  Dockerfile retrieved from:
+#    Repository: svnk42/rpi-raspbian-base
+#    Dockerfile: http://raw.githubusercontent.com/svnk42/rpi-raspbian-base/fa3a7390bede7a42528f382400fa8e50e36b792b/Dockerfile
+FROM resin/rpi-raspbian:wheezy
+MAINTAINER Sven Krewitt <svnk@krewitt.org>
+
+RUN apt-get update
+RUN apt-get -y install apt-utils
+RUN apt-get -y upgrade
+RUN apt-get clean
+RUN apt-get purge

@@ -1,0 +1,12 @@
+#  Dockerfile retrieved from:
+#    Repository: st3w4r/42-pool_ocaml
+#    Dockerfile: http://raw.githubusercontent.com/st3w4r/42-pool_ocaml/4237b5e60b7d214c0fa327e959d23d587c7e03a8/Dockerfile
+FROM debian
+
+RUN apt-get upgrade
+RUN apt-get update
+RUN apt-get install ocaml -y
+RUN apt-get install rlwrap -y
+RUN apt-get install make -y
+
+RUN echo 'alias ocaml="rlwrap ocaml"' >> ~/.bashrc

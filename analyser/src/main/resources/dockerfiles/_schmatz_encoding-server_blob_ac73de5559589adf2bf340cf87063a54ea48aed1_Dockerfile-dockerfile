@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Repository: schmatz/encoding-server
+#    Dockerfile: http://raw.githubusercontent.com/schmatz/encoding-server/ac73de5559589adf2bf340cf87063a54ea48aed1/Dockerfile
+FROM golang:1.4-onbuild
+RUN apt-get -y update && apt-get install -y lame libmp3lame0

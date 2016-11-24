@@ -1,0 +1,7 @@
+#  Dockerfile retrieved from:
+#    Repository: etna-alternance/drone-php-nginx
+#    Dockerfile: http://raw.githubusercontent.com/etna-alternance/drone-php-nginx/be31fcd09e3920c7796d16c41ce3c864f62f8faf/Dockerfile
+FROM etna/drone-php
+
+RUN apt-get update
+RUN apt-get install -y nginx-extras

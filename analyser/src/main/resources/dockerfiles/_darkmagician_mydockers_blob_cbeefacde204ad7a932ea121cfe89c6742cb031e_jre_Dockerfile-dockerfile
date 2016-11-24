@@ -1,0 +1,12 @@
+#  Dockerfile retrieved from:
+#    Repository: darkmagician/mydockers
+#    Dockerfile: http://raw.githubusercontent.com/darkmagician/mydockers/cbeefacde204ad7a932ea121cfe89c6742cb031e/jre/Dockerfile
+FROM debian:jessie
+
+RUN apt-get update
+RUN apt-get -y install openjdk-7-jre
+RUN apt-get -y install wget
+RUN apt-get -y install unzip
+RUN apt-get clean
+
+

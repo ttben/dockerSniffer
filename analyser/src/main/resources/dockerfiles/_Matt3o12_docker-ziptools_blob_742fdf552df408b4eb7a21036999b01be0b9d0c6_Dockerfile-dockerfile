@@ -1,0 +1,9 @@
+#  Dockerfile retrieved from:
+#    Repository: Matt3o12/docker-ziptools
+#    Dockerfile: http://raw.githubusercontent.com/Matt3o12/docker-ziptools/742fdf552df408b4eb7a21036999b01be0b9d0c6/Dockerfile
+FROM debian:wheezy
+
+RUN apt-get update
+RUN apt-get install zip unzip -y
+RUN apt-get clean
+RUN rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*

@@ -1,0 +1,7 @@
+#  Dockerfile retrieved from:
+#    Repository: x3ro/docker-compose-problem-mwe
+#    Dockerfile: http://raw.githubusercontent.com/x3ro/docker-compose-problem-mwe/d950339cc54fb6435240771b0d1cee80a69d2c8a/Dockerfile
+FROM debian:jessie
+
+RUN apt-get update && \
+    apt-get -qq install iputils-ping

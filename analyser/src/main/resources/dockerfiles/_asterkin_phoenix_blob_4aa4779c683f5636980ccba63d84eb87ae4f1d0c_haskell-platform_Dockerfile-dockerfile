@@ -1,0 +1,8 @@
+#  Dockerfile retrieved from:
+#    Repository: asterkin/phoenix
+#    Dockerfile: http://raw.githubusercontent.com/asterkin/phoenix/4aa4779c683f5636980ccba63d84eb87ae4f1d0c/haskell-platform/Dockerfile
+FROM ubuntu:14.04
+
+run apt-get update && apt-get install -y haskell-platform
+
+

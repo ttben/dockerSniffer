@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Repository: kizbitz/testbuild
+#    Dockerfile: http://raw.githubusercontent.com/kizbitz/testbuild/91b010e58079faa78d734dce6310c939f951051e/Dockerfile
+FROM ubuntu
+
+RUN apt-get update

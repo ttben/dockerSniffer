@@ -1,0 +1,7 @@
+#  Dockerfile retrieved from:
+#    Repository: ocditimban/my-d8v1-images
+#    Dockerfile: http://raw.githubusercontent.com/ocditimban/my-d8v1-images/e2921d97bea75f2ab438932c029073afc26f4028/Dockerfile
+FROM phuongbui/d8v1:latest
+RUN apt-get update
+RUN ["apt-get", "install", "-y", "vim"]
+FROM mysql

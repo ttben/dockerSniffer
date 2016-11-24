@@ -1,0 +1,11 @@
+#  Dockerfile retrieved from:
+#    Repository: VideoWorker/VideoWorker
+#    Dockerfile: http://raw.githubusercontent.com/VideoWorker/VideoWorker/1ca58bfe3741afcffef7eb4e3265bf7187ac719e/docker-mp4box/Dockerfile
+FROM debian
+
+RUN apt-get update && apt-get install -y \
+  gpac
+
+WORKDIR /data
+VOLUME /data
+  

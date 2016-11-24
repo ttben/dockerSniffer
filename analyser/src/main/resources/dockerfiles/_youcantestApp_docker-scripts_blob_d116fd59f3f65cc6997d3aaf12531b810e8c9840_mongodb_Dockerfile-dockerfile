@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Repository: youcantestApp/docker-scripts
+#    Dockerfile: http://raw.githubusercontent.com/youcantestApp/docker-scripts/d116fd59f3f65cc6997d3aaf12531b810e8c9840/mongodb/Dockerfile
+FROM frodenas/mongodb
+
+RUN apt-get -y update && apt-get -y install vim

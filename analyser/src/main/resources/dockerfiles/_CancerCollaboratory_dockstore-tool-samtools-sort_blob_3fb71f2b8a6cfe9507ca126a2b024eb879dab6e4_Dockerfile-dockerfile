@@ -1,0 +1,10 @@
+#  Dockerfile retrieved from:
+#    Repository: CancerCollaboratory/dockstore-tool-samtools-sort
+#    Dockerfile: http://raw.githubusercontent.com/CancerCollaboratory/dockstore-tool-samtools-sort/3fb71f2b8a6cfe9507ca126a2b024eb879dab6e4/Dockerfile
+FROM ubuntu:16.10
+
+MAINTAINER Collaboratory@OICR 
+
+RUN  apt-get update \
+  && apt-get install -y samtools
+

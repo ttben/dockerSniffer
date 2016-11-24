@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Repository: mamewotoko/zaurus_xdocker
+#    Dockerfile: http://raw.githubusercontent.com/mamewotoko/zaurus_xdocker/90a2e0698c66126d4b25520db960daf48ee52956/run/Dockerfile
+FROM xbuild
+RUN apt-get update && apt-get install qemu-user-static -y

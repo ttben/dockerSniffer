@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Repository: davidzuhn/buildtest2
+#    Dockerfile: http://raw.githubusercontent.com/davidzuhn/buildtest2/d39892bf557531d80b897df5b6bb970ec1e6a849/Dockerfile
+FROM ubuntu:14.04
+RUN apt-get -y update
+RUN apt-get -y install python2.7 make 

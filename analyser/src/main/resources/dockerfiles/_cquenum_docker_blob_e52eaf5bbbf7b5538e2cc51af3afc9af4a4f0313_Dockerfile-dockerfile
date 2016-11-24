@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Repository: cquenum/docker
+#    Dockerfile: http://raw.githubusercontent.com/cquenum/docker/e52eaf5bbbf7b5538e2cc51af3afc9af4a4f0313/Dockerfile
+FROM ubuntu
+RUN apt-get -y update && apt-get install -y nginx
+CMD ["nginx"]

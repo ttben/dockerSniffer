@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Repository: suitingtseng/ubuntu-sharing
+#    Dockerfile: http://raw.githubusercontent.com/suitingtseng/ubuntu-sharing/9de060085eede1eab16317ddb65f9f3028ea83a7/Dockerfile
+FROM ubuntu:14.04
+RUN apt-get update -y && apt-get install -y zip

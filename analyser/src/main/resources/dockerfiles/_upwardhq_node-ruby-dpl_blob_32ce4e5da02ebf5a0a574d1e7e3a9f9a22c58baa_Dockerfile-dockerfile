@@ -1,0 +1,9 @@
+#  Dockerfile retrieved from:
+#    Repository: upwardhq/node-ruby-dpl
+#    Dockerfile: http://raw.githubusercontent.com/upwardhq/node-ruby-dpl/32ce4e5da02ebf5a0a574d1e7e3a9f9a22c58baa/Dockerfile
+FROM node:6.2
+
+RUN apt-get update -yq && \
+    apt-get install ruby -y
+
+RUN gem install dpl

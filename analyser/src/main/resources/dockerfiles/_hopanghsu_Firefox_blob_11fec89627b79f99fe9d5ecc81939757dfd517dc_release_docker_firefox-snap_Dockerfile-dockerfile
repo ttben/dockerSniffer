@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Repository: hopanghsu/Firefox
+#    Dockerfile: http://raw.githubusercontent.com/hopanghsu/Firefox/11fec89627b79f99fe9d5ecc81939757dfd517dc/release/docker/firefox-snap/Dockerfile
+FROM ubuntu:16.04
+
+RUN apt-get update && apt-get install -qy snapcraft bzip2 curl && apt-get clean

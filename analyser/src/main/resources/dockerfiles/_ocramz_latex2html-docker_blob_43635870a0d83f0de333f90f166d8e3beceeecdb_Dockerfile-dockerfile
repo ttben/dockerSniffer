@@ -1,0 +1,12 @@
+#  Dockerfile retrieved from:
+#    Repository: ocramz/latex2html-docker
+#    Dockerfile: http://raw.githubusercontent.com/ocramz/latex2html-docker/43635870a0d83f0de333f90f166d8e3beceeecdb/Dockerfile
+FROM phusion/baseimage
+
+RUN apt-get upgrade && \
+    apt-get update -y && \
+    apt-get install -y --no-install-recommends latex2html && \
+    apt-get clean
+    
+
+

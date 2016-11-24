@@ -1,0 +1,11 @@
+#  Dockerfile retrieved from:
+#    Repository: itiqiti/docker-empty
+#    Dockerfile: http://raw.githubusercontent.com/itiqiti/docker-empty/53b6688eb93305eafa92ed94b9f0eb45371968a5/Dockerfile
+FROM debian:8.5
+MAINTAINER itiQiti Dev Team <opensource@itiqiti.com>
+RUN apt-get update &&\
+    apt-get install -y \
+      htop &&\
+    apt-get -y autoremove &&\
+    apt-get -y clean
+

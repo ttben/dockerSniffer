@@ -1,0 +1,7 @@
+#  Dockerfile retrieved from:
+#    Repository: kellrott/nebula
+#    Dockerfile: http://raw.githubusercontent.com/kellrott/nebula/53ed7aa5cdb3ccea7140e4ada22bec16bb636105/examples/shell/curl_docker/Dockerfile
+FROM ubuntu
+
+RUN apt-get update
+RUN apt-get install -y curl

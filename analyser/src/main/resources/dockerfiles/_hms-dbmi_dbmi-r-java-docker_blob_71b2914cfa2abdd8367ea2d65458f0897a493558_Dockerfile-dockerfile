@@ -1,0 +1,7 @@
+#  Dockerfile retrieved from:
+#    Repository: hms-dbmi/dbmi-r-java-docker
+#    Dockerfile: http://raw.githubusercontent.com/hms-dbmi/dbmi-r-java-docker/71b2914cfa2abdd8367ea2d65458f0897a493558/Dockerfile
+FROM rocker/r-base:latest
+
+RUN apt-get update && apt-get install -y r-cran-rjava
+RUN apt-get update && apt-get install -y default-jdk

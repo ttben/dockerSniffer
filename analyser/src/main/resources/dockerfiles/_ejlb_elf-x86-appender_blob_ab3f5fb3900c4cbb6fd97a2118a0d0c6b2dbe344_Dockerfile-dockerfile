@@ -1,0 +1,17 @@
+#  Dockerfile retrieved from:
+#    Repository: ejlb/elf-x86-appender
+#    Dockerfile: http://raw.githubusercontent.com/ejlb/elf-x86-appender/ab3f5fb3900c4cbb6fd97a2118a0d0c6b2dbe344/Dockerfile
+FROM ubuntu
+
+RUN apt-get update
+RUN apt-get -y install build-essential
+RUN apt-get -y install gdb
+RUN apt-get -y install strace
+RUN apt-get -y install ltrace
+RUN apt-get -y install bsdmainutils
+RUN apt-get -y install elfutils
+RUN apt-get -y install binutils
+RUN apt-get -y install libc6-dev-i386
+RUN apt-get -y install vim
+
+run echo 'set background=dark' >> /root/.vimrc

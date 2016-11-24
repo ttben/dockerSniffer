@@ -1,0 +1,7 @@
+#  Dockerfile retrieved from:
+#    Repository: Attamusc/QueueBert
+#    Dockerfile: http://raw.githubusercontent.com/Attamusc/QueueBert/4b929bf3e44af6373e09c130568ef6a246ef1203/Dockerfile
+FROM heroku/go:1.5
+
+RUN apt-get update && \
+    apt-get -y install inotify-tools

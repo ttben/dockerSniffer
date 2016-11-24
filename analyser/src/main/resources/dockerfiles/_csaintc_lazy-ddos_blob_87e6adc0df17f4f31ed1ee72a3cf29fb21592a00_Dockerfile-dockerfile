@@ -1,0 +1,7 @@
+#  Dockerfile retrieved from:
+#    Repository: csaintc/lazy-ddos
+#    Dockerfile: http://raw.githubusercontent.com/csaintc/lazy-ddos/87e6adc0df17f4f31ed1ee72a3cf29fb21592a00/Dockerfile
+FROM ubuntu:latest
+RUn apt-get update
+RUN apt-get install curl -y
+

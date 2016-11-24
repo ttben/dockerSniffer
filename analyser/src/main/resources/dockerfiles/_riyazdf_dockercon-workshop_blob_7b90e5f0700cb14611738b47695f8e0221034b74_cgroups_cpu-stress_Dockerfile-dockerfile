@@ -1,0 +1,8 @@
+#  Dockerfile retrieved from:
+#    Repository: riyazdf/dockercon-workshop
+#    Dockerfile: http://raw.githubusercontent.com/riyazdf/dockercon-workshop/7b90e5f0700cb14611738b47695f8e0221034b74/cgroups/cpu-stress/Dockerfile
+FROM ubuntu:latest
+
+RUN apt-get update && apt-get install -y stress
+
+CMD stress -c 2

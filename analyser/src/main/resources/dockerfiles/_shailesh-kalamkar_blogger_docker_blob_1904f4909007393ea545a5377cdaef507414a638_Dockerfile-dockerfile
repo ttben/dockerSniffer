@@ -1,0 +1,12 @@
+#  Dockerfile retrieved from:
+#    Repository: shailesh-kalamkar/blogger_docker
+#    Dockerfile: http://raw.githubusercontent.com/shailesh-kalamkar/blogger_docker/1904f4909007393ea545a5377cdaef507414a638/Dockerfile
+FROM ruby:2.3
+
+RUN apt-get update -qq && apt-get install -y build-essential
+
+RUN apt-get install -y libpq-dev
+RUN apt-get install -y libxml2-dev libxslt1-dev
+RUN apt-get install -y nodejs
+
+WORKDIR /rails

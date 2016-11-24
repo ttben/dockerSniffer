@@ -1,0 +1,8 @@
+#  Dockerfile retrieved from:
+#    Repository: Butanobu/docker
+#    Dockerfile: http://raw.githubusercontent.com/Butanobu/docker/264aef40a9d76277838a8499e6f0ec5a600f2f2e/software.python/Dockerfile
+FROM dockerreg:5000/base/utopic
+
+RUN \
+    apt-get update && \
+    apt-get install -y python

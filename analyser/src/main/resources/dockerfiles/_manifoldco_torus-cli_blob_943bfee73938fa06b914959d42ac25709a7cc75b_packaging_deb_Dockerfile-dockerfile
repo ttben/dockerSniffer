@@ -1,0 +1,10 @@
+#  Dockerfile retrieved from:
+#    Repository: manifoldco/torus-cli
+#    Dockerfile: http://raw.githubusercontent.com/manifoldco/torus-cli/943bfee73938fa06b914959d42ac25709a7cc75b/packaging/deb/Dockerfile
+FROM ubuntu:16.10
+
+RUN apt-get update && \
+	apt-get install -y reprepro && \
+	apt-get clean
+
+VOLUME torus

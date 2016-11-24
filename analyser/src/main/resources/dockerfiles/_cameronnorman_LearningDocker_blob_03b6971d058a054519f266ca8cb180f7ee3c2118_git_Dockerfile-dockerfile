@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Repository: cameronnorman/LearningDocker
+#    Dockerfile: http://raw.githubusercontent.com/cameronnorman/LearningDocker/03b6971d058a054519f266ca8cb180f7ee3c2118/git/Dockerfile
+FROM ubuntu
+
+RUN apt-get -y update && apt-get install -y git

@@ -1,0 +1,7 @@
+#  Dockerfile retrieved from:
+#    Repository: marttosc/learning
+#    Dockerfile: http://raw.githubusercontent.com/marttosc/learning/91a5b08ef927196ad485857f3e5867ba6f3cd0cf/docker/01-ubuntu-16.04/Dockerfile
+FROM ubuntu:16.04
+
+RUN apt-get update && apt-get install nginx -y
+CMD bash

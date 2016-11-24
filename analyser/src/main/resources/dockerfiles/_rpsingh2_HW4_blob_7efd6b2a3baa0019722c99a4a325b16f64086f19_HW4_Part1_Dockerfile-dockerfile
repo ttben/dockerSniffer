@@ -1,0 +1,7 @@
+#  Dockerfile retrieved from:
+#    Repository: rpsingh2/HW4
+#    Dockerfile: http://raw.githubusercontent.com/rpsingh2/HW4/7efd6b2a3baa0019722c99a4a325b16f64086f19/HW4/Part1/Dockerfile
+FROM ubuntu:latest
+
+RUN sudo apt-get -y update
+RUN sudo apt-get install -y socat 

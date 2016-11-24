@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Repository: dave-tucker/dockerfiles
+#    Dockerfile: http://raw.githubusercontent.com/dave-tucker/dockerfiles/36b501282d1d8dd7a23118945169bcc5e6b44442/shellcheck/Dockerfile
+FROM debian:jessie
+RUN apt-get -qy update && apt-get -qy install make shellcheck
+

@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Repository: theBaldSoprano/ubuntuWithCurlGit
+#    Dockerfile: http://raw.githubusercontent.com/theBaldSoprano/ubuntuWithCurlGit/ed1b7fa8f15e211100bc969ed74dab8426d5b169/Dockerfile
+FROM ubuntu:latest
+
+RUN apt-get -y update && apt-get install -y curl && apt-get install -y git

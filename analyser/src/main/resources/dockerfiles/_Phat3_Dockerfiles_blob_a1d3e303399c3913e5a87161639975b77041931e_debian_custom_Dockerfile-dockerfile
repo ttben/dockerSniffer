@@ -1,0 +1,12 @@
+#  Dockerfile retrieved from:
+#    Repository: Phat3/Dockerfiles
+#    Dockerfile: http://raw.githubusercontent.com/Phat3/Dockerfiles/a1d3e303399c3913e5a87161639975b77041931e/debian_custom/Dockerfile
+FROM debian
+
+RUN apt-get update -y && apt-get install -y git
+
+# Install wget
+RUN apt-get install -y wget
+
+# Install vim
+RUN apt-get install -y vim

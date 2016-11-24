@@ -1,0 +1,9 @@
+#  Dockerfile retrieved from:
+#    Repository: tejksat/docker-and-git
+#    Dockerfile: http://raw.githubusercontent.com/tejksat/docker-and-git/f01790293536a861eb8ede88db5a1e727701f191/Dockerfile
+FROM debian:jessie
+
+RUN apt-get update && apt-get install -y \
+	git
+
+ENTRYPOINT ["git"]

@@ -1,0 +1,7 @@
+#  Dockerfile retrieved from:
+#    Repository: yawkat/katbot
+#    Dockerfile: http://raw.githubusercontent.com/yawkat/katbot/99e05120e97c7d61b4621b28f96159d5c0c88662/src/main/resources/at/yawk/katbot/action/repl.dockerfile
+FROM ubuntu:16.04
+
+RUN apt-get update && \
+    apt-get -y install python3 sudo

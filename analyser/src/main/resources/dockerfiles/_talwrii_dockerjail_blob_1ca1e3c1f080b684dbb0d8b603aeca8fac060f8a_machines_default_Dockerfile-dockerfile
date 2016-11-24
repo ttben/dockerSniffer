@@ -1,0 +1,8 @@
+#  Dockerfile retrieved from:
+#    Repository: talwrii/dockerjail
+#    Dockerfile: http://raw.githubusercontent.com/talwrii/dockerjail/1ca1e3c1f080b684dbb0d8b603aeca8fac060f8a/machines/default/Dockerfile
+FROM 826544226fdc
+
+RUN apt-get update -y
+RUN apt-get install -y python
+RUN apt-get install -y python-virtualenv

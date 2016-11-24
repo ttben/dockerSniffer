@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Repository: cvra/roscvra
+#    Dockerfile: http://raw.githubusercontent.com/cvra/roscvra/947dc494b8ed3c9b5b8382fbc49230f54e740033/docker_cvra_dev/Dockerfile
+FROM osrf/ros:jade-desktop-full
+
+RUN apt-get update && apt-get install -y libgazebo5-dev

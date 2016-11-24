@@ -1,0 +1,12 @@
+#  Dockerfile retrieved from:
+#    Repository: huiwq1990/DockerImages
+#    Dockerfile: http://raw.githubusercontent.com/huiwq1990/DockerImages/2c7afdde91f3302f21bf241759f56ef7fd28a100/asm/Dockerfile
+FROM            ubuntu:14.04
+
+MAINTAINER      huiwq1990
+
+ENV DEBIAN_FRONTEND noninteractive
+RUN apt-get -qq update && apt-get -qq -y install wget
+RUN apt-get -qq install nasm
+RUN apt-get -qq install binutils
+RUN apt-get -qq install git

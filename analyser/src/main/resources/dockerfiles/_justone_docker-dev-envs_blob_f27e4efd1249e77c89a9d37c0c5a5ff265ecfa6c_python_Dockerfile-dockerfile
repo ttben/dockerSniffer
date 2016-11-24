@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Repository: justone/docker-dev-envs
+#    Dockerfile: http://raw.githubusercontent.com/justone/docker-dev-envs/f27e4efd1249e77c89a9d37c0c5a5ff265ecfa6c/python/Dockerfile
+FROM nate/basedev
+
+RUN apt-get update && apt-get install python python-dev python-pip -y

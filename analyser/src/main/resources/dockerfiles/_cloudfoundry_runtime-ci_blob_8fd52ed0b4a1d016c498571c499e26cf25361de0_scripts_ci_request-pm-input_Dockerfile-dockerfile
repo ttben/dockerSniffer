@@ -1,0 +1,11 @@
+#  Dockerfile retrieved from:
+#    Repository: cloudfoundry/runtime-ci
+#    Dockerfile: http://raw.githubusercontent.com/cloudfoundry/runtime-ci/8fd52ed0b4a1d016c498571c499e26cf25361de0/scripts/ci/request-pm-input/Dockerfile
+FROM ubuntu:trusty
+
+RUN \
+  apt-get update && \
+  apt-get -y install \
+    build-essential \
+    curl \
+    jq

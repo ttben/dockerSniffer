@@ -1,0 +1,7 @@
+#  Dockerfile retrieved from:
+#    Repository: hknam/docker
+#    Dockerfile: http://raw.githubusercontent.com/hknam/docker/7c897126bdb6a70779c6d66dd59270a2c844432f/Dockerfile
+FROM ubuntu:latest
+
+RUN apt-get update
+RUN apt-get install -y vim ssh 

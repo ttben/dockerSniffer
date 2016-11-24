@@ -1,0 +1,4 @@
+#  Dockerfile retrieved from:
+#    Repository: basho-labs/docker-images
+#    Dockerfile: http://raw.githubusercontent.com/basho-labs/docker-images/f6a7eef29fbbc820e9b27c7e5efbc7ccf58386fc/tools/build-essential/debian/upgrade.Dockerfile
+RUN apt-get dist-upgrade -y

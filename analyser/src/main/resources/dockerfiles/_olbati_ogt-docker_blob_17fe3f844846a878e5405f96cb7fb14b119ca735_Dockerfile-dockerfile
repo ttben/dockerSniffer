@@ -1,0 +1,8 @@
+#  Dockerfile retrieved from:
+#    Repository: olbati/ogt-docker
+#    Dockerfile: http://raw.githubusercontent.com/olbati/ogt-docker/17fe3f844846a878e5405f96cb7fb14b119ca735/Dockerfile
+FROM ubuntu
+RUN \ 
+	apt-get update && \
+	apt-get install -y nodejs && \
+	apt-get install -y npm

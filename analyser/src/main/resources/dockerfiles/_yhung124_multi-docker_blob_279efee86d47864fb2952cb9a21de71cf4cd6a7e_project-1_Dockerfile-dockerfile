@@ -1,0 +1,9 @@
+#  Dockerfile retrieved from:
+#    Repository: yhung124/multi-docker
+#    Dockerfile: http://raw.githubusercontent.com/yhung124/multi-docker/279efee86d47864fb2952cb9a21de71cf4cd6a7e/project-1/Dockerfile
+FROM ubuntu:14.04.4
+
+RUN apt-get update
+RUN apt-get install -y wget
+
+CMD "bash"

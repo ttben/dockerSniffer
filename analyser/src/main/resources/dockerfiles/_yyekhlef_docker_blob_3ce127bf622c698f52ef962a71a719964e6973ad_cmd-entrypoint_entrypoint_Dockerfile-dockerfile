@@ -1,0 +1,7 @@
+#  Dockerfile retrieved from:
+#    Repository: yyekhlef/docker
+#    Dockerfile: http://raw.githubusercontent.com/yyekhlef/docker/3ce127bf622c698f52ef962a71a719964e6973ad/cmd-entrypoint/entrypoint/Dockerfile
+FROM ubuntu
+RUN apt-get update
+RUN apt-get install -y wget
+ENTRYPOINT ["wget", "-O-", "-q"]

@@ -1,0 +1,7 @@
+#  Dockerfile retrieved from:
+#    Repository: mickaelperrin/docker-sync-mac
+#    Dockerfile: http://raw.githubusercontent.com/mickaelperrin/docker-sync-mac/3e05ced7fb1048b03eec0971b28ca20448e6f5b9/nginx/Dockerfile
+FROM nginx:latest
+
+RUN apt-get update -y \
+ && apt-get install -y unzip

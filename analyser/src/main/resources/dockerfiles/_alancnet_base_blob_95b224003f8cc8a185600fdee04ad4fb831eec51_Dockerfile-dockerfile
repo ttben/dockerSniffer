@@ -1,0 +1,8 @@
+#  Dockerfile retrieved from:
+#    Repository: alancnet/base
+#    Dockerfile: http://raw.githubusercontent.com/alancnet/base/95b224003f8cc8a185600fdee04ad4fb831eec51/Dockerfile
+FROM ubuntu
+
+RUN apt-get update && apt-get install -y curl wget gettext jq netcat
+
+RUN apt-get install sudo

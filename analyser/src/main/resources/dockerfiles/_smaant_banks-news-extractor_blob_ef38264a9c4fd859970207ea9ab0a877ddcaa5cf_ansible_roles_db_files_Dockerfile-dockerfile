@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Repository: smaant/banks-news-extractor
+#    Dockerfile: http://raw.githubusercontent.com/smaant/banks-news-extractor/ef38264a9c4fd859970207ea9ab0a877ddcaa5cf/ansible/roles/db/files/Dockerfile
+FROM ubuntu:14.04
+RUN apt-get update && apt-get install -y mongodb-server

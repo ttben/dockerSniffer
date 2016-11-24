@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Repository: mfrellum/PragmaMS
+#    Dockerfile: http://raw.githubusercontent.com/mfrellum/PragmaMS/7d67dd51c3a65c87d54847504d27ba9edde6cb0d/DOCKERFILES/base/Dockerfile
+FROM ubuntu:14.04
+RUN apt-get update
+RUN apt-get -y install wget

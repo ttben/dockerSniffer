@@ -1,0 +1,16 @@
+#  Dockerfile retrieved from:
+#    Repository: jan-osch/assemb
+#    Dockerfile: http://raw.githubusercontent.com/jan-osch/assemb/dcb6332dc9d99edd37ec1de2a010395ee49ddaf2/Dockerfile
+FROM ubuntu
+RUN apt-get update
+RUN apt-get install -y binutils
+RUN apt-get update
+RUN apt-get install -y nasm
+RUN apt-get update
+RUN apt-get install -y make
+RUN apt-get update
+RUN apt-get install -y gcc
+RUN apt-get update
+RUN apt-get install -y libc6-dev-i386
+RUN apt-get update
+RUN apt-get install -y libc-dev

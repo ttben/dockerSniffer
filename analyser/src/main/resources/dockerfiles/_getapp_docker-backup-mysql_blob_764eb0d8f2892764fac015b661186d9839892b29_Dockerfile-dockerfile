@@ -1,0 +1,11 @@
+#  Dockerfile retrieved from:
+#    Repository: getapp/docker-backup-mysql
+#    Dockerfile: http://raw.githubusercontent.com/getapp/docker-backup-mysql/764eb0d8f2892764fac015b661186d9839892b29/Dockerfile
+FROM quay.io/getapp/docker-backup
+
+MAINTAINER Boris Mikhaylov
+
+RUN apt-get update \
+    && apt-get install -y mysql-client \
+    && apt-get autoremove -y -qq \
+    && apt-get clean -qq

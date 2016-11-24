@@ -1,0 +1,9 @@
+#  Dockerfile retrieved from:
+#    Repository: mkhajeh/pandoc-container
+#    Dockerfile: http://raw.githubusercontent.com/mkhajeh/pandoc-container/cfe0fc4683b9535c1eaf02b31096e7a2e815982b/Dockerfile
+FROM debian:latest
+MAINTAINER Mehdi Khajeh
+RUN apt-get update && apt-get install -y pandoc && apt-get clean
+WORKDIR /pandoc
+
+

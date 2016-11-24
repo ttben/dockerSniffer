@@ -1,0 +1,7 @@
+#  Dockerfile retrieved from:
+#    Repository: hitochan777/docker-texlive-full
+#    Dockerfile: http://raw.githubusercontent.com/hitochan777/docker-texlive-full/ea841219c9833e1c2965804182e926cedaa3b7e1/Dockerfile
+FROM ubuntu:trusty
+
+RUN apt-get -q update && apt-get install -y texlive-full make
+

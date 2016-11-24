@@ -1,0 +1,9 @@
+#  Dockerfile retrieved from:
+#    Repository: georgeoly/projects
+#    Dockerfile: http://raw.githubusercontent.com/georgeoly/projects/000c68844b53cac91077e0cbc9da67032d9de3f1/docker/debtest/Dockerfile
+FROM debian:jessie
+
+RUN apt-get update && apt-get install -y vim
+
+ADD *.deb /tmp/
+

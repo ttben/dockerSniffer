@@ -1,0 +1,8 @@
+#  Dockerfile retrieved from:
+#    Repository: bahlo/dockerfiles
+#    Dockerfile: http://raw.githubusercontent.com/bahlo/dockerfiles/90dfd4c27067e6243601cabc242a5f07e7a6d285/rsync/Dockerfile
+FROM buildpack-deps:jessie
+
+RUN apt-get update && \
+  apt-get install rsync -y
+

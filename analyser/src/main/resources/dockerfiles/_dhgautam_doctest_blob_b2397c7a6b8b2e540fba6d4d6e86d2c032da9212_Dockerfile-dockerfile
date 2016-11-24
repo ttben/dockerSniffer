@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Repository: dhgautam/doctest
+#    Dockerfile: http://raw.githubusercontent.com/dhgautam/doctest/b2397c7a6b8b2e540fba6d4d6e86d2c032da9212/Dockerfile
+RUN apt-get update && apt-get install -y curl \
+					 vim \
+					 wget

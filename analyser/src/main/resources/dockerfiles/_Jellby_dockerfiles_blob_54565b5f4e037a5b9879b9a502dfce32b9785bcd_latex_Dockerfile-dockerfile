@@ -1,0 +1,9 @@
+#  Dockerfile retrieved from:
+#    Repository: Jellby/dockerfiles
+#    Dockerfile: http://raw.githubusercontent.com/Jellby/dockerfiles/54565b5f4e037a5b9879b9a502dfce32b9785bcd/latex/Dockerfile
+FROM phusion/baseimage
+
+RUN apt-get upgrade && \
+    apt-get update -y && \
+    apt-get install -y --no-install-recommends texlive-full imagemagick poppler-utils && \
+    apt-get clean

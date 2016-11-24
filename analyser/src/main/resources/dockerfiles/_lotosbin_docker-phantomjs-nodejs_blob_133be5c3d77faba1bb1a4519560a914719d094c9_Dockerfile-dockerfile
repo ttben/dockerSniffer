@@ -1,0 +1,8 @@
+#  Dockerfile retrieved from:
+#    Repository: lotosbin/docker-phantomjs-nodejs
+#    Dockerfile: http://raw.githubusercontent.com/lotosbin/docker-phantomjs-nodejs/133be5c3d77faba1bb1a4519560a914719d094c9/Dockerfile
+FROM servebox/phantomjs:latest
+
+MAINTAINER IvanRave
+
+RUN apt-get update -qq && apt-get upgrade -y && apt-get remove -y node && apt-get install -y nodejs npm

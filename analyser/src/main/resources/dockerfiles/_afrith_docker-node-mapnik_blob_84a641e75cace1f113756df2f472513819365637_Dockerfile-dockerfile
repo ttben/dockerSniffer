@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Repository: afrith/docker-node-mapnik
+#    Dockerfile: http://raw.githubusercontent.com/afrith/docker-node-mapnik/84a641e75cace1f113756df2f472513819365637/Dockerfile
+FROM afrith/node-xenial
+
+RUN apt-get update && apt-get install -y gdal-bin libmapnik-dev

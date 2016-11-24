@@ -1,0 +1,8 @@
+#  Dockerfile retrieved from:
+#    Repository: tony612/docker-jenkins
+#    Dockerfile: http://raw.githubusercontent.com/tony612/docker-jenkins/df84b572425ebe920af72b43cacde73869ca57ad/Dockerfile
+FROM jenkins:2.19.3
+
+USER root
+
+RUN apt-get update && apt-get install -y vim

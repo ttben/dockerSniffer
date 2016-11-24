@@ -1,0 +1,7 @@
+#  Dockerfile retrieved from:
+#    Repository: superr4y/dockerfiles
+#    Dockerfile: http://raw.githubusercontent.com/superr4y/dockerfiles/05f000362fca08d30995d71d29e5ee3ab045ed2e/debian/Dockerfile
+FROM debian:latest
+MAINTAINER superr4y
+
+RUN apt-get update && apt-get install -y vim net-tools

@@ -1,0 +1,10 @@
+#  Dockerfile retrieved from:
+#    Repository: martinholmin/ruby
+#    Dockerfile: http://raw.githubusercontent.com/martinholmin/ruby/f041215106052e30f6ffd79747893d9f3886528c/Dockerfile
+FROM ruby:2.3.0
+ENV LANG C.UTF-8
+
+RUN apt-get update && apt-get install -y \
+  curl \
+  nodejs \
+  git

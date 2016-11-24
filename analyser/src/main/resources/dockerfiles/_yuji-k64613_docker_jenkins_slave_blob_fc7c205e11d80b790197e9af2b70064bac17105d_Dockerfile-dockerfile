@@ -1,0 +1,17 @@
+#  Dockerfile retrieved from:
+#    Repository: yuji-k64613/docker_jenkins_slave
+#    Dockerfile: http://raw.githubusercontent.com/yuji-k64613/docker_jenkins_slave/fc7c205e11d80b790197e9af2b70064bac17105d/Dockerfile
+FROM debian:latest
+MAINTAINER Yuji Konishi
+
+RUN apt-get update
+RUN apt-get install -y vim
+RUN apt-get install -y git
+RUN apt-get install -y curl
+RUN apt-get install -y unzip
+RUN apt-get install -y openjdk-7-jdk
+RUN apt-get install -y maven
+RUN apt-get install -y gradle
+
+ADD script.sh /tmp/script.sh
+CMD [ "/tmp/script.sh" ]

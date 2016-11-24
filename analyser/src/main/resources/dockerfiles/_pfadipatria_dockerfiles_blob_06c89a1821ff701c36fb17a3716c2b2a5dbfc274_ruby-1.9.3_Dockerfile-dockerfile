@@ -1,0 +1,8 @@
+#  Dockerfile retrieved from:
+#    Repository: pfadipatria/dockerfiles
+#    Dockerfile: http://raw.githubusercontent.com/pfadipatria/dockerfiles/06c89a1821ff701c36fb17a3716c2b2a5dbfc274/ruby-1.9.3/Dockerfile
+FROM melopos/docker-rvm-ruby-1.9.3
+
+RUN apt-get update && \
+  apt-get upgrade -y && \
+  apt-get install libmysqlclient-dev -y

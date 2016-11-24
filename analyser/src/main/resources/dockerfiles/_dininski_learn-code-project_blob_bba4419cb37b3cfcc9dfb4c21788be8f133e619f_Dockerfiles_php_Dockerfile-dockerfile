@@ -1,0 +1,8 @@
+#  Dockerfile retrieved from:
+#    Repository: dininski/learn-code-project
+#    Dockerfile: http://raw.githubusercontent.com/dininski/learn-code-project/bba4419cb37b3cfcc9dfb4c21788be8f133e619f/Dockerfiles/php/Dockerfile
+FROM code-execution.base
+
+MAINTAINER Vasil Dininski
+
+RUN apt-get update && apt-get install php5 -y

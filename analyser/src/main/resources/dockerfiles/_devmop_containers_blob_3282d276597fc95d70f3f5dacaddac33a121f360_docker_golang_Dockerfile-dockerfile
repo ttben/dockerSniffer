@@ -1,0 +1,7 @@
+#  Dockerfile retrieved from:
+#    Repository: devmop/containers
+#    Dockerfile: http://raw.githubusercontent.com/devmop/containers/3282d276597fc95d70f3f5dacaddac33a121f360/docker/golang/Dockerfile
+from debian:jessie
+RUN apt-get update && apt-get install -y golang
+WORKDIR /home
+ENTRYPOINT ["go"]

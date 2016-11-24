@@ -1,0 +1,7 @@
+#  Dockerfile retrieved from:
+#    Repository: joaquinbucca/ml-proxy
+#    Dockerfile: http://raw.githubusercontent.com/joaquinbucca/ml-proxy/9e1d1c1b0cb7754704aa267668fc22a74e6f0cbe/docker/pinger/Dockerfile
+FROM ubuntu
+MAINTAINER Joaquin Bucca
+RUN apt-get update && \
+    apt-get -y install curl

@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Repository: OFFLINE-GmbH/rsync-deploy-docker
+#    Dockerfile: http://raw.githubusercontent.com/OFFLINE-GmbH/rsync-deploy-docker/192854e6a3ceebfd6554685f6d98fbfd6469b2f5/Dockerfile
+FROM ubuntu:latest
+
+RUN apt-get update && apt-get install zip rsync openssh-client -y && apt-get -y autoremove && apt-get clean && rm -rf /var/lib/apt/lists/*

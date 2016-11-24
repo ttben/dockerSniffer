@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Repository: Fecana/monostatic
+#    Dockerfile: http://raw.githubusercontent.com/Fecana/monostatic/7758c955ec14d360ab715d98e2c792f124f43bb6/Dockerfile
+FROM mono:3.8
+RUN apt-get -y update && apt-get -y upgrade && apt-get -y install build-essential

@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Repository: gliderlabs/logspout
+#    Dockerfile: http://raw.githubusercontent.com/gliderlabs/logspout/f85812a70be8f6bf5add1f5f43eee3aaed7ab91d/debug/Dockerfile
+FROM ubuntu-debootstrap
+RUN apt-get update && apt-get install -y netcat

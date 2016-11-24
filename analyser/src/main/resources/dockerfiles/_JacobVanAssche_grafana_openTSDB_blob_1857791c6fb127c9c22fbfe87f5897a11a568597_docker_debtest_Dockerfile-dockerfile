@@ -1,0 +1,9 @@
+#  Dockerfile retrieved from:
+#    Repository: JacobVanAssche/grafana_openTSDB
+#    Dockerfile: http://raw.githubusercontent.com/JacobVanAssche/grafana_openTSDB/1857791c6fb127c9c22fbfe87f5897a11a568597/docker/debtest/Dockerfile
+FROM debian:jessie
+
+RUN apt-get update && apt-get install -y vim
+
+ADD *.deb /tmp/
+

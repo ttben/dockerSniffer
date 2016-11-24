@@ -1,0 +1,9 @@
+#  Dockerfile retrieved from:
+#    Repository: mrrn/docker_rbenv
+#    Dockerfile: http://raw.githubusercontent.com/mrrn/docker_rbenv/ad86be1a7270f73a3444d80bddf264dd77b5f370/Dockerfile
+FROM base
+
+RUN apt-get update; apt-get upgrade -y; apt-get clean
+
+RUN apt-get install -y curl git
+RUN apt-get install -y build-essential libssl-dev

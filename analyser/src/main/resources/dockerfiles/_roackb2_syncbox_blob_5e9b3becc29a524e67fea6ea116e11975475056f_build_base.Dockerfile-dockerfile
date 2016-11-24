@@ -1,0 +1,7 @@
+#  Dockerfile retrieved from:
+#    Repository: roackb2/syncbox
+#    Dockerfile: http://raw.githubusercontent.com/roackb2/syncbox/5e9b3becc29a524e67fea6ea116e11975475056f/build/base.Dockerfile
+FROM golang:1.6
+
+RUN apt-get update
+RUN apt-get install -y net-tools net-tools wget

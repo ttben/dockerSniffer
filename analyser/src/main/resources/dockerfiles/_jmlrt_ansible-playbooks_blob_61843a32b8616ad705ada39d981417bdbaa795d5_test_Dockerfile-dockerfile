@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Repository: jmlrt/ansible-playbooks
+#    Dockerfile: http://raw.githubusercontent.com/jmlrt/ansible-playbooks/61843a32b8616ad705ada39d981417bdbaa795d5/test/Dockerfile
+FROM debian:jessie
+RUN apt-get update && apt-get -y install python

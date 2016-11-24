@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Repository: jlhaas/myrepo
+#    Dockerfile: http://raw.githubusercontent.com/jlhaas/myrepo/09f993c71f40c83b05bbe7d0928b4881082142cf/Dockerfile
+FROM nginx
+
+RUN apt-get update

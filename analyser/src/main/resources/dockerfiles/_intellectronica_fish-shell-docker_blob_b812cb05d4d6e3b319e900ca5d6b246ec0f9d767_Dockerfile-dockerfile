@@ -1,0 +1,9 @@
+#  Dockerfile retrieved from:
+#    Repository: intellectronica/fish-shell-docker
+#    Dockerfile: http://raw.githubusercontent.com/intellectronica/fish-shell-docker/b812cb05d4d6e3b319e900ca5d6b246ec0f9d767/Dockerfile
+FROM ubuntu
+RUN apt-get -y update && \
+    apt-get -y upgrade && \
+    apt-get -y install fish && \
+    apt-get -y autoremove
+CMD /usr/bin/fish

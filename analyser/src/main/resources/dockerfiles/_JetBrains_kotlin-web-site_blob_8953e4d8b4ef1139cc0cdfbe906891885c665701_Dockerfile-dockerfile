@@ -1,0 +1,9 @@
+#  Dockerfile retrieved from:
+#    Repository: JetBrains/kotlin-web-site
+#    Dockerfile: http://raw.githubusercontent.com/JetBrains/kotlin-web-site/8953e4d8b4ef1139cc0cdfbe906891885c665701/Dockerfile
+FROM python:2
+
+RUN apt-get update; \
+    apt-get -y install wkhtmltopdf; \
+    apt-get -y install ruby; \
+    gem install kramdown;

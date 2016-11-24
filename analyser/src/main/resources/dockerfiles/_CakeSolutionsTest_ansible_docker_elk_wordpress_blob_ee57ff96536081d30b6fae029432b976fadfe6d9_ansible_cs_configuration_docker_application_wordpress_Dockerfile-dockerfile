@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Repository: CakeSolutionsTest/ansible_docker_elk_wordpress
+#    Dockerfile: http://raw.githubusercontent.com/CakeSolutionsTest/ansible_docker_elk_wordpress/ee57ff96536081d30b6fae029432b976fadfe6d9/ansible/cs_configuration/docker/application/wordpress/Dockerfile
+FROM wordpress:latest
+RUN apt-get -y update && apt-get install -y vim

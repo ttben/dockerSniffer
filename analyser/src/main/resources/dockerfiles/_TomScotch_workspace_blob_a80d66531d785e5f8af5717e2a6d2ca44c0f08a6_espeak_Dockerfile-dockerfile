@@ -1,0 +1,8 @@
+#  Dockerfile retrieved from:
+#    Repository: TomScotch/workspace
+#    Dockerfile: http://raw.githubusercontent.com/TomScotch/workspace/a80d66531d785e5f8af5717e2a6d2ca44c0f08a6/espeak/Dockerfile
+FROM armhf/ubuntu
+RUN apt-get update
+RUN apt-get upgrade -y
+RUN apt-get install -y espeak
+CMD espeak

@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Repository: Pardus-Kurumsal/ulakbus-zcloud
+#    Dockerfile: http://raw.githubusercontent.com/Pardus-Kurumsal/ulakbus-zcloud/30d2da4e076fca2f7eeddd3a42b9fefbc4407b92/containers/elk/containers/logspout/debug/Dockerfile
+FROM ubuntu-debootstrap
+RUN apt-get update && apt-get install -y netcat

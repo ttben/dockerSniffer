@@ -1,0 +1,9 @@
+#  Dockerfile retrieved from:
+#    Repository: swehacker/docker
+#    Dockerfile: http://raw.githubusercontent.com/swehacker/docker/c4850d4a4ec87fa4880a6333637999eeb0c6fb81/redis/Dockerfile
+FROM ubuntu
+MAINTAINER Patrik Falk
+
+RUN apt-get update
+RUN apt-get install -y redis-server
+

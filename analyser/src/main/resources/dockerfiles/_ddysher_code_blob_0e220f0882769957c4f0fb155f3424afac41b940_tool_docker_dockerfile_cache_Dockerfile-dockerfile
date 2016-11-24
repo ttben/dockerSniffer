@@ -1,0 +1,8 @@
+#  Dockerfile retrieved from:
+#    Repository: ddysher/code
+#    Dockerfile: http://raw.githubusercontent.com/ddysher/code/0e220f0882769957c4f0fb155f3424afac41b940/tool/docker/dockerfile/cache/Dockerfile
+FROM debian:jessie
+
+RUN apt-get update && apt-get install -y curl
+
+CMD ["echo", "DONE"]

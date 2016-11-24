@@ -1,0 +1,8 @@
+#  Dockerfile retrieved from:
+#    Repository: webskin/docker-debian-base
+#    Dockerfile: http://raw.githubusercontent.com/webskin/docker-debian-base/d5f3d304c169bed33a7626f9101061068b8f9024/Dockerfile
+FROM debian:7.7
+MAINTAINER webskin <mickael.gauvin@gmail.com>
+
+RUN apt-get update && apt-get install -y curl && apt-get clean
+

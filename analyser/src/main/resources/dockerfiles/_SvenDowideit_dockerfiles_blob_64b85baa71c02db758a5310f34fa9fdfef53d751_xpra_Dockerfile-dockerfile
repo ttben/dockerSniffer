@@ -1,0 +1,11 @@
+#  Dockerfile retrieved from:
+#    Repository: SvenDowideit/dockerfiles
+#    Dockerfile: http://raw.githubusercontent.com/SvenDowideit/dockerfiles/64b85baa71c02db758a5310f34fa9fdfef53d751/xpra/Dockerfile
+FROM debian:jessie
+
+RUN apt-get update
+RUN apt-get install -yq xpra
+RUN apt-get install -yq xterm
+RUN apt-get install -yq dbus
+
+ADD run.sh /

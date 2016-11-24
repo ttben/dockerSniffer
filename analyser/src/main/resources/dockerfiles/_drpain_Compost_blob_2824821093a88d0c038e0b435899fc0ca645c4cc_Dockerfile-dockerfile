@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Repository: drpain/Compost
+#    Dockerfile: http://raw.githubusercontent.com/drpain/Compost/2824821093a88d0c038e0b435899fc0ca645c4cc/Dockerfile
+FROM php:5.6-cli
+RUN apt-get update && apt-get install -y openjdk-7-jre

@@ -1,0 +1,8 @@
+#  Dockerfile retrieved from:
+#    Repository: kratsg/ubuntu-tex
+#    Dockerfile: http://raw.githubusercontent.com/kratsg/ubuntu-tex/f9dd014b5c40ed6487d592ee791784df9f2c8b64/Dockerfile
+FROM ubuntu
+RUN apt-get update
+RUN apt-get install -y wget unzip
+RUN apt-get install -y build-essential
+RUN apt-get install -y texlive-full

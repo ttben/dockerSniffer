@@ -1,0 +1,11 @@
+#  Dockerfile retrieved from:
+#    Repository: dsklopp/docker_recipes
+#    Dockerfile: http://raw.githubusercontent.com/dsklopp/docker_recipes/19b747c4281b34edfc9235d458c3653ea52da1db/wlan_mib_ap_scanner/Dockerfile
+FROM ubuntu:14.04
+Maintainer Daniel Klopp
+RUN apt-get update
+RUN apt-get -y install ssh
+RUN apt-get -y install snmp
+RUN apt-get -y install nano
+RUN apt-get -y install git
+

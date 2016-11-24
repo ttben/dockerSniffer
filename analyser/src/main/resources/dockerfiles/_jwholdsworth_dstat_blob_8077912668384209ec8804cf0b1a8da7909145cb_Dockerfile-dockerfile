@@ -1,0 +1,9 @@
+#  Dockerfile retrieved from:
+#    Repository: jwholdsworth/dstat
+#    Dockerfile: http://raw.githubusercontent.com/jwholdsworth/dstat/8077912668384209ec8804cf0b1a8da7909145cb/Dockerfile
+FROM ubuntu:16.04
+
+RUN apt-get update
+RUN apt-get -y install dstat
+
+ENTRYPOINT 'dstat'

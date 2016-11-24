@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Repository: a-yogi/docker-elk-wordpress
+#    Dockerfile: http://raw.githubusercontent.com/a-yogi/docker-elk-wordpress/9a3f445cb4bd5c17f168635091a8d4cd1edc6f1f/src/configuration/docker/application/wordpress/Dockerfile
+FROM wordpress:latest
+RUN apt-get -y update && apt-get install -y vim

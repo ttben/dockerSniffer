@@ -1,0 +1,7 @@
+#  Dockerfile retrieved from:
+#    Repository: nagachika/docker-locker
+#    Dockerfile: http://raw.githubusercontent.com/nagachika/docker-locker/1dd9f42ba5e0aaab54d7bb1adc7c920e52128df6/docker/ccrypt/Dockerfile
+FROM ubuntu
+
+RUN apt-get update && apt-get install -y ccrypt
+

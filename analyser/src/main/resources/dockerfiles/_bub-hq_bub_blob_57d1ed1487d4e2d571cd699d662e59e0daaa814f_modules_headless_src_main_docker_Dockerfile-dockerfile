@@ -1,0 +1,7 @@
+#  Dockerfile retrieved from:
+#    Repository: bub-hq/bub
+#    Dockerfile: http://raw.githubusercontent.com/bub-hq/bub/57d1ed1487d4e2d571cd699d662e59e0daaa814f/modules/headless/src/main/docker/Dockerfile
+FROM resin/rpi-raspbian:jessie
+
+RUN apt-get update && apt-get install xfonts-base xvfb tightvncserver
+

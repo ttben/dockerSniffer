@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Repository: tcnksm-sample/docker-osx
+#    Dockerfile: http://raw.githubusercontent.com/tcnksm-sample/docker-osx/2ffef9a723a3dcea3a32a0ec029009d44cbaa8fd/Dockerfile
+FROM base
+
+RUN apt-get update

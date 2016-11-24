@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Repository: fourscouts/docker-dd-agent-java
+#    Dockerfile: http://raw.githubusercontent.com/fourscouts/docker-dd-agent-java/11367eafcc48d67cba467ad1117d90cf1d8e814e/Dockerfile
+FROM datadog/docker-dd-agent:latest
+
+RUN apt-get update && apt-get install -y openjdk-7-jdk

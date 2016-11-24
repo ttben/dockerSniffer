@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Repository: passmarked/css
+#    Dockerfile: http://raw.githubusercontent.com/passmarked/css/1eae0468f4dc47a6a33f301a0dca9b85f12e2ca6/Dockerfile
+
+RUN apt-get update
+RUN apt-get install -y csstidy

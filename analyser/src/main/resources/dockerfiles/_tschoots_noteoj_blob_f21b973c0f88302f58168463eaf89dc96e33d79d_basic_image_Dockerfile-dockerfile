@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Repository: tschoots/noteoj
+#    Dockerfile: http://raw.githubusercontent.com/tschoots/noteoj/f21b973c0f88302f58168463eaf89dc96e33d79d/basic_image/Dockerfile
+FROM ubuntu:latest
+
+RUN apt-get update -y && apt-get install docker.io -y

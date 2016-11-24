@@ -1,0 +1,12 @@
+#  Dockerfile retrieved from:
+#    Repository: agnsal/docker-32bit-ubuntu-apache
+#    Dockerfile: http://raw.githubusercontent.com/agnsal/docker-32bit-ubuntu-apache/5108281a5e321e416e640eb147fd716735ead834/Dockerfile
+FROM tutum/apache-php
+MAINTAINER Agnese Salutari
+RUN apt-get update
+RUN apt-get -y upgrade
+
+RUN apt-get install -y libc6-i386
+RUN apt-get install -y lib32ncurses5
+RUN apt-get install -y lib32stdc++6
+

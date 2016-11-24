@@ -1,0 +1,8 @@
+#  Dockerfile retrieved from:
+#    Repository: rmcfrazier/pnwphp-docker-intro
+#    Dockerfile: http://raw.githubusercontent.com/rmcfrazier/pnwphp-docker-intro/0952cb7cb799f5785b9912a79f453cd370c2201b/docker_intro/shared/dockerfile/Dockerfile
+FROM ubuntu:14.04
+
+RUN apt-get clean
+RUN apt-get update
+RUN apt-get -y install apache2

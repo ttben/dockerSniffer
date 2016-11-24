@@ -1,0 +1,9 @@
+#  Dockerfile retrieved from:
+#    Repository: Normegil/Server-Configs
+#    Dockerfile: http://raw.githubusercontent.com/Normegil/Server-Configs/7ee29f79712e1de8d01b4fbc2e1acd277a3de799/docker/base/Dockerfile
+FROM debian:7.8
+
+RUN apt-get update -y && \
+		apt-get install -y gcc wget make
+
+CMD ["true"]

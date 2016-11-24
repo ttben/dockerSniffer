@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Repository: offlinehacker-playground/dummydocker
+#    Dockerfile: http://raw.githubusercontent.com/offlinehacker-playground/dummydocker/914e166450668bd7e10e82dd13e5eb7bb698767a/Dockerfile
+FROM ubuntu
+RUN apt-get update -y
+RUN apt-get install -y python-pip

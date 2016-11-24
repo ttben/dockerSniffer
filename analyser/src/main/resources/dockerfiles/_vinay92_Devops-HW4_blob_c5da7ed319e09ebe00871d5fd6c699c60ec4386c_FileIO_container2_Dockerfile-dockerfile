@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Repository: vinay92/Devops-HW4
+#    Dockerfile: http://raw.githubusercontent.com/vinay92/Devops-HW4/c5da7ed319e09ebe00871d5fd6c699c60ec4386c/FileIO/container2/Dockerfile
+FROM ubuntu:14.04
+RUN apt-get update && apt-get install -y curl

@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Repository: technivore/docker-ansible
+#    Dockerfile: http://raw.githubusercontent.com/technivore/docker-ansible/d8cc55ffce549e80ccac4229f67a10bf6e7275de/Dockerfile
+FROM ubuntu:xenial
+
+RUN apt-get -y update && apt-get -y upgrade && apt-get install -y ansible python-boto

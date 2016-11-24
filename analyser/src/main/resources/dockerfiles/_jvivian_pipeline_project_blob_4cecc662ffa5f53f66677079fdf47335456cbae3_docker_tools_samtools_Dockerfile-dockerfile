@@ -1,0 +1,7 @@
+#  Dockerfile retrieved from:
+#    Repository: jvivian/pipeline_project
+#    Dockerfile: http://raw.githubusercontent.com/jvivian/pipeline_project/4cecc662ffa5f53f66677079fdf47335456cbae3/docker_tools/samtools/Dockerfile
+FROM java
+
+RUN apt-get update
+RUN apt-get install -y samtools

@@ -1,0 +1,7 @@
+#  Dockerfile retrieved from:
+#    Repository: mauroniewolskicesca/htop
+#    Dockerfile: http://raw.githubusercontent.com/mauroniewolskicesca/htop/828bc33cad277e6888419a2df3ece0110999e2ae/Dockerfile
+FROM phusion/baseimage:latest
+
+RUN apt-get update && apt-get install -y htop
+ENTRYPOINT ["htop"]

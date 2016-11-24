@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Repository: OpsTree/HandbooksTraining
+#    Dockerfile: http://raw.githubusercontent.com/OpsTree/HandbooksTraining/ddcad01161335b1b582dffe6297415990910752f/git/Dockerfile
+FROM ubuntu:14.04
+
+RUN apt-get update && apt-get -y install git vim

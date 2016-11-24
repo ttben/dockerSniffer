@@ -1,0 +1,9 @@
+#  Dockerfile retrieved from:
+#    Repository: RowZay/Grafana
+#    Dockerfile: http://raw.githubusercontent.com/RowZay/Grafana/cfd4498c1fca1d8509f45fb305612fea64cfe34d/docker/debtest/Dockerfile
+FROM debian:jessie
+
+RUN apt-get update && apt-get install -y vim
+
+ADD *.deb /tmp/
+

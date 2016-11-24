@@ -1,0 +1,7 @@
+#  Dockerfile retrieved from:
+#    Repository: lkastner/dockerfiles
+#    Dockerfile: http://raw.githubusercontent.com/lkastner/dockerfiles/e831f08fc68bff2c66de7156c2f1e658b191a5d6/complete/polymake/Dockerfile
+FROM ubuntu:16.04
+
+RUN apt-get update
+RUN apt-get install -y polymake

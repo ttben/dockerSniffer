@@ -1,0 +1,7 @@
+#  Dockerfile retrieved from:
+#    Repository: taskworld/docker-stunnel
+#    Dockerfile: http://raw.githubusercontent.com/taskworld/docker-stunnel/1c216f359f896c8c3de963d411b0f2b5ddb56fc6/Dockerfile
+FROM ubuntu
+RUN apt-get update
+RUN apt-get -y install stunnel
+CMD ["stunnel"]

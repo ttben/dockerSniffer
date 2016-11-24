@@ -1,0 +1,4 @@
+#  Dockerfile retrieved from:
+#    Repository: anuragh27crony/PersonalWorkSpace
+#    Dockerfile: http://raw.githubusercontent.com/anuragh27crony/PersonalWorkSpace/42ff6821ce18b7763ffe1af59970732b3b46f3eb/PycharmProjects/FirstSample/DockerSupport/Dockerfile
+RUN apt-get install

@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Repository: wilrilo/talleres
+#    Dockerfile: http://raw.githubusercontent.com/wilrilo/talleres/1f78a07348ff5398bfa018fd081403b17ad67577/file/taller7/files/docker/Dockerfile
+FROM ubuntu:trusty
+RUN sudo apt-get update && sudo apt-get –y install cowsay fortune
+

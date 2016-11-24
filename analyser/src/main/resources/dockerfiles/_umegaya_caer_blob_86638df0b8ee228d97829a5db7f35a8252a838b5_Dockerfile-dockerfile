@@ -1,0 +1,7 @@
+#  Dockerfile retrieved from:
+#    Repository: umegaya/caer
+#    Dockerfile: http://raw.githubusercontent.com/umegaya/caer/86638df0b8ee228d97829a5db7f35a8252a838b5/Dockerfile
+FROM ubuntu:latest
+
+RUN apt-get update && apt-get install -y openssl && apt-get clean
+ADD root /root

@@ -1,0 +1,10 @@
+#  Dockerfile retrieved from:
+#    Repository: DataMgtCloud/baseos
+#    Dockerfile: http://raw.githubusercontent.com/DataMgtCloud/baseos/b67011a9f304a4407d07f5b12f42cd641831b840/Dockerfile
+FROM ubuntu
+
+RUN \
+  apt-get update && \
+  apt-get -y install runit curl iputils-ping dnsutils netcat unzip && \
+  apt-get -y autoremove && \
+  apt-get clean

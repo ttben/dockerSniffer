@@ -1,0 +1,8 @@
+#  Dockerfile retrieved from:
+#    Repository: clarin-eric/docker-clarin-base
+#    Dockerfile: http://raw.githubusercontent.com/clarin-eric/docker-clarin-base/e570c8ba1fd20764054e212b382761c979cd1e11/Dockerfile
+FROM debian:jessie
+
+RUN apt-get update -y && \
+    apt-get upgrade -y && \
+    apt-get install -y sudo curl wget 

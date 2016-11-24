@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Repository: crazycode/docker-php5
+#    Dockerfile: http://raw.githubusercontent.com/crazycode/docker-php5/0323be71267032295ddfbd498f8afcabc50312d1/Dockerfile
+FROM debian:wheezy
+RUN apt-get update && apt-get install php5 php5-mysql -y
+

@@ -1,0 +1,9 @@
+#  Dockerfile retrieved from:
+#    Repository: schmidigital/sails-sparql
+#    Dockerfile: http://raw.githubusercontent.com/schmidigital/sails-sparql/52ae5df21de25f1e4bbafec0be8eff997654d4e2/Dockerfile
+FROM node
+
+RUN apt-get update
+RUN apt-get -y upgrade
+
+CMD npm test

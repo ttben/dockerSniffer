@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Repository: okeashwin/Advanced-Docker
+#    Dockerfile: http://raw.githubusercontent.com/okeashwin/Advanced-Docker/3940dcd83932428d39da0969ef8285820fa3238b/File%20IO/second_container/Dockerfile
+FROM ubuntu:trusty
+RUN apt-get update
+RUN apt-get install -y curl

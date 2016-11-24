@@ -1,0 +1,7 @@
+#  Dockerfile retrieved from:
+#    Repository: swathitetsing/testing
+#    Dockerfile: http://raw.githubusercontent.com/swathitetsing/testing/06ce2b60702f854e18fd03ae83c0215f6785d5de/Dockerfile
+FROM ubuntu:14.04
+
+RUN apt-get update && apt-get install -y firefox 
+RUN apt-get install -y chrome

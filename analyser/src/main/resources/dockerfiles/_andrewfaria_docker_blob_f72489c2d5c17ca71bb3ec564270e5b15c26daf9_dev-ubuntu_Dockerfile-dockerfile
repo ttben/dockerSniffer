@@ -1,0 +1,9 @@
+#  Dockerfile retrieved from:
+#    Repository: andrewfaria/docker
+#    Dockerfile: http://raw.githubusercontent.com/andrewfaria/docker/f72489c2d5c17ca71bb3ec564270e5b15c26daf9/dev-ubuntu/Dockerfile
+FROM ubuntu:14.04
+
+RUN apt-get update
+RUN apt-get -y install curl
+RUN apt-get -y install git
+RUN apt-get -y install wget

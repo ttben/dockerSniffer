@@ -1,0 +1,9 @@
+#  Dockerfile retrieved from:
+#    Repository: flipstone/glados
+#    Dockerfile: http://raw.githubusercontent.com/flipstone/glados/c27db20b691afc536b45e93776ecc21128303d3d/containers/dev/Dockerfile
+FROM haskell:7.8.4
+
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends libpq5 libpq-dev &&\
+    apt-get clean
+

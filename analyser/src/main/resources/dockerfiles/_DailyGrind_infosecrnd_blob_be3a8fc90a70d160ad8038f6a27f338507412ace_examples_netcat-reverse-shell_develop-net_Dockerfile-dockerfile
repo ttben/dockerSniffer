@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Repository: DailyGrind/infosecrnd
+#    Dockerfile: http://raw.githubusercontent.com/DailyGrind/infosecrnd/be3a8fc90a70d160ad8038f6a27f338507412ace/examples/netcat-reverse-shell/develop-net/Dockerfile
+FROM ubuntu
+RUN apt-get update && apt-get -y install netcat telnet iputils-ping

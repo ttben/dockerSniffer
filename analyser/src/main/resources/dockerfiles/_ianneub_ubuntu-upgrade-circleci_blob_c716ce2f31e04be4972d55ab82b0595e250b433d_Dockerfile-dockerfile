@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Repository: ianneub/ubuntu-upgrade-circleci
+#    Dockerfile: http://raw.githubusercontent.com/ianneub/ubuntu-upgrade-circleci/c716ce2f31e04be4972d55ab82b0595e250b433d/Dockerfile
+FROM ubuntu:12.04
+
+RUN apt-get update && apt-get upgrade -y 

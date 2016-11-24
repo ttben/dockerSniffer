@@ -1,0 +1,7 @@
+#  Dockerfile retrieved from:
+#    Repository: featurist/browser-monkey-talk
+#    Dockerfile: http://raw.githubusercontent.com/featurist/browser-monkey-talk/9fb4d62b5da814fbb27ce4f957345ee91c040edd/rsync.dockerfile
+from tutum/ubuntu:trusty
+
+run apt-get update
+run apt-get install -y rsync

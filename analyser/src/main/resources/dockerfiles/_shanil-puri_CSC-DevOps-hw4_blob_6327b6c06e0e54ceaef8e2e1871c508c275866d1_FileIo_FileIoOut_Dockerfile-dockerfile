@@ -1,0 +1,8 @@
+#  Dockerfile retrieved from:
+#    Repository: shanil-puri/CSC-DevOps-hw4
+#    Dockerfile: http://raw.githubusercontent.com/shanil-puri/CSC-DevOps-hw4/6327b6c06e0e54ceaef8e2e1871c508c275866d1/FileIo/FileIoOut/Dockerfile
+FROM ubuntu:14.04
+
+RUN apt-get -y update
+RUN apt-get -y upgrade
+RUN apt-get install -y curl

@@ -1,0 +1,8 @@
+#  Dockerfile retrieved from:
+#    Repository: jasonsemko/dockerfun
+#    Dockerfile: http://raw.githubusercontent.com/jasonsemko/dockerfun/ac59f25bf0854a68dc0f9ae676c554ea61315556/Dockerfile
+FROM ubuntu
+COPY hello goooooogle 
+RUN apt-get update && apt-get install -y curl \
+wget \
+vim

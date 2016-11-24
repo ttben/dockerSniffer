@@ -1,0 +1,8 @@
+#  Dockerfile retrieved from:
+#    Repository: devhelp/docker-symfony
+#    Dockerfile: http://raw.githubusercontent.com/devhelp/docker-symfony/088dbb124edbc2f5b30a4e7b454aa6861f2ddb4a/code/Dockerfile
+FROM debian:jessie
+
+RUN apt-get update && apt-get install -y git
+
+VOLUME /var/www/symfony

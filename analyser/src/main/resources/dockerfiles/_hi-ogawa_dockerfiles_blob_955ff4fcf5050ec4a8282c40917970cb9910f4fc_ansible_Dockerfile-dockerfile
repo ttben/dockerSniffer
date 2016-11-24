@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Repository: hi-ogawa/dockerfiles
+#    Dockerfile: http://raw.githubusercontent.com/hi-ogawa/dockerfiles/955ff4fcf5050ec4a8282c40917970cb9910f4fc/ansible/Dockerfile
+FROM williamyeh/ansible:ubuntu16.04
+
+RUN apt-get update && apt-get install -y less

@@ -1,0 +1,10 @@
+#  Dockerfile retrieved from:
+#    Repository: windname/java-tool
+#    Dockerfile: http://raw.githubusercontent.com/windname/java-tool/4f6b14e327e59a50650610dae164e91f959d3e2c/docker-proj/Dockerfile
+FROM ubuntu:14.04
+RUN apt-get update && apt-get -y install nano
+RUN apt-get -y install wget
+RUN apt-get -y install tar
+RUN apt-get -y install unzip
+
+RUN /bin/echo 'OS+tools'

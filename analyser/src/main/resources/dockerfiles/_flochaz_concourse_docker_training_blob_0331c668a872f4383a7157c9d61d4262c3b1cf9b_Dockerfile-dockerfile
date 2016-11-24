@@ -1,0 +1,7 @@
+#  Dockerfile retrieved from:
+#    Repository: flochaz/concourse_docker_training
+#    Dockerfile: http://raw.githubusercontent.com/flochaz/concourse_docker_training/0331c668a872f4383a7157c9d61d4262c3b1cf9b/Dockerfile
+FROM ubuntu:latest
+RUN apt-get update && apt-get install -y \
+git \
+golang

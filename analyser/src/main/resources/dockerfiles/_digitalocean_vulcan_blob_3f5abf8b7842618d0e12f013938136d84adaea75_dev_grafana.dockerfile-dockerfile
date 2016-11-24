@@ -1,0 +1,10 @@
+#  Dockerfile retrieved from:
+#    Repository: digitalocean/vulcan
+#    Dockerfile: http://raw.githubusercontent.com/digitalocean/vulcan/3f5abf8b7842618d0e12f013938136d84adaea75/dev/grafana.dockerfile
+FROM grafana/grafana:3.1.1
+
+RUN apt-get update \
+ && apt-get install -y curl \
+ && apt-get clean \
+ && apt-get autoremove -y \
+ && rm -rf /var/lib/apt/lists/*

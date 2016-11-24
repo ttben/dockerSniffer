@@ -1,0 +1,7 @@
+#  Dockerfile retrieved from:
+#    Repository: rquez/docker-files
+#    Dockerfile: http://raw.githubusercontent.com/rquez/docker-files/731cf75761ae7ce3ebfb71c121171204d82d7169/rpgify-dev/Dockerfile
+FROM ubuntu:trusty
+
+RUN apt-get update && \
+    apt-get -y upgrade

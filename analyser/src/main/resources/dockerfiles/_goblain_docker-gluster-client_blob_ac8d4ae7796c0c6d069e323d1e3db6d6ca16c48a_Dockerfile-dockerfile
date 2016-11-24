@@ -1,0 +1,10 @@
+#  Dockerfile retrieved from:
+#    Repository: goblain/docker-gluster-client
+#    Dockerfile: http://raw.githubusercontent.com/goblain/docker-gluster-client/ac8d4ae7796c0c6d069e323d1e3db6d6ca16c48a/Dockerfile
+FROM ubuntu:latest
+
+RUN apt-get update
+RUN apt-get install software-properties-common python-software-properties
+RUN apt-get update
+RUN apt-get install glusterfs-client
+

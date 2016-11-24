@@ -1,0 +1,9 @@
+#  Dockerfile retrieved from:
+#    Repository: mpdatx/dotfiles
+#    Dockerfile: http://raw.githubusercontent.com/mpdatx/dotfiles/0c28c0a93c1b364f9225043115247e3682789860/docker/converter/Dockerfile
+FROM ubuntu:15.10
+
+RUN apt-get update
+RUN apt-get install -y ffmpeg
+RUN apt-get install -y python python-pip
+RUN pip install youtube-dl

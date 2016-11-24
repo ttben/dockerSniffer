@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Repository: yeison/dockers
+#    Dockerfile: http://raw.githubusercontent.com/yeison/dockers/ef80800eb52dcc33a6b01c7de676580b7c36f887/cuda-opencv-boost/Dockerfile
+FROM devyeison/cuda:6.5
+
+RUN apt-get update && apt-get install -y libopencv-dev python-opencv boost

@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Repository: powellquiring/dockerdemo
+#    Dockerfile: http://raw.githubusercontent.com/powellquiring/dockerdemo/04dcfebbc6f8e32e05f00c68ec5eae20f1b9a66d/debian/Dockerfile
+FROM debian
+RUN apt-get update -qq
+RUN apt-get install -y procps

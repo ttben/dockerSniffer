@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Repository: onDevio/docker-drcon
+#    Dockerfile: http://raw.githubusercontent.com/onDevio/docker-drcon/5eacb0cc146fd03abd37114d1ca40b597134819e/ab/Dockerfile
+FROM debian:jessie
+RUN apt-get update -y
+RUN apt-get install -y apache2-utils

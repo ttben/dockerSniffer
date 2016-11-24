@@ -1,0 +1,7 @@
+#  Dockerfile retrieved from:
+#    Repository: docker-nipap/nipap-psql
+#    Dockerfile: http://raw.githubusercontent.com/docker-nipap/nipap-psql/71dffb09621787b94285d287746bb8a236767e5a/Dockerfile
+FROM postgres:9.3
+MAINTAINER Codey Oxley
+
+RUN apt-get update && apt-get install -y postgresql-9.3-ip4r

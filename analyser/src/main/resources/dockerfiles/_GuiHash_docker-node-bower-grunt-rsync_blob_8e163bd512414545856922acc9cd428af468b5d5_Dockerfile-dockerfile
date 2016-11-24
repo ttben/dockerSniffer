@@ -1,0 +1,7 @@
+#  Dockerfile retrieved from:
+#    Repository: GuiHash/docker-node-bower-grunt-rsync
+#    Dockerfile: http://raw.githubusercontent.com/GuiHash/docker-node-bower-grunt-rsync/8e163bd512414545856922acc9cd428af468b5d5/Dockerfile
+FROM digitallyseamless/nodejs-bower-grunt
+
+RUN apt-get update && \
+    apt-get -y install rsync

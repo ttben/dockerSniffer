@@ -1,0 +1,7 @@
+#  Dockerfile retrieved from:
+#    Repository: TokinT-Mac/dockerfile
+#    Dockerfile: http://raw.githubusercontent.com/TokinT-Mac/dockerfile/dac527c8535980229101089044bc276a598e290c/ApacheCgi/Dockerfile
+FROM debian:testing
+RUN apt-get update && apt-get install apache2 python
+CMD ['/bin/bash']
+

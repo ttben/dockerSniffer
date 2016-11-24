@@ -1,0 +1,9 @@
+#  Dockerfile retrieved from:
+#    Repository: markus-k/dockerfiles
+#    Dockerfile: http://raw.githubusercontent.com/markus-k/dockerfiles/3c9e887df25676d52755050163a13851d36f246b/buildessentials/Dockerfile
+FROM debian:jessie
+
+ARG DEBIAN_FRONTEND=noninteractive
+RUN apt-get update && \
+    apt-get install -y build-essential && \
+    apt-get clean

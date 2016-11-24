@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Repository: kevana/ui-for-docker
+#    Dockerfile: http://raw.githubusercontent.com/kevana/ui-for-docker/db5dd0c356e088322742d9a77c13f1b1061884f3/examples/swarm/Dockerfile
+FROM debian
+
+RUN apt-get update && apt-get install -y socat

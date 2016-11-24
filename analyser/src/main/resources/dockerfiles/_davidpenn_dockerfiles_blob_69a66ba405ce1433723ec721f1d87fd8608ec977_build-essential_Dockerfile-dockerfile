@@ -1,0 +1,7 @@
+#  Dockerfile retrieved from:
+#    Repository: davidpenn/dockerfiles
+#    Dockerfile: http://raw.githubusercontent.com/davidpenn/dockerfiles/69a66ba405ce1433723ec721f1d87fd8608ec977/build-essential/Dockerfile
+FROM debian:jessie
+RUN \
+ apt-get update && \
+ apt-get install -y build-essential git wget vim

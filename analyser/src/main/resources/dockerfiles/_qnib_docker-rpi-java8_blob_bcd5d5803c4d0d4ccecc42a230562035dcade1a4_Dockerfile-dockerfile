@@ -1,0 +1,9 @@
+#  Dockerfile retrieved from:
+#    Repository: qnib/docker-rpi-java8
+#    Dockerfile: http://raw.githubusercontent.com/qnib/docker-rpi-java8/bcd5d5803c4d0d4ccecc42a230562035dcade1a4/Dockerfile
+FROM sdhibit/rpi-raspbian
+
+RUN apt-get update && \
+    apt-get upgrade -y 
+RUN apt-get install -y openjdk-8-jre-headless
+

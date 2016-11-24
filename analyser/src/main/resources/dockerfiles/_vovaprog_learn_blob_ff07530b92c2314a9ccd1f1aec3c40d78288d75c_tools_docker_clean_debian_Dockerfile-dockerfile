@@ -1,0 +1,10 @@
+#  Dockerfile retrieved from:
+#    Repository: vovaprog/learn
+#    Dockerfile: http://raw.githubusercontent.com/vovaprog/learn/ff07530b92c2314a9ccd1f1aec3c40d78288d75c/tools/docker_clean_debian/Dockerfile
+FROM debian
+
+RUN apt-get update
+RUN apt-get -y install git
+
+ENTRYPOINT /bin/bash
+

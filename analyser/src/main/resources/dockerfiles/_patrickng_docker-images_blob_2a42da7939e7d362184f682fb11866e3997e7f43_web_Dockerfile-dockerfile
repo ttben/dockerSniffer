@@ -1,0 +1,8 @@
+#  Dockerfile retrieved from:
+#    Repository: patrickng/docker-images
+#    Dockerfile: http://raw.githubusercontent.com/patrickng/docker-images/2a42da7939e7d362184f682fb11866e3997e7f43/web/Dockerfile
+FROM debian:latest
+
+RUN apt-get update
+RUN apt-get upgrade -y --force-yes
+RUN apt-get install -y nginx

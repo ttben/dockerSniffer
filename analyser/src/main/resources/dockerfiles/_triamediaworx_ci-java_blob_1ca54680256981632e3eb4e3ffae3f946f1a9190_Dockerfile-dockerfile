@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Repository: triamediaworx/ci-java
+#    Dockerfile: http://raw.githubusercontent.com/triamediaworx/ci-java/1ca54680256981632e3eb4e3ffae3f946f1a9190/Dockerfile
+FROM java:8
+RUN apt-get update && apt-get -y upgrade && apt-get -y install gradle

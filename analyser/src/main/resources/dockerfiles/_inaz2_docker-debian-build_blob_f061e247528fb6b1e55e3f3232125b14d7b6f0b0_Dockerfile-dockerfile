@@ -1,0 +1,9 @@
+#  Dockerfile retrieved from:
+#    Repository: inaz2/docker-debian-build
+#    Dockerfile: http://raw.githubusercontent.com/inaz2/docker-debian-build/f061e247528fb6b1e55e3f3232125b14d7b6f0b0/Dockerfile
+FROM debian:jessie
+
+RUN apt-get update \
+    && apt-get -y upgrade \
+    && apt-get -y install build-essential wget git vim-tiny less \
+    && apt-get clean

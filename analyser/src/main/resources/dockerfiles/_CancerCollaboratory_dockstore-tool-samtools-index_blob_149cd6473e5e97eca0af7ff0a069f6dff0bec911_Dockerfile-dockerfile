@@ -1,0 +1,10 @@
+#  Dockerfile retrieved from:
+#    Repository: CancerCollaboratory/dockstore-tool-samtools-index
+#    Dockerfile: http://raw.githubusercontent.com/CancerCollaboratory/dockstore-tool-samtools-index/149cd6473e5e97eca0af7ff0a069f6dff0bec911/Dockerfile
+FROM ubuntu:15.04
+
+MAINTAINER dockstore.org
+
+RUN  apt-get update \
+  && apt-get install -y samtools
+

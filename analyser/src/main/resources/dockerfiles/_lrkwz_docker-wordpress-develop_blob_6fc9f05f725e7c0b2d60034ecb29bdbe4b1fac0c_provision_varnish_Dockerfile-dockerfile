@@ -1,0 +1,8 @@
+#  Dockerfile retrieved from:
+#    Repository: lrkwz/docker-wordpress-develop
+#    Dockerfile: http://raw.githubusercontent.com/lrkwz/docker-wordpress-develop/6fc9f05f725e7c0b2d60034ecb29bdbe4b1fac0c/provision/varnish/Dockerfile
+FROM tutum/varnish:3.0
+
+RUN apt-get update && apt-get install -y libssl-dev
+
+COPY run.sh /

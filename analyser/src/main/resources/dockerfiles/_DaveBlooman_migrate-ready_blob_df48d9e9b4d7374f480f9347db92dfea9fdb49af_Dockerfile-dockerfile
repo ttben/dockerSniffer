@@ -1,0 +1,7 @@
+#  Dockerfile retrieved from:
+#    Repository: DaveBlooman/migrate-ready
+#    Dockerfile: http://raw.githubusercontent.com/DaveBlooman/migrate-ready/df48d9e9b4d7374f480f9347db92dfea9fdb49af/Dockerfile
+FROM widmogrod/migrate
+
+RUN apt-get update -y
+RUN apt-get install postgresql-client-9.4 -y

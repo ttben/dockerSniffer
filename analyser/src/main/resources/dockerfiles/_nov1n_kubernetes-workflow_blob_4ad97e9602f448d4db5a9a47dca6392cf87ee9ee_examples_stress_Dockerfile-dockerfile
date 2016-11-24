@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Repository: nov1n/kubernetes-workflow
+#    Dockerfile: http://raw.githubusercontent.com/nov1n/kubernetes-workflow/4ad97e9602f448d4db5a9a47dca6392cf87ee9ee/examples/stress/Dockerfile
+FROM jess/stress
+
+RUN apt-get update && apt-get install -y cpulimit

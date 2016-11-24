@@ -1,0 +1,9 @@
+#  Dockerfile retrieved from:
+#    Repository: yuvaraj951/icongrafana
+#    Dockerfile: http://raw.githubusercontent.com/yuvaraj951/icongrafana/bf8148f5abd596eac71a85a91a9142a1d09e94cf/docker/debtest/Dockerfile
+FROM debian:jessie
+
+RUN apt-get update && apt-get install -y vim
+
+ADD *.deb /tmp/
+

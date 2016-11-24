@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Repository: devmop/containers
+#    Dockerfile: http://raw.githubusercontent.com/devmop/containers/3282d276597fc95d70f3f5dacaddac33a121f360/docker/haskell/Dockerfile
+FROM debian:jessie
+RUN apt-get update && apt-get install -y haskell-platform
+WORKDIR /home

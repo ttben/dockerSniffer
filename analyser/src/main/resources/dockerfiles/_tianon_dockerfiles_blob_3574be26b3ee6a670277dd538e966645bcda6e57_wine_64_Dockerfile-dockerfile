@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Repository: tianon/dockerfiles
+#    Dockerfile: http://raw.githubusercontent.com/tianon/dockerfiles/3574be26b3ee6a670277dd538e966645bcda6e57/wine/64/Dockerfile
+FROM debian:sid
+
+RUN apt-get update && apt-get install -y wine64

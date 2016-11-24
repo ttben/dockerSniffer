@@ -1,0 +1,7 @@
+#  Dockerfile retrieved from:
+#    Repository: ohac/dockerfiles
+#    Dockerfile: http://raw.githubusercontent.com/ohac/dockerfiles/8a17e76860a000f98953b663958cbc03de883f63/base/Dockerfile
+FROM ubuntu:14.04.1
+
+RUN apt-get update
+RUN apt-get upgrade -y

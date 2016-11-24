@@ -1,0 +1,8 @@
+#  Dockerfile retrieved from:
+#    Repository: DilvanLab/MoodleCodeQuestionType
+#    Dockerfile: http://raw.githubusercontent.com/DilvanLab/MoodleCodeQuestionType/c2c347459ba86cd0cab7989a0b0c627cf9552984/moodlecode/env/cStdGrader/mcl-c/Dockerfile
+FROM node:4.4.1
+
+RUN apt-get -y update && apt-get install -y gcc
+
+CMD bash

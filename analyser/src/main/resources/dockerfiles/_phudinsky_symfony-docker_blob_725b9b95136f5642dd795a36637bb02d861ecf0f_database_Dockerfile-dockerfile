@@ -1,0 +1,8 @@
+#  Dockerfile retrieved from:
+#    Repository: phudinsky/symfony-docker
+#    Dockerfile: http://raw.githubusercontent.com/phudinsky/symfony-docker/725b9b95136f5642dd795a36637bb02d861ecf0f/database/Dockerfile
+FROM mysql
+
+RUN apt-get update && \
+    apt-get install less && \
+    rm -rf /var/lib/apt/lists/*

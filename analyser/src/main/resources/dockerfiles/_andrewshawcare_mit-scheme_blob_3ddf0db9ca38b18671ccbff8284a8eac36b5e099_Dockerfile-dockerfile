@@ -1,0 +1,9 @@
+#  Dockerfile retrieved from:
+#    Repository: andrewshawcare/mit-scheme
+#    Dockerfile: http://raw.githubusercontent.com/andrewshawcare/mit-scheme/3ddf0db9ca38b18671ccbff8284a8eac36b5e099/Dockerfile
+FROM debian:8.3
+
+RUN apt-get update && \
+  apt-get install -y mit-scheme
+
+ENTRYPOINT ["mit-scheme"]

@@ -1,0 +1,7 @@
+#  Dockerfile retrieved from:
+#    Repository: cactusthinking/docker-files
+#    Dockerfile: http://raw.githubusercontent.com/cactusthinking/docker-files/8fde6c0f07d352617dd3d8c5fddeaf76a4de58d9/jenkins/Dockerfile
+FROM jenkins
+USER root
+RUN apt-get update && apt-get install -y bzip2
+USER jenkins

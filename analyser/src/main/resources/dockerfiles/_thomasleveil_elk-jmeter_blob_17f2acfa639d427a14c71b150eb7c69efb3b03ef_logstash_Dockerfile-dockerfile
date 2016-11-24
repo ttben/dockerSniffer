@@ -1,0 +1,9 @@
+#  Dockerfile retrieved from:
+#    Repository: thomasleveil/elk-jmeter
+#    Dockerfile: http://raw.githubusercontent.com/thomasleveil/elk-jmeter/17f2acfa639d427a14c71b150eb7c69efb3b03ef/logstash/Dockerfile
+FROM logstash:latest
+
+RUN apt-get update
+RUN apt-get -y install telnet python
+
+COPY . /opt

@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Repository: jglee1/debian-python3
+#    Dockerfile: http://raw.githubusercontent.com/jglee1/debian-python3/293f712d4c3792c6fb598d88ee06b4a79a37ae28/Dockerfile
+FROM armbuild/debian:8.0
+RUN apt-get update && apt-get -y install python3 && apt-get clean
+

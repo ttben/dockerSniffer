@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Repository: fmd/damus
+#    Dockerfile: http://raw.githubusercontent.com/fmd/damus/46857c345ef4d435ccfb2898794aa065cfa1b9f3/apps/expl/base/Dockerfile
+from ubuntu:latest
+run apt-get -y update
+run apt-get -y install golang git

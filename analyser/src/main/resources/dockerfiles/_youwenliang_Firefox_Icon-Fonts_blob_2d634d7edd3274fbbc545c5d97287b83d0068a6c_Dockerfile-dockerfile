@@ -1,0 +1,7 @@
+#  Dockerfile retrieved from:
+#    Repository: youwenliang/Firefox_Icon-Fonts
+#    Dockerfile: http://raw.githubusercontent.com/youwenliang/Firefox_Icon-Fonts/2d634d7edd3274fbbc545c5d97287b83d0068a6c/Dockerfile
+FROM node:5.0.0
+RUN apt-get update && apt-get -y upgrade
+WORKDIR /firefox-icons
+RUN apt-get -y install fontforge;

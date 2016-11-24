@@ -1,0 +1,8 @@
+#  Dockerfile retrieved from:
+#    Repository: direktspeed/dockerimage-ubuntu-trusty
+#    Dockerfile: http://raw.githubusercontent.com/direktspeed/dockerimage-ubuntu-trusty/09bb8dfa4d5dbbf4fcc3bb78e8ea04e49d5bfb74/Dockerfile
+FROM ubuntu:13.10
+RUN apt-get update
+RUN apt-get upgrade -y
+RUN apt-get clean -y
+RUN do-dist-upgrade -y

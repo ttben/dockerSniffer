@@ -1,0 +1,7 @@
+#  Dockerfile retrieved from:
+#    Repository: dergachev/sitediff
+#    Dockerfile: http://raw.githubusercontent.com/dergachev/sitediff/b7b68c3672748481c2d48cc1cfb61925be0a9937/spec/fixtures/Dockerfile
+FROM ubuntu:12.04
+
+RUN apt-get update
+RUN apt-get -y install python2.7

@@ -1,0 +1,29 @@
+#  Dockerfile retrieved from:
+#    Repository: sfister/Projects
+#    Dockerfile: http://raw.githubusercontent.com/sfister/Projects/077dd19700e507c801cb4f39e2d969f4889d2e91/docker/ODBCBridge/Dockerfile
+from debian:sid
+# http://blog.tryolabs.com/2012/06/25/connecting-sql-server-database-python-under-ubuntu/
+
+run apt-get update 
+run apt-get install -y \
+   wget \
+   curl 
+run apt-get install -y \
+   unixodbc
+run apt-get install -y \
+   tdsodbc 
+run apt-get update 
+run apt-get install -y \
+   build-essential
+#run apt-get install -y \
+#   gcc 
+run apt-get install -y \
+   python-pip 
+run apt-get install -y \
+   python-dev 
+run apt-get install -y \
+   freetds-dev
+
+run pip install pymssql
+
+

@@ -1,0 +1,7 @@
+#  Dockerfile retrieved from:
+#    Repository: jecklgamis/dockerfiles
+#    Dockerfile: http://raw.githubusercontent.com/jecklgamis/dockerfiles/30f372776091084f35e96b104ca213620a9fe4dd/nodejs-runtime/Dockerfile
+FROM ubuntu:latest
+
+RUN apt-get -y update && apt-get -y install nodejs
+CMD ["nodejs","--version"]

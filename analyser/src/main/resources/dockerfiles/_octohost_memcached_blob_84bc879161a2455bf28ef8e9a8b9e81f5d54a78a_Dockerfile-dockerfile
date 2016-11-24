@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Repository: octohost/memcached
+#    Dockerfile: http://raw.githubusercontent.com/octohost/memcached/84bc879161a2455bf28ef8e9a8b9e81f5d54a78a/Dockerfile
+FROM octohost/ubuntu:13.10
+
+RUN apt-get update && apt-get install -y memcached

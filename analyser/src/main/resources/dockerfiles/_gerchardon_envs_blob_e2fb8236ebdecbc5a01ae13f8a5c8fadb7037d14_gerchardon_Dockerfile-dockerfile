@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Repository: gerchardon/envs
+#    Dockerfile: http://raw.githubusercontent.com/gerchardon/envs/e2fb8236ebdecbc5a01ae13f8a5c8fadb7037d14/gerchardon/Dockerfile
+FROM ubuntu
+
+RUN apt-get update && apt-get install curl git -y && apt-get clean

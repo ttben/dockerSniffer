@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Repository: evermax/dockerfiles
+#    Dockerfile: http://raw.githubusercontent.com/evermax/dockerfiles/c2f9aa469170b45ac645d26a48bb0758a03bddf4/basic-vim/Dockerfile
+FROM ubuntu:14.04
+
+RUN apt-get update && apt-get install -y tmux vim git

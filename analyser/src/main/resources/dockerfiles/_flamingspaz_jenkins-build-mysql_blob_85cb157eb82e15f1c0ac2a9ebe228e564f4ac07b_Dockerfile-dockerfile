@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Repository: flamingspaz/jenkins-build-mysql
+#    Dockerfile: http://raw.githubusercontent.com/flamingspaz/jenkins-build-mysql/85cb157eb82e15f1c0ac2a9ebe228e564f4ac07b/Dockerfile
+FROM yalam96/jenkins-build-base
+RUN apt-get update && apt-get install -y mysql-client

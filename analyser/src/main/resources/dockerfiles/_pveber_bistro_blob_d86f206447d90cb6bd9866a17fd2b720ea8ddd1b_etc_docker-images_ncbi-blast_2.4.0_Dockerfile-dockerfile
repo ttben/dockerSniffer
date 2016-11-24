@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Repository: pveber/bistro
+#    Dockerfile: http://raw.githubusercontent.com/pveber/bistro/d86f206447d90cb6bd9866a17fd2b720ea8ddd1b/etc/docker-images/ncbi-blast/2.4.0/Dockerfile
+FROM pveber/bistro-base:latest
+
+RUN apt-get update && apt-get install -y ncbi-blast+=2.4.0-3

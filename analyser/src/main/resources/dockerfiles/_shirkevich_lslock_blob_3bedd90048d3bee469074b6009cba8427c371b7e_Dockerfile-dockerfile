@@ -1,0 +1,8 @@
+#  Dockerfile retrieved from:
+#    Repository: shirkevich/lslock
+#    Dockerfile: http://raw.githubusercontent.com/shirkevich/lslock/3bedd90048d3bee469074b6009cba8427c371b7e/Dockerfile
+FROM ruby:2.1-onbuild
+
+#RUN apt-get update && apt-get install -y lsof
+
+CMD ["./bin/lslock"]

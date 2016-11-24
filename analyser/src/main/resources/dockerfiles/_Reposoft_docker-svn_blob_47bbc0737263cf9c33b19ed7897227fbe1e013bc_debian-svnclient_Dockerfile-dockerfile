@@ -1,0 +1,9 @@
+#  Dockerfile retrieved from:
+#    Repository: Reposoft/docker-svn
+#    Dockerfile: http://raw.githubusercontent.com/Reposoft/docker-svn/47bbc0737263cf9c33b19ed7897227fbe1e013bc/debian-svnclient/Dockerfile
+FROM debian:jessie
+
+RUN apt-get update && \
+  apt-get install -y curl libsvn-perl subversion && \
+  apt-get autoremove -y && \
+  apt-get clean

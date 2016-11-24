@@ -1,0 +1,8 @@
+#  Dockerfile retrieved from:
+#    Repository: SoloMagic/golang_docker
+#    Dockerfile: http://raw.githubusercontent.com/SoloMagic/golang_docker/b14ad998448d39841ec6e9454cb890475d64ffef/ubuntu/Dockerfile
+FROM ubuntu:14.04
+
+RUN apt-get update
+
+RUN apt-get install curl -y

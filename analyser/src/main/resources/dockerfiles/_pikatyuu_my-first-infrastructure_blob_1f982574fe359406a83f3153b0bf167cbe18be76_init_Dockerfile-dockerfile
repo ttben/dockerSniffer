@@ -1,0 +1,9 @@
+#  Dockerfile retrieved from:
+#    Repository: pikatyuu/my-first-infrastructure
+#    Dockerfile: http://raw.githubusercontent.com/pikatyuu/my-first-infrastructure/1f982574fe359406a83f3153b0bf167cbe18be76/init/Dockerfile
+FROM ubuntu:trusty
+MAINTAINER pikatyuu
+
+RUN apt-get update && apt-get upgrade -y
+
+CMD /bin/bash

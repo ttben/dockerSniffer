@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Repository: grigio/docker-apps
+#    Dockerfile: http://raw.githubusercontent.com/grigio/docker-apps/f55b66c25a7e26010ab52ccd2e44ad5c0dc5256f/debian/Dockerfile
+FROM debian:8
+
+RUN apt-get update && apt-get install -y curl git

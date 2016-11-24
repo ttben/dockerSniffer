@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Repository: brunozrk/rails_docker_test
+#    Dockerfile: http://raw.githubusercontent.com/brunozrk/rails_docker_test/440cc6fa8d19a8ebc74c4ca7e3863ff4bee9cefa/Dockerfile
+FROM ruby:2.2.2-onbuild
+
+RUN apt-get update && apt-get install -y nodejs postgresql-client

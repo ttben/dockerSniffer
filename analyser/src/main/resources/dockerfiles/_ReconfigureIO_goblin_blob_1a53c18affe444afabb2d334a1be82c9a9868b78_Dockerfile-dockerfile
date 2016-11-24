@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Repository: ReconfigureIO/goblin
+#    Dockerfile: http://raw.githubusercontent.com/ReconfigureIO/goblin/1a53c18affe444afabb2d334a1be82c9a9868b78/Dockerfile
+MAINTAINER Patrick Thomson <patrick.thomson@reconfigure.io>
+
+RUN apt-get update && apt-get install -y golang

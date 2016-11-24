@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Repository: marnikow/usefulcombos-docker
+#    Dockerfile: http://raw.githubusercontent.com/marnikow/usefulcombos-docker/c861830c78e3504fcd4a272a58b3fa45f250f94d/java/java8JRE-ant/Dockerfile
+FROM isuper/java-oracle:jre_8
+
+RUN apt-get update && apt-get install -y ant

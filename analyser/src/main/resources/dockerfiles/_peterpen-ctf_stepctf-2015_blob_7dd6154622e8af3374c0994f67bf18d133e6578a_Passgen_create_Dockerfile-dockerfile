@@ -1,0 +1,8 @@
+#  Dockerfile retrieved from:
+#    Repository: peterpen-ctf/stepctf-2015
+#    Dockerfile: http://raw.githubusercontent.com/peterpen-ctf/stepctf-2015/7dd6154622e8af3374c0994f67bf18d133e6578a/Passgen/create/Dockerfile
+FROM ubuntu:14.04
+MAINTAINER tonyo
+
+RUN apt-get update && apt-get install -y wget curl
+

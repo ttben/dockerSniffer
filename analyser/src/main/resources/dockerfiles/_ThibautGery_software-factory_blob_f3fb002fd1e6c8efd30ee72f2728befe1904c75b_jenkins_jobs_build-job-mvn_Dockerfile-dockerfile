@@ -1,0 +1,7 @@
+#  Dockerfile retrieved from:
+#    Repository: ThibautGery/software-factory
+#    Dockerfile: http://raw.githubusercontent.com/ThibautGery/software-factory/f3fb002fd1e6c8efd30ee72f2728befe1904c75b/jenkins/jobs/build-job-mvn/Dockerfile
+FROM build-base
+
+RUN apt-get update -qq && apt-get install -qqy \
+    maven

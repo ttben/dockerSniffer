@@ -1,0 +1,9 @@
+#  Dockerfile retrieved from:
+#    Repository: MG-RAST/Skyport
+#    Dockerfile: http://raw.githubusercontent.com/MG-RAST/Skyport/46f498b92219ceb11aeff9c4e2ef0854bdd9cf4c/dockerfiles/bowtie2/Dockerfile
+FROM ubuntu:14.04
+
+RUN apt-get update && apt-get install -y \
+	bowtie2
+
+#2.1.0

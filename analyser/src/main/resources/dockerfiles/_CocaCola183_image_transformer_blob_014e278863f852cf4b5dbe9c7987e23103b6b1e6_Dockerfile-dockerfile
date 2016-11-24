@@ -1,0 +1,8 @@
+#  Dockerfile retrieved from:
+#    Repository: CocaCola183/image_transformer
+#    Dockerfile: http://raw.githubusercontent.com/CocaCola183/image_transformer/014e278863f852cf4b5dbe9c7987e23103b6b1e6/Dockerfile
+FROM node:latest
+
+RUN apt-get update && apt-get install -y imagemagick --fix-missing
+
+CMD [ "node" ]

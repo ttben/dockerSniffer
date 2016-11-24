@@ -1,0 +1,8 @@
+#  Dockerfile retrieved from:
+#    Repository: diego9627/random-code
+#    Dockerfile: http://raw.githubusercontent.com/diego9627/random-code/f624b92ad932e27bfa05e7258e7dce72cca8b384/docker-builds/test/Dockerfile
+FROM ubuntu:14.04
+RUN apt-get update
+RUN apt-get install -y curl
+RUN apt-get install -y vim
+

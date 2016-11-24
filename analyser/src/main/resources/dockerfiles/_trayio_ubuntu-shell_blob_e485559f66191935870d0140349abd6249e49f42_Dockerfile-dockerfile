@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Repository: trayio/ubuntu-shell
+#    Dockerfile: http://raw.githubusercontent.com/trayio/ubuntu-shell/e485559f66191935870d0140349abd6249e49f42/Dockerfile
+FROM ubuntu:latest
+
+RUN apt-get -q update && apt-get -y install jq curl

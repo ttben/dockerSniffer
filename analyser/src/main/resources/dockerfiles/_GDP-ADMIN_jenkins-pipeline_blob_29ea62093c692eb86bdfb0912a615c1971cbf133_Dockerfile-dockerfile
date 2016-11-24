@@ -1,0 +1,7 @@
+#  Dockerfile retrieved from:
+#    Repository: GDP-ADMIN/jenkins-pipeline
+#    Dockerfile: http://raw.githubusercontent.com/GDP-ADMIN/jenkins-pipeline/29ea62093c692eb86bdfb0912a615c1971cbf133/Dockerfile
+FROM jenkins:2.7.1
+USER root
+
+RUN apt-get update && apt-get install php5-cli -y

@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Repository: tyzhnenko/dockerfiles
+#    Dockerfile: http://raw.githubusercontent.com/tyzhnenko/dockerfiles/f08f322685686718c40e68680ff5ffa8d8e80d65/shellcheck/Dockerfile
+FROM ubuntu:16.04
+RUN apt-get -qy update && apt-get -qy install make shellcheck

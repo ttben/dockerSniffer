@@ -1,0 +1,8 @@
+#  Dockerfile retrieved from:
+#    Repository: nptomlin/docker-seneca-demo
+#    Dockerfile: http://raw.githubusercontent.com/nptomlin/docker-seneca-demo/307b80a51a12d924c7c466c54aca3b951ca7386c/infrastructure/beanstalk/Dockerfile
+FROM        ubuntu
+RUN         apt-get update
+RUN         apt-get -y install beanstalkd
+EXPOSE      11300
+CMD  beanstalkd

@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Repository: HackEmergency/hack-emergency
+#    Dockerfile: http://raw.githubusercontent.com/HackEmergency/hack-emergency/017b5379e51af1eb034549744b98834df9125e6e/data_science/Dockerfile
+FROM python:2.7
+# RUN apt-get update

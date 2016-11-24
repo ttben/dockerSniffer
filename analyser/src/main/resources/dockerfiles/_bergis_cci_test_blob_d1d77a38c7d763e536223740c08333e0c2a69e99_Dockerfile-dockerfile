@@ -1,0 +1,9 @@
+#  Dockerfile retrieved from:
+#    Repository: bergis/cci_test
+#    Dockerfile: http://raw.githubusercontent.com/bergis/cci_test/d1d77a38c7d763e536223740c08333e0c2a69e99/Dockerfile
+FROM ubuntu:latest
+
+RUN \
+  apt-get update && \
+  apt-get install -y golang wget
+

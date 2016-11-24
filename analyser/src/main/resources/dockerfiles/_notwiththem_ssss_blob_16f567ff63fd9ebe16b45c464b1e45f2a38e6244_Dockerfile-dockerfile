@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Repository: notwiththem/ssss
+#    Dockerfile: http://raw.githubusercontent.com/notwiththem/ssss/16f567ff63fd9ebe16b45c464b1e45f2a38e6244/Dockerfile
+FROM ubuntu:16.04
+RUN apt-get update
+RUN apt-get install -y ssss

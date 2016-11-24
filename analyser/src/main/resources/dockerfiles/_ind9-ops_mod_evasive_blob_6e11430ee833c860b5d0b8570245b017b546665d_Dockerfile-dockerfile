@@ -1,0 +1,9 @@
+#  Dockerfile retrieved from:
+#    Repository: ind9-ops/mod_evasive
+#    Dockerfile: http://raw.githubusercontent.com/ind9-ops/mod_evasive/6e11430ee833c860b5d0b8570245b017b546665d/Dockerfile
+FROM httpd:2.4
+
+RUN apt-get update && \
+    apt-get install -y gcc vim
+
+WORKDIR /app

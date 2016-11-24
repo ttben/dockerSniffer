@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Repository: JeromeCosmo/notification-center
+#    Dockerfile: http://raw.githubusercontent.com/JeromeCosmo/notification-center/6ba6ff778496f7b4b3db5a43b3a74c457e329a59/imagesDocker/kibana/Dockerfile
+FROM kibana:latest
+RUN apt-get update
+RUN apt-get -y install nano wget telnet

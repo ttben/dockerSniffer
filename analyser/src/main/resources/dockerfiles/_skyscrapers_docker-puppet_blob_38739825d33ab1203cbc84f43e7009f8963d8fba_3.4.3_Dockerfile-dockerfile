@@ -1,0 +1,12 @@
+#  Dockerfile retrieved from:
+#    Repository: skyscrapers/docker-puppet
+#    Dockerfile: http://raw.githubusercontent.com/skyscrapers/docker-puppet/38739825d33ab1203cbc84f43e7009f8963d8fba/3.4.3/Dockerfile
+FROM ubuntu:14.04
+
+ENV PUPPET_VERSION 3.4.3-1ubuntu1.1
+
+RUN \
+  apt-get update && \
+  apt-get install -y puppet=$PUPPET_VERSION && \
+  apt-get install -y git && \
+  apt-get clean

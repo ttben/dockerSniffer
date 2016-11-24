@@ -1,0 +1,10 @@
+#  Dockerfile retrieved from:
+#    Repository: barogi/docker-jenkinsci
+#    Dockerfile: http://raw.githubusercontent.com/barogi/docker-jenkinsci/02b707b53137c75ca889c74d57da7478bd63cd31/Dockerfile
+FROM jenkins
+USER root
+RUN \
+  apt-get update && \
+  apt-get install -y \
+    build-essential 
+USER jenkins

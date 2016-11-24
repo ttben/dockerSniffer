@@ -1,0 +1,7 @@
+#  Dockerfile retrieved from:
+#    Repository: indy-golang/managing-dependencies
+#    Dockerfile: http://raw.githubusercontent.com/indy-golang/managing-dependencies/26d7f11a1feb0515ade95bd2d0b5f5be4ee67a8e/1-simple-install/Dockerfile
+FROM debian:jessie
+
+RUN apt-get update
+RUN apt-get install git golang -y --force-yes

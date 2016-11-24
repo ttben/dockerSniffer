@@ -1,0 +1,11 @@
+#  Dockerfile retrieved from:
+#    Repository: zoozalp/docker-lamp
+#    Dockerfile: http://raw.githubusercontent.com/zoozalp/docker-lamp/3f3cca243f0b94f5e7673275ccf8d086d1fa2738/Dockerfile
+FROM ubuntu:latest
+
+RUN apt-get -y update
+RUN apt-get -y dist-upgrade
+RUN apt-get -t upgrade
+
+RUN apt-get install -y fortunes
+RUN apt-get install -y apache2 mysql-server libmysql* php5

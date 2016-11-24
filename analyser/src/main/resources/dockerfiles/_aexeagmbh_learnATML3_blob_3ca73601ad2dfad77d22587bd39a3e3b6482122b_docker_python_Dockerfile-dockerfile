@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Repository: aexeagmbh/learnATML3
+#    Dockerfile: http://raw.githubusercontent.com/aexeagmbh/learnATML3/3ca73601ad2dfad77d22587bd39a3e3b6482122b/docker_python/Dockerfile
+FROM ubuntu:16.04
+RUN apt-get update && apt-get install -y python3 && apt-get install -y python3-pip

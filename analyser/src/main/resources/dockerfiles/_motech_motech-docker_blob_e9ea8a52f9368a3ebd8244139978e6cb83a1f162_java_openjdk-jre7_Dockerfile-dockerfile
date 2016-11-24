@@ -1,0 +1,7 @@
+#  Dockerfile retrieved from:
+#    Repository: motech/motech-docker
+#    Dockerfile: http://raw.githubusercontent.com/motech/motech-docker/e9ea8a52f9368a3ebd8244139978e6cb83a1f162/java/openjdk-jre7/Dockerfile
+FROM ubuntu:12.04
+
+RUN apt-get update
+RUN apt-get install openjdk-7-jre-headless -y

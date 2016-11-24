@@ -1,0 +1,7 @@
+#  Dockerfile retrieved from:
+#    Repository: hanw/opennsl-switch
+#    Dockerfile: http://raw.githubusercontent.com/hanw/opennsl-switch/10fba5865ee255b41b0b440c28b3612e551aeb99/Dockerfile
+from hanw/bsc
+
+run apt-get update && \
+	apt-get install -y curl build-essential

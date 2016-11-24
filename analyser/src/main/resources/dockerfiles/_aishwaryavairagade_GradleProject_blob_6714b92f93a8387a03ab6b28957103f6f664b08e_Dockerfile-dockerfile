@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/aishwaryavairagade/GradleProject/6714b92f93a8387a03ab6b28957103f6f664b08e/Dockerfile
+FROM ubuntu:trusty
+RUN apt-get update
+RUN apt-get -y upgrade

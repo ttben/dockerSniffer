@@ -1,0 +1,7 @@
+#  Dockerfile retrieved from:
+#    Repository: chtiJBUG/docker-ubuntu-jdk7
+#    Dockerfile: http://raw.githubusercontent.com/chtiJBUG/docker-ubuntu-jdk7/c1e7e4cbbc883a5296755744d8dffa857d37e080/Dockerfile
+FROM ubuntu:14.04
+
+RUN apt-get update 
+RUN apt-get install -y openjdk-7-jdk

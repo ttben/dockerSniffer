@@ -1,0 +1,22 @@
+#  Dockerfile retrieved from:
+#    Repository: st3w4r/42-ft_nmap
+#    Dockerfile: http://raw.githubusercontent.com/st3w4r/42-ft_nmap/b09fd4e60692f4065c86adeb271feca37a5e3ca7/Dockerfile
+FROM debian:wheezy
+
+RUN apt-get update
+RUN apt-get install apt-utils -y;
+RUN apt-get install clang -y ;
+RUN apt-get install make -y;
+RUN apt-get install binutils -y
+#RUN apt-get install git -y
+
+# Tools
+RUN apt-get install inetutils-traceroute -y
+RUN apt-get install vim -y
+RUN apt-get install tcpdump -y
+RUN apt-get install nmap -y;
+RUN apt-get install libpcap-dev -y;
+
+EXPOSE 22
+
+CMD /bin/bash

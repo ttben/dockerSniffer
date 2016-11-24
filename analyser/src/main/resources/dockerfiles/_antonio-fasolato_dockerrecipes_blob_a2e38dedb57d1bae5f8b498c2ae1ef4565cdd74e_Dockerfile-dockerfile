@@ -1,0 +1,7 @@
+#  Dockerfile retrieved from:
+#    Repository: antonio-fasolato/dockerrecipes
+#    Dockerfile: http://raw.githubusercontent.com/antonio-fasolato/dockerrecipes/a2e38dedb57d1bae5f8b498c2ae1ef4565cdd74e/Dockerfile
+FROM postgres
+
+RUN apt-get update
+RUN apt-get -y install postgresql-contrib

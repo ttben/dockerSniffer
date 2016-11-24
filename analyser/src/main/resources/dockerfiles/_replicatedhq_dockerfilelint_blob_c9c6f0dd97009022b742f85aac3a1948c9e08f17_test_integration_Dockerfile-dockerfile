@@ -1,0 +1,9 @@
+#  Dockerfile retrieved from:
+#    Repository: replicatedhq/dockerfilelint
+#    Dockerfile: http://raw.githubusercontent.com/replicatedhq/dockerfilelint/c9c6f0dd97009022b742f85aac3a1948c9e08f17/test/integration/Dockerfile
+FROM ubuntu
+
+RUN apt-get update
+RUN apt-get install python-pip
+
+EXPOSE 8080:8080

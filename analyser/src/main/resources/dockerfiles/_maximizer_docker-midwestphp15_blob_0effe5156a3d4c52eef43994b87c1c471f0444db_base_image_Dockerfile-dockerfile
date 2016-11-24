@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Repository: maximizer/docker-midwestphp15
+#    Dockerfile: http://raw.githubusercontent.com/maximizer/docker-midwestphp15/0effe5156a3d4c52eef43994b87c1c471f0444db/base_image/Dockerfile
+FROM ubuntu:trusty
+RUN apt-get update && \
+    apt-get -y install php5-cli 

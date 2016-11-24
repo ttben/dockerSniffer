@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Repository: craigfurman/building-docker-images
+#    Dockerfile: http://raw.githubusercontent.com/craigfurman/building-docker-images/9492942d5b78898fc854ae4a8c7e8fdc513facd5/ansible-over-ssh/ubuntu-ssh-image/Dockerfile
+FROM ubuntu:trusty
+
+RUN apt-get update && apt-get install -y openssh-server

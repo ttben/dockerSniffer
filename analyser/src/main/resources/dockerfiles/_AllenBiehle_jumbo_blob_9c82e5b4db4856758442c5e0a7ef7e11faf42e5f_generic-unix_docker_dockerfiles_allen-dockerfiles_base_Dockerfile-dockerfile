@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Repository: AllenBiehle/jumbo
+#    Dockerfile: http://raw.githubusercontent.com/AllenBiehle/jumbo/9c82e5b4db4856758442c5e0a7ef7e11faf42e5f/generic-unix/docker/dockerfiles/allen-dockerfiles/base/Dockerfile
+FROM ubuntu:16.04
+RUN apt-get update && apt-get upgrade -y
+CMD /bin/bash

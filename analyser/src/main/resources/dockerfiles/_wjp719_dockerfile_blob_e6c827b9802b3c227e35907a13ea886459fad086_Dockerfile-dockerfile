@@ -1,0 +1,7 @@
+#  Dockerfile retrieved from:
+#    Repository: wjp719/dockerfile
+#    Dockerfile: http://raw.githubusercontent.com/wjp719/dockerfile/e6c827b9802b3c227e35907a13ea886459fad086/Dockerfile
+from ubuntu:14.04
+RUN apt-get update
+RUN apt-get -y install gcc
+

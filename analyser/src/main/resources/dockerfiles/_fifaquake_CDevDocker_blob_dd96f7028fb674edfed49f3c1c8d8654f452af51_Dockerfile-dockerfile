@@ -1,0 +1,11 @@
+#  Dockerfile retrieved from:
+#    Repository: fifaquake/CDevDocker
+#    Dockerfile: http://raw.githubusercontent.com/fifaquake/CDevDocker/dd96f7028fb674edfed49f3c1c8d8654f452af51/Dockerfile
+From ubuntu
+MAINTAINER lipengweb@gmail.com
+
+Run apt-get update
+Run apt-get -y install git
+Run apt-get -y install gcc 
+Run apt-get -y install vim
+

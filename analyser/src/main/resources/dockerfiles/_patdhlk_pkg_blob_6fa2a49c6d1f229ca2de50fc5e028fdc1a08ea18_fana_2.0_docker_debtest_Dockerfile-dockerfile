@@ -1,0 +1,9 @@
+#  Dockerfile retrieved from:
+#    Repository: patdhlk/pkg
+#    Dockerfile: http://raw.githubusercontent.com/patdhlk/pkg/6fa2a49c6d1f229ca2de50fc5e028fdc1a08ea18/fana/2.0/docker/debtest/Dockerfile
+FROM debian:jessie
+
+RUN apt-get update && apt-get install -y vim
+
+ADD *.deb /tmp/
+

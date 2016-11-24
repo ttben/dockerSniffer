@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Repository: paulajusti/Lab8and9
+#    Dockerfile: http://raw.githubusercontent.com/paulajusti/Lab8and9/bf3446c06521684b4f97fae458da615ef5b35655/TestingArea/Dockerfile
+RUN apt-get update
+

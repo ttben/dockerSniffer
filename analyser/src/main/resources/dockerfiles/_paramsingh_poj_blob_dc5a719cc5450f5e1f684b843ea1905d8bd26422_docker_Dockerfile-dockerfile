@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Repository: paramsingh/poj
+#    Dockerfile: http://raw.githubusercontent.com/paramsingh/poj/dc5a719cc5450f5e1f684b843ea1905d8bd26422/docker/Dockerfile
+FROM ubuntu:14.04
+RUN apt-get update && apt-get install -y gcc g++

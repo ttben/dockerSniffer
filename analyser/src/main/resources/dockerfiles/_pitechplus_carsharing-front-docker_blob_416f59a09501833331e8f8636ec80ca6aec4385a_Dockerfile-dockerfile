@@ -1,0 +1,7 @@
+#  Dockerfile retrieved from:
+#    Repository: pitechplus/carsharing-front-docker
+#    Dockerfile: http://raw.githubusercontent.com/pitechplus/carsharing-front-docker/416f59a09501833331e8f8636ec80ca6aec4385a/Dockerfile
+FROM node:6.5
+
+RUN apt-get update -q && apt-get install -y rsync
+

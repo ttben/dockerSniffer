@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Repository: synasius/ci
+#    Dockerfile: http://raw.githubusercontent.com/synasius/ci/40c0754abf762f6470fdc0d4c604f0cc225a27f0/Dockerfile
+FROM python:3.4
+MAINTAINER synasius
+RUN apt-get update && apt-get install -y socat postgresql-client

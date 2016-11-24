@@ -1,0 +1,8 @@
+#  Dockerfile retrieved from:
+#    Repository: jelu/apps
+#    Dockerfile: http://raw.githubusercontent.com/jelu/apps/60c06dc9bd9ff3ed75d90179492425d31612e4ec/pdftk/Dockerfile
+FROM base
+
+RUN apt-get install -y pdftk
+RUN apt-get install -y pandoc
+RUN apt-get install -y groff

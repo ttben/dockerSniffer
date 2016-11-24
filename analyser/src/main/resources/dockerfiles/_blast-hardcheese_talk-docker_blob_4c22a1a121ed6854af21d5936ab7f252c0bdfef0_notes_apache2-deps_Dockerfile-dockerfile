@@ -1,0 +1,7 @@
+#  Dockerfile retrieved from:
+#    Repository: blast-hardcheese/talk-docker
+#    Dockerfile: http://raw.githubusercontent.com/blast-hardcheese/talk-docker/4c22a1a121ed6854af21d5936ab7f252c0bdfef0/notes/apache2-deps/Dockerfile
+FROM ubuntu
+
+RUN apt-get update
+RUN apt-get install -y apache2

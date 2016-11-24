@@ -1,0 +1,11 @@
+#  Dockerfile retrieved from:
+#    Repository: docker-build/bind9
+#    Dockerfile: http://raw.githubusercontent.com/docker-build/bind9/ec4a6b4128f393dd4dd248e79e8535d8cf2bd6ae/Dockerfile
+FROM ubuntu-upstart:14.04
+
+RUN apt-get update; apt-get -y upgrade
+RUN apt-get -y purge openssh-server openssh-client ; apt-get -y autoremove
+RUN apt-get -y install vim ufw bind9
+
+COPY . /data/
+RUN ["/data/config.sh"]

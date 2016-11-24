@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Repository: simonbrennan/buildbottest
+#    Dockerfile: http://raw.githubusercontent.com/simonbrennan/buildbottest/806656617134f8fbe0bc58b5144203983827acd7/Dockerfile
+FROM ubuntu:14.04 
+RUN apt-get update && apt-get install -y apache2 git

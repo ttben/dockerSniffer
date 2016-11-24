@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Repository: coduno/docker
+#    Dockerfile: http://raw.githubusercontent.com/coduno/docker/3d6c6a3ae7fca8a050f5cc81e53651cb36d19627/scala/Dockerfile
+FROM coduno/base
+RUN apt-get update -y && apt-get install scala -y
+ADD . /run

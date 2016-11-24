@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Repository: sh19910711/u-aizu-prolog
+#    Dockerfile: http://raw.githubusercontent.com/sh19910711/u-aizu-prolog/2766878db1e1ad2abc386256e06e4c2d1795ee42/Dockerfile
+FROM debian:jessie
+
+RUN apt-get update && apt-get install -y gprolog

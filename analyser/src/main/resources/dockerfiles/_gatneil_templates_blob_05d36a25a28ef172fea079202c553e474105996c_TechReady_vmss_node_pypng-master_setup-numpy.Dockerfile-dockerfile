@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Repository: gatneil/templates
+#    Dockerfile: http://raw.githubusercontent.com/gatneil/templates/05d36a25a28ef172fea079202c553e474105996c/TechReady/vmss_node/pypng-master/setup-numpy.Dockerfile
+FROM pypng-test
+RUN apt-get update && apt-get install -y python-numpy python3-numpy

@@ -1,0 +1,8 @@
+#  Dockerfile retrieved from:
+#    Repository: polem/docker-python-docutils
+#    Dockerfile: http://raw.githubusercontent.com/polem/docker-python-docutils/d3ab98cc83f54d445736e1f30da9de30b9de35e5/Dockerfile
+FROM python:latest
+
+RUN apt-get update
+RUN apt-get install python-docutils -y
+RUN apt-get install rst2pdf -y

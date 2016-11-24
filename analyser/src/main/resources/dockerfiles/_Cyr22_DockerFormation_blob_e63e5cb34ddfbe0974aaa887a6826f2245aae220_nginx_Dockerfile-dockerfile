@@ -1,0 +1,7 @@
+#  Dockerfile retrieved from:
+#    Repository: Cyr22/DockerFormation
+#    Dockerfile: http://raw.githubusercontent.com/Cyr22/DockerFormation/e63e5cb34ddfbe0974aaa887a6826f2245aae220/nginx/Dockerfile
+from ubuntu
+run apt-get update && apt-get install -y nginx
+
+cmd ["nginx"]

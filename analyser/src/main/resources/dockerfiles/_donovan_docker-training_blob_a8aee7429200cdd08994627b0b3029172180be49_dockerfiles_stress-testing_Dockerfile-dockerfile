@@ -1,0 +1,7 @@
+#  Dockerfile retrieved from:
+#    Repository: donovan/docker-training
+#    Dockerfile: http://raw.githubusercontent.com/donovan/docker-training/a8aee7429200cdd08994627b0b3029172180be49/dockerfiles/stress-testing/Dockerfile
+FROM debian:latest
+
+RUN apt-get -y update && apt-get install -y stress
+CMD ["/bin/bash"]

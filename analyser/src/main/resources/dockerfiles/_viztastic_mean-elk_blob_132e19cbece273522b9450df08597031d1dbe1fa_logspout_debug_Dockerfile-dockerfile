@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Repository: viztastic/mean-elk
+#    Dockerfile: http://raw.githubusercontent.com/viztastic/mean-elk/132e19cbece273522b9450df08597031d1dbe1fa/logspout/debug/Dockerfile
+FROM ubuntu-debootstrap
+RUN apt-get update && apt-get install -y netcat

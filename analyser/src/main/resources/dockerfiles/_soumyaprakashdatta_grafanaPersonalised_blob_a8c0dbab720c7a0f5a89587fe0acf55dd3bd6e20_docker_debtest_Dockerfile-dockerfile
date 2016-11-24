@@ -1,0 +1,9 @@
+#  Dockerfile retrieved from:
+#    Repository: soumyaprakashdatta/grafanaPersonalised
+#    Dockerfile: http://raw.githubusercontent.com/soumyaprakashdatta/grafanaPersonalised/a8c0dbab720c7a0f5a89587fe0acf55dd3bd6e20/docker/debtest/Dockerfile
+FROM debian:jessie
+
+RUN apt-get update && apt-get install -y vim
+
+ADD *.deb /tmp/
+

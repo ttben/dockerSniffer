@@ -1,0 +1,7 @@
+#  Dockerfile retrieved from:
+#    Repository: jayfk/cloudbench.io
+#    Dockerfile: http://raw.githubusercontent.com/jayfk/cloudbench.io/9f6aaba5b63441bcc3fc8decdaffe4e516bb088b/dockerfiles/mbw/Dockerfile
+FROM debian:jessie
+
+RUN apt-get update && apt-get install -y \
+	mbw \

@@ -1,0 +1,4 @@
+#  Dockerfile retrieved from:
+#    Repository: madebymany/solr-package
+#    Dockerfile: http://raw.githubusercontent.com/madebymany/solr-package/9d982e421676a63679d1fa24798a78f1f6b5b747/metallus/build/solr-common/Dockerfile
+RUN apt-get update -qq && apt-get install -y curl zip

@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Repository: shenzhang/docker
+#    Dockerfile: http://raw.githubusercontent.com/shenzhang/docker/1225af2e7fa4bba9be71691dda85b93d261898a1/ubuntu-java7/Dockerfile
+FROM shenzhang/ubuntu
+
+RUN apt-get update && apt-get install -y openjdk-7-jdk

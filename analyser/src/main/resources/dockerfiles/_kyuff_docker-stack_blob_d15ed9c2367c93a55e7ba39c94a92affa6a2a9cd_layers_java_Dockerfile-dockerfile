@@ -1,0 +1,8 @@
+#  Dockerfile retrieved from:
+#    Repository: kyuff/docker-stack
+#    Dockerfile: http://raw.githubusercontent.com/kyuff/docker-stack/d15ed9c2367c93a55e7ba39c94a92affa6a2a9cd/layers/java/Dockerfile
+FROM kyuff/base
+
+RUN apt-get update && apt-get install -y openjdk-8-jre-headless \
+    && apt-get clean
+

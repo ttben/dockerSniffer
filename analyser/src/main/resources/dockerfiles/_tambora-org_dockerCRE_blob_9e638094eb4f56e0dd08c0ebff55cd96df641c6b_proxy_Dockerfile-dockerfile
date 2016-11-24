@@ -1,0 +1,9 @@
+#  Dockerfile retrieved from:
+#    Repository: tambora-org/dockerCRE
+#    Dockerfile: http://raw.githubusercontent.com/tambora-org/dockerCRE/9e638094eb4f56e0dd08c0ebff55cd96df641c6b/proxy/Dockerfile
+FROM nginx:latest
+
+RUN apt-get update; apt-get install -y openssl
+
+
+

@@ -1,0 +1,9 @@
+#  Dockerfile retrieved from:
+#    Repository: rezpablo/docker
+#    Dockerfile: http://raw.githubusercontent.com/rezpablo/docker/ababdc4f093a4bd8da5ecc0566e41f11ac392e94/debian_base/Dockerfile
+FROM debian:jessie
+
+MAINTAINER rezpablo@gmail.com
+
+RUN apt-get update && apt-get install -y && \
+        apt-get update

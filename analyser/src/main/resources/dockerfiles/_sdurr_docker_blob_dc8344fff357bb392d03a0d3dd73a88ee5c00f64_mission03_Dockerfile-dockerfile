@@ -1,0 +1,11 @@
+#  Dockerfile retrieved from:
+#    Repository: sdurr/docker
+#    Dockerfile: http://raw.githubusercontent.com/sdurr/docker/dc8344fff357bb392d03a0d3dd73a88ee5c00f64/mission03/Dockerfile
+FROM debian:wheezy
+
+RUN apt-get update
+
+RUN apt-get upgrade
+VOLUME [./share]
+EXPOSE 80
+

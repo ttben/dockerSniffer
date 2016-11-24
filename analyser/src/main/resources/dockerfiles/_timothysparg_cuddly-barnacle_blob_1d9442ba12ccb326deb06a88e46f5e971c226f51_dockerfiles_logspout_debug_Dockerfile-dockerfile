@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Repository: timothysparg/cuddly-barnacle
+#    Dockerfile: http://raw.githubusercontent.com/timothysparg/cuddly-barnacle/1d9442ba12ccb326deb06a88e46f5e971c226f51/dockerfiles/logspout/debug/Dockerfile
+FROM ubuntu-debootstrap
+RUN apt-get update && apt-get install -y netcat

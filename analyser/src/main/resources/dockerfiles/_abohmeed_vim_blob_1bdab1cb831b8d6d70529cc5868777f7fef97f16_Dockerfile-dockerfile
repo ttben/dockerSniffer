@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Repository: abohmeed/vim
+#    Dockerfile: http://raw.githubusercontent.com/abohmeed/vim/1bdab1cb831b8d6d70529cc5868777f7fef97f16/Dockerfile
+FROM ubuntu:latest
+RUN apt-get update && apt-get install -y vim
+ENTRYPOINT ["vim"]

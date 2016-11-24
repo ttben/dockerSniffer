@@ -1,0 +1,7 @@
+#  Dockerfile retrieved from:
+#    Repository: NotyIm/rethinkdb
+#    Dockerfile: http://raw.githubusercontent.com/NotyIm/rethinkdb/f4921176e8b73e04313fd0fef09431d0b6dc1c37/Dockerfile
+FROM rethinkdb:2.3.0
+
+RUN apt-get update -y
+RUN apt-get install -y wget

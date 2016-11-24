@@ -1,0 +1,7 @@
+#  Dockerfile retrieved from:
+#    Repository: flash1293/docker-jenkinsslave
+#    Dockerfile: http://raw.githubusercontent.com/flash1293/docker-jenkinsslave/5e9500f4da55827c65da7d3baf9c2ead52e5ec00/Dockerfile
+FROM tehranian/dind-jenkins-slave
+
+RUN apt-get update
+RUN apt-get install -y curl

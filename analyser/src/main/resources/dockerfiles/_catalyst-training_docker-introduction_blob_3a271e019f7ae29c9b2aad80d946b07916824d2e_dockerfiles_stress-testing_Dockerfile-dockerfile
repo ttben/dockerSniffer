@@ -1,0 +1,7 @@
+#  Dockerfile retrieved from:
+#    Repository: catalyst-training/docker-introduction
+#    Dockerfile: http://raw.githubusercontent.com/catalyst-training/docker-introduction/3a271e019f7ae29c9b2aad80d946b07916824d2e/dockerfiles/stress-testing/Dockerfile
+FROM debian:latest
+
+RUN apt-get -y update && apt-get install -y stress
+CMD ["/bin/bash"]

@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Repository: MackeyRMS/dockerfiles-roles
+#    Dockerfile: http://raw.githubusercontent.com/MackeyRMS/dockerfiles-roles/49db0613695878e599eadd26b2f0d219f769d858/ubuntu14.04-ruby1.9.3/Dockerfile
+FROM ubuntu:14.04
+RUN apt-get -y update
+RUN apt-get -y install ruby1.9.3=1.9.3*

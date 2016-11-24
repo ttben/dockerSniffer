@@ -1,0 +1,7 @@
+#  Dockerfile retrieved from:
+#    Repository: sixeyed/docker-succinctly
+#    Dockerfile: http://raw.githubusercontent.com/sixeyed/docker-succinctly/91f40e48c0411f8c729903276ec6ef849067a16e/code-listing-10/Dockerfile
+FROM ubuntu
+MAINTAINER Elton Stoneman <elton@sixeyed.com>
+
+RUN apt-get update && apt-get install nano

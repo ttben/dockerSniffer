@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Repository: tianon/dockerfiles
+#    Dockerfile: http://raw.githubusercontent.com/tianon/dockerfiles/f35287efd367f6742000547c297f24122cee8816/latex/Dockerfile
+FROM debian:jessie
+
+RUN apt-get update && apt-get install -y texlive-full biber latexmk make

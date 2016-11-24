@@ -1,0 +1,10 @@
+#  Dockerfile retrieved from:
+#    Repository: jillza/eservice
+#    Dockerfile: http://raw.githubusercontent.com/jillza/eservice/6291ea29ca90f605f90a44798bfbf8505a049e34/build/web/Dockerfile
+FROM lukaszkinder/apache-php-oci8-pdo_oci
+
+RUN apt-get update \
+    && apt-get install -y unzip \
+    && apt-get clean -y
+
+RUN apt-get install -y php5-memcached memcached

@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Repository: rajatgoel/slimcache
+#    Dockerfile: http://raw.githubusercontent.com/rajatgoel/slimcache/fcb20c2d36af6c3724946b0107a3a64424b2b1e5/Dockerfile
+FROM golang:1.5
+
+RUN apt-get update && apt-get install libaio1 libaio-dev libaio1-dbg

@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Repository: jasonblanchard/dockerhub-test
+#    Dockerfile: http://raw.githubusercontent.com/jasonblanchard/dockerhub-test/50efc1c0293b03622606fb07ebbcceb977b31612/Dockerfile
+FROM ubuntu:14.04
+RUN apt-get update
+RUN apt-get install curl -y

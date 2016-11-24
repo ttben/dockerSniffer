@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Repository: pjsong/vending
+#    Dockerfile: http://raw.githubusercontent.com/pjsong/vending/0854290ada110a78d39555feff50bb521c1cd0cb/django/Dockerfile/0-ubuntu-updated/Dockerfile
+FROM ubuntu:16.04
+
+RUN apt-get update && apt-get install -y

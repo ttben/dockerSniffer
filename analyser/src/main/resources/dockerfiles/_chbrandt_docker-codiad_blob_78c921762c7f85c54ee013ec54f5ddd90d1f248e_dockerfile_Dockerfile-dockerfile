@@ -1,0 +1,8 @@
+#  Dockerfile retrieved from:
+#    Repository: chbrandt/docker-codiad
+#    Dockerfile: http://raw.githubusercontent.com/chbrandt/docker-codiad/78c921762c7f85c54ee013ec54f5ddd90d1f248e/dockerfile/Dockerfile
+FROM wernight/codiad
+RUN apt-get update \
+    && apt-get install -y build-essential python \
+    && apt-get clean
+

@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Repository: harto/battleship-api
+#    Dockerfile: http://raw.githubusercontent.com/harto/battleship-api/37e007ff5913e7bed2deb49ac7b2696b8a0a075d/Dockerfile
+FROM node:4.4
+RUN apt-get update \
+ && apt-get install -y postgresql-client

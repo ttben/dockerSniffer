@@ -1,0 +1,8 @@
+#  Dockerfile retrieved from:
+#    Repository: notonthehighstreet/minke-generator-spring
+#    Dockerfile: http://raw.githubusercontent.com/notonthehighstreet/minke-generator-spring/e447b637e581c3bbf9a5e4661f7c0f14edd6216f/lib/generators/spring/scaffold/_build/dockerfile/build/Dockerfile
+FROM ubuntu:xenial
+
+RUN apt-get update && apt-get install -y \
+    maven \
+    openjdk-8-jdk

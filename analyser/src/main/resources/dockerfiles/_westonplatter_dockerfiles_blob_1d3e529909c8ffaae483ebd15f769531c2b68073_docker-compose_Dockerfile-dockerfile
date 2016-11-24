@@ -1,0 +1,14 @@
+#  Dockerfile retrieved from:
+#    Repository: westonplatter/dockerfiles
+#    Dockerfile: http://raw.githubusercontent.com/westonplatter/dockerfiles/1d3e529909c8ffaae483ebd15f769531c2b68073/docker-compose/Dockerfile
+FROM ubuntu:12.04
+
+RUN apt-get update
+
+RUN apt-get -y install \
+    apt-utils
+
+RUN apt-get -y install \
+    python-pip
+
+RUN pip install docker-compose

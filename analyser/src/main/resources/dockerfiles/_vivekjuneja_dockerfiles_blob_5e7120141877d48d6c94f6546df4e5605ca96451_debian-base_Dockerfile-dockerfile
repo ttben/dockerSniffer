@@ -1,0 +1,7 @@
+#  Dockerfile retrieved from:
+#    Repository: vivekjuneja/dockerfiles
+#    Dockerfile: http://raw.githubusercontent.com/vivekjuneja/dockerfiles/5e7120141877d48d6c94f6546df4e5605ca96451/debian-base/Dockerfile
+FROM library/debian:wheezy
+
+RUN apt-get -y update && \
+    apt-get -y install curl

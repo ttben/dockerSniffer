@@ -1,0 +1,7 @@
+#  Dockerfile retrieved from:
+#    Repository: mumuki/mumuki-prolog-runner
+#    Dockerfile: http://raw.githubusercontent.com/mumuki/mumuki-prolog-runner/b7528e2c130f33f40ecee68ff57ded49105ff459/worker/Dockerfile
+FROM ubuntu
+MAINTAINER Franco Leonardo Bulgarelli
+RUN apt-get update && apt-get install -y swi-prolog
+

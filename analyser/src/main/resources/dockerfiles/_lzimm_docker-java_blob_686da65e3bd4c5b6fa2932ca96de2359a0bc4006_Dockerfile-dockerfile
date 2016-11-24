@@ -1,0 +1,13 @@
+#  Dockerfile retrieved from:
+#    Repository: lzimm/docker-java
+#    Dockerfile: http://raw.githubusercontent.com/lzimm/docker-java/686da65e3bd4c5b6fa2932ca96de2359a0bc4006/Dockerfile
+FROM library/ubuntu:vivid
+
+RUN \
+	apt-get update && \
+	DEBIAN_FRONTEND=noninteractive \
+		apt-get -y install openjdk-8-jre-headless \
+	&& \
+	apt-get autoremove && \
+	apt-get autoclean && \
+	apt-get clean

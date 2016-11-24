@@ -1,0 +1,14 @@
+#  Dockerfile retrieved from:
+#    Repository: asterkin/chol
+#    Dockerfile: http://raw.githubusercontent.com/asterkin/chol/ac42446749dc2f22f1fc0ca751c4b5070ab3c6f6/cdev/Dockerfile
+FROM ubuntu:latest
+
+run apt-get update -y && \
+    apt-get install -y gcc && \
+    apt-get install -y g++ && \
+    apt-get install -y make
+
+
+
+
+

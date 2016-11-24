@@ -1,0 +1,10 @@
+#  Dockerfile retrieved from:
+#    Repository: csmarosi/dockerFiles
+#    Dockerfile: http://raw.githubusercontent.com/csmarosi/dockerFiles/57d840ca9b651138d64cac70e531a54516d0be17/xrdp_firefox/Dockerfile
+FROM xrdp_base
+
+RUN apt-get update && \
+    apt-get install --no-install-recommends -y -q \
+        iceweasel pulseaudio \
+    && \
+    apt-get clean

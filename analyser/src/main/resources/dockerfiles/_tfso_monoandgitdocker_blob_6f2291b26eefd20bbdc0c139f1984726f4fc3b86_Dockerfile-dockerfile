@@ -1,0 +1,9 @@
+#  Dockerfile retrieved from:
+#    Repository: tfso/monoandgitdocker
+#    Dockerfile: http://raw.githubusercontent.com/tfso/monoandgitdocker/6f2291b26eefd20bbdc0c139f1984726f4fc3b86/Dockerfile
+FROM suchja/wine:latest
+RUN apt-get update
+RUN apt-get install -y git
+
+
+

@@ -1,0 +1,7 @@
+#  Dockerfile retrieved from:
+#    Repository: aplicacionesnubemcicud/Documentacion2016-1
+#    Dockerfile: http://raw.githubusercontent.com/aplicacionesnubemcicud/Documentacion2016-1/e69ba51232974eced4a74b494fe209c2998f61f2/curso_nube_2016-1/talleres/Talleres_desarrollo/Yeny%20Mu%C3%B1oz%20-%20Julian%20Moreno/Taller7/Dockerfile
+FROM ubuntu:trusty
+RUN sudo apt-get update && sudo apt-get -y install cowsay fortune
+
+

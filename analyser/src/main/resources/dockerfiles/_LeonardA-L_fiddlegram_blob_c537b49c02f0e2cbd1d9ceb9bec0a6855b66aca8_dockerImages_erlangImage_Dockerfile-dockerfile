@@ -1,0 +1,8 @@
+#  Dockerfile retrieved from:
+#    Repository: LeonardA-L/fiddlegram
+#    Dockerfile: http://raw.githubusercontent.com/LeonardA-L/fiddlegram/c537b49c02f0e2cbd1d9ceb9bec0a6855b66aca8/dockerImages/erlangImage/Dockerfile
+FROM debian:jessie
+RUN apt-get update -y
+RUN apt-get upgrade -y
+RUN apt-get update -y
+RUN apt-get install erlang -y

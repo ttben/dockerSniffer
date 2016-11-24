@@ -1,0 +1,7 @@
+#  Dockerfile retrieved from:
+#    Repository: LTD-Beget/besync
+#    Dockerfile: http://raw.githubusercontent.com/LTD-Beget/besync/b394521514498d36ad836151d84ab2f90437885b/Dockerfile
+FROM golang:1.6
+
+RUN apt-get update -qq
+RUN apt-get install -qqy libsqlite3-dev

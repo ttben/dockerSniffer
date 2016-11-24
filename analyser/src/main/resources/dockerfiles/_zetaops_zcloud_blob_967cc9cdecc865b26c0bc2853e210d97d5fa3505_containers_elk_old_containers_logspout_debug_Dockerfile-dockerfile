@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Repository: zetaops/zcloud
+#    Dockerfile: http://raw.githubusercontent.com/zetaops/zcloud/967cc9cdecc865b26c0bc2853e210d97d5fa3505/containers/elk/old_containers/logspout/debug/Dockerfile
+FROM ubuntu-debootstrap
+RUN apt-get update && apt-get install -y netcat

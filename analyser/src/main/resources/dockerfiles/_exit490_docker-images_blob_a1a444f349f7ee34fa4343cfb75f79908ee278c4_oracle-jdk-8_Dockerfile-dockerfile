@@ -1,0 +1,10 @@
+#  Dockerfile retrieved from:
+#    Repository: exit490/docker-images
+#    Dockerfile: http://raw.githubusercontent.com/exit490/docker-images/a1a444f349f7ee34fa4343cfb75f79908ee278c4/oracle-jdk-8/Dockerfile
+FROM debian:jessie
+
+RUN  apt-get update && \
+        apt-get install -y openjdk-7-jre-headless && \
+        apt-get clean && \
+        apt-get autoclean
+ENV JAVA_HOME /usr/lib/jvm/java-8-oracle

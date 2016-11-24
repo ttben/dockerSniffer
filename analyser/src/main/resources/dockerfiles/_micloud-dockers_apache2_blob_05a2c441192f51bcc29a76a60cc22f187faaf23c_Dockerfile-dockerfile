@@ -1,0 +1,8 @@
+#  Dockerfile retrieved from:
+#    Repository: micloud-dockers/apache2
+#    Dockerfile: http://raw.githubusercontent.com/micloud-dockers/apache2/05a2c441192f51bcc29a76a60cc22f187faaf23c/Dockerfile
+FROM debian
+
+RUN apt-get update
+RUN apt-get install apache2 -y
+RUN apt-get install gnuplot -y

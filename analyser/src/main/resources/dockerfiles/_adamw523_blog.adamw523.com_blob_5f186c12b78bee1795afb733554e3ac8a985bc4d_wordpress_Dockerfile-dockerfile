@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Repository: adamw523/blog.adamw523.com
+#    Dockerfile: http://raw.githubusercontent.com/adamw523/blog.adamw523.com/5f186c12b78bee1795afb733554e3ac8a985bc4d/wordpress/Dockerfile
+FROM wordpress
+
+RUN apt-get update && apt-get install -y less

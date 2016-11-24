@@ -1,0 +1,7 @@
+#  Dockerfile retrieved from:
+#    Repository: ludekvesely/docker-ubuntu-ssh
+#    Dockerfile: http://raw.githubusercontent.com/ludekvesely/docker-ubuntu-ssh/7d2c9fcaa6d8a8ced668d3545ec20d3d6d8ef27c/Dockerfile
+FROM tutum/ubuntu:latest
+
+RUN apt-get update && \
+    apt-get install -y --force-yes mysql-client

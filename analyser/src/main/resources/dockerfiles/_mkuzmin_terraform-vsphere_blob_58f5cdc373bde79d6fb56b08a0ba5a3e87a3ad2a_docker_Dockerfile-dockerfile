@@ -1,0 +1,7 @@
+#  Dockerfile retrieved from:
+#    Repository: mkuzmin/terraform-vsphere
+#    Dockerfile: http://raw.githubusercontent.com/mkuzmin/terraform-vsphere/58f5cdc373bde79d6fb56b08a0ba5a3e87a3ad2a/docker/Dockerfile
+FROM golang:1.6.2
+RUN export DEBIAN_FRONTEND=noninteractive && \
+apt-get -qq update && \
+apt-get -y install zip

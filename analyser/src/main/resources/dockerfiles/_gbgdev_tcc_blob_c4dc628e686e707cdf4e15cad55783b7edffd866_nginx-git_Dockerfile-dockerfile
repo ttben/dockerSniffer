@@ -1,0 +1,7 @@
+#  Dockerfile retrieved from:
+#    Repository: gbgdev/tcc
+#    Dockerfile: http://raw.githubusercontent.com/gbgdev/tcc/c4dc628e686e707cdf4e15cad55783b7edffd866/nginx-git/Dockerfile
+FROM nginx
+
+RUN apt-get update
+RUN apt-get install -y git python-virtualenv --force-yes

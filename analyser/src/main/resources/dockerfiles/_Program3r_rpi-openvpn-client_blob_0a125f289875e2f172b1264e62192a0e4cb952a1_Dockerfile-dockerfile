@@ -1,0 +1,7 @@
+#  Dockerfile retrieved from:
+#    Repository: Program3r/rpi-openvpn-client
+#    Dockerfile: http://raw.githubusercontent.com/Program3r/rpi-openvpn-client/0a125f289875e2f172b1264e62192a0e4cb952a1/Dockerfile
+FROM resin/rpi-raspbian
+RUN apt-get update
+RUN apt-get install openvpn
+

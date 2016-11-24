@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Repository: ksp558562/docker_test
+#    Dockerfile: http://raw.githubusercontent.com/ksp558562/docker_test/635d73fcd80950f33c051c2ae96be4f4306a043a/docker/Dockerfile
+FROM docker/whalesay:latest
+
+RUN apt-get -y update && apt-get install -y openssh-server

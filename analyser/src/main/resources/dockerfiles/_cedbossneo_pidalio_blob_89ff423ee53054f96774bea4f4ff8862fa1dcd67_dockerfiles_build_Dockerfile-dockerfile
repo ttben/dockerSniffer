@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Repository: cedbossneo/pidalio
+#    Dockerfile: http://raw.githubusercontent.com/cedbossneo/pidalio/89ff423ee53054f96774bea4f4ff8862fa1dcd67/dockerfiles/build/Dockerfile
+FROM golang:1.6
+
+RUN apt-get update && apt-get install -y pkg-config libssl-dev

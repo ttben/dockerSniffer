@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Repository: cameronmaske/quay-example
+#    Dockerfile: http://raw.githubusercontent.com/cameronmaske/quay-example/b1dfa0f201f875d3fd061e6d24a7ef6be9a708cb/Dockerfile
+FROM ubuntu
+RUN apt-get -y update

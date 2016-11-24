@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Repository: allingeek/pollendina
+#    Dockerfile: http://raw.githubusercontent.com/allingeek/pollendina/29f60488d4873321c10b6d08b416650037810a1a/bases/debian/Dockerfile
+FROM debian:jessie
+RUN apt-get update && apt-get upgrade -y && apt-get install -y openssl

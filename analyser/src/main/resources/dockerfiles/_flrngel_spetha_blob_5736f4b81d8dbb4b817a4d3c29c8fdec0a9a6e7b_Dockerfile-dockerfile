@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Repository: flrngel/spetha
+#    Dockerfile: http://raw.githubusercontent.com/flrngel/spetha/5736f4b81d8dbb4b817a4d3c29c8fdec0a9a6e7b/Dockerfile
+FROM golang:1.4.1-onbuild
+RUN apt-get update && apt-get install haproxy -y
+EXPOSE 80

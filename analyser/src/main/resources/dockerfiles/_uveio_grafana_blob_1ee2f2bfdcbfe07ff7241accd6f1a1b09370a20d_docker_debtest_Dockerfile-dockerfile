@@ -1,0 +1,9 @@
+#  Dockerfile retrieved from:
+#    Repository: uveio/grafana
+#    Dockerfile: http://raw.githubusercontent.com/uveio/grafana/1ee2f2bfdcbfe07ff7241accd6f1a1b09370a20d/docker/debtest/Dockerfile
+FROM debian:jessie
+
+RUN apt-get update && apt-get install -y vim
+
+ADD *.deb /tmp/
+

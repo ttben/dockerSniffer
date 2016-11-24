@@ -1,0 +1,8 @@
+#  Dockerfile retrieved from:
+#    Repository: mraxilus/docker-base
+#    Dockerfile: http://raw.githubusercontent.com/mraxilus/docker-base/a8b4f5b5d0faa48b51a133e348f83951dee1a40a/Dockerfile
+from ubuntu:latest
+run apt-get update && apt-get install -y \
+  build-essential \
+  zsh
+cmd ["zsh"]

@@ -1,0 +1,8 @@
+#  Dockerfile retrieved from:
+#    Repository: jadr2ddude/arm-docker-images
+#    Dockerfile: http://raw.githubusercontent.com/jadr2ddude/arm-docker-images/04f24548946d863b129c10aafb3a0c9b3d69794d/debian-lighttpd/Dockerfile
+FROM ioft/armhf-debian
+
+RUN apt-get update
+RUN apt-get -y upgrade
+RUN apt-get -y install lighttpd

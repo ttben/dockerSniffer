@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Repository: Opine-Org/Build
+#    Dockerfile: http://raw.githubusercontent.com/Opine-Org/Build/aa1a762e4c3b11fd9b16a2330a3c7561edbfbeef/docker/test/Dockerfile
+FROM phpunit/phpunit:5.5
+
+RUN apt-get update && apt-get install -y libssl-dev

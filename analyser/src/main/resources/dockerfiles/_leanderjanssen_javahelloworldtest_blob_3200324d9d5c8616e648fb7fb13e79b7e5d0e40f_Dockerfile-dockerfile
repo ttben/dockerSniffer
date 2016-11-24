@@ -1,0 +1,7 @@
+#  Dockerfile retrieved from:
+#    Repository: leanderjanssen/javahelloworldtest
+#    Dockerfile: http://raw.githubusercontent.com/leanderjanssen/javahelloworldtest/3200324d9d5c8616e648fb7fb13e79b7e5d0e40f/Dockerfile
+FROM java:7
+
+RUN apt-get update
+

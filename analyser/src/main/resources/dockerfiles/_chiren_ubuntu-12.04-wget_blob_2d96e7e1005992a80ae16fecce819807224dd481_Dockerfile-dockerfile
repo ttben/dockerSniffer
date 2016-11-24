@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Repository: chiren/ubuntu-12.04-wget
+#    Dockerfile: http://raw.githubusercontent.com/chiren/ubuntu-12.04-wget/2d96e7e1005992a80ae16fecce819807224dd481/Dockerfile
+FROM salttest/ubuntu-12.04:latest
+
+RUN apt-get -y update && apt-get install -y wget

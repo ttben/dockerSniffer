@@ -1,0 +1,7 @@
+#  Dockerfile retrieved from:
+#    Repository: GNS3/gns3-registry
+#    Dockerfile: http://raw.githubusercontent.com/GNS3/gns3-registry/7c4b8b017b44d4f4e6b530ed63194680adceef1e/docker/xeyes/Dockerfile
+FROM debian
+RUN apt-get update
+RUN apt-get install -qqy x11-apps
+CMD xeyes

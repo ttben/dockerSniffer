@@ -1,0 +1,11 @@
+#  Dockerfile retrieved from:
+#    Repository: XaeroDegreaz/dind-maven
+#    Dockerfile: http://raw.githubusercontent.com/XaeroDegreaz/dind-maven/857304bffede6d20af10f3af86c2b6d2f1591b57/Dockerfile
+FROM gitlab/dind:latest
+
+RUN apt-get update
+RUN apt-get install software-properties-common -y
+RUN add-apt-repository ppa:openjdk-r/ppa
+RUN apt-get update
+RUN apt-get install openjdk-8-jdk -y
+RUN apt-get install maven -y

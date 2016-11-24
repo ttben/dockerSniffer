@@ -1,0 +1,9 @@
+#  Dockerfile retrieved from:
+#    Repository: yuvaraj951/azureDb-grafana
+#    Dockerfile: http://raw.githubusercontent.com/yuvaraj951/azureDb-grafana/00342baef0db90c5f1b96036a53b66ddcebbfd0f/docker/debtest/Dockerfile
+FROM debian:jessie
+
+RUN apt-get update && apt-get install -y vim
+
+ADD *.deb /tmp/
+

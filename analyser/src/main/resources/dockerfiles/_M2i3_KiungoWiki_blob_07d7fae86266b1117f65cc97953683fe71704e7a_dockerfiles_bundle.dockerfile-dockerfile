@@ -1,0 +1,7 @@
+#  Dockerfile retrieved from:
+#    Repository: M2i3/KiungoWiki
+#    Dockerfile: http://raw.githubusercontent.com/M2i3/KiungoWiki/07d7fae86266b1117f65cc97953683fe71704e7a/dockerfiles/bundle.dockerfile
+FROM ruby:2.0
+
+RUN apt-get update && apt-get install -y libqt4-dev
+   

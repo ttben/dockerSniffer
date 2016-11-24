@@ -1,0 +1,9 @@
+#  Dockerfile retrieved from:
+#    Repository: troyan29/helloworld
+#    Dockerfile: http://raw.githubusercontent.com/troyan29/helloworld/a4bddc51fc73db53f64c7f026c3556818ccf7da0/docker/base/Dockerfile
+FROM debian
+
+RUN apt-get update && apt-get install -y vim \
+	curl \
+	unzip \
+	wget \

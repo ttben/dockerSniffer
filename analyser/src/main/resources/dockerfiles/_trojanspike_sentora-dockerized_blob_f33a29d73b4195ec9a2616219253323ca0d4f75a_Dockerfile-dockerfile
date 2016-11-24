@@ -1,0 +1,7 @@
+#  Dockerfile retrieved from:
+#    Repository: trojanspike/sentora-dockerized
+#    Dockerfile: http://raw.githubusercontent.com/trojanspike/sentora-dockerized/f33a29d73b4195ec9a2616219253323ca0d4f75a/Dockerfile
+FROM ubuntu:14.04
+MAINTAINER Lee Mc Kay
+
+RUN apt-get update && apt-get upgrade -y

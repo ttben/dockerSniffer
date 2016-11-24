@@ -1,0 +1,13 @@
+#  Dockerfile retrieved from:
+#    Repository: laod/docker
+#    Dockerfile: http://raw.githubusercontent.com/laod/docker/f19f1ad9611f026aeb647fae84cef8aa5c1266aa/sshd/Dockerfile
+FROM ubuntu
+
+RUN apt-get update && \
+    apt-get upgrade -y && \
+    apt-get install -qy openssh-server && \
+    apt-get clean
+
+COPY run.sh /run.sh
+
+CMD /run.sh

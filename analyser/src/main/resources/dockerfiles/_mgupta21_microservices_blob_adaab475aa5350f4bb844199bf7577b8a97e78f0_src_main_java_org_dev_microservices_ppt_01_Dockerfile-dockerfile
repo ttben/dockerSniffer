@@ -1,0 +1,8 @@
+#  Dockerfile retrieved from:
+#    Repository: mgupta21/microservices
+#    Dockerfile: http://raw.githubusercontent.com/mgupta21/microservices/adaab475aa5350f4bb844199bf7577b8a97e78f0/src/main/java/org/dev/microservices/ppt/01/Dockerfile
+FROM ubuntu:latest
+MAINTAINER mgupta
+RUN apt-get update
+RUN apt-get install
+default-jdk

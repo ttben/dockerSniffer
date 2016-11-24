@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Repository: orchardup/docker-php5
+#    Dockerfile: http://raw.githubusercontent.com/orchardup/docker-php5/2abddedff12b18e084ae30d69976aed1acd83299/Dockerfile
+FROM stackbrew/ubuntu:13.10
+RUN apt-get update && apt-get install php5 php5-mysql -y
+

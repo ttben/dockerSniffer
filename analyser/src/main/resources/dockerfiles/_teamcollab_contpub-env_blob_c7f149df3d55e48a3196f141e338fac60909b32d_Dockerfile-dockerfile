@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Repository: teamcollab/contpub-env
+#    Dockerfile: http://raw.githubusercontent.com/teamcollab/contpub-env/c7f149df3d55e48a3196f141e338fac60909b32d/Dockerfile
+FROM ubuntu:trusty
+RUN apt-get update -qq -y
+RUN apt-get install texlive-full -y

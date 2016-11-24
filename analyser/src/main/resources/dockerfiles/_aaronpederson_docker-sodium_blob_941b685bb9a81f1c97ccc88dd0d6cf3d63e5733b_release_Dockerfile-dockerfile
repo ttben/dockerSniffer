@@ -1,0 +1,7 @@
+#  Dockerfile retrieved from:
+#    Repository: aaronpederson/docker-sodium
+#    Dockerfile: http://raw.githubusercontent.com/aaronpederson/docker-sodium/941b685bb9a81f1c97ccc88dd0d6cf3d63e5733b/release/Dockerfile
+FROM aaronpederson/ubuntu
+
+RUN apt-get update
+RUN apt-get install libsodium18

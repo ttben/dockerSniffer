@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Repository: denisbelyaev/react_redux_client_side_rendering
+#    Dockerfile: http://raw.githubusercontent.com/denisbelyaev/react_redux_client_side_rendering/a553fbc548f8b38bcc282c08d10e39a1aefda1eb/nginx/Dockerfile
+FROM debian:jessie
+RUN apt-get update
+RUN apt-get install -y nginx

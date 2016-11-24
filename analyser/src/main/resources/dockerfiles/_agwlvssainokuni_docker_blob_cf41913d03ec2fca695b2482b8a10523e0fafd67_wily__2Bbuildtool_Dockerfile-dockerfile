@@ -1,0 +1,12 @@
+#  Dockerfile retrieved from:
+#    Repository: agwlvssainokuni/docker
+#    Dockerfile: http://raw.githubusercontent.com/agwlvssainokuni/docker/cf41913d03ec2fca695b2482b8a10523e0fafd67/wily%2Bbuildtool/Dockerfile
+FROM ubuntu:wily
+MAINTAINER agw.lvs.sainokuni@gmail.com
+RUN apt-get -y update
+RUN apt-get -y upgrade
+RUN apt-get -y install curl unzip
+RUN apt-get -y install build-essential
+RUN apt-get -y install git git-flow
+RUN apt-get -y autoremove
+RUN apt-get -y autoclean

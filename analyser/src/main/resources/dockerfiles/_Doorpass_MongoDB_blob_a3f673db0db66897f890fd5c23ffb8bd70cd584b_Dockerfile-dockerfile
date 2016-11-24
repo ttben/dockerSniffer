@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Repository: Doorpass/MongoDB
+#    Dockerfile: http://raw.githubusercontent.com/Doorpass/MongoDB/a3f673db0db66897f890fd5c23ffb8bd70cd584b/Dockerfile
+FROM mongo:3.0.7
+
+RUN apt-get update && apt-get install -y curl

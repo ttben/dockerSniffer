@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Repository: unikoid/cslowlog
+#    Dockerfile: http://raw.githubusercontent.com/unikoid/cslowlog/556c40f065a2839e90aec2fc1ccca14b348cae95/Dockerfile
+FROM ubuntu
+RUN apt-get update && apt-get install -y bash build-essential
+CMD bash

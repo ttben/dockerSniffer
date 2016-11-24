@@ -1,0 +1,9 @@
+#  Dockerfile retrieved from:
+#    Repository: slobo/docker-git
+#    Dockerfile: http://raw.githubusercontent.com/slobo/docker-git/842ea76eb0bd3894e7e437ad27259f7fef924e4e/Dockerfile
+FROM ubuntu:14.04
+
+RUN apt-get update && \
+    DEBIAN_FRONTEND=noninteractive apt-get install -y git
+
+

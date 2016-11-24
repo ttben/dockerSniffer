@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Repository: locatw/AppHost
+#    Dockerfile: http://raw.githubusercontent.com/locatw/AppHost/37427ff7a7015a7690e8c2f16beac600e8ad6be6/Mono/Dockerfile
+FROM ubuntu:xenial-20161010
+RUN apt-get update
+RUN apt-get install -y mono-complete

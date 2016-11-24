@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Repository: sedden/config-owncloud
+#    Dockerfile: http://raw.githubusercontent.com/sedden/config-owncloud/0eca5457f89db37b60a6202d8a379935e782f695/owncloud/duply/Dockerfile
+FROM debian:jessie
+
+RUN apt-get update && apt-get install -y --no-install-recommends duply

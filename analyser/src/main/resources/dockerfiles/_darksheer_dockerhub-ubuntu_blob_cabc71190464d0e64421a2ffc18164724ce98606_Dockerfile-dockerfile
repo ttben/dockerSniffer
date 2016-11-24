@@ -1,0 +1,7 @@
+#  Dockerfile retrieved from:
+#    Repository: darksheer/dockerhub-ubuntu
+#    Dockerfile: http://raw.githubusercontent.com/darksheer/dockerhub-ubuntu/cabc71190464d0e64421a2ffc18164724ce98606/Dockerfile
+FROM ubuntu:latest
+MAINTAINER Darksheer
+
+RUN     apt-get update -y && apt-get upgrade -y

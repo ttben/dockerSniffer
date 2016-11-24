@@ -1,0 +1,7 @@
+#  Dockerfile retrieved from:
+#    Repository: charlieegan3/docker-pg-replication
+#    Dockerfile: http://raw.githubusercontent.com/charlieegan3/docker-pg-replication/d543681dfe6c169845d2d25b18bf0b80432210af/slave/Dockerfile
+FROM postgres:9.4.8
+
+RUN apt-get -y update
+RUN apt-get -y install vim

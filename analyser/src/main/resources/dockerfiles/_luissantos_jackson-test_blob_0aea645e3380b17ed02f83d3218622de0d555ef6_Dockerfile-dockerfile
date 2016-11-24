@@ -1,0 +1,7 @@
+#  Dockerfile retrieved from:
+#    Repository: luissantos/jackson-test
+#    Dockerfile: http://raw.githubusercontent.com/luissantos/jackson-test/0aea645e3380b17ed02f83d3218622de0d555ef6/Dockerfile
+FROM dockerfile/java:oracle-java8
+
+RUN apt-get update
+RUN apt-get install -y maven 

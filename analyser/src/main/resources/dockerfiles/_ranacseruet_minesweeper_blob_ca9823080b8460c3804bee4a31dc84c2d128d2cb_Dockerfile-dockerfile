@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Repository: ranacseruet/minesweeper
+#    Dockerfile: http://raw.githubusercontent.com/ranacseruet/minesweeper/ca9823080b8460c3804bee4a31dc84c2d128d2cb/Dockerfile
+FROM nginx
+
+#RUN apt-get update && apt-get install -y nginx

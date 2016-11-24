@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Repository: hashlabs/docker-golang-psql
+#    Dockerfile: http://raw.githubusercontent.com/hashlabs/docker-golang-psql/9b7b8b13b76cbdce769a88831c2e5a4603f48e86/Dockerfile
+FROM golang
+RUN apt-get -qq update
+RUN apt-get -qq -y install postgresql-client-9.4

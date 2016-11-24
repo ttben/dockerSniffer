@@ -1,0 +1,7 @@
+#  Dockerfile retrieved from:
+#    Repository: mpdatx/dotfiles
+#    Dockerfile: http://raw.githubusercontent.com/mpdatx/dotfiles/0c28c0a93c1b364f9225043115247e3682789860/docker/megatools/Dockerfile
+FROM debian:unstable
+RUN apt-get update
+RUN apt-get -y install megatools
+

@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Repository: spullara/iscsi
+#    Dockerfile: http://raw.githubusercontent.com/spullara/iscsi/a3112ffcc379567cd1ca6733aa3550bc97d8b9fc/Dockerfile
+FROM ubuntu
+RUN apt-get update
+RUN apt-get install open-iscsi -y

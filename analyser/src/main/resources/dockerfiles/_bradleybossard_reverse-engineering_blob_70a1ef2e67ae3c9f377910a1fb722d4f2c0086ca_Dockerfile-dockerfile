@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Repository: bradleybossard/reverse-engineering
+#    Dockerfile: http://raw.githubusercontent.com/bradleybossard/reverse-engineering/70a1ef2e67ae3c9f377910a1fb722d4f2c0086ca/Dockerfile
+FROM bradleybossard/docker-common-devbox
+
+RUN apt-get update && apt-get install -y gcc

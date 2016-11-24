@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Repository: Magnetikio/torrent-stream-microservice
+#    Dockerfile: http://raw.githubusercontent.com/Magnetikio/torrent-stream-microservice/72f3a6493f9ede5a752338d6e28847445832c31d/Dockerfile
+FROM ubuntu
+RUN apt-get update && apt-get install nodejs
+CMD [ "nodejs", "index.js" ]

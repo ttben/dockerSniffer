@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Repository: brutus333/rancher-workshop-demo2
+#    Dockerfile: http://raw.githubusercontent.com/brutus333/rancher-workshop-demo2/ab929f8bc5df3b58f13d97e40928ce7183833c73/troubleshoot/Dockerfile
+FROM ubuntu:14.04.3
+
+RUN apt-get update && apt-get install dnsutils apache2-utils httping curl -y && apt-get clean

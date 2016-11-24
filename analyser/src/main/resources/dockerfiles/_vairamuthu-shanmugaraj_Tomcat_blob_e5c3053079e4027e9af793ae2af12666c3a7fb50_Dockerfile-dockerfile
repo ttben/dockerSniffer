@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Repository: vairamuthu-shanmugaraj/Tomcat
+#    Dockerfile: http://raw.githubusercontent.com/vairamuthu-shanmugaraj/Tomcat/e5c3053079e4027e9af793ae2af12666c3a7fb50/Dockerfile
+FROM vairamuthushanmugaraj/jdk:jdk7Base14
+RUN apt-get update
+RUN apt-get -y install tomcat7

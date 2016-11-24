@@ -1,0 +1,11 @@
+#  Dockerfile retrieved from:
+#    Repository: lborguetti/debian-tools
+#    Dockerfile: http://raw.githubusercontent.com/lborguetti/debian-tools/6c2dd37f83a8c8ec163cdd39c3bbcd3abbafb895/Dockerfile
+FROM debian
+
+RUN apt-get update \
+ && apt-get -y install tcpdump \
+ && apt-get -y install iperf \
+ && apt-get -y install htop
+
+CMD /bin/bash

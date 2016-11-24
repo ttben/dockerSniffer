@@ -1,0 +1,7 @@
+#  Dockerfile retrieved from:
+#    Repository: s-take/ubuntu_ssh
+#    Dockerfile: http://raw.githubusercontent.com/s-take/ubuntu_ssh/cc8bde301b93e77c0cc67cb3e8a9681466e898a4/Dockerfile
+FROM ubuntu
+
+RUN apt-get install -y openssh-server
+RUN apt-get install -y git

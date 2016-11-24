@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Repository: eadz/docker-files
+#    Dockerfile: http://raw.githubusercontent.com/eadz/docker-files/682bf3bf8189a94a11a1b70ccc5a7c302a2ca896/ubuntu-trusty-base/Dockerfile
+FROM ubuntu:14.04
+MAINTAINER _@eaden.net
+RUN apt-get update && apt-get upgrade -y

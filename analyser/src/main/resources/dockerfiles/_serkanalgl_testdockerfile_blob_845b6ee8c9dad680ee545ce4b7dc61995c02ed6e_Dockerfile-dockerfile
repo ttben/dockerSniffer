@@ -1,0 +1,9 @@
+#  Dockerfile retrieved from:
+#    Repository: serkanalgl/testdockerfile
+#    Dockerfile: http://raw.githubusercontent.com/serkanalgl/testdockerfile/845b6ee8c9dad680ee545ce4b7dc61995c02ed6e/Dockerfile
+FROM ubuntu:14.04
+RUN apt-get update && apt-get install -y curl \
+                                                vim
+
+
+ENTRYPOINT ["ping"]

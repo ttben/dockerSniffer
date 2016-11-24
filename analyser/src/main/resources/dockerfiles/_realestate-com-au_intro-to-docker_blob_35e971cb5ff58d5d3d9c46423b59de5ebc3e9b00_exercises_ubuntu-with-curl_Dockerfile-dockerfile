@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Repository: realestate-com-au/intro-to-docker
+#    Dockerfile: http://raw.githubusercontent.com/realestate-com-au/intro-to-docker/35e971cb5ff58d5d3d9c46423b59de5ebc3e9b00/exercises/ubuntu-with-curl/Dockerfile
+FROM ubuntu
+RUN apt-get update && apt-get install -y curl

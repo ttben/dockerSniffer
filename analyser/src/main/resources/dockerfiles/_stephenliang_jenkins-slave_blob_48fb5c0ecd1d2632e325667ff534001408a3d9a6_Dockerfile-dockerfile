@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Repository: stephenliang/jenkins-slave
+#    Dockerfile: http://raw.githubusercontent.com/stephenliang/jenkins-slave/48fb5c0ecd1d2632e325667ff534001408a3d9a6/Dockerfile
+FROM evarga/jenkins-slave
+
+RUN apt-get update && apt-get install -y curl

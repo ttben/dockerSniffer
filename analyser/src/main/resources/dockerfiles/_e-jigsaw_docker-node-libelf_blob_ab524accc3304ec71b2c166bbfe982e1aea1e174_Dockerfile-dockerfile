@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Repository: e-jigsaw/docker-node-libelf
+#    Dockerfile: http://raw.githubusercontent.com/e-jigsaw/docker-node-libelf/ab524accc3304ec71b2c166bbfe982e1aea1e174/Dockerfile
+FROM node:6
+RUN apt-get update && apt-get install -y libelf-dev

@@ -1,0 +1,8 @@
+#  Dockerfile retrieved from:
+#    Repository: docker/labs
+#    Dockerfile: http://raw.githubusercontent.com/docker/labs/d9273d2cbcba20a132a266e4b7c4c6377f475aba/security/cgroups/cpu-stress/Dockerfile
+FROM ubuntu:latest
+
+RUN apt-get update && apt-get install -y stress
+
+CMD stress -c 2

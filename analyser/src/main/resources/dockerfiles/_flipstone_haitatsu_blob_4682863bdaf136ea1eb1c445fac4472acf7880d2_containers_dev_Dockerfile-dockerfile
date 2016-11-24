@@ -1,0 +1,9 @@
+#  Dockerfile retrieved from:
+#    Repository: flipstone/haitatsu
+#    Dockerfile: http://raw.githubusercontent.com/flipstone/haitatsu/4682863bdaf136ea1eb1c445fac4472acf7880d2/containers/dev/Dockerfile
+FROM haskell:7.10
+
+RUN apt-get update &&\
+    apt-get install ca-certificates -y &&\
+    apt-get clean
+

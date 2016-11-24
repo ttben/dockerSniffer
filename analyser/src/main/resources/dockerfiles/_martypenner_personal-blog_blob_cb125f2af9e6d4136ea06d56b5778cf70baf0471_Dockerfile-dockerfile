@@ -1,0 +1,9 @@
+#  Dockerfile retrieved from:
+#    Repository: martypenner/personal-blog
+#    Dockerfile: http://raw.githubusercontent.com/martypenner/personal-blog/cb125f2af9e6d4136ea06d56b5778cf70baf0471/Dockerfile
+FROM ghost
+
+ENV TERM xterm
+
+RUN apt-get update
+RUN apt-get -y install nano htop

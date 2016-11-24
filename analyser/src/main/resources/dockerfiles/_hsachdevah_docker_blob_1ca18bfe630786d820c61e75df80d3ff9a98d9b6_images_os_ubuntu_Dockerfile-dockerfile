@@ -1,0 +1,8 @@
+#  Dockerfile retrieved from:
+#    Repository: hsachdevah/docker
+#    Dockerfile: http://raw.githubusercontent.com/hsachdevah/docker/1ca18bfe630786d820c61e75df80d3ff9a98d9b6/images/os/ubuntu/Dockerfile
+FROM ubuntu:latest
+
+RUN apt-get update
+
+RUN apt-get -y install vim git

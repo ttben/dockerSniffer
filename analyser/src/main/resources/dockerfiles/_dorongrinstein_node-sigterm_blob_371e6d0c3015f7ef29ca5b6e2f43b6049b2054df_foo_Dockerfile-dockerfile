@@ -1,0 +1,8 @@
+#  Dockerfile retrieved from:
+#    Repository: dorongrinstein/node-sigterm
+#    Dockerfile: http://raw.githubusercontent.com/dorongrinstein/node-sigterm/371e6d0c3015f7ef29ca5b6e2f43b6049b2054df/foo/Dockerfile
+FROM ubuntu
+
+RUN apt-get update
+
+RUN apt-get install -y nodejs npm 

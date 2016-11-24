@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Repository: cs50/smtp
+#    Dockerfile: http://raw.githubusercontent.com/cs50/smtp/21e7f559811af9e821f4dbb79f7cf8d1caef1a09/example/Dockerfile
+FROM cs50/cli
+RUN apt-get update && apt-get install -y libphp-phpmailer
+CMD sleep infinity

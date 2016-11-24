@@ -1,0 +1,10 @@
+#  Dockerfile retrieved from:
+#    Repository: jcuotpc/docker-ooffice
+#    Dockerfile: http://raw.githubusercontent.com/jcuotpc/docker-ooffice/c4eaf3d1268b2af3938497005550609bf61c8909/Dockerfile
+FROM python:3.4
+
+MAINTAINER Julian C. <jcuotpc@gmail.com>
+
+RUN apt-get update && \
+    apt-get install -y libreoffice tidy && \
+    apt-get clean

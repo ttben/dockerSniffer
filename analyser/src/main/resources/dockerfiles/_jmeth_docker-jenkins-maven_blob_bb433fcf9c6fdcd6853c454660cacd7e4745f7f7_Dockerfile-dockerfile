@@ -1,0 +1,7 @@
+#  Dockerfile retrieved from:
+#    Repository: jmeth/docker-jenkins-maven
+#    Dockerfile: http://raw.githubusercontent.com/jmeth/docker-jenkins-maven/bb433fcf9c6fdcd6853c454660cacd7e4745f7f7/Dockerfile
+FROM jenkins
+USER root
+RUN apt-get update && apt-get install -y maven
+USER jenkins

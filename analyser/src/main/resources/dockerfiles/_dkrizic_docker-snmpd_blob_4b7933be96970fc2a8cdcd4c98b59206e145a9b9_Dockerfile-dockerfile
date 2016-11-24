@@ -1,0 +1,9 @@
+#  Dockerfile retrieved from:
+#    Repository: dkrizic/docker-snmpd
+#    Dockerfile: http://raw.githubusercontent.com/dkrizic/docker-snmpd/4b7933be96970fc2a8cdcd4c98b59206e145a9b9/Dockerfile
+FROM debian
+MAINTAINER darko@krizic.net
+
+RUN apt-get update
+RUN apt-get install snmpd
+

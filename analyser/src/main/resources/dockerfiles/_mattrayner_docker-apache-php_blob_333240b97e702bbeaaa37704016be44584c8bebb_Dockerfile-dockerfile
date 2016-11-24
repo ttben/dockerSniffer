@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Repository: mattrayner/docker-apache-php
+#    Dockerfile: http://raw.githubusercontent.com/mattrayner/docker-apache-php/333240b97e702bbeaaa37704016be44584c8bebb/Dockerfile
+FROM dgraziotin/lamp
+RUN apt-get update && apt-get -y install php5-gd
+CMD ["/run.sh"]

@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Repository: hone/mferuby
+#    Dockerfile: http://raw.githubusercontent.com/hone/mferuby/01d4a24d541d85737c9adc8dc22b74cf15c39d8d/Dockerfile
+FROM hone/mruby-cli:14.04-rust
+
+RUN apt-get update && apt-get install gdb -y

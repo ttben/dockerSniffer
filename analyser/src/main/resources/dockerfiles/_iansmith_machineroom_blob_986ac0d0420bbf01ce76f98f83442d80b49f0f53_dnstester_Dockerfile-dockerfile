@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Repository: iansmith/machineroom
+#    Dockerfile: http://raw.githubusercontent.com/iansmith/machineroom/986ac0d0420bbf01ce76f98f83442d80b49f0f53/dnstester/Dockerfile
+FROM ubuntu
+RUN sudo apt-get update -q
+RUN sudo apt-get install -q -y dnsutils
