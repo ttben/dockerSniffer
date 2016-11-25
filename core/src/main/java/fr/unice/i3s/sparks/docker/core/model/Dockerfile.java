@@ -23,7 +23,7 @@ public class Dockerfile {
 
     public boolean contains(Class<? extends Command> commandClass) {
         for (Command command : listOfCommand) {
-            if (command.getClass().isAssignableFrom(commandClass)) {
+            if (command.getClass().equals(commandClass)) {
                 return true;
             }
         }

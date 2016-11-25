@@ -2,6 +2,7 @@ package fr.unice.i3s.sparks.docker.analyser;
 
 import fr.unice.i3s.sparks.docker.DockerfileLexer;
 import fr.unice.i3s.sparks.docker.DockerfileParser;
+import fr.unice.i3s.sparks.docker.core.commands.COPYCommand;
 import fr.unice.i3s.sparks.docker.core.commands.RUNCommand;
 import fr.unice.i3s.sparks.docker.core.conflicts.Enricher;
 import fr.unice.i3s.sparks.docker.core.conflicts.MalFormedImageException;
@@ -14,6 +15,7 @@ import org.antlr.v4.runtime.CommonTokenStream;
 import org.antlr.v4.runtime.tree.ParseTreeWalker;
 import org.apache.commons.io.FileUtils;
 
+import java.io.Console;
 import java.io.File;
 import java.io.FilenameFilter;
 import java.io.IOException;
@@ -46,8 +48,12 @@ public class Main {
         File[] files = folder.listFiles(textFilter);
         int nbOfDockerFilesThatContainsRunInstallOrUpdate = 0;
         int nbOfDockerFilesThatContainsRun = 0;
+        int nbOfDockerFilesThatContainsCopy = 0;
+        int nbOfTrivialDockerfiles = 0;
+        int trivialThreshold = 2;
+
         for (File f : files) {
-            System.err.println("Handling file:" + f.getAbsolutePath());
+            System.out.println("Handling file:" + f.getAbsolutePath());
             List<String> strings = FileUtils.readLines(f, "utf-8");
 
             String sentence = "";
@@ -74,11 +80,21 @@ public class Main {
 
             walker.walk(listener, drinkSentenceContext);
 
-            /*
             Dockerfile dockerfile = listener.getDockerfile();
+
+            if(dockerfile.getListOfCommand().size() <= trivialThreshold) {
+                System.out.println(dockerfile.getListOfCommand().size());
+                System.out.println(dockerfile);
+                waitForEnter("Press enter");
+                nbOfTrivialDockerfiles++;
+            }
 
             if (dockerfile.contains(RUNCommand.class)) {
                 nbOfDockerFilesThatContainsRun++;
+            }
+
+            if(dockerfile.contains(COPYCommand.class)) {
+                nbOfDockerFilesThatContainsCopy++;
             }
 
             Dockerfile enrichedDockerfile = Enricher.enrich(dockerfile);
@@ -86,6 +102,7 @@ public class Main {
 
             //System.err.println(enrichedDockerfile);
 
+            /*
             RUNConflictSniffer runConflictSniffer = new RUNConflictSniffer();
             RUNConflict conflict = runConflictSniffer.conflict(enrichedDockerfile);
 
@@ -104,8 +121,14 @@ public class Main {
         System.out.println(dockerfiles.size() + " dockerfiles parsed into model.");
         System.out.println(conflicts.size() + " run conflicts found.");
 
+        double percentageOfTrivialDockerfile = (nbOfTrivialDockerfiles * 100.0) / (double) dockerfiles.size();
+        System.out.println(df.format(percentageOfTrivialDockerfile) + "% of files are trivial(" + nbOfTrivialDockerfiles + ")");
+
         double percentageOfDockerfileQWithRun = (nbOfDockerFilesThatContainsRun * 100.0) / (double) dockerfiles.size();
-        System.out.println(df.format(percentageOfDockerfileQWithRun) + "% of files contained any RUN command (" + nbOfDockerFilesThatContainsRun + ")");
+        System.out.println(df.format(percentageOfDockerfileQWithRun) + "% of files contained a RUN command (" + nbOfDockerFilesThatContainsRun + ")");
+
+        double percentageOfDockerfileWithCOPY = (nbOfDockerFilesThatContainsCopy * 100.0) / (double) dockerfiles.size();
+        System.out.println(df.format(percentageOfDockerfileWithCOPY) + "% of files contained a COPY command (" + nbOfDockerFilesThatContainsCopy + ")");
 
         double percentageOfDockerfileQWithRunInstallOrUpdate = (nbOfDockerFilesThatContainsRunInstallOrUpdate * 100.0) / (double) dockerfiles.size();
         System.out.println(df.format(percentageOfDockerfileQWithRunInstallOrUpdate) + "% of files contained a RUN command that update or install (" + nbOfDockerFilesThatContainsRunInstallOrUpdate + ")");
@@ -118,6 +141,17 @@ public class Main {
 
         double percentageRunSniffed = (conflicts.size() * 100.0) / (double) dockerfiles.size();
         System.out.println(df.format(percentageRunSniffed) + "% of files contained a RUN issue (" + conflicts.size() + ")");
+    }
 
+    public static void waitForEnter(String message, Object... args) {
+        Console c = System.console();
+        if (c != null) {
+            // printf-like arguments
+            if (message != null)
+                c.format(message, args);
+            c.format("\nPress ENTER to proceed.\n");
+            c.readLine();
+
+        }
     }
 }
