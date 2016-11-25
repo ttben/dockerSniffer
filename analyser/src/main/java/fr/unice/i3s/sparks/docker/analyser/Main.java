@@ -74,6 +74,7 @@ public class Main {
 
             walker.walk(listener, drinkSentenceContext);
 
+            /*
             Dockerfile dockerfile = listener.getDockerfile();
 
             if (dockerfile.contains(RUNCommand.class)) {
@@ -94,6 +95,7 @@ public class Main {
                     conflicts.add(conflict);
                 }
             }
+            */
         }
         DecimalFormat df = new DecimalFormat("#.####");
         df.setRoundingMode(RoundingMode.CEILING);
