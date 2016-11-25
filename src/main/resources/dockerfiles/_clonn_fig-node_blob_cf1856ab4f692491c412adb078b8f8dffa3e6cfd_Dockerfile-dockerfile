@@ -1,0 +1,3 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/clonn/fig-node/cf1856ab4f692491c412adb078b8f8dffa3e6cfd/Dockerfile
+FROM dockerfile/nodejs

@@ -1,0 +1,4 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/tsileo/ts4/6011d1d6bfa36f2c52c537ffaae18dc30ca29430/Dockerfile
+FROM golang:onbuild
+EXPOSE 8010

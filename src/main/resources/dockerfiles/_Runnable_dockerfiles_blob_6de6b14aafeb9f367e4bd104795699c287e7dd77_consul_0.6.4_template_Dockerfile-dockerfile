@@ -1,0 +1,3 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/Runnable/dockerfiles/6de6b14aafeb9f367e4bd104795699c287e7dd77/consul/0.6.4/template/Dockerfile
+FROM runnable/consul-server:0.6.4

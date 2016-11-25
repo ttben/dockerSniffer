@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/jreeme/firmament/1f61e0aa0dac2acaebd79f26b8b739d25a3d8245/docker/memex/mongo/Dockerfile
+FROM jreeme/mongo:2.6
+
+CMD ["/bin/bash"]

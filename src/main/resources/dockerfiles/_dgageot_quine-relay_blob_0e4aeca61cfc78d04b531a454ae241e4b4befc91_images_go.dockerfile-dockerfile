@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/dgageot/quine-relay/0e4aeca61cfc78d04b531a454ae241e4b4befc91/images/go.dockerfile
+FROM dgageot/quine:base
+
+COPY . ./

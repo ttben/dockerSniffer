@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/soulsearcher/docker-example/0a0ab41e6c08c3557cccec6f7f7b9a21907bc3a7/busybox/Dockerfile
+FROM busybox
+VOLUME /data
+CMD /bin/sh

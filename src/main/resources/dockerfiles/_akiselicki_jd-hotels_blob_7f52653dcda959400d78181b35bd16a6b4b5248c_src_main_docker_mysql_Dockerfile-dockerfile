@@ -1,0 +1,4 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/akiselicki/jd-hotels/7f52653dcda959400d78181b35bd16a6b4b5248c/src/main/docker/mysql/Dockerfile
+FROM mysql:latest
+

@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/ViBiOh/angular-bp/9159eb0873d48d30c2ca2a1118a084d60312f545/Dockerfile
+FROM vibioh/http
+
+COPY dist/ /www/

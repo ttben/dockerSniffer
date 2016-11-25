@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/LucioFranco/DonaldGMiller/67a62de7c694cd2025c4391f5699209229a791ba/Dockerfile
+FROM tutum/apache-php
+ENV ALLOW_OVERRIDE=true
+ADD . /app

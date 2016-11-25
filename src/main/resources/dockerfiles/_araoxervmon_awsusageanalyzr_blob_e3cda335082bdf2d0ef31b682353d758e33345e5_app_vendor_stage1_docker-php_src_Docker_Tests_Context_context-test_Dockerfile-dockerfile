@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/araoxervmon/awsusageanalyzr/e3cda335082bdf2d0ef31b682353d758e33345e5/app/vendor/stage1/docker-php/src/Docker/Tests/Context/context-test/Dockerfile
+FROM base
+
+RUN echo 'hello world'

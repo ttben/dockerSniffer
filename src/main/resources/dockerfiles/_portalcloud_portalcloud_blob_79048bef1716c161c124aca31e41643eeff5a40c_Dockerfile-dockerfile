@@ -1,0 +1,3 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/portalcloud/portalcloud/79048bef1716c161c124aca31e41643eeff5a40c/Dockerfile
+FROM golang:1.3-onbuild

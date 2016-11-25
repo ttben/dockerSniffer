@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/hortonworks/kubernetes-yarn/3dbbeeee1f8f344a983f53da98f5eed7cefbe9d1/examples/liveness/image/Dockerfile
+FROM scratch
+
+ADD server /server
+

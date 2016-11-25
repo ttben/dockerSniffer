@@ -1,0 +1,4 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/writeline/docker-nodejs-sample/61edfb43e573ebb3166358e89f5f524aa8688512/Dockerfile
+FROM		node:0.10-onbuild
+EXPOSE		5000

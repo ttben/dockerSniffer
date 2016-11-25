@@ -1,0 +1,4 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/ggotti/aem-dev-env/8f6a313cc85c588136009fa68cacace713cd0ce6/publisher/Dockerfile
+DOCKER-VERSION 1.0.1
+FROM ggotti/aem-publisher

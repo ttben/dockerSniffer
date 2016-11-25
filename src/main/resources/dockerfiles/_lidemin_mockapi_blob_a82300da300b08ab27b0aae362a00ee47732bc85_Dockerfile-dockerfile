@@ -1,0 +1,3 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/lidemin/mockapi/a82300da300b08ab27b0aae362a00ee47732bc85/Dockerfile
+FROM google/golang-runtime

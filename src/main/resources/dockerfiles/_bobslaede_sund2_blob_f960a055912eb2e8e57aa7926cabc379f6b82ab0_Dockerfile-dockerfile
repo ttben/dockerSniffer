@@ -1,0 +1,7 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/bobslaede/sund2/f960a055912eb2e8e57aa7926cabc379f6b82ab0/Dockerfile
+FROM dockerfile/nodejs
+
+ADD . /code
+WORKDIR /code
+

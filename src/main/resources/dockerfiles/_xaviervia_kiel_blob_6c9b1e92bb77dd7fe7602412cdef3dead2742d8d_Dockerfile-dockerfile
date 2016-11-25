@@ -1,0 +1,3 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/xaviervia/kiel/6c9b1e92bb77dd7fe7602412cdef3dead2742d8d/Dockerfile
+FROM iojs:onbuild

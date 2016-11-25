@@ -1,0 +1,4 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/uvwxy/dockerparty/4851e503e4196dba0156d333b4ad1b6bfd3788cf/server/Dockerfile
+FROM tutum/apache-php
+ADD /app/ /app

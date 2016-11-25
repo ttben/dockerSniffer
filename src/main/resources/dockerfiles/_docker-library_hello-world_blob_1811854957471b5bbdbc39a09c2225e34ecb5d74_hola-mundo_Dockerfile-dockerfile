@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/docker-library/hello-world/1811854957471b5bbdbc39a09c2225e34ecb5d74/hola-mundo/Dockerfile
+FROM scratch
+COPY hello /
+CMD ["/hello"]

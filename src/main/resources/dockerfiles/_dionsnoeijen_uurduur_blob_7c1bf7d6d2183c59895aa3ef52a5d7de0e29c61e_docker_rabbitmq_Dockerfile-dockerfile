@@ -1,0 +1,3 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/dionsnoeijen/uurduur/7c1bf7d6d2183c59895aa3ef52a5d7de0e29c61e/docker/rabbitmq/Dockerfile
+FROM rabbitmq:latest

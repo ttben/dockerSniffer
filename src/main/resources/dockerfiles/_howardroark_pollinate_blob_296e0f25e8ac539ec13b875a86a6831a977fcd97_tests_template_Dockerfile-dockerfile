@@ -1,0 +1,3 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/howardroark/pollinate/296e0f25e8ac539ec13b875a86a6831a977fcd97/tests/template/Dockerfile
+FROM {{ container }}

@@ -1,0 +1,3 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/ruby/openssl/4eda40878fc42ac5bad6dd7b1ebc8f0eac796b94/Dockerfile
+FROM zzak/ruby-openssl-docker:2.0

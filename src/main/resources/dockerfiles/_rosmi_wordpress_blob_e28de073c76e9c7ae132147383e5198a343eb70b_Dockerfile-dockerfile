@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/rosmi/wordpress/e28de073c76e9c7ae132147383e5198a343eb70b/Dockerfile
+FROM orchardup/php5
+ADD . /code
+

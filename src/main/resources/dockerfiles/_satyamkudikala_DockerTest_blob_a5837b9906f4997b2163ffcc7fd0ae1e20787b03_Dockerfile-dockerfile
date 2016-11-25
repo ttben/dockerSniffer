@@ -1,0 +1,3 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/satyamkudikala/DockerTest/a5837b9906f4997b2163ffcc7fd0ae1e20787b03/Dockerfile
+FROM ubuntu

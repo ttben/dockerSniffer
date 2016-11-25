@@ -1,0 +1,4 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/Softhouse/pretty-imp/4ed4cc36d1f84ef95baba89da842e4049c780856/Dockerfile
+FROM golang:onbuild
+EXPOSE 3000

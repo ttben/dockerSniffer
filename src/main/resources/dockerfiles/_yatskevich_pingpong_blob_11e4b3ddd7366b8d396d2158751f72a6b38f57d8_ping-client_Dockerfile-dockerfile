@@ -1,0 +1,4 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/yatskevich/pingpong/11e4b3ddd7366b8d396d2158751f72a6b38f57d8/ping-client/Dockerfile
+FROM golang:onbuild
+EXPOSE 8888

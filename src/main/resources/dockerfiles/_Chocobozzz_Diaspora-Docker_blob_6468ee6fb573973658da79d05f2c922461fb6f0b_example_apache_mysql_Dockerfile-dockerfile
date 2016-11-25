@@ -1,0 +1,3 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/Chocobozzz/Diaspora-Docker/6468ee6fb573973658da79d05f2c922461fb6f0b/example/apache_mysql/Dockerfile
+FROM chocobozzz/diaspora-docker:with_apache_mysql

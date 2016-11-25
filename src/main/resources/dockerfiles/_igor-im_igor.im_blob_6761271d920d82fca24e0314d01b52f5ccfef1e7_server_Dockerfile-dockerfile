@@ -1,0 +1,4 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/igor-im/igor.im/6761271d920d82fca24e0314d01b52f5ccfef1e7/server/Dockerfile
+FROM node:6-onbuild
+EXPOSE 3001

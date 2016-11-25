@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/ReadyTalk/squirrel-server-go/e2d2726ec720df239e085e4ab80140ed9a2a7644/Dockerfile
+FROM golang:1.6.1-onbuild
+
+EXPOSE 3000

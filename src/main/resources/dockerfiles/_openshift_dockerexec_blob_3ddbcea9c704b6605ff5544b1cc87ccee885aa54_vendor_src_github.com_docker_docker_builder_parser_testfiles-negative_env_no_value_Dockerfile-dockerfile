@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/openshift/dockerexec/3ddbcea9c704b6605ff5544b1cc87ccee885aa54/vendor/src/github.com/docker/docker/builder/parser/testfiles-negative/env_no_value/Dockerfile
+FROM busybox
+
+ENV PATH

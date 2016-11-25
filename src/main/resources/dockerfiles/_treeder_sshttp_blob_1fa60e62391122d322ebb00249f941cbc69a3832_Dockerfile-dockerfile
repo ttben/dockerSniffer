@@ -1,0 +1,7 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/treeder/sshttp/1fa60e62391122d322ebb00249f941cbc69a3832/Dockerfile
+FROM iron/base
+
+ADD sshttp /sshttp/sshttp
+
+ENTRYPOINT ["/sshttp/sshttp"]

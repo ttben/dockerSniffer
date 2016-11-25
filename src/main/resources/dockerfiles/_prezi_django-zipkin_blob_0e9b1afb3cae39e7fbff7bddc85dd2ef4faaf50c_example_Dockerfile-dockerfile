@@ -1,0 +1,3 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/prezi/django-zipkin/0e9b1afb3cae39e7fbff7bddc85dd2ef4faaf50c/example/Dockerfile
+FROM django:python2-onbuild

@@ -1,0 +1,3 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/greyarch/chess-board/70cb0f6ba4d46e481681307a3c63c5ff38503b6e/Dockerfile
+FROM meteorhacks/meteord

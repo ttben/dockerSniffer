@@ -1,0 +1,4 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/maddyonline/copyshields/e8f1208daf233e1dc14bc7ee666e2d02c48b4dc1/Dockerfile
+FROM golang:onbuild
+EXPOSE 8080

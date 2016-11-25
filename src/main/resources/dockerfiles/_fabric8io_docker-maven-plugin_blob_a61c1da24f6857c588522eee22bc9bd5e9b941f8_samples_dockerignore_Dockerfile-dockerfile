@@ -1,0 +1,3 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/fabric8io/docker-maven-plugin/a61c1da24f6857c588522eee22bc9bd5e9b941f8/samples/dockerignore/Dockerfile
+FROM busybox

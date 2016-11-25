@@ -1,0 +1,3 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/Rodeoclash/KimonosWebsite/0fc45594d35161766cc876791b0da59742ebace3/client/Dockerfile
+FROM iojs:2.0.0-onbuild

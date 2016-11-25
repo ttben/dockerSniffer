@@ -1,0 +1,4 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/setkeh/FusionPBX/eaef49df4ba1c9f478aeb1574c2ad203dfeef039/Dockerfile
+FROM ubuntu:14.04
+MAINTAINER

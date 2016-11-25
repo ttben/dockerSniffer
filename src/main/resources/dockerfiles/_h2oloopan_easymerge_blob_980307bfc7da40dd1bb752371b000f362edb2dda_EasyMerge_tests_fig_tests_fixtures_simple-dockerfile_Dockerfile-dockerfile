@@ -1,0 +1,4 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/h2oloopan/easymerge/980307bfc7da40dd1bb752371b000f362edb2dda/EasyMerge/tests/fig/tests/fixtures/simple-dockerfile/Dockerfile
+FROM ubuntu
+CMD echo "success"

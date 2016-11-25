@@ -1,0 +1,3 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/patniharshit/forumanythingai/27c30d5accefe466ae0b38b804976ab1473213af/Dockerfile
+FROM abernix/meteord:onbuild

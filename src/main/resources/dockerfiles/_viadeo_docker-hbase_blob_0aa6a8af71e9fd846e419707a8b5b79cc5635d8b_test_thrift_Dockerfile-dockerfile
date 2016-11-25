@@ -1,0 +1,3 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/viadeo/docker-hbase/0aa6a8af71e9fd846e419707a8b5b79cc5635d8b/test/thrift/Dockerfile
+FROM google/python-runtime

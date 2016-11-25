@@ -1,0 +1,3 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/gesellix/docker-client/d149422813cddc725d5b9d24b1574bc6788ac971/client/src/test/resources/de/gesellix/docker/client/build/build_with_unknown_base_image/Dockerfile
+FROM localhost:5000/missing/image

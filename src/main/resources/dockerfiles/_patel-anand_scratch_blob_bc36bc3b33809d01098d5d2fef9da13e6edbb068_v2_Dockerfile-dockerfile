@@ -1,0 +1,4 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/patel-anand/scratch/bc36bc3b33809d01098d5d2fef9da13e6edbb068/v2/Dockerfile
+FROM scratch
+ENV project="v2"

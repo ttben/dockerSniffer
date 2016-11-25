@@ -1,0 +1,4 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/sjoakley/spot-instance-tutorial/970f6f4dbee1d9ef161b4342360086a5cf433686/docker/nginx/Dockerfile
+FROM nginx
+COPY www /usr/share/nginx/html

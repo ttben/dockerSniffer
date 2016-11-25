@@ -1,0 +1,3 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/kimh/baleen-poc/f3f6901f4b2fb817eaec5edd9344f132229c6cf0/Dockerfile
+from ubuntu

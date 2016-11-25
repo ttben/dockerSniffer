@@ -1,0 +1,4 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/radial/wheel-coreos-pxe/1aa0b7fcb70dd73bc1c6320ec04e576b17882363/hub/Dockerfile
+FROM            radial/hub-base:latest
+MAINTAINER      radial@brianclements.net

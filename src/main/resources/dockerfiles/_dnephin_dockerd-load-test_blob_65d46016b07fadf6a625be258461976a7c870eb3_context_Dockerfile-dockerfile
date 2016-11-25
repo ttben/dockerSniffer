@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/dnephin/dockerd-load-test/65d46016b07fadf6a625be258461976a7c870eb3/context/Dockerfile
+
+FROM    busybox:latest
+ADD     . /data
+CMD     echo

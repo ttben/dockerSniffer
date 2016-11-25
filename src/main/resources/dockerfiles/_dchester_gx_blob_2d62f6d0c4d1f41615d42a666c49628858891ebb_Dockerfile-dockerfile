@@ -1,0 +1,3 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/dchester/gx/2d62f6d0c4d1f41615d42a666c49628858891ebb/Dockerfile
+FROM node:0.11-onbuild

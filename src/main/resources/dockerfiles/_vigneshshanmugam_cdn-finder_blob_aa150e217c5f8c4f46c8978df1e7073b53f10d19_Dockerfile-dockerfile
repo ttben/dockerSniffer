@@ -1,0 +1,4 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/vigneshshanmugam/cdn-finder/aa150e217c5f8c4f46c8978df1e7073b53f10d19/Dockerfile
+FROM iojs:onbuild
+expose 3000

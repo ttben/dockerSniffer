@@ -1,0 +1,4 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/salimane/salimane.github.io/98f85d43d6429c7b63af1dc85f9182104551503c/Dockerfile
+FROM nginx
+VOLUME /usr/share/nginx/html

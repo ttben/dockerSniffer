@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/sidzan/DockerCode/3c32db45d28686cd29879ab65b640bf2724ad4d4/docker-master/builder/parser/testfiles-negative/env_no_value/Dockerfile
+FROM busybox
+
+ENV PATH

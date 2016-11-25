@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/shykes/docker-dev/3d74a5f4d3f1bf947d34bfe2ff328ac32cdcca80/github/docker/master/builder/parser/testfiles-negative/env_equals_env/Dockerfile
+FROM busybox
+
+ENV PATH=PATH

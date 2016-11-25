@@ -1,0 +1,3 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/conjurinc/sdf-gen/74dcc1113ddfc25bb9932e6951cb0bb3c267bdd2/examples/listy/webapp/gatekeeper/Dockerfile
+FROM conjurinc/openresty 

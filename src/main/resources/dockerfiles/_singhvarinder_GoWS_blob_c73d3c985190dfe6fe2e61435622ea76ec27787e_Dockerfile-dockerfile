@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/singhvarinder/GoWS/c73d3c985190dfe6fe2e61435622ea76ec27787e/Dockerfile
+FROM scratch
+ADD bin/helloworld /helloworld
+CMD ["/helloworld"]

@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/amjibaly/submain/dcb0cf731df6453668428af62431919186342f60/Dockerfile
+FROM ubuntu:14.04
+
+COPY . /owp

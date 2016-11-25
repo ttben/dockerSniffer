@@ -1,0 +1,4 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/aidanhs/docker-chmod/77b694ed9185a95842e868d7a3d4c935012e0e4d/Dockerfile
+FROM scratch
+COPY chmod /

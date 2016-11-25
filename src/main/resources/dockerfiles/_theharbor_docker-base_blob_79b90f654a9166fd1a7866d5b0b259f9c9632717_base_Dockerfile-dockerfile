@@ -1,0 +1,4 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/theharbor/docker-base/79b90f654a9166fd1a7866d5b0b259f9c9632717/base/Dockerfile
+FROM zoni/ubuntu:latest
+MAINTAINER Nick Groenen

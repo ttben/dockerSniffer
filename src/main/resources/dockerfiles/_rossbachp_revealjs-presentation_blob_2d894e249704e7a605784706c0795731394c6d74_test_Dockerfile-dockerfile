@@ -1,0 +1,3 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/rossbachp/revealjs-presentation/2d894e249704e7a605784706c0795731394c6d74/test/Dockerfile
+FROM rossbachp/presentation

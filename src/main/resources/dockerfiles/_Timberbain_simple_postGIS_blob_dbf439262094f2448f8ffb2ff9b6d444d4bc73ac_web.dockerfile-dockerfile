@@ -1,0 +1,3 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/Timberbain/simple_postGIS/dbf439262094f2448f8ffb2ff9b6d444d4bc73ac/web.dockerfile
+FROM nginx

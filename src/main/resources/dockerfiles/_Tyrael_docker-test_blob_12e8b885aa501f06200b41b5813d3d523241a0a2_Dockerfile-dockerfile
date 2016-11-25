@@ -1,0 +1,4 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/Tyrael/docker-test/12e8b885aa501f06200b41b5813d3d523241a0a2/Dockerfile
+FROM busybox
+CMD echo "Hello World!!"

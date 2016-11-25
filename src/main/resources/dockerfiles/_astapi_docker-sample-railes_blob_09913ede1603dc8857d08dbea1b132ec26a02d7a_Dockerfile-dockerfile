@@ -1,0 +1,3 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/astapi/docker-sample-railes/09913ede1603dc8857d08dbea1b132ec26a02d7a/Dockerfile
+FROM rails:onbuild

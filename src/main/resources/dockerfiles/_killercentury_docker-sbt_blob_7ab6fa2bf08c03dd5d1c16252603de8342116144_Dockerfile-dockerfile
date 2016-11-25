@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/killercentury/docker-sbt/7ab6fa2bf08c03dd5d1c16252603de8342116144/Dockerfile
+FROM killercentury/sbt:launcher
+
+RUN sbt about

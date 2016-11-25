@@ -1,0 +1,4 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/ahmetalpbalkan/goodbye/f36f53102141bf9fdd7108cec07481f238334c49/Dockerfile
+FROM python:2.7-onbuild
+ENTRYPOINT ["python", "-u", "goodbye.py"]

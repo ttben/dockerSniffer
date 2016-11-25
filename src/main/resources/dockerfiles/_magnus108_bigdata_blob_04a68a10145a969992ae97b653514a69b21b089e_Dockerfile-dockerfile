@@ -1,0 +1,4 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/magnus108/bigdata/04a68a10145a969992ae97b653514a69b21b089e/Dockerfile
+FROM neo4j:latest
+ADD ./import import

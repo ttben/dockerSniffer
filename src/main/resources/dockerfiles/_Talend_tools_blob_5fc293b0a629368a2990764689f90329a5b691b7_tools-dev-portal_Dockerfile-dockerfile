@@ -1,0 +1,4 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/Talend/tools/5fc293b0a629368a2990764689f90329a5b691b7/tools-dev-portal/Dockerfile
+FROM nginx:alpine
+COPY slate/build /usr/share/nginx/html

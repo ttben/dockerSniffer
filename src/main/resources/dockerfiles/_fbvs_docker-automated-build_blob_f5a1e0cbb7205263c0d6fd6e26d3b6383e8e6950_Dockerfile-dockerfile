@@ -1,0 +1,8 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/fbvs/docker-automated-build/f5a1e0cbb7205263c0d6fd6e26d3b6383e8e6950/Dockerfile
+FROM busybox
+
+RUN sleep 60
+
+
+

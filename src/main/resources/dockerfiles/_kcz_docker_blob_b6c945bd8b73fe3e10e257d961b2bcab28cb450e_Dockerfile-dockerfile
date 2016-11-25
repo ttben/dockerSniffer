@@ -1,0 +1,4 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/kcz/docker/b6c945bd8b73fe3e10e257d961b2bcab28cb450e/Dockerfile
+FROM xzkcz/open-resty
+RUN /etc/init.d/nginx start

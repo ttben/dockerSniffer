@@ -1,0 +1,3 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/sczizzo/Archive/36f66417e46dda94f6bb49316a9e81a1912c9dcd/smort/Dockerfile
+FROM rails:onbuild

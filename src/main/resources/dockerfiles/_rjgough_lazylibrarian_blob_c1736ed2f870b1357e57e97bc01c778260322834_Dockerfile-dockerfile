@@ -1,0 +1,4 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/rjgough/lazylibrarian/c1736ed2f870b1357e57e97bc01c778260322834/Dockerfile
+FROM ubuntu:14.04
+MAINTAINER blackfox

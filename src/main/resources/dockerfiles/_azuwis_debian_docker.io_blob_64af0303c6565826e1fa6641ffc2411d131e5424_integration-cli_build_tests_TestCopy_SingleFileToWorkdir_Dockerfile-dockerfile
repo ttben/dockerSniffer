@@ -1,0 +1,4 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/azuwis/debian_docker.io/64af0303c6565826e1fa6641ffc2411d131e5424/integration-cli/build_tests/TestCopy/SingleFileToWorkdir/Dockerfile
+FROM busybox
+COPY test_file .

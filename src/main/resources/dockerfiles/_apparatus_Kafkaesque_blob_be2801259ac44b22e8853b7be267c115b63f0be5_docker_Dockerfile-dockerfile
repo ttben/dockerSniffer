@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/apparatus/Kafkaesque/be2801259ac44b22e8853b7be267c115b63f0be5/docker/Dockerfile
+FROM spotify/kafka
+
+EXPOSE 9092

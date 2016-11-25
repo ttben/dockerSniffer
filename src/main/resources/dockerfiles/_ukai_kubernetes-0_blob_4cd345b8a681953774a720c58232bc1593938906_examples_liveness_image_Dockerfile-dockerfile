@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/ukai/kubernetes-0/4cd345b8a681953774a720c58232bc1593938906/examples/liveness/image/Dockerfile
+FROM scratch
+
+ADD server /server
+

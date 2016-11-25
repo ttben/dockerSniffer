@@ -1,0 +1,3 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/rgardler/AzureDevTestDeploy/4cf23b2887394eb38305041840ef9b25e94b98ef/demo/demo120_docker_compose/Dockerfile
+FROM rgardler/revealjs

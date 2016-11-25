@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/dustinlacewell/highland_test/266c8cc479624d17dbe09b44a89e616ec17bc435/stuck/Dockerfile
+FROM busybox
+ADD stuck /stuck
+CMD ["/stuck"]

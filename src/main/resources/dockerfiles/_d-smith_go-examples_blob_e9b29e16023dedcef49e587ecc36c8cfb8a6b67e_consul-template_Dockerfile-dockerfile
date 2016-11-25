@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/d-smith/go-examples/e9b29e16023dedcef49e587ecc36c8cfb8a6b67e/consul-template/Dockerfile
+FROM alpine
+
+ADD service /
+CMD ["/service"]

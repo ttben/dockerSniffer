@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/yanana/docker-nginx-php/8dcaf78bff61bb77787170ecbbe0840d7b3d1e85/Dockerfile
+FROM nginx
+
+COPY conf /etc/nginx

@@ -1,0 +1,3 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/lolotp/locked.danang/2e63013b145a9d4463578a3e5c4cc9de57c7b55d/booking/database/Dockerfile
+FROM postgres:9.4

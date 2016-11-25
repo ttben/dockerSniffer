@@ -1,0 +1,8 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/CrossRef/cayenne/605b539654a839eb7c9510774d4c33685ffad106/Dockerfile
+FROM clojure
+
+COPY . /app
+WORKDIR /app
+
+RUN lein deps

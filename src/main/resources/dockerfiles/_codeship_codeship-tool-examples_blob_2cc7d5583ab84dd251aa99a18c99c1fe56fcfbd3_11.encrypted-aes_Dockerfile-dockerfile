@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/codeship/codeship-tool-examples/2cc7d5583ab84dd251aa99a18c99c1fe56fcfbd3/11.encrypted-aes/Dockerfile
+FROM busybox
+
+ADD check_for_foo.sh .

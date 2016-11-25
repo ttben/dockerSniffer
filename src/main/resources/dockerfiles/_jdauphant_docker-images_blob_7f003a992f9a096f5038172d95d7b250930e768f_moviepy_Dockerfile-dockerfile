@@ -1,0 +1,7 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/jdauphant/docker-images/7f003a992f9a096f5038172d95d7b250930e768f/moviepy/Dockerfile
+FROM python:2.7
+MAINTAINER Julien DAUPHANT
+
+RUN pip install moviepy
+RUN python -c "from moviepy.editor import *"

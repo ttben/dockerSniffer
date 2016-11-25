@@ -1,0 +1,4 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/mauri/docker-demo/4685a7df9872d79bc367936bc225e81762b4a3b8/demo-cats/Dockerfile
+FROM httpd:2.4
+COPY / /usr/local/apache2/htdocs/

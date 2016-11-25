@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/dudymas/docker-consul-template/63da3ca765b9dce088d1d3e1f17b0f72e818bea8/templates/Dockerfile
+FROM busybox:latest
+
+ADD . /data/templates

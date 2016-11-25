@@ -1,0 +1,4 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/imjacobclark/devnews-core/97b9419080b0945861fcff9abe3343a10e4f4e2b/Dockerfile
+FROM node:0.10-onbuild
+EXPOSE 3000

@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/kgrvamsi/vectorstack/11926654b1ac7b163ddc82c254888065694f0d7c/images/nodejs/Dockerfile
+FROM dockerfile/nodejs
+
+MAINTAINER K.G.R Vamsi

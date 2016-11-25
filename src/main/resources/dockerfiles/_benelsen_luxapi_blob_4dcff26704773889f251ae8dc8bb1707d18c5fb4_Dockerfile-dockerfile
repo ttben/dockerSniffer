@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/benelsen/luxapi/4dcff26704773889f251ae8dc8bb1707d18c5fb4/Dockerfile
+FROM node:5-onbuild
+
+EXPOSE 3000

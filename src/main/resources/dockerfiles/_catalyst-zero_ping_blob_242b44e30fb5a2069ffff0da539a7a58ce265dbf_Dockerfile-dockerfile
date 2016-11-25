@@ -1,0 +1,9 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/catalyst-zero/ping/242b44e30fb5a2069ffff0da539a7a58ce265dbf/Dockerfile
+FROM flynn/busybox
+
+ADD ./ping /
+
+EXPOSE 80
+ENTRYPOINT ["/ping"]
+

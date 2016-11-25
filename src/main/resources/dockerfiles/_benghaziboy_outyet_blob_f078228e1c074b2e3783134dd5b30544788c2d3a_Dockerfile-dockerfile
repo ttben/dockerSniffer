@@ -1,0 +1,4 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/benghaziboy/outyet/f078228e1c074b2e3783134dd5b30544788c2d3a/Dockerfile
+FROM golang:onbuild
+EXPOSE 8080

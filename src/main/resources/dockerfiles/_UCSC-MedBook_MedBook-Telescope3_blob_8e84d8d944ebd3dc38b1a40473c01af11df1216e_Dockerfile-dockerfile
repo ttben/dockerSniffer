@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/UCSC-MedBook/MedBook-Telescope3/8e84d8d944ebd3dc38b1a40473c01af11df1216e/Dockerfile
+FROM medbook/meteor-base:v0.7
+MAINTAINER Mike Risse
+

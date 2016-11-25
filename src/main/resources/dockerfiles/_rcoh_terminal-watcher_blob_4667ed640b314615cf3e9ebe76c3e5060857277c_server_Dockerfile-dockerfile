@@ -1,0 +1,4 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/rcoh/terminal-watcher/4667ed640b314615cf3e9ebe76c3e5060857277c/server/Dockerfile
+FROM golang:onbuild
+EXPOSE 8080

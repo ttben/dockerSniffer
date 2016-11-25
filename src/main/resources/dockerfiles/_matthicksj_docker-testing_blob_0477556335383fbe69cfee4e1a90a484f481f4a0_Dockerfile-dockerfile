@@ -1,0 +1,4 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/matthicksj/docker-testing/0477556335383fbe69cfee4e1a90a484f481f4a0/Dockerfile
+FROM busybox:latest
+CMD echo "success"

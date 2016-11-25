@@ -1,0 +1,3 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/huangsam/ciscochef/304a87cd406ecbb6bf74b2507afddd4f09b1985d/Dockerfile
+FROM rails:onbuild

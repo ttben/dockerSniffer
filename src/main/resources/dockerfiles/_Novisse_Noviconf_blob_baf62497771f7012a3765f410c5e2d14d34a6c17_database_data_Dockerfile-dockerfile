@@ -1,0 +1,3 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/Novisse/Noviconf/baf62497771f7012a3765f410c5e2d14d34a6c17/database/data/Dockerfile
+FROM busybox

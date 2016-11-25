@@ -1,0 +1,7 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/jdrivas/docker-workshop/fe1c6af2be75009f7375bda193654243c9732b8e/Reverse/Dockerfile
+FROM ubuntu
+MAINTAINER JDR
+
+CMD rev
+

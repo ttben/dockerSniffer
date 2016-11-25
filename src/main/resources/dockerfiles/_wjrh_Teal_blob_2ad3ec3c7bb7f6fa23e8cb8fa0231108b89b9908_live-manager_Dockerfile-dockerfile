@@ -1,0 +1,4 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/wjrh/Teal/2ad3ec3c7bb7f6fa23e8cb8fa0231108b89b9908/live-manager/Dockerfile
+FROM golang:onbuild
+EXPOSE 8080

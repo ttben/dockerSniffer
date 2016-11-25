@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/jsantiago/docker-hub-test/abc38b18ff0e7a932d658831fcb1c53ba95cc899/Dockerfile
+FROM busybox
+
+CMD ["ls"]

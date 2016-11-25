@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/cloudspace/microservice-utm-stripper-go/ce48a3d45a651e9f230d7b4d62800df4090dbe3b/Dockerfile
+FROM scratch
+ADD ./stripper /stripper
+ENTRYPOINT ["/stripper"]

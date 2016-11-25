@@ -1,0 +1,3 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/heroku/umpire/a6b19814d88b58ece3ef8cd77271590abf9c48e7/Dockerfile
+FROM jmervine/herokudev-ruby:1.9.3

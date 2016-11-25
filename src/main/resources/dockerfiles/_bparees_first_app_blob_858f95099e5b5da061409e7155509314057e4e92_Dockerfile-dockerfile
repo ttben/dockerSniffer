@@ -1,0 +1,4 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/bparees/first_app/858f95099e5b5da061409e7155509314057e4e92/Dockerfile
+FROM centos:centos7
+

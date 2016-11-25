@@ -1,0 +1,3 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/inoccu/haruka_rails4/326441114395ac96702f78b0416e8478473cbbe6/Dockerfile
+FROM rails:onbuild

@@ -1,0 +1,4 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/evizitei/Hello-Node/b7ab21ca0292e66974099e2bcf89d3f879960e64/Dockerfile
+FROM node:0.10-onbuild
+EXPOSE 8080

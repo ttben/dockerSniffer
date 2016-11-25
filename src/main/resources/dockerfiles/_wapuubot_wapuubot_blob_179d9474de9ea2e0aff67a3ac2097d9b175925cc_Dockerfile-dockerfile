@@ -1,0 +1,3 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/wapuubot/wapuubot/179d9474de9ea2e0aff67a3ac2097d9b175925cc/Dockerfile
+FROM node:onbuild

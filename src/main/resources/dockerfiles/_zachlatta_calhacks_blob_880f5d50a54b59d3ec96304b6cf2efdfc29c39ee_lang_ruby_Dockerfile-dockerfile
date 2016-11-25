@@ -1,0 +1,4 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/zachlatta/calhacks/880f5d50a54b59d3ec96304b6cf2efdfc29c39ee/lang/ruby/Dockerfile
+FROM ruby:2.1.3
+ENTRYPOINT ["ruby"]

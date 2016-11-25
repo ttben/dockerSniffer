@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/polinchw/glassfish-docker/7c0394ccdc1a654afb531e2bf33d85f137bca60a/glassfish-docker/Dockerfile
+FROM codenvy/jdk7_glassfish4
+
+EXPOSE 4848

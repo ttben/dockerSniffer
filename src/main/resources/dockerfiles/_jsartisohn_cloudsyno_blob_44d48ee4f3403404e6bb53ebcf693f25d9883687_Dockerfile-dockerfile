@@ -1,0 +1,3 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/jsartisohn/cloudsyno/44d48ee4f3403404e6bb53ebcf693f25d9883687/Dockerfile
+FROM ulexus/meteor

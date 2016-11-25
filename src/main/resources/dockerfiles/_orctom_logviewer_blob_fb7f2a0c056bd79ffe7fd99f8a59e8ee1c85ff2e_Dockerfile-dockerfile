@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/orctom/logviewer/fb7f2a0c056bd79ffe7fd99f8a59e8ee1c85ff2e/Dockerfile
+FROM orctom/node:4.3.1
+
+EXPOSE 3000

@@ -1,0 +1,3 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/RealGeeks/redis-llen-statsd/1b6f19036419cc83bec0e888037d213ce099a843/Dockerfile
+FROM node:onbuild

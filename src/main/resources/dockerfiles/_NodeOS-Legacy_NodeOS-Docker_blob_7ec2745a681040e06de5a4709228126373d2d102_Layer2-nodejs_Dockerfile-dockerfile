@@ -1,0 +1,7 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/NodeOS-Legacy/NodeOS-Docker/7ec2745a681040e06de5a4709228126373d2d102/Layer2-nodejs/Dockerfile
+FROM layer1
+
+MAINTAINER Jacob Groundwater <groundwater@gmail.com>
+
+ADD ROOT/ /

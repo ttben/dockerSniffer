@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/hortonworks/kubernetes-yarn/3dbbeeee1f8f344a983f53da98f5eed7cefbe9d1/build/hello-kubernetes/Dockerfile
+FROM scratch
+ADD hello /
+EXPOSE 8080
+ENTRYPOINT ["/hello"]

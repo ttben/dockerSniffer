@@ -1,0 +1,3 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/mszalbach/simple-chat/66907bafa6da2987552a029816baa11fcbedf646/docker-installer/src/main/docker/mongodb/Dockerfile
+FROM mongo:${docker-mongodb.version}

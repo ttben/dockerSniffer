@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/jolicode/JoliCi/c042812c6ccf2c61c665bc0722bd8d25dada2715/tests/Joli/JoliCi/BuildStrategy/fixtures/jolici/project1/.jolici/test/Dockerfile
+FROM ubuntu
+
+CMD echo 'lol'

@@ -1,0 +1,4 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/rstropek/DockerVS2015Intro/8ff1500ea344fd968089c23e8e6087d4ced2a64b/dockerDemos/02-compose/dependentService/Dockerfile
+FROM node:5.5-onbuild
+EXPOSE 1337

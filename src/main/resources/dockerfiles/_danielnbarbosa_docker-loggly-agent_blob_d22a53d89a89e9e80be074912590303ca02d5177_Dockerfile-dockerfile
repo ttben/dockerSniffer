@@ -1,0 +1,3 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/danielnbarbosa/docker-loggly-agent/d22a53d89a89e9e80be074912590303ca02d5177/Dockerfile
+FROM sendgridlabs/loggly-docker

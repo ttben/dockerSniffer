@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/shouldbee/docker-fabric-boto/5ce31cc3ec311881aa64ca0cd7d1890940c50889/Dockerfile
+FROM shouldbee/fabric
+
+RUN pip install boto

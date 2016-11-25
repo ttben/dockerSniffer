@@ -1,0 +1,4 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/andrewshawcare/render-tree/cd84d7a13af6afddbd341514dae6c48c3c5e0b14/Dockerfile
+FROM nginx
+COPY . /usr/share/nginx/html

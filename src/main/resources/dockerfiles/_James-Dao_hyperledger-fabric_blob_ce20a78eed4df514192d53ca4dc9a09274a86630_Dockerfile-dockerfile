@@ -1,0 +1,3 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/James-Dao/hyperledger-fabric/ce20a78eed4df514192d53ca4dc9a09274a86630/Dockerfile
+FROM yeasy/hyperledger-fabric:0.6-dp

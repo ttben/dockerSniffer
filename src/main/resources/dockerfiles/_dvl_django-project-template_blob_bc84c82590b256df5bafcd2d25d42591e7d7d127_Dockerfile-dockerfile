@@ -1,0 +1,3 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/dvl/django-project-template/bc84c82590b256df5bafcd2d25d42591e7d7d127/Dockerfile
+FROM python:2-onbuild

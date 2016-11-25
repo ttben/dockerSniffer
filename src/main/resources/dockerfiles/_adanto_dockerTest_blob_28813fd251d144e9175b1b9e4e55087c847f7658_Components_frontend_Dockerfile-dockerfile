@@ -1,0 +1,4 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/adanto/dockerTest/28813fd251d144e9175b1b9e4e55087c847f7658/Components/frontend/Dockerfile
+FROM tsir/baselab3
+

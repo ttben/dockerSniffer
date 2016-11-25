@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/CenturyLinkLabs/draycluster/f00dd768b0b25bacf543eac2a1768b9c7e51d496/kube/Dockerfile
+FROM scratch
+ADD config.json ./
+ADD kube ./
+CMD ["./kube"]

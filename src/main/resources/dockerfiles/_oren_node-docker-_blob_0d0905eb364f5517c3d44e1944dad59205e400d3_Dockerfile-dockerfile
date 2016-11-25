@@ -1,0 +1,4 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/oren/node-docker-/0d0905eb364f5517c3d44e1944dad59205e400d3/Dockerfile
+FROM node:0.10-onbuild
+EXPOSE 3000

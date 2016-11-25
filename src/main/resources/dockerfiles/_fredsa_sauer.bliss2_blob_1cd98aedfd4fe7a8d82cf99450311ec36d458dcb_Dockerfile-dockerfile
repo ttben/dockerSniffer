@@ -1,0 +1,4 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/fredsa/sauer.bliss2/1cd98aedfd4fe7a8d82cf99450311ec36d458dcb/Dockerfile
+# TODO: remove me
+FROM google/appengine-python27

@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/multikatt/api/05c0f38d73edb701205a100a292ab495ff1164ba/Dockerfile
+FROM ubuntu
+ADD ./api /
+CMD ["./api"]

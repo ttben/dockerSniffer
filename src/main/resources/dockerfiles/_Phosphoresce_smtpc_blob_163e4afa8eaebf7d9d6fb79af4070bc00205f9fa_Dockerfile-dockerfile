@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/Phosphoresce/smtpc/163e4afa8eaebf7d9d6fb79af4070bc00205f9fa/Dockerfile
+FROM scratch
+COPY /smtpc /smtpc
+CMD ["/smtpc"]

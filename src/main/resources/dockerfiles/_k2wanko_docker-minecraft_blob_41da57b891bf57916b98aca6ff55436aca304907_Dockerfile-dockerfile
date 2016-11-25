@@ -1,0 +1,3 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/k2wanko/docker-minecraft/41da57b891bf57916b98aca6ff55436aca304907/Dockerfile
+FROM k2wanko/minecraft:1.8

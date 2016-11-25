@@ -1,0 +1,3 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/alexec/docker-maven-plugin/ca37839c0cf638b1c4b92de0ab04a865873d343e/src/it/build-test-it/src/main/docker/rubbish/Dockerfile
+FROM java:7

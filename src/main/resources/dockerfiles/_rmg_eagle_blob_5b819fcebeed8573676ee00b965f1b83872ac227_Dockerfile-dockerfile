@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/rmg/eagle/5b819fcebeed8573676ee00b965f1b83872ac227/Dockerfile
+FROM golang:onbuild
+ENV PORT 8000
+EXPOSE 8000

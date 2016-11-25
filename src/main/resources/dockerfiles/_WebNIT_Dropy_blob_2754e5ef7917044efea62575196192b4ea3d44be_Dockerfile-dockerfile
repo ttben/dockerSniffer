@@ -1,0 +1,3 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/WebNIT/Dropy/2754e5ef7917044efea62575196192b4ea3d44be/Dockerfile
+FROM rails:onbuild

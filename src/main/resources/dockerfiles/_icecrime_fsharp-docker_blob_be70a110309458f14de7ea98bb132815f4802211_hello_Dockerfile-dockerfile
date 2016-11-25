@@ -1,0 +1,4 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/icecrime/fsharp-docker/be70a110309458f14de7ea98bb132815f4802211/hello/Dockerfile
+FROM icecrime/fsharp-runtime
+

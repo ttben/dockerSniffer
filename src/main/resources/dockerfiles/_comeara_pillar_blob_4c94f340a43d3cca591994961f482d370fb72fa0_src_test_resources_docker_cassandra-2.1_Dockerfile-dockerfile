@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/comeara/pillar/4c94f340a43d3cca591994961f482d370fb72fa0/src/test/resources/docker/cassandra-2.1/Dockerfile
+FROM cassandra:2.1
+
+ADD contents /

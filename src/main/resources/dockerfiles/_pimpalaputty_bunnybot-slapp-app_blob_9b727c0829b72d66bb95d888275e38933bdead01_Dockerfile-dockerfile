@@ -1,0 +1,3 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/pimpalaputty/bunnybot-slapp-app/9b727c0829b72d66bb95d888275e38933bdead01/Dockerfile
+FROM node:6.7-onbuild

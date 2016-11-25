@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/bodenr/cloudy-docker-kvm-bench/d89cc979c06541c3c02463b05e804d9a3ec712fe/docker/Dockerfile
+FROM tutum/mysql
+
+CMD ["mysqld"]

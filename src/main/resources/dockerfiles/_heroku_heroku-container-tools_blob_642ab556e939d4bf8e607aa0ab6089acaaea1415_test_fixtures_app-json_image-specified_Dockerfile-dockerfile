@@ -1,0 +1,3 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/heroku/heroku-container-tools/642ab556e939d4bf8e607aa0ab6089acaaea1415/test/fixtures/app-json/image-specified/Dockerfile
+FROM heroku/nodejs

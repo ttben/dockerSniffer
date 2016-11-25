@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/nacyot/docker-programming-languages/126959c8183d4499bc5b8c6d45479028cb2c1d59/java-oracle-1.7.0/Dockerfile
+FROM dockerfile/java
+
+WORKDIR /source

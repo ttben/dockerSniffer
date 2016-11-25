@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/kussj/docker-images/12734da4de54a94393e9a17b1e87485d9144d44a/ruby-linters/Dockerfile
+FROM ruby:2.3.1
+
+RUN gem install rubocop foodcritic

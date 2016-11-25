@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/odewahn/staticcell/eb33073b5100dbad0609a5a43e3be2b9d73aad8e/Dockerfile
+from ipython/scipystack
+
+WORKDIR /usr/src

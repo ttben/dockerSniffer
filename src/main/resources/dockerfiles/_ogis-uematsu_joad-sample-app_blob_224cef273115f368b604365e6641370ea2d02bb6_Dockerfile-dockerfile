@@ -1,0 +1,3 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/ogis-uematsu/joad-sample-app/224cef273115f368b604365e6641370ea2d02bb6/Dockerfile
+FROM joad/nginx

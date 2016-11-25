@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/conjurinc/api-ruby/a340aa0b55b33561b42e75827b8a33f3d2ea4583/Dockerfile
+FROM ruby:1.9.3
+
+RUN mkdir /src
+WORKDIR /src

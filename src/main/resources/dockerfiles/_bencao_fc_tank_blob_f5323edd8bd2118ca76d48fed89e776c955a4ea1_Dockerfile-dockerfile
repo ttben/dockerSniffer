@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/bencao/fc_tank/f5323edd8bd2118ca76d48fed89e776c955a4ea1/Dockerfile
+FROM nginx
+
+COPY . /usr/share/nginx/html

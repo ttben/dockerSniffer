@@ -1,0 +1,4 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/dceejay/nrbroker/ad637d8e4175940bf12a668e6a78987691999222/Dockerfile
+    FROM node:0.10-onbuild
+    EXPOSE 1883

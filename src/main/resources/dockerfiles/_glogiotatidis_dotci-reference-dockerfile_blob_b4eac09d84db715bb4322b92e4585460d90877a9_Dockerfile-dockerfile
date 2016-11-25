@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/glogiotatidis/dotci-reference-dockerfile/b4eac09d84db715bb4322b92e4585460d90877a9/Dockerfile
+FROM python:3
+
+ADD . /app
+WORKDIR /app

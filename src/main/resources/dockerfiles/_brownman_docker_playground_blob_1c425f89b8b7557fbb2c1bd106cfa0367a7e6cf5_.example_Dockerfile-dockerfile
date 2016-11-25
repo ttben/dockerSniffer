@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/brownman/docker_playground/1c425f89b8b7557fbb2c1bd106cfa0367a7e6cf5/.example/Dockerfile
+FROM ubuntu
+MAINTAINER brownman
+CMD env

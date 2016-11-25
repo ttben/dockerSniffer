@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/troy0820/expressworkshop/1f8b75259a4000c02b19663fb0a691364ad1d12e/Dockerfile
+FROM node:4-onbuild
+
+EXPOSE 3000

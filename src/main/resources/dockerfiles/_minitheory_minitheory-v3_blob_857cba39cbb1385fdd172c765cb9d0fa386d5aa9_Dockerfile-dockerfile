@@ -1,0 +1,4 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/minitheory/minitheory-v3/857cba39cbb1385fdd172c765cb9d0fa386d5aa9/Dockerfile
+FROM orchardup/php5
+ADD . /code

@@ -1,0 +1,3 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/CDE-UNIBE/qcat/eb62fc16851ec630e44def0409368a5542f787d4/stress_tests/Dockerfile
+FROM christianbladescb/locustio

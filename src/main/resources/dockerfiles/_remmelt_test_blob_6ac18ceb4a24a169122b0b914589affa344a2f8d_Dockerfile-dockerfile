@@ -1,0 +1,4 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/remmelt/test/6ac18ceb4a24a169122b0b914589affa344a2f8d/Dockerfile
+FROM scratch
+

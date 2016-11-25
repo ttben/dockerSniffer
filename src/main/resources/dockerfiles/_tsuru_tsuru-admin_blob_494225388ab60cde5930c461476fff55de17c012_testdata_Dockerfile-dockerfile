@@ -1,0 +1,4 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/tsuru/tsuru-admin/494225388ab60cde5930c461476fff55de17c012/testdata/Dockerfile
+FROM	tsuru/java
+RUN	true

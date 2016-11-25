@@ -1,0 +1,3 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/Anumodana/hello_go/29d65791834f0420ad66d6021fa9d89654819848/Dockerfile
+FROM golang:1.3-onbuild

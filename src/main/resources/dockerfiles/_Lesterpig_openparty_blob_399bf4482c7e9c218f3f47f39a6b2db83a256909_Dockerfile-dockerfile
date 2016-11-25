@@ -1,0 +1,4 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/Lesterpig/openparty/399bf4482c7e9c218f3f47f39a6b2db83a256909/Dockerfile
+FROM node:0.12-onbuild
+EXPOSE 3040

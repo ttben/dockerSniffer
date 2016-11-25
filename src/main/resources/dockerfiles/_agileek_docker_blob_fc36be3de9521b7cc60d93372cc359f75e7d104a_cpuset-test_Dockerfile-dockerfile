@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/agileek/docker/fc36be3de9521b7cc60d93372cc359f75e7d104a/cpuset-test/Dockerfile
+FROM scratch
+ADD cpuburn /
+CMD ["/cpuburn"]

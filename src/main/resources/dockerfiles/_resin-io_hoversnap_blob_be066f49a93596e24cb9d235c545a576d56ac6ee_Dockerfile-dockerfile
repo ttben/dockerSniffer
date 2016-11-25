@@ -1,0 +1,3 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/resin-io/hoversnap/be066f49a93596e24cb9d235c545a576d56ac6ee/Dockerfile
+FROM resin/rpi-nodejs

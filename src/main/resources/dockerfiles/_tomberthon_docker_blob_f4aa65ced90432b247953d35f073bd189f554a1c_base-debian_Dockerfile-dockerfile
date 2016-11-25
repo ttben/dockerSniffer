@@ -1,0 +1,3 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/tomberthon/docker/f4aa65ced90432b247953d35f073bd189f554a1c/base-debian/Dockerfile
+FROM debian:jessie

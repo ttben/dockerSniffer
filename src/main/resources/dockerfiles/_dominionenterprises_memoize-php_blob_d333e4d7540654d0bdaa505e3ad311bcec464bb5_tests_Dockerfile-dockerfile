@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/dominionenterprises/memoize-php/d333e4d7540654d0bdaa505e3ad311bcec464bb5/tests/Dockerfile
+FROM nubs/phpunit
+
+CMD ["./build.php"]

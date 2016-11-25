@@ -1,0 +1,3 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/jorotenev/flask_vagrant_docker/7f9b88a0c2d9ccad493b18b62b52b181fa251323/Dockerfile
+FROM python:3.5.1-onbuild

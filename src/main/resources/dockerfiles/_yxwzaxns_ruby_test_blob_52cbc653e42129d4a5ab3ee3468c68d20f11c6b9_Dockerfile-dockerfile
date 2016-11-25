@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/yxwzaxns/ruby_test/52cbc653e42129d4a5ab3ee3468c68d20f11c6b9/Dockerfile
+FROM ruby:1.9.3
+
+CMD ["ruby","hello.rb"]

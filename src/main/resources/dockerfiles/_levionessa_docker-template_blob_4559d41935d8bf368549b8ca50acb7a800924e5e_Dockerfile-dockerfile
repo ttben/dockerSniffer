@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/levionessa/docker-template/4559d41935d8bf368549b8ca50acb7a800924e5e/Dockerfile
+FROM buildpack-deps:jessie
+
+CMD ["/bin/bash"]

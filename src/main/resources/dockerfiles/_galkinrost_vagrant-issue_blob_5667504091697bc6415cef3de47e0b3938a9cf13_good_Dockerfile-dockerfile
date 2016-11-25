@@ -1,0 +1,3 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/galkinrost/vagrant-issue/5667504091697bc6415cef3de47e0b3938a9cf13/good/Dockerfile
+FROM postgres

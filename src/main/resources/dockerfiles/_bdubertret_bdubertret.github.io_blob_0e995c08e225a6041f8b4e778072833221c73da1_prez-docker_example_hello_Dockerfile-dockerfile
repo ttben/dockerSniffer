@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/bdubertret/bdubertret.github.io/0e995c08e225a6041f8b4e778072833221c73da1/prez-docker/example/hello/Dockerfile
+FROM ubuntu:precise
+
+CMD echo 'Hello, world!'

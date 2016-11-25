@@ -1,0 +1,3 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/ryanfitz/elasticauth-api/14b668219ac820da994af6f0e25dd5680843fab3/Dockerfile
+FROM iojs:onbuild

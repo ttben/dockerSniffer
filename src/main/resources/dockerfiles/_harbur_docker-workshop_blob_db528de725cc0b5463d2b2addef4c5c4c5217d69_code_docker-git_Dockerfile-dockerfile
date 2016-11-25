@@ -1,0 +1,4 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/harbur/docker-workshop/db528de725cc0b5463d2b2addef4c5c4c5217d69/code/docker-git/Dockerfile
+FROM alpine:3.3
+RUN apk --update add git

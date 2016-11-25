@@ -1,0 +1,3 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/jeffbr13/rinse-rss/cee66767c0186f93452e4bbeaad92089f0bfca77/Dockerfile
+FROM python:3-onbuild

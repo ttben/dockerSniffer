@@ -1,0 +1,4 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/Google-IO-Extended-Grand-Rapids/conference_webapp/e6f80f8d14e8ff0d420112b741c2a385b6bfa470/Dockerfile
+FROM nginx
+COPY /dist /usr/share/nginx/html

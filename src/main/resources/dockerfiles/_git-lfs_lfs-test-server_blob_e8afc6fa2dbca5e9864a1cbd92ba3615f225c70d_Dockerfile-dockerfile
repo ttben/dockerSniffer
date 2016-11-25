@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/git-lfs/lfs-test-server/e8afc6fa2dbca5e9864a1cbd92ba3615f225c70d/Dockerfile
+FROM golang:1.4-onbuild
+MAINTAINER GitHub, Inc.
+EXPOSE 8080

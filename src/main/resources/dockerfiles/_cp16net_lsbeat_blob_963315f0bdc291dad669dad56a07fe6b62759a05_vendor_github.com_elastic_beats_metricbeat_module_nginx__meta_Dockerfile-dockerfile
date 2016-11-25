@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/cp16net/lsbeat/963315f0bdc291dad669dad56a07fe6b62759a05/vendor/github.com/elastic/beats/metricbeat/module/nginx/_meta/Dockerfile
+FROM nginx:1.9
+
+COPY ./nginx.conf /etc/nginx/

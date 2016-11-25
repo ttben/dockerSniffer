@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/danmane/abalone/faded9ec3f436aa3ac93b4b41f2341436532eb02/go/cmd/abalone_example_ai/Dockerfile
+FROM golang:1.4-onbuild
+
+EXPOSE 3423

@@ -1,0 +1,4 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/wfdemo/docker-fly-ng/39440585cc55b0b9884920e9d7d12878d331e24a/Dockerfile
+FROM hasalex/fly-ng
+MAINTAINER Alexis Hassler <alexis@sewatech.org>

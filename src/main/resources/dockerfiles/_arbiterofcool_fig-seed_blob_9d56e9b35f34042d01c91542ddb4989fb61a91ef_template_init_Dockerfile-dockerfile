@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/arbiterofcool/fig-seed/9d56e9b35f34042d01c91542ddb4989fb61a91ef/template/init/Dockerfile
+FROM ubuntu:trusty
+
+ADD . /code
+WORKDIR /code

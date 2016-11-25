@@ -1,0 +1,4 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/sidewinder-team/sidewinder-server/8cb0d86d3db10a3726cf060b049606b196c2afcc/Dockerfile
+FROM golang:1.4-onbuild
+EXPOSE 8000

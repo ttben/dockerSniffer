@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/vmarmol/tools/bb3bcf510c87c2d5f563844d66bb673cab186d32/docker/true/Dockerfile
+FROM busybox
+
+ENTRYPOINT ["/bin/true"]

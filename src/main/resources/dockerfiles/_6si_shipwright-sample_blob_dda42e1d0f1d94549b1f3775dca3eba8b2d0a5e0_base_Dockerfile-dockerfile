@@ -1,0 +1,4 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/6si/shipwright-sample/dda42e1d0f1d94549b1f3775dca3eba8b2d0a5e0/base/Dockerfile
+FROM busybox
+ADD . /code

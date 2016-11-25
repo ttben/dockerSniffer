@@ -1,0 +1,3 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/da-funk/funky-cli/c8277c76e8f9a45c70757a7c7bf4014a6939c3c8/Dockerfile
+FROM hone/mruby-cli

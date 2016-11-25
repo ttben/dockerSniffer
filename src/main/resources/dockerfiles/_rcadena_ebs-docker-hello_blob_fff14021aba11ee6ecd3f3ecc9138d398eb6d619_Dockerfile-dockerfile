@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/rcadena/ebs-docker-hello/fff14021aba11ee6ecd3f3ecc9138d398eb6d619/Dockerfile
+FROM google/golang-runtime 
+EXPOSE 8080
+WORKDIR /gopath/src/app
+

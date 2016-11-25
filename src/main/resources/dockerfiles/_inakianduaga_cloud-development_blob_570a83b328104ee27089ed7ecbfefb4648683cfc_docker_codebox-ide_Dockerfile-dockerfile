@@ -1,0 +1,3 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/inakianduaga/cloud-development/570a83b328104ee27089ed7ecbfefb4648683cfc/docker/codebox-ide/Dockerfile
+from inakianduaga/docker-codeboxide:latest

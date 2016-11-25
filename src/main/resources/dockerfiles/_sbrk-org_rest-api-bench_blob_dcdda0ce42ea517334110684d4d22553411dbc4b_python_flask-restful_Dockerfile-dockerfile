@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/sbrk-org/rest-api-bench/dcdda0ce42ea517334110684d4d22553411dbc4b/python/flask-restful/Dockerfile
+FROM python:2-onbuild
+CMD python server.py
+EXPOSE 5000

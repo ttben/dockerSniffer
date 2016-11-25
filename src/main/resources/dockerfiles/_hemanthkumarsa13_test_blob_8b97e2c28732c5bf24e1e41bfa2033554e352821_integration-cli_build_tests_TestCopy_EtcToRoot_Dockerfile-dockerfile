@@ -1,0 +1,4 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/hemanthkumarsa13/test/8b97e2c28732c5bf24e1e41bfa2033554e352821/integration-cli/build_tests/TestCopy/EtcToRoot/Dockerfile
+FROM scratch
+COPY . /

@@ -1,0 +1,7 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/socrata-platform/opendj/3c64261c7cb404a083c63f5902d860cf491ebd3c/data/Dockerfile
+FROM busybox
+
+RUN mkdir /data
+VOLUME /data
+CMD ["/bin/sh"]

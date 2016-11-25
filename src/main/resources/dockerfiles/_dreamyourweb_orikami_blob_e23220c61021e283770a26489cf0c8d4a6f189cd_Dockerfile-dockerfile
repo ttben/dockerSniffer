@@ -1,0 +1,3 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/dreamyourweb/orikami/e23220c61021e283770a26489cf0c8d4a6f189cd/Dockerfile
+FROM meteorhacks/meteord:onbuild

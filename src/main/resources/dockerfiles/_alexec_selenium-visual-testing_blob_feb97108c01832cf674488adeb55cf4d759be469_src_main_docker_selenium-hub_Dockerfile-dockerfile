@@ -1,0 +1,3 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/alexec/selenium-visual-testing/feb97108c01832cf674488adeb55cf4d759be469/src/main/docker/selenium-hub/Dockerfile
+FROM selenium/hub:${selenium.version}

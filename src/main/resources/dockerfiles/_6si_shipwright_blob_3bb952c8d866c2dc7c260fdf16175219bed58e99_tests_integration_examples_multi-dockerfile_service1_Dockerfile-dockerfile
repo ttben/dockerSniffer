@@ -1,0 +1,4 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/6si/shipwright/3bb952c8d866c2dc7c260fdf16175219bed58e99/tests/integration/examples/multi-dockerfile/service1/Dockerfile
+FROM shipwright/base
+ADD ./src /code/

@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/chaliy/studies-octo-adventure/7677b035f722e684454c93d39bae200bf8e4634d/lp/c4_2/pm/src/Dockerfile
+FROM node:5.9.0-onbuild
+
+EXPOSE 3000

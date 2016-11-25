@@ -94,7 +94,7 @@ public class Handler {
     }
 
     public static void main(String[] args) throws IOException {
-        Handler handler = new Handler(Handler.class.getClassLoader().getResource("github_docker_24-11-16.csv"));
+        Handler handler = new Handler(Handler.class.getClassLoader().getResource("github_docker_25-11-16-all.csv"));
         handler.start();
     }
 }

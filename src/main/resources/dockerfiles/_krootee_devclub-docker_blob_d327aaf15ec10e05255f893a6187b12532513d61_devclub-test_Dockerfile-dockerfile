@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/krootee/devclub-docker/d327aaf15ec10e05255f893a6187b12532513d61/devclub-test/Dockerfile
+FROM ubuntu:14.04
+CMD echo "Hello Devclub!"
+

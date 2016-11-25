@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/schanezon/times-program/4f236fdbb547a89afe53fd0de53578db1c985ee6/Dockerfile
+FROM python:2-onbuild
+
+ENTRYPOINT ["python", "times.py"]

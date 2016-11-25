@@ -1,0 +1,8 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/mdp/honeypot.go/ad480e614633cb4c32f071a6dae9b2c6e5f991e4/Dockerfile
+FROM  ubuntu
+
+ADD . .
+
+EXPOSE  2022
+CMD ["./honeypot"]

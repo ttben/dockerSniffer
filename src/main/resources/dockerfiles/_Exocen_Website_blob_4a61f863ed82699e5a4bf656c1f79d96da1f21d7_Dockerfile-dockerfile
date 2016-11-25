@@ -1,0 +1,7 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/Exocen/Website/4a61f863ed82699e5a4bf656c1f79d96da1f21d7/Dockerfile
+# Dockerfile
+FROM exocen/docker-rails
+MAINTAINER Exocen
+
+EXPOSE 80

@@ -1,0 +1,4 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/doubaokun/dockers/06ebce335465b19c65d1bf26d16849ec90cf1a1c/hello/Dockerfile
+FROM ubuntu
+CMD echo 'Hello'

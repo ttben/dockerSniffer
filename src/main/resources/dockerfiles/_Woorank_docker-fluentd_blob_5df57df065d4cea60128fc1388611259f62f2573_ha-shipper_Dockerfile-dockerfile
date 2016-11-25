@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/Woorank/docker-fluentd/5df57df065d4cea60128fc1388611259f62f2573/ha-shipper/Dockerfile
+FROM woorank/fluentd:latest
+
+EXPOSE 514/udp

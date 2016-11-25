@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/sosickstudios/frenchquarterinns/2fd8e348a12fa1e5e8ba3744a8ee9230b7ed2b00/dist/Dockerfile
+FROM nginx
+
+COPY . /usr/share/nginx/html

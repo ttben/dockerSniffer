@@ -1,0 +1,9 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/sebbrousse/oki-docki-test/13cb023e13843679b378588ee639bc1dd2921d39/Dockerfile
+FROM csanchez/maven
+
+
+
+
+
+

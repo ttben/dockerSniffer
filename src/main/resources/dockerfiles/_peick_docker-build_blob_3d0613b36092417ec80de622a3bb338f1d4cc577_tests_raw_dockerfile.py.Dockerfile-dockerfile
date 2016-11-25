@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/peick/docker-build/3d0613b36092417ec80de622a3bb338f1d4cc577/tests/raw/dockerfile.py.Dockerfile
+FROM registry:0.9.1
+
+RUN echo

@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/cloudfoundry-attic/garden-linux-release/b9153bf44042d9a15ca5f23301cb6325eafc62c6/src/github.com/docker/docker/builder/parser/testfiles-negative/env_no_value/Dockerfile
+FROM busybox
+
+ENV PATH

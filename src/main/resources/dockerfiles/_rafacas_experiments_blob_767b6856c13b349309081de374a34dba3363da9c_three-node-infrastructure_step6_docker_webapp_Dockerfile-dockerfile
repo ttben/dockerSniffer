@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/rafacas/experiments/767b6856c13b349309081de374a34dba3363da9c/three-node-infrastructure/step6/docker/webapp/Dockerfile
+FROM nginx
+
+COPY content /usr/share/nginx/html
+

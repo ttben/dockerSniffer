@@ -1,0 +1,4 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/wujiang/tic-tac-toe/120716cc58ea10ba8b985b5ba1eff68506b5ec16/ttt-server/Dockerfile
+FROM golang:1.4.1-onbuild
+EXPOSE 8080

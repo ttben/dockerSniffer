@@ -1,0 +1,3 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/synclio/gvm-cloud-datastore/814d14d8ded4b9df665359383a911e2b40b9c543/Dockerfile
+FROM google/nodejs-runtime

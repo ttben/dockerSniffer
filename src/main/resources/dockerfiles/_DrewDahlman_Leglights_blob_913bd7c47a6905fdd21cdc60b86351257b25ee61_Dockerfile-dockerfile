@@ -1,0 +1,3 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/DrewDahlman/Leglights/913bd7c47a6905fdd21cdc60b86351257b25ee61/Dockerfile
+FROM node:0.12-onbuild

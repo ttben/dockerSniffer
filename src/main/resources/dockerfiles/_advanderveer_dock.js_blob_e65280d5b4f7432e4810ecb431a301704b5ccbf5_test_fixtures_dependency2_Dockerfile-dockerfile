@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/advanderveer/dock.js/e65280d5b4f7432e4810ecb431a301704b5ccbf5/test/fixtures/dependency2/Dockerfile
+#
+# some comment
+FROM test

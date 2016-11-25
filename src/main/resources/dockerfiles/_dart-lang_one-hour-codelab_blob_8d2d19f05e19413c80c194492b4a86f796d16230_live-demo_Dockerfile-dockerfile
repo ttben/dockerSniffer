@@ -1,0 +1,3 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/dart-lang/one-hour-codelab/8d2d19f05e19413c80c194492b4a86f796d16230/live-demo/Dockerfile
+FROM google/dart-runtime

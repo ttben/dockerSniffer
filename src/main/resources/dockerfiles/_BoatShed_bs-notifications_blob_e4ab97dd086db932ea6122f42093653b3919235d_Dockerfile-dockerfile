@@ -1,0 +1,3 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/BoatShed/bs-notifications/e4ab97dd086db932ea6122f42093653b3919235d/Dockerfile
+FROM asher/nodejs-runtime

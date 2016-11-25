@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/RobotGame/rgserver/851e381763e8de6c0f18cdc1a510a96b82dc6dc3/matchmaker/Dockerfile
+FROM python:2.7-onbuild
+
+CMD ["./matchmaker.py"]

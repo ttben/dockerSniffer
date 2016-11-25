@@ -1,0 +1,9 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/c3h3/docker-oblas-py278/845606429558ca0711368cf1d9d3ad888685cd6e/Dockerfile
+
+FROM c3h3/oblas-pyenv
+
+RUN pyenv install 2.7.8
+RUN pyenv global 2.7.8
+
+

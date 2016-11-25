@@ -1,0 +1,3 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/trujunzhang/politicl-image/df57630fdc6805f6fe45779617ed6096b6767dd3/docker/php7-fpm/Dockerfile
+FROM sadokf/php7fpm_mozjpeg

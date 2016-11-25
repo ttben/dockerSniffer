@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/cpuguy83/docker-onbuild_demo/9a8dfc4c2f8091ea8915a2b5fd4315bd0ccf6b53/rails_demo/Dockerfile
+FROM cpuguy83/onbuild_demo
+
+

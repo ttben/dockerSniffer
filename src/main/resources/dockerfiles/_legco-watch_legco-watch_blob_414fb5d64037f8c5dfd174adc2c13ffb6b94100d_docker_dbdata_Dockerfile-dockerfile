@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/legco-watch/legco-watch/414fb5d64037f8c5dfd174adc2c13ffb6b94100d/docker/dbdata/Dockerfile
+FROM debian:7.7
+
+VOLUME /var/lib/postgresql/data

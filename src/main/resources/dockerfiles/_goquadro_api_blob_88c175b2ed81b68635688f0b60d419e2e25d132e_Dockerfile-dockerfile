@@ -1,0 +1,4 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/goquadro/api/88c175b2ed81b68635688f0b60d419e2e25d132e/Dockerfile
+FROM golang:onbuild
+EXPOSE 8080

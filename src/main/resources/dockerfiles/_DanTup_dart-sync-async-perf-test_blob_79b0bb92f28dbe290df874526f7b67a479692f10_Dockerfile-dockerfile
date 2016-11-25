@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/DanTup/dart-sync-async-perf-test/79b0bb92f28dbe290df874526f7b67a479692f10/Dockerfile
+FROM google/dart-runtime
+
+EXPOSE 80

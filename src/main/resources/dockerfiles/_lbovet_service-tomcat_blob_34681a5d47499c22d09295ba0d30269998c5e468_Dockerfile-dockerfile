@@ -1,0 +1,3 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/lbovet/service-tomcat/34681a5d47499c22d09295ba0d30269998c5e468/Dockerfile
+from tomcat:7

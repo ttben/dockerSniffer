@@ -1,0 +1,4 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/ArnaudPiroelle/docker-mysql/659ed9a25b2ab2cfcd91e401ddabc193b3032fb7/Dockerfile
+FROM mysql
+MAINTAINER Arnaud Piroelle

@@ -1,0 +1,4 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/bcicen/fig/43daa4ef8236aad4555cc4d0998d22d5b1d4de63/tests/fixtures/dockerfile_with_entrypoint/Dockerfile
+FROM busybox:latest
+ENTRYPOINT echo "From prebuilt entrypoint"

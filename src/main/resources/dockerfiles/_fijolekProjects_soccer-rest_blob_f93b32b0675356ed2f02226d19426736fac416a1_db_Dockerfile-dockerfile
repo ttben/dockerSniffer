@@ -1,0 +1,3 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/fijolekProjects/soccer-rest/f93b32b0675356ed2f02226d19426736fac416a1/db/Dockerfile
+FROM mongo:2.6

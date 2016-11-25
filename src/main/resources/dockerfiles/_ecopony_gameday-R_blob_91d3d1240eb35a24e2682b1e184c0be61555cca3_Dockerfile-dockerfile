@@ -1,0 +1,3 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/ecopony/gameday-R/91d3d1240eb35a24e2682b1e184c0be61555cca3/Dockerfile
+FROM rocker/r-base:latest

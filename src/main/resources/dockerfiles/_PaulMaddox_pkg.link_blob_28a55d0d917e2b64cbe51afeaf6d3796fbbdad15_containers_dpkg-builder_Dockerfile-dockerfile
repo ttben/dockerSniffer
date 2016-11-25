@@ -1,0 +1,3 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/PaulMaddox/pkg.link/28a55d0d917e2b64cbe51afeaf6d3796fbbdad15/containers/dpkg-builder/Dockerfile
+FROM ubuntu

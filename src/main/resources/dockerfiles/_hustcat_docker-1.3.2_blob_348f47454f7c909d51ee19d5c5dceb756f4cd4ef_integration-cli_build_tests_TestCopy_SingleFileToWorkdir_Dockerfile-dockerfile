@@ -1,0 +1,4 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/hustcat/docker-1.3.2/348f47454f7c909d51ee19d5c5dceb756f4cd4ef/integration-cli/build_tests/TestCopy/SingleFileToWorkdir/Dockerfile
+FROM busybox
+COPY test_file .

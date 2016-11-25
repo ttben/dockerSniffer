@@ -1,0 +1,3 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/mazgi-sandbox/DockerTestDrive/92769bd7138f129ce31f03f7b738f8464fdfdd34/Dockerfile
+FROM busybox:buildroot-2014.02

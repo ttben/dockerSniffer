@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/Butanobu/docker/264aef40a9d76277838a8499e6f0ec5a600f2f2e/centos/software.python/Dockerfile
+FROM centos
+
+RUN \
+    yum  install -y python

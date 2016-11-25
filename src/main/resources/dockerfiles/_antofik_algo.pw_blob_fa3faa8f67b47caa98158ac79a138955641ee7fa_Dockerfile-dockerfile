@@ -1,0 +1,4 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/antofik/algo.pw/fa3faa8f67b47caa98158ac79a138955641ee7fa/Dockerfile
+FROM antofik/python-uwsgi:2.7
+MAINTAINER antofik                                          

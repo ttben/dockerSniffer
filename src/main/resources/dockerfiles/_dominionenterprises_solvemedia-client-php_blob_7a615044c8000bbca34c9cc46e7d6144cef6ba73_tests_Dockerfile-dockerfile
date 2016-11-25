@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/dominionenterprises/solvemedia-client-php/7a615044c8000bbca34c9cc46e7d6144cef6ba73/tests/Dockerfile
+FROM nubs/phpunit
+
+CMD ["./build.php"]

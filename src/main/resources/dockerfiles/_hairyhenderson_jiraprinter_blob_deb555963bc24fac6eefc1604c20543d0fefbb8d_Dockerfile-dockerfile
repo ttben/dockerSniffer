@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/hairyhenderson/jiraprinter/deb555963bc24fac6eefc1604c20543d0fefbb8d/Dockerfile
+FROM node:6-onbuild
+
+ENV PORT 80

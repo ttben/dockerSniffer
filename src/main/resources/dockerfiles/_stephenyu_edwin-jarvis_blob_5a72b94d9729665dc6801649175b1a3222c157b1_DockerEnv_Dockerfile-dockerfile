@@ -1,0 +1,3 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/stephenyu/edwin-jarvis/5a72b94d9729665dc6801649175b1a3222c157b1/DockerEnv/Dockerfile
+FROM ruby:2.3.0

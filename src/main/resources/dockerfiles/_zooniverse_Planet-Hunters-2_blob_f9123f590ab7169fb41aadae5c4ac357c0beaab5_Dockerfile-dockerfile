@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/zooniverse/Planet-Hunters-2/f9123f590ab7169fb41aadae5c4ac357c0beaab5/Dockerfile
+FROM node:0.12-onbuild
+
+EXPOSE 3416

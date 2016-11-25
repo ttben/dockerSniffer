@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/alexec/docker-java-orchestration/626681c40f79c4e0fd968d557d01cf5a5f53c38a/docker-java-orchestration-core/src/test/docker/private-registry/Dockerfile
+FROM my-server:5001/some-image:42
+
+CMD ["cat"]

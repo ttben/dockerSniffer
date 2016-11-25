@@ -1,0 +1,3 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/bfosberry/GameSocial/5384f4aca81c1dc7e8a3d4cef816d7f94d000d7b/Dockerfile
+FROM rails:onbuild

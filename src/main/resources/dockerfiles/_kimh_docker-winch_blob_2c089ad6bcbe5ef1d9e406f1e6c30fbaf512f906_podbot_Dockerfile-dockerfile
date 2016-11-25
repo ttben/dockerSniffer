@@ -1,0 +1,3 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/kimh/docker-winch/2c089ad6bcbe5ef1d9e406f1e6c30fbaf512f906/podbot/Dockerfile
+From ubuntu

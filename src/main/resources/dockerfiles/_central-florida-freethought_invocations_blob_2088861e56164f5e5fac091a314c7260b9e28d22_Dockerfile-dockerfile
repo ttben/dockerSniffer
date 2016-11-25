@@ -1,0 +1,8 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/central-florida-freethought/invocations/2088861e56164f5e5fac091a314c7260b9e28d22/Dockerfile
+FROM rails:onbuild
+
+ENV RAILS_VERSION 4.2.0
+
+CMD ["rails", "server", "--bind", "0.0.0.0"]
+

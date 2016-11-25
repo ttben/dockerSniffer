@@ -1,0 +1,3 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/PlanitarInc/docker-image-userdb/90ba06cf5549d202140215d38ee0cd46b7d2b7c2/Dockerfile
+FROM planitar/postgresql

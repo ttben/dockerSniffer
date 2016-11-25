@@ -1,0 +1,3 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/littlebits/www-developers/bd0061c9a7b1336c93669a53e34a617bd083927c/Dockerfile
+FROM quay.io/littlebits/node:2.x.x-onbuild

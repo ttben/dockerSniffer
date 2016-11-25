@@ -1,0 +1,4 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/phillbarber/smartstack-docker-demo-service-a/8207df6a6f301605fe221cd03191e397df0736a4/Dockerfile
+FROM java
+RUN echo "YAY"

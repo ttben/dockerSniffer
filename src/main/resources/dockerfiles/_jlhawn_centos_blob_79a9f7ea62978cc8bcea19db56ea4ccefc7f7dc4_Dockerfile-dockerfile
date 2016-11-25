@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/jlhawn/centos/79a9f7ea62978cc8bcea19db56ea4ccefc7f7dc4/Dockerfile
+FROM centos
+
+RUN echo hello world

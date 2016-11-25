@@ -1,0 +1,4 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/vaceletm/slides/4984db2a1ca5f188aad82825ae3e96708d765f54/2015.11.25%20-%20DockerMeetup%20-%201.9/Dockerfile
+FROM node
+

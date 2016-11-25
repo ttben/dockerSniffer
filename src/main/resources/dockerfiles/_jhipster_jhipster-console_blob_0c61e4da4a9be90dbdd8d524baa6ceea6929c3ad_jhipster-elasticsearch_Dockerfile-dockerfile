@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/jhipster/jhipster-console/0c61e4da4a9be90dbdd8d524baa6ceea6929c3ad/jhipster-elasticsearch/Dockerfile
+FROM elasticsearch:5.0.0
+
+VOLUME ["/usr/share/elasticsearch/data"]

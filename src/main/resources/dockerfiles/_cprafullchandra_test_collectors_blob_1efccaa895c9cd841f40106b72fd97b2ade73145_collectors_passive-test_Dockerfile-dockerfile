@@ -1,0 +1,3 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/cprafullchandra/test_collectors/1efccaa895c9cd841f40106b72fd97b2ade73145/collectors/passive-test/Dockerfile
+FROM alpine:3.4

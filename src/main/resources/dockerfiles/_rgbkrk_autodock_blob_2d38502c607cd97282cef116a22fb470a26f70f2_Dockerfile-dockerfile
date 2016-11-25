@@ -1,0 +1,4 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/rgbkrk/autodock/2d38502c607cd97282cef116a22fb470a26f70f2/Dockerfile
+FROM google/golang-runtime
+

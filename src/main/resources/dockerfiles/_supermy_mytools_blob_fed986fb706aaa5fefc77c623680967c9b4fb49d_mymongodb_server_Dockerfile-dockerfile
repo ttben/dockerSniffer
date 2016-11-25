@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/supermy/mytools/fed986fb706aaa5fefc77c623680967c9b4fb49d/mymongodb/server/Dockerfile
+FROM supermy/docker-mongodb:3.0.1
+
+ENTRYPOINT ["mongod"]

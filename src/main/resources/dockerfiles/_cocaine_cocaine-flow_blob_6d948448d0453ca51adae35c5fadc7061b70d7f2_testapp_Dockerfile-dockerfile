@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/cocaine/cocaine-flow/6d948448d0453ca51adae35c5fadc7061b70d7f2/testapp/Dockerfile
+from busybox
+
+RUN ls /
+RUN uname -a

@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/openscript/location_stalker/d7020f239bf9b2e5736002442ba770dcc53bbaa4/Dockerfile
+# DOCKER-VERSION 0.9
+
+FROM	debian:testing

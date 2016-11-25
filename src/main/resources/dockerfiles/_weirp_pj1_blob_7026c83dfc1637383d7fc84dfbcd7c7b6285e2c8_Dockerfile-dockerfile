@@ -1,0 +1,8 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/weirp/pj1/7026c83dfc1637383d7fc84dfbcd7c7b6285e2c8/Dockerfile
+FROM zaiste/postgresql
+
+
+
+
+

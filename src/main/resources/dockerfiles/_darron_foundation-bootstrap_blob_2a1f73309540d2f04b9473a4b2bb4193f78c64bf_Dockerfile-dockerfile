@@ -1,0 +1,9 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/darron/foundation-bootstrap/2a1f73309540d2f04b9473a4b2bb4193f78c64bf/Dockerfile
+FROM octohost/nginx
+
+ADD . /srv/www/
+
+EXPOSE 80
+
+CMD nginx

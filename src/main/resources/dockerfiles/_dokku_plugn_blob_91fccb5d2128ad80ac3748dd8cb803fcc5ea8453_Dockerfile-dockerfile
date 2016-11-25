@@ -1,0 +1,4 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/dokku/plugn/91fccb5d2128ad80ac3748dd8cb803fcc5ea8453/Dockerfile
+FROM ubuntu-debootstrap
+ADD ./plugn /bin/plugn

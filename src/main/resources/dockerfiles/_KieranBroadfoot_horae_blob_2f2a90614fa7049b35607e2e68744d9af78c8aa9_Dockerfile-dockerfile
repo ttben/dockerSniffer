@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/KieranBroadfoot/horae/2f2a90614fa7049b35607e2e68744d9af78c8aa9/Dockerfile
+FROM scratch
+COPY horae /
+ENTRYPOINT ["/horae"]

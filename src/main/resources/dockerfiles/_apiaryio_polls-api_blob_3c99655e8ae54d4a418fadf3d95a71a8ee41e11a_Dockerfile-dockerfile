@@ -1,0 +1,4 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/apiaryio/polls-api/3c99655e8ae54d4a418fadf3d95a71a8ee41e11a/Dockerfile
+FROM heroku/python
+

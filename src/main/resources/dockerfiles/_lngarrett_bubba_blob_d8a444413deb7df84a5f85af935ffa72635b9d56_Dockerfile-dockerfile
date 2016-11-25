@@ -1,0 +1,4 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/lngarrett/bubba/d8a444413deb7df84a5f85af935ffa72635b9d56/Dockerfile
+FROM ruby:2.1-onbuild
+CMD ["./main.rb"]

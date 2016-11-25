@@ -1,0 +1,3 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/chaomodus/hackernamegen/6da112705f219784c37b2e2053b7caa6ea45e465/Dockerfile
+FROM google/python-runtime

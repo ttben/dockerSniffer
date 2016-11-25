@@ -1,0 +1,7 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/elct9620/mruby-alpine-compiler/a5e3eee595f1bde1ba24aa4c174f0eb96729fd45/Dockerfile
+FROM alpine:3.4
+
+COPY ./bin/entrypoint /usr/local/bin
+
+ENTRYPOINT ["entrypoint"]

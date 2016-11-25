@@ -1,0 +1,4 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/tnachen/mesos_traces_vis/7883aa84cc2bfd928ebf8b3b27421deae18d73b3/Dockerfile
+FROM golang:onbuild
+EXPOSE 3000

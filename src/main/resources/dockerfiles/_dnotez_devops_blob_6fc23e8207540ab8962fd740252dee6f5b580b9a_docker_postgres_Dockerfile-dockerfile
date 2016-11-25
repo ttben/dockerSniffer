@@ -1,0 +1,3 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/dnotez/devops/6fc23e8207540ab8962fd740252dee6f5b580b9a/docker/postgres/Dockerfile
+FROM devops-base

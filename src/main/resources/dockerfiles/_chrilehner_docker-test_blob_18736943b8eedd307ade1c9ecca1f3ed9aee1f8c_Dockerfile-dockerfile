@@ -1,0 +1,4 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/chrilehner/docker-test/18736943b8eedd307ade1c9ecca1f3ed9aee1f8c/Dockerfile
+FROM ubuntu
+ENTRYPOINT ["/bin/bash"]

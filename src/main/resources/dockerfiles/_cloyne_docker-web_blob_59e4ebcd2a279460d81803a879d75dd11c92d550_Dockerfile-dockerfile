@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/cloyne/docker-web/59e4ebcd2a279460d81803a879d75dd11c92d550/Dockerfile
+FROM tozd/nginx-proxy
+
+COPY ./etc /etc

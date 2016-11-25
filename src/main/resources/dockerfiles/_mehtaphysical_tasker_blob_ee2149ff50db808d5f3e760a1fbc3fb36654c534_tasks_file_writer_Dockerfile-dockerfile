@@ -1,0 +1,7 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/mehtaphysical/tasker/ee2149ff50db808d5f3e760a1fbc3fb36654c534/tasks/file_writer/Dockerfile
+FROM ubuntu
+
+COPY ./task ./task
+
+CMD ./task

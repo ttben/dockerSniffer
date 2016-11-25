@@ -1,0 +1,3 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/parente/dockerfiles/73c695c23d7ee2236bfaa77b156cbc6f85be34fa/revealjs/test/Dockerfile
+FROM parente/revealjs

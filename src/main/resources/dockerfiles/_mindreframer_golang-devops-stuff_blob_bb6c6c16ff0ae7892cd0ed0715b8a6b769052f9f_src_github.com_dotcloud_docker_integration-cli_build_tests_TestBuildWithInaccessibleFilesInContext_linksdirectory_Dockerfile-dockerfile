@@ -1,0 +1,4 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/mindreframer/golang-devops-stuff/bb6c6c16ff0ae7892cd0ed0715b8a6b769052f9f/src/github.com/dotcloud/docker/integration-cli/build_tests/TestBuildWithInaccessibleFilesInContext/linksdirectory/Dockerfile
+FROM busybox
+ADD . /foo/

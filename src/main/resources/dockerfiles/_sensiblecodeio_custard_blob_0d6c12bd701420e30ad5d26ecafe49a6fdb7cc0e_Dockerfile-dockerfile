@@ -1,0 +1,4 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/sensiblecodeio/custard/0d6c12bd701420e30ad5d26ecafe49a6fdb7cc0e/Dockerfile
+FROM node:0.10-onbuild
+EXPOSE 3001

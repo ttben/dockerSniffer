@@ -1,0 +1,3 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/CommBank/ci/a53f524f613711a0e91063396639e9c96d0530ee/tests/test-bump-versions/docker/test/Dockerfile
+FROM test:1

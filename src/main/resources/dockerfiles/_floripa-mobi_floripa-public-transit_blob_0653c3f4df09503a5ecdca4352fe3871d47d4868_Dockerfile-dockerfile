@@ -1,0 +1,3 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/floripa-mobi/floripa-public-transit/0653c3f4df09503a5ecdca4352fe3871d47d4868/Dockerfile
+FROM ruby:2.1-onbuild

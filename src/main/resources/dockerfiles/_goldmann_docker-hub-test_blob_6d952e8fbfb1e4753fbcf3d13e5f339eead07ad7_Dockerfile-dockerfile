@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/goldmann/docker-hub-test/6d952e8fbfb1e4753fbcf3d13e5f339eead07ad7/Dockerfile
+FROM centos:latest
+ENV VERSION 1.1
+RUN touch /update
+CMD ["bash"]

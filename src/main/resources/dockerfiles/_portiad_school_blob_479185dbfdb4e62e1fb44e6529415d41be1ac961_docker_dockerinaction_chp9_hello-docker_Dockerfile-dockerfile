@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/portiad/school/479185dbfdb4e62e1fb44e6529415d41be1ac961/docker/dockerinaction/chp9/hello-docker/Dockerfile
+FROM busybox:latest
+
+CMD echo Hello World

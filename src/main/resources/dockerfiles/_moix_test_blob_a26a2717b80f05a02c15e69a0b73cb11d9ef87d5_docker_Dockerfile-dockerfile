@@ -1,0 +1,5 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/moix/test/a26a2717b80f05a02c15e69a0b73cb11d9ef87d5/docker/Dockerfile
+FROM scratch
+COPY hello /
+

@@ -1,0 +1,7 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/geeknam/django-fig-template/213f0c343e9f60d47a40cc069f6a3a0d0491017f/Dockerfiles/celery/Dockerfile
+FROM fcoelho/celery
+
+ADD . /code
+WORKDIR /code
+

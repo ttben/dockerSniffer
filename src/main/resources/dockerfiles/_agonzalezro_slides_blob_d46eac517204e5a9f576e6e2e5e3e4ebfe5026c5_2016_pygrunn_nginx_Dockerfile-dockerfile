@@ -1,0 +1,4 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/agonzalezro/slides/d46eac517204e5a9f576e6e2e5e3e4ebfe5026c5/2016/pygrunn/nginx/Dockerfile
+FROM nginx:stable
+COPY nginx.conf /etc/nginx/nginx.conf

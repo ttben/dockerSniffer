@@ -1,0 +1,6 @@
+#  Dockerfile retrieved from:
+#    Dockerfile: http://raw.githubusercontent.com/noxiouz/infinite-flow/6253461e6f81551b40cd71e8f6e66d5eb0e708b1/test/testapp/Dockerfile
+from busybox
+
+RUN ls /
+RUN uname -a
