@@ -1,42 +1,39 @@
 grammar Dockerfile;
 
-dockerfile: line+;
+dockerfile: ((COMMENT | command))+ EOF;
 
-line: comment (NEWLINE)+ | command (NEWLINE)+ | ws* command (NEWLINE)+;
-comment
-  :  '#' ~( '\r' | '\n' )* | '/' | '.' | ')'| '('| '%' | '-'
-  ;
-command: (from |  env | run |entrypoint | maintainer | workdir | add | multipleRun | copy);
+COMMENT
+    :   ( '#' ~[\r\n]* '\r'? '\n'
+        | '/*' .*? '*/'
+        ) -> skip
+    ;
 
-from: FROM ws (ANYKEYS);
+command: one_line | run;
+one_line: (from | env | entrypoint | maintainer | workdir | add | copy | expose) (NEWLINE);
 
+from: FROM ANYKEYS;
+maintainer: MAINTAINER ANYKEYS ANYKEYS;
 
-
-env: ENV (key ws value)+ | (ENV ws key '=' value);
+env: (ENV key '=' LETTER+);
 key: (LETTER | NUMBER)+;
 value: (LETTER | NUMBER)+;
 
-entrypoint: ENTRYPOINT ws ANYKEYS;
+entrypoint: ENTRYPOINT ANYKEYS;
 
-maintainer: MAINTAINER (. | '<' | '>' | '@' | ',')*;
-
-workdir: WORKDIR (. | '<' | '>' | '@' | ',')*;
+workdir: WORKDIR ANYKEYS;
 
 add: ADD .*?;
 
-copy: COPY src ws dest;
+copy: COPY src dest;
+src: ANYKEYS | '.';
+dest: ANYKEYS | '.';
 
-src: ANYKEYS;
-dest: ANYKEYS;
+expose: EXPOSE NUMBER;
 
-ws: (' '| '\t')+;
+run: RUN body NEWLINE;
+body: shellCmd (SHELLAND shellCmd)* ;
+shellCmd: ANYKEYS+;
 
-run: RUN ws body ws*;
-body: shellCmd (ws SHELLAND ws shellCmd)*;
-shellCmd: ANYKEYS (ws ANYKEYS)*;
-multipleRun: (.+?)+;
-
-NEWLINE: '\n';
 SHARP: '#';
 FROM: [fF][rR][oO][mM];
 ENV: [eE][nN][vV];
@@ -44,11 +41,14 @@ RUN: [rR][uU][nN];
 ENTRYPOINT: [eE][nN][tT][rR][yY][pP][oO][iI][nN][tT];
 MAINTAINER: [mM][aA][iI][nN][tT][aA][iI][nN][eE][rR];
 WORKDIR: [wW][oO][rR][kK][dD][iI][rR];
-SHELLAND: '&&';
+SHELLAND: '&&' | ('\\' NEWLINE '&&');
 ADD: [aA][dD][dD];
 COPY: [cC][oO][pP][yY];
+EXPOSE: [eE][xX][pP][oO][sS][eE];
 
-ANYKEYS: (LETTER | NUMBER | ':' | '_' | '-' | '/' | '|' | '"' | '=' | '*' | '\\' | '\'' | '+' | ']' | '[' | '{' | '}' | ';' | '!' | '~' | '.' | '–' | '$')+;
-LIT:(LETTER | NUMBER)+;
-LETTER: [a-zA-Z];
 NUMBER: [0-9];
+LETTER: [a-zA-Z];
+ANYKEYS: (LETTER | NUMBER | ':' | '_' | '-' | '/' | '|' | '"' | '=' | '*' | '\\' | '\'' | '+' | ']' | '[' | '{' | '}' | ';' | '!' | '~' | '.' | '–' | '$' | '<' | '>' | '@' | ',')+;
+
+NEWLINE: ('\n' | '\r')+;
+WS : ((' ' | '\t')+) -> skip;
