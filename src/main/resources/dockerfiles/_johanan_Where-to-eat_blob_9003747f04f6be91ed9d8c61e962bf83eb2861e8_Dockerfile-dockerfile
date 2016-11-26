@@ -1,4 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/johanan/Where-to-eat/9003747f04f6be91ed9d8c61e962bf83eb2861e8/Dockerfile
-FROM node:4-onbuild
-EXPOSE 3000

@@ -1,5 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/michaelneale/hello-docker-world/6a69504aca6cc1b699e77be8758f534e2dc3a844/more/Dockerfile
-FROM ubuntu:14.04
-
-ADD yeah /yeah

@@ -1,3 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/nealhardesty/dockerfiles/6333f777cacdbccfe3806337e7ef5e9822fe91de/cassandra/Dockerfile
-FROM tobert/cassandra

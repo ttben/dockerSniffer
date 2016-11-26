@@ -1,4 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/shin-/sakuya-blog/7dcac199f465245ba16cca26eb152ea61b758c61/Dockerfile
-FROM node:0.10-onbuild
-EXPOSE 1990

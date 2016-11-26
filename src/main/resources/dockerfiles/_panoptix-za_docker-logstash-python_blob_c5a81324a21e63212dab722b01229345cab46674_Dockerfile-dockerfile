@@ -1,9 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: panoptix-za/docker-logstash-python
-#    Dockerfile: http://raw.githubusercontent.com/panoptix-za/docker-logstash-python/c5a81324a21e63212dab722b01229345cab46674/Dockerfile
-FROM logstash:2.2
-
-RUN apt-get update
-
-RUN apt-get install -y \
-  python

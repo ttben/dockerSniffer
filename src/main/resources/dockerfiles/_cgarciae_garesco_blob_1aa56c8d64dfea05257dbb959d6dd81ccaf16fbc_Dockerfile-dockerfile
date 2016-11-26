@@ -1,7 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: cgarciae/garesco
-#    Dockerfile: http://raw.githubusercontent.com/cgarciae/garesco/1aa56c8d64dfea05257dbb959d6dd81ccaf16fbc/Dockerfile
-FROM google/dart-runtime:1.11.0
-
-RUN apt-get update
-RUN apt-get install git

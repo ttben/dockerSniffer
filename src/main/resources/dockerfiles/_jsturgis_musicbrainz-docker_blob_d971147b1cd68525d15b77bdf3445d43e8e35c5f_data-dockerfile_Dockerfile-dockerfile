@@ -1,4 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/jsturgis/musicbrainz-docker/d971147b1cd68525d15b77bdf3445d43e8e35c5f/data-dockerfile/Dockerfile
-FROM busybox
-VOLUME ["/dbdata"]

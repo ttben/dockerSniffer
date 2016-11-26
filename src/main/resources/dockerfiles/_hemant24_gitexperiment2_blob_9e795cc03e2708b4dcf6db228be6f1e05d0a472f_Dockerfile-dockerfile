@@ -1,4 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/hemant24/gitexperiment2/9e795cc03e2708b4dcf6db228be6f1e05d0a472f/Dockerfile
-FROM busybox
-CMD echo Hello world!!

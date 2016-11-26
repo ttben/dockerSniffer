@@ -1,5 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: raychaser/logspout-http
-#    Dockerfile: http://raw.githubusercontent.com/raychaser/logspout-http/20cce8f8b966183623f2426d6366e169ead9e74c/vendor/src/github.com/gliderlabs/logspout/debug/Dockerfile
-FROM ubuntu-debootstrap
-RUN apt-get update && apt-get install -y netcat

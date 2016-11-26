@@ -1,7 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: TrueAbility/docker-examples
-#    Dockerfile: http://raw.githubusercontent.com/TrueAbility/docker-examples/e8aa3e9e83f7f4730f3d1053b27d939edd8f253f/puppetbase/Dockerfile
-FROM debian:stable
-MAINTAINER ops@trueability.com
-
-RUN apt-get update && apt-get -y install puppet

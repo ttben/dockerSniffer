@@ -1,3 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/spotify/docker-client/3c985eb7e2b77e1c71badf3621a98e8d9f28d0b6/src/test/resources/dockerDirectoryNeedsAuth/Dockerfile
-FROM dxia2/scratch-private:latest

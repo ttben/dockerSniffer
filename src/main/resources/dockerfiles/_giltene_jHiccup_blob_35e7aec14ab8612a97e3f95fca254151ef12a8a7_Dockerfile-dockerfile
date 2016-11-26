@@ -1,7 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: giltene/jHiccup
-#    Dockerfile: http://raw.githubusercontent.com/giltene/jHiccup/35e7aec14ab8612a97e3f95fca254151ef12a8a7/Dockerfile
-FROM azul/zulu-openjdk:8
-
-RUN apt-get update
-RUN apt-get -qqy install maven 

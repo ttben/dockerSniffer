@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: liangshengzh/nginx-vim
-#    Dockerfile: http://raw.githubusercontent.com/liangshengzh/nginx-vim/ae775ebe874cc3ac195ac0cd81af0c10e07f7f26/Dockerfile
-FROM nginx
-RUN apt-get -y update
-RUN apt-get -y install vim

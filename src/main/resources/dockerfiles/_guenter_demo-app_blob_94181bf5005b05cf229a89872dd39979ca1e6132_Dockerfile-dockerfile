@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/guenter/demo-app/94181bf5005b05cf229a89872dd39979ca1e6132/Dockerfile
-FROM rails:onbuild
-
-EXPOSE 31100
-CMD ["rails", "server", "-p", "31100"]

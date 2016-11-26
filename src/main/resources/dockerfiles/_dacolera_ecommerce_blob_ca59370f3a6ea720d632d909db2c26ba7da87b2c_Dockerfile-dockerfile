@@ -1,8 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: dacolera/ecommerce
-#    Dockerfile: http://raw.githubusercontent.com/dacolera/ecommerce/ca59370f3a6ea720d632d909db2c26ba7da87b2c/Dockerfile
-FROM ubuntu
-
-RUN apt-get update
-RUN apt-get install apache2 -y
-EXPOSE 80

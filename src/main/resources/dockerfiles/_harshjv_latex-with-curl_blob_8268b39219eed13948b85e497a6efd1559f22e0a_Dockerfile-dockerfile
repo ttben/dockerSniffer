@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: harshjv/latex-with-curl
-#    Dockerfile: http://raw.githubusercontent.com/harshjv/latex-with-curl/8268b39219eed13948b85e497a6efd1559f22e0a/Dockerfile
-FROM blang/latex
-
-RUN apt-get update && apt-get install -y curl

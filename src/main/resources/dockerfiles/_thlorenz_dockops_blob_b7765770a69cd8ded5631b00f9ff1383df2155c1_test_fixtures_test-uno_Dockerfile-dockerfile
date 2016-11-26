@@ -1,4 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/thlorenz/dockops/b7765770a69cd8ded5631b00f9ff1383df2155c1/test/fixtures/test-uno/Dockerfile
-from    dockerfile/nodejs
-add     . /src

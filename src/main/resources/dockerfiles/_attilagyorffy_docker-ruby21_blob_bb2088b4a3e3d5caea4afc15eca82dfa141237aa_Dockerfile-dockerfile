@@ -1,5 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: attilagyorffy/docker-ruby21
-#    Dockerfile: http://raw.githubusercontent.com/attilagyorffy/docker-ruby21/bb2088b4a3e3d5caea4afc15eca82dfa141237aa/Dockerfile
-FROM ubuntu
-RUN apt-get update

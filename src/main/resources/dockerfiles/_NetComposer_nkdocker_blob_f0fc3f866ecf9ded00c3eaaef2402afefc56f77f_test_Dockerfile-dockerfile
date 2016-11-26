@@ -1,3 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/NetComposer/nkdocker/f0fc3f866ecf9ded00c3eaaef2402afefc56f77f/test/Dockerfile
-FROM busybox

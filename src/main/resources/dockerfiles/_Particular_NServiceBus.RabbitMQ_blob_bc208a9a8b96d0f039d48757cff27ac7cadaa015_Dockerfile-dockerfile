@@ -1,4 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/Particular/NServiceBus.RabbitMQ/bc208a9a8b96d0f039d48757cff27ac7cadaa015/Dockerfile
-FROM rabbitmq:3.5.4-management
-MAINTAINER Particular Software

@@ -1,5 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: sunix/docker
-#    Dockerfile: http://raw.githubusercontent.com/sunix/docker/5b0debf15d17b5d9b0d571230ea33b5a12e1e57a/tracepath/Dockerfile
-FROM debian:jessie
-RUN apt-get update && apt-get -y install iputils-tracepath dnsutils

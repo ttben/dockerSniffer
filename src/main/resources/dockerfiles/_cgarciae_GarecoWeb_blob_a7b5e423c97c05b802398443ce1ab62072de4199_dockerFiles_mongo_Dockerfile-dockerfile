@@ -1,3 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/cgarciae/GarecoWeb/a7b5e423c97c05b802398443ce1ab62072de4199/dockerFiles/mongo/Dockerfile
-FROM mongo

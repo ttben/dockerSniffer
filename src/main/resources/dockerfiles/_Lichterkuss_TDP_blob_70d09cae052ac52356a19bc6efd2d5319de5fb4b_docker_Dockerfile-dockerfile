@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: Lichterkuss/TDP
-#    Dockerfile: http://raw.githubusercontent.com/Lichterkuss/TDP/70d09cae052ac52356a19bc6efd2d5319de5fb4b/docker/Dockerfile
-FROM ubuntu:14.04
-MAINTAINER Erik Svenonius
-RUN apt-get update && apt-get -y install gcc

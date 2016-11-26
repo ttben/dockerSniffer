@@ -1,5 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/hokuma/docker_rails_sample/792dfd9b89f5f084c60dc09bb7c855a8d9be5a44/Dockerfile
-FROM ruby:2.1.5-onbuild
-
-CMD ["bin/rails", "s"]

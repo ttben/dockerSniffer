@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: wowofbob/docker-haskell-ubuntu-with-stack
-#    Dockerfile: http://raw.githubusercontent.com/wowofbob/docker-haskell-ubuntu-with-stack/f8b53bfc0e4cdacf74ff917d1f3781f4a62612bc/Dockerfile
-FROM ubuntu-with-stack-install-requirements
-RUN apt-get update
-RUN apt-get install -y stack

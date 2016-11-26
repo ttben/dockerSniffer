@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: virgo-agent-toolkit/docker-base-image
-#    Dockerfile: http://raw.githubusercontent.com/virgo-agent-toolkit/docker-base-image/4e6ddd133fa3a48f67da2afc8ec56f3c074e5c79/Dockerfile
-FROM ubuntu:14.04
-RUN apt-get update && \
-    apt-get install -y curl

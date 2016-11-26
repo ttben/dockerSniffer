@@ -1,3 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/zyberit/Dockerfiles/8c825dbb5d376ced030ebf743a8ec7a3044a2f7e/django-template/Dockerfile
-FROM django:python2-onbuild

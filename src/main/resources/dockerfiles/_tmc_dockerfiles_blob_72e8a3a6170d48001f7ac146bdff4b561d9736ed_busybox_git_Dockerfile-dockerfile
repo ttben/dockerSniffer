@@ -1,5 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/tmc/dockerfiles/72e8a3a6170d48001f7ac146bdff4b561d9736ed/busybox_git/Dockerfile
-FROM busybox
-
-ADD tmp/usr/ /usr/

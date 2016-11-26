@@ -1,7 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: dnotez/devops
-#    Dockerfile: http://raw.githubusercontent.com/dnotez/devops/6fc23e8207540ab8962fd740252dee6f5b580b9a/docker/base-slave-jenkins/Dockerfile
-FROM devops-base
-
-RUN apt-get update && \
-    apt-get install git

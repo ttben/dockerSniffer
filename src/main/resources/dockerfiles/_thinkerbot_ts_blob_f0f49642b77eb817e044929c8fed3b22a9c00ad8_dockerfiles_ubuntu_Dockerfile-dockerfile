@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: thinkerbot/ts
-#    Dockerfile: http://raw.githubusercontent.com/thinkerbot/ts/f0f49642b77eb817e044929c8fed3b22a9c00ad8/dockerfiles/ubuntu/Dockerfile
-FROM ubuntu:latest
-RUN ["apt-get", "update"]
-RUN ["apt-get", "install", "-y", "bash", "zsh", "ksh"]

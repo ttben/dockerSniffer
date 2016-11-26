@@ -1,8 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: jad-b/light_fantastic
-#    Dockerfile: http://raw.githubusercontent.com/jad-b/light_fantastic/e4ac233b7f59c63e97786d7043ee9b4256e0ba4b/Dockerfile
-FROM ubuntu:14.04
-
-RUN apt-get update && apt-get install -y \
-    arduino \
-    unzip

@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: jimjkelly/SlowTravelBerlin
-#    Dockerfile: http://raw.githubusercontent.com/jimjkelly/SlowTravelBerlin/538c97840be8185b6ff69f9b2056ebd20d0ae2bf/wordpress/Dockerfile
-FROM wordpress:4.6.0-apache
- 
-RUN apt-get update && apt-get install -y php5-curl

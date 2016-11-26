@@ -1,9 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: wrmsr/trumpet
-#    Dockerfile: http://raw.githubusercontent.com/wrmsr/trumpet/987f21e5816ee42a86ba674f9c7e5c113e073886/compose/trumpet-test-mysql/Dockerfile
-FROM mysql:5.6.34
-
-RUN apt-get update && \
-  apt-get install -y \
-    apt-utils \
-    vim

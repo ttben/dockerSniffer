@@ -1,4 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/ElvisTheKing/hubot_cr/8f10e100a0ca80e1030c8b51ebc1c9e8de711bfb/Dockerfile
-FROM node:onbuild
-ENV HUBOT_ADAPTER slack

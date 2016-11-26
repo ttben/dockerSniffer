@@ -1,7 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: Duke-Translational-Bioinformatics/kairx-deploy
-#    Dockerfile: http://raw.githubusercontent.com/Duke-Translational-Bioinformatics/kairx-deploy/74ef96539c43854943d29cf6ae08baf718c44388/Dockerfile
-FROM nginx
-
-RUN apt-get update
-RUN apt-get install -y vim

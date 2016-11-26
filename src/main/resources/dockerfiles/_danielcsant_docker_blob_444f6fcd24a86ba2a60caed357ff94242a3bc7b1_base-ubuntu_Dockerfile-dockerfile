@@ -1,9 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: danielcsant/docker
-#    Dockerfile: http://raw.githubusercontent.com/danielcsant/docker/444f6fcd24a86ba2a60caed357ff94242a3bc7b1/base-ubuntu/Dockerfile
-FROM ubuntu:16.04
-
-RUN apt-get update
-RUN apt-get -y install default-jre
-RUN apt-get -y install maven
-RUN apt-get -y install git

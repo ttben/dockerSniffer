@@ -1,5 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/rgbkrk/robocall-data/3e12f38f42be2e92824fe86ef480146b3d9b7960/Dockerfile
-FROM ubuntu:14.04
-
-ADD . /data

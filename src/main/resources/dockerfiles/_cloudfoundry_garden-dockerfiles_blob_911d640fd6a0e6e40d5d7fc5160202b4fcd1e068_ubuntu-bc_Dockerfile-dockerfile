@@ -1,5 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: cloudfoundry/garden-dockerfiles
-#    Dockerfile: http://raw.githubusercontent.com/cloudfoundry/garden-dockerfiles/911d640fd6a0e6e40d5d7fc5160202b4fcd1e068/ubuntu-bc/Dockerfile
-FROM ubuntu:trusty
-RUN apt-get update && apt-get install -y bc

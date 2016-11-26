@@ -1,3 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/eurucamp/call4papers/b7a71b2f640ae1b29dcc11dcd5a39a55be19c668/Dockerfile
-FROM rails:onbuild

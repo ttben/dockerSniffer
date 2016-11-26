@@ -1,7 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: ch1bbe/my-docker
-#    Dockerfile: http://raw.githubusercontent.com/ch1bbe/my-docker/2ff0b73cd0824a259d82b24f6c4153688503b346/docker-x11/Dockerfile
-FROM ubuntu
-
-RUN apt-get update && apt-get install x11-apps -y
-

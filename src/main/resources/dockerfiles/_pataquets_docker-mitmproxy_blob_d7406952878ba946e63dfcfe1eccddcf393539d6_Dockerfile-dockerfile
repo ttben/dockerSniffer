@@ -1,8 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/pataquets/docker-mitmproxy/d7406952878ba946e63dfcfe1eccddcf393539d6/Dockerfile
-FROM python:2.7
-
-RUN \
-	pip install mitmproxy
-
-ENTRYPOINT [ "mitmproxy", "--bind-address", "0.0.0.0" ]

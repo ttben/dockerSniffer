@@ -1,8 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: tluongpillar/RomanNumeralKata
-#    Dockerfile: http://raw.githubusercontent.com/tluongpillar/RomanNumeralKata/fd260deb5f8f9109a0ad0c25467f7c7fe42d8535/Dockerfile
-FROM ubuntu:14.04
-
-RUN apt-get update 
-RUN apt-get -y install build-essential
-RUN apt-get install check

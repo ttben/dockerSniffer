@@ -1,3 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/tavisto/docker-flask-app-stack/4a7a6d4bbeb0066b5521a09474d9c962bdd9a6bc/db/Dockerfile
-FROM orchardup/postgresql

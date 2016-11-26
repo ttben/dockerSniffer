@@ -1,9 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: akiellor/skydns-service-spike
-#    Dockerfile: http://raw.githubusercontent.com/akiellor/skydns-service-spike/48f7ef20f92f48db8a6af0edbc7d1750a85541cf/shell/Dockerfile
-FROM ubuntu
-
-RUN apt-get update
-RUN apt-get install curl dnsutils -y
-
-CMD /bin/bash

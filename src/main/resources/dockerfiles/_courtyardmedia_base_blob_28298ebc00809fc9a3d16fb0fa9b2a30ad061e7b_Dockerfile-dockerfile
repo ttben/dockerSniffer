@@ -1,9 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: courtyardmedia/base
-#    Dockerfile: http://raw.githubusercontent.com/courtyardmedia/base/28298ebc00809fc9a3d16fb0fa9b2a30ad061e7b/Dockerfile
-FROM ubuntu
-MAINTAINER Joseph Abell
-
-RUN apt-get update
-RUN apt-get install nodejs npm -y
-

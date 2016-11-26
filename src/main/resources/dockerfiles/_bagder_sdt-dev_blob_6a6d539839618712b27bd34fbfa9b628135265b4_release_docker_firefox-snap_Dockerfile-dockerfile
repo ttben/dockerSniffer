@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: bagder/sdt-dev
-#    Dockerfile: http://raw.githubusercontent.com/bagder/sdt-dev/6a6d539839618712b27bd34fbfa9b628135265b4/release/docker/firefox-snap/Dockerfile
-FROM ubuntu:16.04
-
-RUN apt-get update && apt-get install -qy snapcraft bzip2 curl && apt-get clean

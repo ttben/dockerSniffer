@@ -1,9 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: paulkling/ubuntu
-#    Dockerfile: http://raw.githubusercontent.com/paulkling/ubuntu/f5f0b8b25a8bb12534363012e9c51fb4022dc0e6/Dockerfile
-FROM ubuntu
-
-RUN apt-get update
-RUN apt-get install node -y
-
-CMD /bin/bash

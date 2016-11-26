@@ -1,8 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: qnib/u-ansible
-#    Dockerfile: http://raw.githubusercontent.com/qnib/u-ansible/01b2880dc4b39140fff8c96fd3638af9ec59a1fa/Dockerfile
-FROM ubuntu
-
-
-RUN apt-get update \
- && apt-get install -y ansible openssh-client

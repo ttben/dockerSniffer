@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: tonniloiola/docker
-#    Dockerfile: http://raw.githubusercontent.com/tonniloiola/docker/bbb66938152b290017de4395cb7cb7de447ddab9/imagens/ubuntu-teste/Dockerfile
-FROM ubuntu:16.04
-RUN apt-get update && apt-get install nginx -y
-CMD bash

@@ -1,5 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/DavidGDragon/testYmls/697ada36ce356d93677da59d8a3eea170728ae9d/Dockerfile
-FROM library/ubuntu:14.04
-
-VOLUME ["/testify/"]

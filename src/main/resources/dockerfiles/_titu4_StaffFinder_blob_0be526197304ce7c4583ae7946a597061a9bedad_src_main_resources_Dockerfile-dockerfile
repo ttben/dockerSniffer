@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: titu4/StaffFinder
-#    Dockerfile: http://raw.githubusercontent.com/titu4/StaffFinder/0be526197304ce7c4583ae7946a597061a9bedad/src/main/resources/Dockerfile
-FROM jenkins
-USER root
-RUN apt-get update && apt-get install -y maven

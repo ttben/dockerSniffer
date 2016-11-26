@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: bcho/ubuntu-openjdk
-#    Dockerfile: http://raw.githubusercontent.com/bcho/ubuntu-openjdk/04c0b0a9f4be7253f693bfc5cb0bc09e94b42f9d/Dockerfile
-FROM ubuntu:14.04
-
-RUN apt-get update && apt-get install -y openjdk-7-jdk

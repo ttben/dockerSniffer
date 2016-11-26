@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: CHECK24/docker-ansible
-#    Dockerfile: http://raw.githubusercontent.com/CHECK24/docker-ansible/f66feba4438d7e3e2df5deba754c61c8e6b7e264/Dockerfile
-FROM williamyeh/ansible:ubuntu16.04
-
-RUN apt-get update && apt-get install -y git

@@ -1,4 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/gitnacho/ejemplo/f05fac50cfb6b4531c102885080dae943abf4a1b/yasalio/Dockerfile
-FROM golang:onbuild
-EXPOSE 8080

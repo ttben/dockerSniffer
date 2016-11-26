@@ -1,7 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: AGrzes/presentation-git
-#    Dockerfile: http://raw.githubusercontent.com/AGrzes/presentation-git/0b45f33cf955a933b17ffa45eb218fc2acb2e6ac/docker/Dockerfile
-from ubuntu:latest
-RUN apt-get update
-RUN apt-get install -qqy git nano
-ENV DISPLAY :0

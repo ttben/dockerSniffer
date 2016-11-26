@@ -1,5 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: hyperworks/docker-cgo
-#    Dockerfile: http://raw.githubusercontent.com/hyperworks/docker-cgo/0d952d06d9a479454b56c4fe51eec3212fc16a21/Dockerfile
-FROM golang:latest
-RUN apt-get update && apt-get install -y cmake build-essential pkg-config

@@ -1,3 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/ramn/robocode-hill/b03d38849c066737c4913a88094c9a22674e1bda/Dockerfile
-FROM jeanblanchard/busybox-java

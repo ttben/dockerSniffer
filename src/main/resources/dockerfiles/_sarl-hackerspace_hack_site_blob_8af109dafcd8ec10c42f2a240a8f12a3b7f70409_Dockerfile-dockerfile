@@ -1,8 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/sarl-hackerspace/hack_site/8af109dafcd8ec10c42f2a240a8f12a3b7f70409/Dockerfile
-FROM node:0.11-onbuild
-
-
-
-EXPOSE 8888
-

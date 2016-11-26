@@ -1,4 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/foxiswho/docker-compose-nginx-php-mysql/c6795d4e26e29b289846ca03569658ba10007716/mac-php7/php/Dockerfile
-FROM foxiswho/php:php7-fpm
-

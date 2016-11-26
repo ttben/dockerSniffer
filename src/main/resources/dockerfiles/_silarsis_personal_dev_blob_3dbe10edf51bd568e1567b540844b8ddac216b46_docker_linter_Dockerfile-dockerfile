@@ -1,7 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: silarsis/personal_dev
-#    Dockerfile: http://raw.githubusercontent.com/silarsis/personal_dev/3dbe10edf51bd568e1567b540844b8ddac216b46/docker/linter/Dockerfile
-FROM debian:sid
-RUN apt-get -yq update && apt-get -yq upgrade
-RUN apt-get -yq install shellcheck
-CMD bash

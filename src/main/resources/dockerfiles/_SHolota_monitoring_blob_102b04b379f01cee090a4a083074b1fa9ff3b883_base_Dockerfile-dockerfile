@@ -1,9 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: SHolota/monitoring
-#    Dockerfile: http://raw.githubusercontent.com/SHolota/monitoring/102b04b379f01cee090a4a083074b1fa9ff3b883/base/Dockerfile
-FROM     ubuntu:14.04.1
-
-RUN		apt-get update && apt-get upgrade -y
-RUN		apt-get install -y vim wget curl
-RUN		apt-get autoremove -y --purge
-RUN		apt-get clean

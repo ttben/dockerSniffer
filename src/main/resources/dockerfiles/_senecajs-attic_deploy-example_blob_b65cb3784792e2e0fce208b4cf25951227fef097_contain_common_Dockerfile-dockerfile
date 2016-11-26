@@ -1,4 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/senecajs-attic/deploy-example/b65cb3784792e2e0fce208b4cf25951227fef097/contain/common/Dockerfile
-FROM node-base-0
-ADD . /

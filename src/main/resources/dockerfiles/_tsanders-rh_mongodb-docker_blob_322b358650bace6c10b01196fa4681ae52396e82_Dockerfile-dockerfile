@@ -1,3 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/tsanders-rh/mongodb-docker/322b358650bace6c10b01196fa4681ae52396e82/Dockerfile
-FROM

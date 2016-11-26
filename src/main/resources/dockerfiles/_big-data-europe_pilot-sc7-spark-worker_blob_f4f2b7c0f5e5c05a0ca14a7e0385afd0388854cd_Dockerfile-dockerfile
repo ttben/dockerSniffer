@@ -1,7 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: big-data-europe/pilot-sc7-spark-worker
-#    Dockerfile: http://raw.githubusercontent.com/big-data-europe/pilot-sc7-spark-worker/f4f2b7c0f5e5c05a0ca14a7e0385afd0388854cd/Dockerfile
-FROM bde2020/spark-worker:1.6.2-hadoop2.6
-
-RUN apt-get update \
-      && apt-get install -y libgfortran3

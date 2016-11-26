@@ -1,3 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/mitaliswain/WMSService/3c874cbfcd87b1700548ec4dd6f028f2e260e2fd/Dockerfile
-FROM rails:onbuild

@@ -1,9 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: akiellor/dockerfiles
-#    Dockerfile: http://raw.githubusercontent.com/akiellor/dockerfiles/3faa10e7abada959aef868602edf96bbb0db1442/typist/Dockerfile
-FROM ubuntu
-
-RUN apt-get update
-RUN apt-get install -y gtypist
-
-ENTRYPOINT [ "gtypist" ]

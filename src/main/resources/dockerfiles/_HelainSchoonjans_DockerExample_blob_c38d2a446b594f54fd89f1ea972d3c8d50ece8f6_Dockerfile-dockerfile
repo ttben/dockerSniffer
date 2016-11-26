@@ -1,5 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/HelainSchoonjans/DockerExample/c38d2a446b594f54fd89f1ea972d3c8d50ece8f6/Dockerfile
-FROM ubuntu
-MAINTAINER helain schoonjans
-USER heschoon

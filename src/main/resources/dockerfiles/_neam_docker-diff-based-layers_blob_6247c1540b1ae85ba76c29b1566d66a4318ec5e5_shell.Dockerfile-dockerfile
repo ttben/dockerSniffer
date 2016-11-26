@@ -1,5 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: neam/docker-diff-based-layers
-#    Dockerfile: http://raw.githubusercontent.com/neam/docker-diff-based-layers/6247c1540b1ae85ba76c29b1566d66a4318ec5e5/shell.Dockerfile
-FROM debian:jessie
-RUN apt-get update && apt-get install gettext -y

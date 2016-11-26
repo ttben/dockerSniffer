@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: sivertigo/dockerfiles
-#    Dockerfile: http://raw.githubusercontent.com/sivertigo/dockerfiles/180e24059d7dbb4c3d828a605a1a7f2556a1bb16/ubuntu/Dockerfile
-FROM ubuntu
-
-RUN apt-get update

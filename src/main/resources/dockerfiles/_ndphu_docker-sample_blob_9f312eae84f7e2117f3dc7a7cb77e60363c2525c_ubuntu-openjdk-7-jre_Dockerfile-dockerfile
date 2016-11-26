@@ -1,9 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: ndphu/docker-sample
-#    Dockerfile: http://raw.githubusercontent.com/ndphu/docker-sample/9f312eae84f7e2117f3dc7a7cb77e60363c2525c/ubuntu-openjdk-7-jre/Dockerfile
-FROM ubuntu
-RUN apt-get update -y && apt-get upgrade -y
-RUN apt-get install openjdk-7-jre -y
-
-
-

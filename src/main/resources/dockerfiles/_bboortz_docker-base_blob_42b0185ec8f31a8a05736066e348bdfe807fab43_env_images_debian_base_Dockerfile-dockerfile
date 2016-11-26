@@ -1,7 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: bboortz/docker-base
-#    Dockerfile: http://raw.githubusercontent.com/bboortz/docker-base/42b0185ec8f31a8a05736066e348bdfe807fab43/env/images/debian_base/Dockerfile
-FROM debian:latest
-
-RUN apt-get update && apt-get upgrade -y -q
-

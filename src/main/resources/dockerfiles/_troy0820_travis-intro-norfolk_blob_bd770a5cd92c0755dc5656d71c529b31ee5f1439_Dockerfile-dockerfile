@@ -1,5 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/troy0820/travis-intro-norfolk/bd770a5cd92c0755dc5656d71c529b31ee5f1439/Dockerfile
-FROM node:4-onbuild
-
-EXPOSE 3000

@@ -1,7 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: ewoutp/rpi-gcc-docker
-#    Dockerfile: http://raw.githubusercontent.com/ewoutp/rpi-gcc-docker/9ebafed792cf3c345ad63fb2ce4ec36a5b3f5081/Dockerfile
-FROM resin/rpi-raspbian
-
-RUN apt-get update && apt-get install -y gcc cmake 
-

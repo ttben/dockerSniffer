@@ -1,5 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: kisel/meteord-imagemagick
-#    Dockerfile: http://raw.githubusercontent.com/kisel/meteord-imagemagick/cbbf86196190b4563773849402999ccfe16a1157/Dockerfile
-FROM meteorhacks/meteord:base
-RUN apt-get update && apt-get install -y imagemagick && apt-get clean

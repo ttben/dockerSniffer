@@ -1,7 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: Nanard/docker-node-cairo-imagemagick-povray
-#    Dockerfile: http://raw.githubusercontent.com/Nanard/docker-node-cairo-imagemagick-povray/8511c64c3b4d1e00dc23e2e33fdbe321aea70329/Dockerfile
-FROM bernardfr/docker-node-cairo-imagemagick
-
-RUN \
-  apt-get update && apt-get -y install povray

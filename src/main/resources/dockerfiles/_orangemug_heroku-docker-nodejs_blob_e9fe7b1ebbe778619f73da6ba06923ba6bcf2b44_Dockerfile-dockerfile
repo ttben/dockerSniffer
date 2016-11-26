@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: orangemug/heroku-docker-nodejs
-#    Dockerfile: http://raw.githubusercontent.com/orangemug/heroku-docker-nodejs/e9fe7b1ebbe778619f73da6ba06923ba6bcf2b44/Dockerfile
-FROM heroku/nodejs
-RUN apt-get update && apt-get install -y postgresql-client-9.3
-

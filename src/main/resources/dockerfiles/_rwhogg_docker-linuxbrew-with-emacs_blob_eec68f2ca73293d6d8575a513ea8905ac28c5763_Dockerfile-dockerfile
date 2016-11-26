@@ -1,7 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: rwhogg/docker-linuxbrew-with-emacs
-#    Dockerfile: http://raw.githubusercontent.com/rwhogg/docker-linuxbrew-with-emacs/eec68f2ca73293d6d8575a513ea8905ac28c5763/Dockerfile
-FROM linuxbrew/linuxbrew
-
-RUN sudo apt-get update
-RUN yes | sudo apt-get install emacs23-nox

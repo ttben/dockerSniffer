@@ -1,3 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/palladius/septober/ffe0385d31beb7cde9d510775c8ad8ae41b628a3/Dockerfile
-FROM rails:onbuild

@@ -1,7 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: linkthrow/docker-php-5-6
-#    Dockerfile: http://raw.githubusercontent.com/linkthrow/docker-php-5-6/030cf6576c29f3d2cf20932234d2f6e5ba058661/Dockerfile
-FROM ubuntu:15.10
-
-RUN apt-get update -y
-RUN apt-get install php5 -y

@@ -1,3 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/howardroark/webapp/9099079e9f1bc96146afd2eb2e40fd62e5a908d3/Dockerfile
-FROM {{ container }}

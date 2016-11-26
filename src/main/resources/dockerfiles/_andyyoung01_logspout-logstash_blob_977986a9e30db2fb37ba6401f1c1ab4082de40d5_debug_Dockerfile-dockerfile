@@ -1,5 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: andyyoung01/logspout-logstash
-#    Dockerfile: http://raw.githubusercontent.com/andyyoung01/logspout-logstash/977986a9e30db2fb37ba6401f1c1ab4082de40d5/debug/Dockerfile
-FROM ubuntu-debootstrap
-RUN apt-get update && apt-get install -y netcat

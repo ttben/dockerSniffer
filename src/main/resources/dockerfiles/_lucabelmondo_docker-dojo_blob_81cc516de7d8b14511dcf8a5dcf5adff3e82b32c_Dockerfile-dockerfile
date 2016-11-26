@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: lucabelmondo/docker-dojo
-#    Dockerfile: http://raw.githubusercontent.com/lucabelmondo/docker-dojo/81cc516de7d8b14511dcf8a5dcf5adff3e82b32c/Dockerfile
-FROM golang:1.6.2-onbuild
-RUN apt-get update
-RUN apt-get install -y inotify-tools

@@ -1,8 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: TomScotch/workspace
-#    Dockerfile: http://raw.githubusercontent.com/TomScotch/workspace/0b662d358d586a2637e4603917ea4105ed281638/irc/Dockerfile
-FROM armhf/ubuntu
-RUN apt-get update
-RUN apt-get upgrade -y
-RUN apt-get install -y irssi
-CMD irssi

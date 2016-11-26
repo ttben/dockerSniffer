@@ -1,4 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/trappsnl/dstore/f893c43478c5d1bfd751acfb113e1641b70fd327/Dockerfile
-FROM node:onbuild
-EXPOSE 9000

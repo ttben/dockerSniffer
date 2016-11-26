@@ -1,3 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/AeroNotix/dotfiles/d3ec5d0563bdf5b372d1019d48b136a95575b7ea/Docker/postgres/Dockerfile
-FROM postgres:9.5.1

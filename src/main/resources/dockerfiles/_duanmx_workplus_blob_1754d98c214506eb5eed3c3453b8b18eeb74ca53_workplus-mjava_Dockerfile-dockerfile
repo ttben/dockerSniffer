@@ -1,7 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: duanmx/workplus
-#    Dockerfile: http://raw.githubusercontent.com/duanmx/workplus/1754d98c214506eb5eed3c3453b8b18eeb74ca53/workplus-mjava/Dockerfile
-FROM java:8-jre
-
-RUN apt-get update
-RUN apt-get install file -y

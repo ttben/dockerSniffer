@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: DrStep/CodeValPlatform
-#    Dockerfile: http://raw.githubusercontent.com/DrStep/CodeValPlatform/028993f856746c803acccedc0ef298f62c2217d6/Dockerfile
-FROM ubuntu:latest
-RUN apt-get update
-RUN apt-get install gcc -y --force-yes

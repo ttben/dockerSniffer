@@ -1,5 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/atbaker/tweetcheck-node/dce9cda09335e3cf2cb1a737cc6d456e88c34668/Dockerfile
-FROM node:0.10-onbuild
-
-EXPOSE 3000

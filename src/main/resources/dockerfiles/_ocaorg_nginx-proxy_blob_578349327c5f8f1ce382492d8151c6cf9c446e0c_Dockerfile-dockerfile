@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: ocaorg/nginx-proxy
-#    Dockerfile: http://raw.githubusercontent.com/ocaorg/nginx-proxy/578349327c5f8f1ce382492d8151c6cf9c446e0c/Dockerfile
-FROM jwilder/nginx-proxy:0.4.0
-
-RUN apt-get update && apt-get install -y openssl libssl1.0.0

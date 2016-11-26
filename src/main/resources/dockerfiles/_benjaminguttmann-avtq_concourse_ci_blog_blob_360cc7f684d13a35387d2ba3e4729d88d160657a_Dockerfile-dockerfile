@@ -1,8 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: benjaminguttmann-avtq/concourse_ci_blog
-#    Dockerfile: http://raw.githubusercontent.com/benjaminguttmann-avtq/concourse_ci_blog/360cc7f684d13a35387d2ba3e4729d88d160657a/Dockerfile
-FROM ubuntu:latest
-
-RUN \
-  apt-get update && \
-  apt-get install -y golang

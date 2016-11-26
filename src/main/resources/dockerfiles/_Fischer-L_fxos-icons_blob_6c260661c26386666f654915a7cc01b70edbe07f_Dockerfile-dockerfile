@@ -1,7 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: Fischer-L/fxos-icons
-#    Dockerfile: http://raw.githubusercontent.com/Fischer-L/fxos-icons/6c260661c26386666f654915a7cc01b70edbe07f/Dockerfile
-FROM node:5.0.0
-RUN apt-get update && apt-get -y upgrade
-WORKDIR /fxos-icons
-RUN apt-get -y install fontforge;

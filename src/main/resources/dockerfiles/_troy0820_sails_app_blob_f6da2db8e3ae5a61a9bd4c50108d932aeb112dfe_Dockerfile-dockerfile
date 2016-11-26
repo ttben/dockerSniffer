@@ -1,5 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/troy0820/sails_app/f6da2db8e3ae5a61a9bd4c50108d932aeb112dfe/Dockerfile
-FROM node:4-onbuild
-
-EXPOSE 1337

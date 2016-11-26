@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: jlrigau/ci-mesos
-#    Dockerfile: http://raw.githubusercontent.com/jlrigau/ci-mesos/01e882d4e20d7f2979b249716151a457974a77ed/maven-git/Dockerfile
-FROM maven:3
-
-RUN apt-get update && apt-get -y install git

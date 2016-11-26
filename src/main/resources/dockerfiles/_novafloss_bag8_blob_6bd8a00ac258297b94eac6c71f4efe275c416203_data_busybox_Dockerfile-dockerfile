@@ -1,4 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/novafloss/bag8/6bd8a00ac258297b94eac6c71f4efe275c416203/data/busybox/Dockerfile
-FROM busybox
-CMD tail -f /dev/null

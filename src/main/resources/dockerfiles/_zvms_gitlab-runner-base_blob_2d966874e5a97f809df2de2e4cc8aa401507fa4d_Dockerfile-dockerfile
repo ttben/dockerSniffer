@@ -1,9 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: zvms/gitlab-runner-base
-#    Dockerfile: http://raw.githubusercontent.com/zvms/gitlab-runner-base/2d966874e5a97f809df2de2e4cc8aa401507fa4d/Dockerfile
-FROM ubuntu:latest
-
-RUN apt-get update && apt-get install -y \
-    git \
-    curl \
-    build-essential

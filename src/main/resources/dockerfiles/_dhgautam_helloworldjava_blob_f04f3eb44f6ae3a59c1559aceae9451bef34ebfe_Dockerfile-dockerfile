@@ -1,7 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: dhgautam/helloworldjava
-#    Dockerfile: http://raw.githubusercontent.com/dhgautam/helloworldjava/f04f3eb44f6ae3a59c1559aceae9451bef34ebfe/Dockerfile
-FROM ubuntu:latest
-RUN apt-get update && apt-get install -y curl \
-					 vim \
-					 wget

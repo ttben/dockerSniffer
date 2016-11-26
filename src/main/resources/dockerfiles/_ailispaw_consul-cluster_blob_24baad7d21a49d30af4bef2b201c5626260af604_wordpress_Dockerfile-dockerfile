@@ -1,4 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/ailispaw/consul-cluster/24baad7d21a49d30af4bef2b201c5626260af604/wordpress/Dockerfile
-FROM ailispaw/php5
-ADD wordpress /code

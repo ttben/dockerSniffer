@@ -1,4 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/vossim/docker-base-images/1d8d46b384a7cc373570fd3a1264f4979e5e32c8/debian-jessie-amd64-base/Dockerfile
-FROM scratch
-ADD rootfs.tar.xz /

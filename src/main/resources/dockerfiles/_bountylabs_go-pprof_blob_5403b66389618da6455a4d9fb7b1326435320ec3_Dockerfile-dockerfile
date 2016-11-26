@@ -1,7 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: bountylabs/go-pprof
-#    Dockerfile: http://raw.githubusercontent.com/bountylabs/go-pprof/5403b66389618da6455a4d9fb7b1326435320ec3/Dockerfile
-FROM golang
-RUN apt-get update -y
-RUN apt-get install graphviz -y
-ENTRYPOINT go

@@ -1,3 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/winton/gulp-docker/036ae1a67241d5885f754c30644c3fbb475b4b25/Dockerfile
-FROM busybox

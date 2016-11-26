@@ -1,3 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/codegangsta/hello-martini-docker/c865b6d441021a34fef2953e5186afced6ac1598/Dockerfile
-FROM google/golang-runtime

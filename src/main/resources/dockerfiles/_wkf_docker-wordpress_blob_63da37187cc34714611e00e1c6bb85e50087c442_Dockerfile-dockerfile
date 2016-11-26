@@ -1,4 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/wkf/docker-wordpress/63da37187cc34714611e00e1c6bb85e50087c442/Dockerfile
-FROM ubuntu
-MAINTAINER wkf <Will Farrell>

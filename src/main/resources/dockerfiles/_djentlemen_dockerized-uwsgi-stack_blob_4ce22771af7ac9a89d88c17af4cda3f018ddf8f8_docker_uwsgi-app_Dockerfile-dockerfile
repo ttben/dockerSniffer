@@ -1,5 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/djentlemen/dockerized-uwsgi-stack/4ce22771af7ac9a89d88c17af4cda3f018ddf8f8/docker/uwsgi-app/Dockerfile
-FROM django
-
-## TODO: Example uwsgi application

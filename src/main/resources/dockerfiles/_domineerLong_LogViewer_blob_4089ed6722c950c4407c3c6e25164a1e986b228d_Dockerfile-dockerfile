@@ -1,3 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/domineerLong/LogViewer/4089ed6722c950c4407c3c6e25164a1e986b228d/Dockerfile
-FROM java

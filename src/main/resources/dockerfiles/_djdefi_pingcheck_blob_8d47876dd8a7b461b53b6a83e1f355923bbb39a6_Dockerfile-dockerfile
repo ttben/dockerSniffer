@@ -1,4 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/djdefi/pingcheck/8d47876dd8a7b461b53b6a83e1f355923bbb39a6/Dockerfile
-FROM php:5.6-apache
-COPY . /var/www/html/

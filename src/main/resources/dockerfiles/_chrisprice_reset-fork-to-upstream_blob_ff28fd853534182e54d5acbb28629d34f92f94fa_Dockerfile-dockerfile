@@ -1,4 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/chrisprice/reset-fork-to-upstream/ff28fd853534182e54d5acbb28629d34f92f94fa/Dockerfile
-FROM golang:onbuild
-EXPOSE 443

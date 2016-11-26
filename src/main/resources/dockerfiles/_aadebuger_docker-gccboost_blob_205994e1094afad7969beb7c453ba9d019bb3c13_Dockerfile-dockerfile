@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: aadebuger/docker-gccboost
-#    Dockerfile: http://raw.githubusercontent.com/aadebuger/docker-gccboost/205994e1094afad7969beb7c453ba9d019bb3c13/Dockerfile
-from gcc
-run apt-get update
-run apt-get -y install libboost-all-dev

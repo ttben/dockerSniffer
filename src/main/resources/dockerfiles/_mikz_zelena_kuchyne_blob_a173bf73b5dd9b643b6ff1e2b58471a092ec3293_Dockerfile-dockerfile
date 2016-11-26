@@ -1,4 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/mikz/zelena_kuchyne/a173bf73b5dd9b643b6ff1e2b58471a092ec3293/Dockerfile
-FROM mikz/passenger:1.9
-MAINTAINER Michal Cichra <michal@cichra.cz>

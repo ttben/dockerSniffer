@@ -1,5 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: saijusgeorge/docker
-#    Dockerfile: http://raw.githubusercontent.com/saijusgeorge/docker/eea79a9b22a9f670d7d8e768797c07470ebc6f6f/Dockerfile
-FROM docker/whalesay:latest
-RUN apt-get -y update && apt-get install -y fortunes

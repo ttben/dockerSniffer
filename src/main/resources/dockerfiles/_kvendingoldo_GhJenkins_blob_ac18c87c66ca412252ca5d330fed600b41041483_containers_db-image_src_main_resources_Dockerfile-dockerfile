@@ -1,7 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: kvendingoldo/GhJenkins
-#    Dockerfile: http://raw.githubusercontent.com/kvendingoldo/GhJenkins/ac18c87c66ca412252ca5d330fed600b41041483/containers/db-image/src/main/resources/Dockerfile
-FROM postgres:latest	
-
-RUN	apt-get update && \
-    apt-get -yq install net-tools

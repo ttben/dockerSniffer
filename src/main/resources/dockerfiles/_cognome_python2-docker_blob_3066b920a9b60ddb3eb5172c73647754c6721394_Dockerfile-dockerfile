@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: cognome/python2-docker
-#    Dockerfile: http://raw.githubusercontent.com/cognome/python2-docker/3066b920a9b60ddb3eb5172c73647754c6721394/Dockerfile
-FROM python:2
-
-RUN apt-get update && apt-get install locales-all && apt-get clean

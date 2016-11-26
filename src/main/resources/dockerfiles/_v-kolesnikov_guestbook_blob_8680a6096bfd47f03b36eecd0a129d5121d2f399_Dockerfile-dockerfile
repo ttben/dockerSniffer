@@ -1,3 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/v-kolesnikov/guestbook/8680a6096bfd47f03b36eecd0a129d5121d2f399/Dockerfile
-FROM clojure

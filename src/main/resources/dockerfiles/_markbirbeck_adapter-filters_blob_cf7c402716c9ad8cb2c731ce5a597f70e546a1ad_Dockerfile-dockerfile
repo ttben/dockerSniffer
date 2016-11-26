@@ -1,3 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/markbirbeck/adapter-filters/cf7c402716c9ad8cb2c731ce5a597f70e546a1ad/Dockerfile
-FROM node:4-onbuild

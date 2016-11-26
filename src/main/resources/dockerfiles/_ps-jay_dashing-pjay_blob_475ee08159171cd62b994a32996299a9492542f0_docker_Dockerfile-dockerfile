@@ -1,9 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: ps-jay/dashing-pjay
-#    Dockerfile: http://raw.githubusercontent.com/ps-jay/dashing-pjay/475ee08159171cd62b994a32996299a9492542f0/docker/Dockerfile
-FROM frvi/dashing
-RUN \
-    apt-get update && \
-    apt-get install -y ruby-sqlite3
-
-

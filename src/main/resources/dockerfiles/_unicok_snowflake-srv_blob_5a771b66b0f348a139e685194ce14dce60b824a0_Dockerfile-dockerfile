@@ -1,5 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/unicok/snowflake-srv/5a771b66b0f348a139e685194ce14dce60b824a0/Dockerfile
-FROM alpine:3.2
-ADD snowflake /snowflake
-ENTRYPOINT [ "/snowflake" ]

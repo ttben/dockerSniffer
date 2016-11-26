@@ -1,7 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: tmate/mdocker-tmate
-#    Dockerfile: http://raw.githubusercontent.com/tmate/mdocker-tmate/f9f0e06a40c5d0a26309d685d476782d665786a4/git/Dockerfile
-FROM scratch
-
-RUN \
-    apt-get update && apt-get install -y git

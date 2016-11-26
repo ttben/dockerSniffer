@@ -1,5 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: olalonde/node12-psql-docker
-#    Dockerfile: http://raw.githubusercontent.com/olalonde/node12-psql-docker/ff4c09d75c9cc59fc4275077ad8ea20509b68d40/Dockerfile
-FROM node:0.12
-RUN apt-get update && apt-get install -y postgresql-client socat

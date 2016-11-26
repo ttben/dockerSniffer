@@ -1,9 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: matrixstylite/ETL-Tools
-#    Dockerfile: http://raw.githubusercontent.com/matrixstylite/ETL-Tools/e62734b72bb839fdd774cbf3695b16cc6e70e6c0/Env/Nginx/Dockerfile
-FROM nginx:latest
-
-MAINTAINER matrixstyle
-
-RUN apt-get update
-RUN apt-get install netstat vim

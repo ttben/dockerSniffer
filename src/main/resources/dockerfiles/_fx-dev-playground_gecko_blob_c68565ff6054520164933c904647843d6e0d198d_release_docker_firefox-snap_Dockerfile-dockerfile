@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: fx-dev-playground/gecko
-#    Dockerfile: http://raw.githubusercontent.com/fx-dev-playground/gecko/c68565ff6054520164933c904647843d6e0d198d/release/docker/firefox-snap/Dockerfile
-FROM ubuntu:16.04
-
-RUN apt-get update && apt-get install -qy snapcraft bzip2 curl && apt-get clean

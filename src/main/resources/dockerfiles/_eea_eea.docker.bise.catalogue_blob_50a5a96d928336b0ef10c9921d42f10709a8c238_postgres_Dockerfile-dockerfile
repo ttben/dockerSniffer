@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: eea/eea.docker.bise.catalogue
-#    Dockerfile: http://raw.githubusercontent.com/eea/eea.docker.bise.catalogue/50a5a96d928336b0ef10c9921d42f10709a8c238/postgres/Dockerfile
-FROM postgres:8.4
-
-RUN apt-get update -q && apt-get install -y libc6

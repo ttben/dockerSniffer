@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: fote/dockerfiles
-#    Dockerfile: http://raw.githubusercontent.com/fote/dockerfiles/3763ecb13bafbe2fddeabc1c70863f9dd820fcfa/fpm/Dockerfile
-FROM php:fpm
-
-RUN apt-get update && apt-get install php5-mysql

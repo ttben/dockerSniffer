@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: tothanhcong/congtodockerfile
-#    Dockerfile: http://raw.githubusercontent.com/tothanhcong/congtodockerfile/ed9352fe469e0cf45e6711b61f349e8ff0fb2ad4/Dockerfile
-FROM ubuntu
-RUN apt-get update
-RUN apt-get install curl -y

@@ -1,5 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/mariusGundersen/ReactBenchmark/75ddbabc4448b887c0e0375d0448170e6884559f/Dockerfile
-FROM node:0.10-onbuild
-
-EXPOSE 8080

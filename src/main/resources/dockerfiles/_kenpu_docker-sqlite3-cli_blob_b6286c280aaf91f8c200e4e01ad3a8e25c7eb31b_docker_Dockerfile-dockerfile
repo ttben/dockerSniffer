@@ -1,8 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: kenpu/docker-sqlite3-cli
-#    Dockerfile: http://raw.githubusercontent.com/kenpu/docker-sqlite3-cli/b6286c280aaf91f8c200e4e01ad3a8e25c7eb31b/docker/Dockerfile
-FROM ubuntu
-RUN apt-get update
-RUN apt-get install --yes rlwrap
-COPY ./sqlite3 /usr/bin/
-

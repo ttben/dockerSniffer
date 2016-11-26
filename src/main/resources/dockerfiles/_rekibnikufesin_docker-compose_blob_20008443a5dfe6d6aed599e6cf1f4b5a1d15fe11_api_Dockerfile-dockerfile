@@ -1,8 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: rekibnikufesin/docker-compose
-#    Dockerfile: http://raw.githubusercontent.com/rekibnikufesin/docker-compose/20008443a5dfe6d6aed599e6cf1f4b5a1d15fe11/api/Dockerfile
-FROM node:latest
-EXPOSE 3000
-
-RUN apt-get update
-RUN apt-get install -y build-essential

@@ -1,9 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: moul/docker-dput
-#    Dockerfile: http://raw.githubusercontent.com/moul/docker-dput/766eff3f6bffec811b741f296f6570497d5f164c/Dockerfile
-FROM ubuntu:latest
-
-RUN apt-get update && apt-get -y install dput
-
-ENTRYPOINT ["dput"]
-CMD ["-h"]

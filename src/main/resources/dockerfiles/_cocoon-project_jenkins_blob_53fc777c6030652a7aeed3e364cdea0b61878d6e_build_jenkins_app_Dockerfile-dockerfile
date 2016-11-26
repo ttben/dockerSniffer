@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/cocoon-project/jenkins/53fc777c6030652a7aeed3e364cdea0b61878d6e/build/jenkins/app/Dockerfile
-FROM cocoon/jenkins
-MAINTAINER cocoon
-
-

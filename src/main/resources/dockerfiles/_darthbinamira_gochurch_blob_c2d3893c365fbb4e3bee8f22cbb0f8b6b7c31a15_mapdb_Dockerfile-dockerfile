@@ -1,5 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/darthbinamira/gochurch/c2d3893c365fbb4e3bee8f22cbb0f8b6b7c31a15/mapdb/Dockerfile
-FROM mongo:2.6.5
-MAINTAINER gochurch.com@gmail.com
-

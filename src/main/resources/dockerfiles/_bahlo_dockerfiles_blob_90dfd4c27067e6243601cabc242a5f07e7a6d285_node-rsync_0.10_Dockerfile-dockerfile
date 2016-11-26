@@ -1,8 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: bahlo/dockerfiles
-#    Dockerfile: http://raw.githubusercontent.com/bahlo/dockerfiles/90dfd4c27067e6243601cabc242a5f07e7a6d285/node-rsync/0.10/Dockerfile
-FROM node:0.10
-
-RUN apt-get update && \
-  apt-get install rsync -y
-

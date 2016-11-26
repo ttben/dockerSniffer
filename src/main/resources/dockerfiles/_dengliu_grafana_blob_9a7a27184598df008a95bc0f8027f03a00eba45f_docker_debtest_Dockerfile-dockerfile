@@ -1,9 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: dengliu/grafana
-#    Dockerfile: http://raw.githubusercontent.com/dengliu/grafana/9a7a27184598df008a95bc0f8027f03a00eba45f/docker/debtest/Dockerfile
-FROM debian:jessie
-
-RUN apt-get update && apt-get install -y vim
-
-ADD *.deb /tmp/
-

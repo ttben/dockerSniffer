@@ -1,3 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/dougjohnson/authproxy_target_app/205cf1501b53f2b71472130c6762838a37a45435/Dockerfile
-FROM rails:onbuild

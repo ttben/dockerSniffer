@@ -1,8 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: kellrott/tcga_realign
-#    Dockerfile: http://raw.githubusercontent.com/kellrott/tcga_realign/cd2819e7a869279f13c508fa2b06f61cda1eec9d/test-chain/dockers/test-chain-image/Dockerfile
-FROM    ubuntu
-
-RUN    apt-get update
-RUN    apt-get install -y python
-ADD    cgquery cgquery

@@ -1,7 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: ditointernet/sprintfy
-#    Dockerfile: http://raw.githubusercontent.com/ditointernet/sprintfy/b44a7311f750b76098063e242ac4def2fa83ecf7/Dockerfile
-FROM ruby:2.2.5-onbuild
-
-RUN apt-get update && \
-    apt-get install -y nodejs

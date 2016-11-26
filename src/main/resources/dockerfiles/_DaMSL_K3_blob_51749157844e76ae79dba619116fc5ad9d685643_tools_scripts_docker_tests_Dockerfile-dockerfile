@@ -1,5 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: DaMSL/K3
-#    Dockerfile: http://raw.githubusercontent.com/DaMSL/K3/51749157844e76ae79dba619116fc5ad9d685643/tools/scripts/docker/tests/Dockerfile
-FROM damsl/k3-vanilla:latest
-RUN apt-get update && apt-get install -y postgresql postgresql-contrib

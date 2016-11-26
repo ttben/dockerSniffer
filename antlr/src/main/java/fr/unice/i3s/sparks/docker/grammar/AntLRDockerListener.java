@@ -53,8 +53,9 @@ public class AntLRDockerListener extends DockerfileBaseListener {
 
     @Override
     public void visitErrorNode(ErrorNode node) {
-        System.err.println("loooo");
-        super.visitErrorNode(node);
+        System.out.println("loooo");
+        System.out.println(node);
+        //super.visitErrorNode(node);
     }
 
     public Dockerfile getDockerfile() {

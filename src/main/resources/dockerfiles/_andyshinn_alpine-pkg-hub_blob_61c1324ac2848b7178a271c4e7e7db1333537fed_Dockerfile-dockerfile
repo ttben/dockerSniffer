@@ -1,3 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/andyshinn/alpine-pkg-hub/61c1324ac2848b7178a271c4e7e7db1333537fed/Dockerfile
-FROM andyshinn/alpine-abuild

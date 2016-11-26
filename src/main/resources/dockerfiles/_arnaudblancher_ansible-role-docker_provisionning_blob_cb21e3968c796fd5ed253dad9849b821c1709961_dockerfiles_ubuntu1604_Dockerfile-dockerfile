@@ -1,7 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: arnaudblancher/ansible-role-docker_provisionning
-#    Dockerfile: http://raw.githubusercontent.com/arnaudblancher/ansible-role-docker_provisionning/cb21e3968c796fd5ed253dad9849b821c1709961/dockerfiles/ubuntu1604/Dockerfile
-FROM ubuntu:16.04
-RUN apt-get update && apt-get install -y python-apt vim curl
-
-

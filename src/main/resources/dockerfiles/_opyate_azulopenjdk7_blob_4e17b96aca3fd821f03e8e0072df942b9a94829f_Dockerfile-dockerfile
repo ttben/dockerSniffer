@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: opyate/azulopenjdk7
-#    Dockerfile: http://raw.githubusercontent.com/opyate/azulopenjdk7/4e17b96aca3fd821f03e8e0072df942b9a94829f/Dockerfile
-FROM azul/zulu-openjdk:7
-RUN apt-get update && \
-  apt-get install -qqy docker.io

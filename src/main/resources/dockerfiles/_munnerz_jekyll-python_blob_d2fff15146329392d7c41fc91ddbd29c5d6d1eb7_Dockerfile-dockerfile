@@ -1,7 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: munnerz/jekyll-python
-#    Dockerfile: http://raw.githubusercontent.com/munnerz/jekyll-python/d2fff15146329392d7c41fc91ddbd29c5d6d1eb7/Dockerfile
-FROM munnerz/jekyll
-
-RUN apt-get update && \
-	apt-get install -y python

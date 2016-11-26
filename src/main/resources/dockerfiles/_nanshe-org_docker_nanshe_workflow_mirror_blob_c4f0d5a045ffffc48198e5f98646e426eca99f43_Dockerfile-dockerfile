@@ -1,3 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/nanshe-org/docker_nanshe_workflow_mirror/c4f0d5a045ffffc48198e5f98646e426eca99f43/Dockerfile
-FROM quay.io/nanshe/nanshe_workflow:latest

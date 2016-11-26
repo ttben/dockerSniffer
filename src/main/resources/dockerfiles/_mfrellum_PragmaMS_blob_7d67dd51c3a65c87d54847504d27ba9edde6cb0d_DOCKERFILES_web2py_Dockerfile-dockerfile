@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: mfrellum/PragmaMS
-#    Dockerfile: http://raw.githubusercontent.com/mfrellum/PragmaMS/7d67dd51c3a65c87d54847504d27ba9edde6cb0d/DOCKERFILES/web2py/Dockerfile
-FROM mfrellum/python:v0.1
-RUN apt-get update
-RUN apt-get -y install web2py

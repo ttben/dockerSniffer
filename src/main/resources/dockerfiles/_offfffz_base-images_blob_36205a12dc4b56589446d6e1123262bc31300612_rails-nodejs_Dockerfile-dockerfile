@@ -1,9 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: offfffz/base-images
-#    Dockerfile: http://raw.githubusercontent.com/offfffz/base-images/36205a12dc4b56589446d6e1123262bc31300612/rails-nodejs/Dockerfile
-FROM ruby:2.3.1
-
-RUN apt-get update && \
-  apt-get install -y nodejs sqlite3
-
-RUN gem install rails

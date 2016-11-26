@@ -1,5 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/gicmo/docker-datahub/b1adadd50a480b1fc5f11f9060f340c6cd46d07d/psql/Dockerfile
-FROM postgres:9.4
-
-ADD setup-dh-db.sh /docker-entrypoint-initdb.d/

@@ -1,7 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: webreactor/autofile
-#    Dockerfile: http://raw.githubusercontent.com/webreactor/autofile/bc1644bfeae1859397e963d80ee52c04856ad358/Dockerfile
-FROM webreactor/nginx-php:v0.0.1
-
-RUN apt-get install \
-    && apt-get install -y imagemagick php5-imagick

@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: logilab/saemref-formula
-#    Dockerfile: http://raw.githubusercontent.com/logilab/saemref-formula/b4ca542fe7e1f223cd396813e58a71c8e729a6c9/test/postgres.Dockerfile
-FROM postgres:9.4
-
-RUN apt-get -qqy update && apt-get -qqy install postgresql-plpython-9.4

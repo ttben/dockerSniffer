@@ -1,3 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/evelan/Recrutoid-test-task/9a4e60abbc96aba731ef2119f66ff14dc29cb416/docker/backend/Dockerfile
-FROM bankmonitor/spring-boot

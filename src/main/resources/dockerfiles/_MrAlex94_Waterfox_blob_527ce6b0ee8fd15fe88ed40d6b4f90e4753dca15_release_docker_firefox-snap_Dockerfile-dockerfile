@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: MrAlex94/Waterfox
-#    Dockerfile: http://raw.githubusercontent.com/MrAlex94/Waterfox/527ce6b0ee8fd15fe88ed40d6b4f90e4753dca15/release/docker/firefox-snap/Dockerfile
-FROM ubuntu:16.04
-
-RUN apt-get update && apt-get install -qy snapcraft bzip2 curl && apt-get clean

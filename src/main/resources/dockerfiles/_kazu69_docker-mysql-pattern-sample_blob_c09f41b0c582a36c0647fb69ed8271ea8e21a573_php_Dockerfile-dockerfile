@@ -1,7 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: kazu69/docker-mysql-pattern-sample
-#    Dockerfile: http://raw.githubusercontent.com/kazu69/docker-mysql-pattern-sample/c09f41b0c582a36c0647fb69ed8271ea8e21a573/php/Dockerfile
-FROM php:5.5-apache
-
-RUN apt-get update -y && \
-    apt-get install -y mysql-client

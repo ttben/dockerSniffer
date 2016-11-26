@@ -1,3 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/toritori0318/flask-vagrant-docker-sample/f30ebd4530d109ce3d1f9a9b55d49a7faf09be88/docker-container/redis/Dockerfile
-FROM redis

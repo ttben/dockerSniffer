@@ -1,8 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: dbehnke/linux-packaging-docker
-#    Dockerfile: http://raw.githubusercontent.com/dbehnke/linux-packaging-docker/cb71885b01609c3e2b5bfaac392318b9c93a1d20/docker/build-deb-wheezy/Dockerfile
-FROM debian:wheezy
-RUN apt-get update && \
-    apt-get -y install devscripts debhelper dh-make && \
-    apt-get -y clean all
-

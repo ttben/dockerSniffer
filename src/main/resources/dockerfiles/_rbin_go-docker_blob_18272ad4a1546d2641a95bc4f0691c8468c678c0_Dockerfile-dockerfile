@@ -1,3 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/rbin/go-docker/18272ad4a1546d2641a95bc4f0691c8468c678c0/Dockerfile
-FROM google/golang-runtime

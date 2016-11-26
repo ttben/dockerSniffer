@@ -1,7 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/derintendant/dockerfiles/e209bc22ea7da4c8502c74e63e859b027d2a3796/webfiles/Dockerfile
-FROM busybox
-
-VOLUME /var/www
-
-CMD true

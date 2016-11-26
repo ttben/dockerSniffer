@@ -1,5 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/shilab/sample_overlap/19d2a355bbf543054dc8c0e7ea67791b9f15c68e/Dockerfile
-from python
-COPY ./overlap/overlap.py /
-ENTRYPOINT ["python", "overlap.py"]

@@ -1,3 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/kojiromike/docker-jenkins/0dca4ebfca3bcea600ccbef0ce56f000971966b8/jenkins/Dockerfile
-FROM jenkins

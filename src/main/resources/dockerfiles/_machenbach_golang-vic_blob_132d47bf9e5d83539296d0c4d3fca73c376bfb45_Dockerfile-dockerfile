@@ -1,7 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: machenbach/golang-vic
-#    Dockerfile: http://raw.githubusercontent.com/machenbach/golang-vic/132d47bf9e5d83539296d0c4d3fca73c376bfb45/Dockerfile
-from golang:1.6
-
-RUN apt-get update && apt-get install time
-

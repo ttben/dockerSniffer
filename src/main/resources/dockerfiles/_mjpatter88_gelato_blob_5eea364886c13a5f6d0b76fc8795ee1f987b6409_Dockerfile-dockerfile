@@ -1,7 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: mjpatter88/gelato
-#    Dockerfile: http://raw.githubusercontent.com/mjpatter88/gelato/5eea364886c13a5f6d0b76fc8795ee1f987b6409/Dockerfile
-FROM ubuntu:trusty
-
-RUN apt-get update && apt-get install -y build-essential check valgrind
-

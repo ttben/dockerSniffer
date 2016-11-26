@@ -1,9 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: hernad/docker-openjfx
-#    Dockerfile: http://raw.githubusercontent.com/hernad/docker-openjfx/dba96eed3e4b93a52f2da41707c88404d4f3a27d/Dockerfile
-FROM ubuntu:wily
-
-RUN apt-get update -y &&\
-    apt-get install -y openjdk-8-jdk openjfx
-
-

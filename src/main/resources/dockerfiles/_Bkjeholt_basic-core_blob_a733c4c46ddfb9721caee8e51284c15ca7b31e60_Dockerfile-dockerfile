@@ -1,9 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: Bkjeholt/basic-core
-#    Dockerfile: http://raw.githubusercontent.com/Bkjeholt/basic-core/a733c4c46ddfb9721caee8e51284c15ca7b31e60/Dockerfile
-FROM armv7/armhf-debian:jessie
-
-RUN apt-get update && \
-    apt-get upgrade -y && \
-    apt-get install -y php5-cli vim
-

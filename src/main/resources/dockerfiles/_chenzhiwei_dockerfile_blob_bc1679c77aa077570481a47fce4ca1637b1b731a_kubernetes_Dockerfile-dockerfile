@@ -1,3 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/chenzhiwei/dockerfile/bc1679c77aa077570481a47fce4ca1637b1b731a/kubernetes/Dockerfile
-FROM gcr.io/google_containers/hyperkube:v1.2.4

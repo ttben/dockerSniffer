@@ -1,3 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/guernica0131/test-mongo-docker/74a185636e88658e004d03ea9c05701539bd1953/Dockerfile
-FROM node:0.10-onbuild

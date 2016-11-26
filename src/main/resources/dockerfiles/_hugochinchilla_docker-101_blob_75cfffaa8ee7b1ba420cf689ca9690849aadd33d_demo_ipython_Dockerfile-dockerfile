@@ -1,7 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: hugochinchilla/docker-101
-#    Dockerfile: http://raw.githubusercontent.com/hugochinchilla/docker-101/75cfffaa8ee7b1ba420cf689ca9690849aadd33d/demo/ipython/Dockerfile
-FROM debian:jessie
-RUN apt-get update
-RUN apt-get install -y ipython
-CMD ["ipython"]

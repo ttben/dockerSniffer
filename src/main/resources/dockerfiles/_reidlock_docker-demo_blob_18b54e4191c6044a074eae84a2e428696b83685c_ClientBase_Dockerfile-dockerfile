@@ -1,7 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: reidlock/docker-demo
-#    Dockerfile: http://raw.githubusercontent.com/reidlock/docker-demo/18b54e4191c6044a074eae84a2e428696b83685c/ClientBase/Dockerfile
-FROM ubuntu
-
-RUN apt-get update
-RUN apt-get install -y curl

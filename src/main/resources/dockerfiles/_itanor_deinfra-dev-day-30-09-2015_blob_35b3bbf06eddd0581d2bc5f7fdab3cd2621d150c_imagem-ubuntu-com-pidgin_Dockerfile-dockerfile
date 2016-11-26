@@ -1,7 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: itanor/deinfra-dev-day-30-09-2015
-#    Dockerfile: http://raw.githubusercontent.com/itanor/deinfra-dev-day-30-09-2015/35b3bbf06eddd0581d2bc5f7fdab3cd2621d150c/imagem-ubuntu-com-pidgin/Dockerfile
-FROM ubuntu:14.10
-
-RUN sudo apt-get update && apt-get install -y pidgin
-

@@ -1,9 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: oilogic/docker-orgmode
-#    Dockerfile: http://raw.githubusercontent.com/oilogic/docker-orgmode/7a4d144808c9c0fe0152db448ef67874c7cb608e/Dockerfile
-FROM oilogic/pdflatex
-
-RUN apt-get update && apt-get install -y \
-    org-mode \
-    graphviz \
-    raptor-utils

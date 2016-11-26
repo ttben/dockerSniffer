@@ -1,4 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/netgio/flint/01bf9e99206f747e16f09d448b8c436e37a47291/Dockerfile
-FROM dockerfile/nodejs-runtime
-

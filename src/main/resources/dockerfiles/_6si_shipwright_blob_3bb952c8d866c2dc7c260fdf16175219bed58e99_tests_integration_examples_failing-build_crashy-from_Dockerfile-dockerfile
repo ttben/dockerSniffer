@@ -1,4 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/6si/shipwright/3bb952c8d866c2dc7c260fdf16175219bed58e99/tests/integration/examples/failing-build/crashy-from/Dockerfile
-FROM example.invalid/invalid
-COPY . /code

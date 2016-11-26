@@ -1,4 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/samiskin/JavaGame2D/5439fae6d8aeb258ee5ab7cd99f31fcf8c5a444b/Dockerfile
-# Pull base image.
-FROM ubuntu

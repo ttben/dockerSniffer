@@ -1,4 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/oreillymedia/pyxie-cookbooks/a4ba2032792f7c575efb2e86fabbc13c2017b566/docker/test/cookbooks/docker_test/files/default/Dockerfile
-FROM busybox
-RUN /bin/echo hello world

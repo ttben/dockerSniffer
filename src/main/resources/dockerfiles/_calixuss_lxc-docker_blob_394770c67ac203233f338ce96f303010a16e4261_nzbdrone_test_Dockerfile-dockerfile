@@ -1,4 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/calixuss/lxc-docker/394770c67ac203233f338ce96f303010a16e4261/nzbdrone/test/Dockerfile
-FROM atemu/nzbdrone
-CMD /bin/bash

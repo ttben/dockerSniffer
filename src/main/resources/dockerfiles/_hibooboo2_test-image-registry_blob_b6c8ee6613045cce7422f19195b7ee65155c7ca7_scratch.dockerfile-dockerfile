@@ -1,4 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/hibooboo2/test-image-registry/b6c8ee6613045cce7422f19195b7ee65155c7ca7/scratch.dockerfile
-FROM scratch
-MAINTAINER no one

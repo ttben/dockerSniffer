@@ -1,7 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: unnonouno/pficommon-test
-#    Dockerfile: http://raw.githubusercontent.com/unnonouno/pficommon-test/7060b7a279d1b39155b130727afb31dd8ac7232b/Dockerfile
-FROM ubuntu
-
-RUN apt-get update -y
-RUN apt-get install -y python g++

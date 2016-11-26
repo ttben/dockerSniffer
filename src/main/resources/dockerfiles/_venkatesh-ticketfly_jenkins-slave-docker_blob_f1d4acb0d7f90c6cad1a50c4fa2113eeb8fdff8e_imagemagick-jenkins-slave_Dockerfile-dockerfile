@@ -1,7 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: venkatesh-ticketfly/jenkins-slave-docker
-#    Dockerfile: http://raw.githubusercontent.com/venkatesh-ticketfly/jenkins-slave-docker/f1d4acb0d7f90c6cad1a50c4fa2113eeb8fdff8e/imagemagick-jenkins-slave/Dockerfile
-FROM venkatesh4ticketfly/jenkins-slave
-
-RUN apt-get update \
-  && apt-get install -y imagemagick

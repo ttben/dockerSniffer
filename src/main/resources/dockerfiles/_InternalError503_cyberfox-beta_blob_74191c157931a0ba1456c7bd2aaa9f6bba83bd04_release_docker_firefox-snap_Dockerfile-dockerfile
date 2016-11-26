@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: InternalError503/cyberfox-beta
-#    Dockerfile: http://raw.githubusercontent.com/InternalError503/cyberfox-beta/74191c157931a0ba1456c7bd2aaa9f6bba83bd04/release/docker/firefox-snap/Dockerfile
-FROM ubuntu:16.04
-
-RUN apt-get update && apt-get install -qy snapcraft bzip2 curl && apt-get clean

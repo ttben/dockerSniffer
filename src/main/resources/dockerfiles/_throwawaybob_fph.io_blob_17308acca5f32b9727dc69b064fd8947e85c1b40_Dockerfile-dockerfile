@@ -1,3 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/throwawaybob/fph.io/17308acca5f32b9727dc69b064fd8947e85c1b40/Dockerfile
-FROM meteorhacks/meteord:onbuild

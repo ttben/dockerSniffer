@@ -1,5 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/HPI-SWA-Lab/Nemo/e476d3ae4a037b79d32f5c5af9787d5450d808b9/Dockerfile
-FROM squeak/jumpinto
-ADD . /checkout
-CMD /run.sh

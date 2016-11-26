@@ -1,7 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: crosbymichael/htop-docker
-#    Dockerfile: http://raw.githubusercontent.com/crosbymichael/htop-docker/93af80d5072219659d0c7fb1b6522fe50c8dce41/Dockerfile
-FROM debian:jessie
-
-RUN apt-get update && apt-get install -y htop
-ENTRYPOINT ["htop"]

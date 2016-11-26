@@ -1,9 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: ubermuda/m6web-docker
-#    Dockerfile: http://raw.githubusercontent.com/ubermuda/m6web-docker/9bcbcccd37ac8f29f87898202cd7c589f04d35b6/redis/Dockerfile
-FROM stackbrew/ubuntu
-
-RUN apt-get update -y
-RUN apt-get install redis-server
-
-ENTRYPOINT ["redis"]

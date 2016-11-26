@@ -1,5 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/allingeek/ch4_packed_config/d88f0ab1eb541c3cdd747d83ec0346cf8d2c290b/Dockerfile
-FROM busybox:latest
-VOLUME ["/config"]
-ADD . /

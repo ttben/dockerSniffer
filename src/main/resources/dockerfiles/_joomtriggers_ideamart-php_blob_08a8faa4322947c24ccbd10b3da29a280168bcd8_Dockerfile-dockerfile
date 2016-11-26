@@ -1,7 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: joomtriggers/ideamart-php
-#    Dockerfile: http://raw.githubusercontent.com/joomtriggers/ideamart-php/08a8faa4322947c24ccbd10b3da29a280168bcd8/Dockerfile
-FROM php:latest
-
-RUN apt-get update && apt-get install git -y
-

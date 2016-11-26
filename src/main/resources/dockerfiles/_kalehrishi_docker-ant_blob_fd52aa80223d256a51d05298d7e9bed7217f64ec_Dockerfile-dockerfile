@@ -1,7 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: kalehrishi/docker-ant
-#    Dockerfile: http://raw.githubusercontent.com/kalehrishi/docker-ant/fd52aa80223d256a51d05298d7e9bed7217f64ec/Dockerfile
-FROM java
-
-RUN apt-get update
-RUN apt-get install ant -y

@@ -1,4 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/giantswarm/docker-workshop/0da504c04ab288415c6dfc4f1b4c339e980f41cd/Dockerfile
-FROM nginx:1.7.7
-ADD . /usr/share/nginx/html

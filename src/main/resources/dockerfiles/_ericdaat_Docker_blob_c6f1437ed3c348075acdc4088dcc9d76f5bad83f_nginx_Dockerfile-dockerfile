@@ -1,8 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: ericdaat/Docker
-#    Dockerfile: http://raw.githubusercontent.com/ericdaat/Docker/c6f1437ed3c348075acdc4088dcc9d76f5bad83f/nginx/Dockerfile
-FROM ubuntu
-
-run apt-get update && apt-get install -y nginx
-
-cmd ["nginx"]

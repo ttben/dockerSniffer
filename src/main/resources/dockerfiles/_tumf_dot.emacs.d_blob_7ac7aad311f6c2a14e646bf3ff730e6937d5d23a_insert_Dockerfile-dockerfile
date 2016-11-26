@@ -1,5 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/tumf/dot.emacs.d/7ac7aad311f6c2a14e646bf3ff730e6937d5d23a/insert/Dockerfile
-FROM ubuntu
-MAINTAINER tumf <y.takahara@gmail.com>
-

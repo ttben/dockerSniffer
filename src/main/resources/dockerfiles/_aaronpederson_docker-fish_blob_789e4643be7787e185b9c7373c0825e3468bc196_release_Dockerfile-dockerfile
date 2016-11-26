@@ -1,7 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: aaronpederson/docker-fish
-#    Dockerfile: http://raw.githubusercontent.com/aaronpederson/docker-fish/789e4643be7787e185b9c7373c0825e3468bc196/release/Dockerfile
-FROM aaronpederson/ubuntu
-
-RUN apt-get update
-RUN yes | apt-get install fish

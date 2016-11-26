@@ -1,7 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: austinhlopez/celeste
-#    Dockerfile: http://raw.githubusercontent.com/austinhlopez/celeste/12badf33b1ef0e5cfb539a4ef51ecc1426b68f38/docker/base/Dockerfile
-FROM debian:jessie
-
-RUN apt-get update \
-  && apt-get -y install build-essential git wget

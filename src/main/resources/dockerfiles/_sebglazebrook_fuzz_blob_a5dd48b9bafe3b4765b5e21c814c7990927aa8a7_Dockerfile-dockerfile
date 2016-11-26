@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: sebglazebrook/fuzz
-#    Dockerfile: http://raw.githubusercontent.com/sebglazebrook/fuzz/a5dd48b9bafe3b4765b5e21c814c7990927aa8a7/Dockerfile
-FROM sebglazebrook/rust-nightly
-
-RUN apt-get update && apt-get install -y libncurses5-dev libncursesw5-dev

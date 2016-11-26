@@ -1,9 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: juicelink/dockerFiles
-#    Dockerfile: http://raw.githubusercontent.com/juicelink/dockerFiles/39620b2e0f13f59af341dd0ada99116f7640f45c/ubuntu/Dockerfile
-FROM ubuntu:15.10
-
-RUN \
-	apt-get update -qq && \
-	apt-get upgrade -qqy && \
-	apt-get install -qqy curl

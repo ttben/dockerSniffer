@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: ef-ice/Dockerfiles
-#    Dockerfile: http://raw.githubusercontent.com/ef-ice/Dockerfiles/b5718f6541299285cea59df6652ab06267799553/vulcand/Dockerfile
-FROM mailgun/vulcand:v0.8.0-beta.3
-
-RUN apt-get update && apt-get upgrade -y

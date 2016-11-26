@@ -1,4 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: znetstar/guiltyspark
-#    Dockerfile: http://raw.githubusercontent.com/znetstar/guiltyspark/c5669aa62908b06b0fb463ff99ad82b476bd03df/Dockerfile
-RUN apt-get update && apt-get install -y -qq libasound2-dev

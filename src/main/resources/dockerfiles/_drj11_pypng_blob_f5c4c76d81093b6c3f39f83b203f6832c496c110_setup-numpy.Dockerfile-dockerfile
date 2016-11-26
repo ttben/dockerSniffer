@@ -1,5 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: drj11/pypng
-#    Dockerfile: http://raw.githubusercontent.com/drj11/pypng/f5c4c76d81093b6c3f39f83b203f6832c496c110/setup-numpy.Dockerfile
-FROM pypng-test
-RUN apt-get update && apt-get install -y python-numpy python3-numpy

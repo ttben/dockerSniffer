@@ -1,5 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/jpetazzo/plumber/6bf2d769a2d5e5db7b1e5bae3b6422b00aede76f/Dockerfile
-FROM ubuntu
-ADD run.sh /
-CMD bash

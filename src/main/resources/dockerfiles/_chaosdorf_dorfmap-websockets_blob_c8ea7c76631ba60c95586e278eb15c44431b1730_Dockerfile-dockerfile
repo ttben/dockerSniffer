@@ -1,4 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/chaosdorf/dorfmap-websockets/c8ea7c76631ba60c95586e278eb15c44431b1730/Dockerfile
-FROM node:5
-EXPOSE 3001

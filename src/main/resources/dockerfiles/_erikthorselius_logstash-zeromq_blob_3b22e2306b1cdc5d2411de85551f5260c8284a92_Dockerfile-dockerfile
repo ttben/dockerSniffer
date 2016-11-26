@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: erikthorselius/logstash-zeromq
-#    Dockerfile: http://raw.githubusercontent.com/erikthorselius/logstash-zeromq/3b22e2306b1cdc5d2411de85551f5260c8284a92/Dockerfile
-FROM logstash:2.1
-RUN apt-get update && apt-get install -y libzmq3-dev
-

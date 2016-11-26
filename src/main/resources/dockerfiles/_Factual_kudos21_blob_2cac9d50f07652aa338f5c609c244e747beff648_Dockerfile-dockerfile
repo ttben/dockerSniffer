@@ -1,7 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: Factual/kudos21
-#    Dockerfile: http://raw.githubusercontent.com/Factual/kudos21/2cac9d50f07652aa338f5c609c244e747beff648/Dockerfile
-FROM ruby:2.3-onbuild
-
-RUN apt-get update
-RUN apt-get install -y nodejs

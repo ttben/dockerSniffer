@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/CNCFlora/entrypoint/2713f538305b662d605ea662405df4835728aa25/Dockerfile
-FROM cncflora/apache
-
-ADD . /var/www/html
-

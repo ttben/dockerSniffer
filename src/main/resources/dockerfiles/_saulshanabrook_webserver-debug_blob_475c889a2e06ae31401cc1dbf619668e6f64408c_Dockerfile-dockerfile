@@ -1,3 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/saulshanabrook/webserver-debug/475c889a2e06ae31401cc1dbf619668e6f64408c/Dockerfile
-FROM golang:1.4-onbuild

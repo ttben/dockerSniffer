@@ -1,8 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: dgageot/quine-relay
-#    Dockerfile: http://raw.githubusercontent.com/dgageot/quine-relay/0e4aeca61cfc78d04b531a454ae241e4b4befc91/images/python.dockerfile
-FROM dgageot/quine:base
-
-RUN apt-get update -qq && apt-get install -y python
-
-COPY . ./

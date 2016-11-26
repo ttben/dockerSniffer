@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: homburg/docker-debian-nginx-test
-#    Dockerfile: http://raw.githubusercontent.com/homburg/docker-debian-nginx-test/a68a934643c53e61c57cee9fd4f34e261291c731/Dockerfile
-FROM debian
-
-RUN apt-get update && apt-get install nginx --yes

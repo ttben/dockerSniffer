@@ -1,4 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/swipely/docker-api/2b306bad803a2df9a12dab4fc673486365872666/Dockerfile
-FROM scratch
-ADD Dockerfile /Dockerfile

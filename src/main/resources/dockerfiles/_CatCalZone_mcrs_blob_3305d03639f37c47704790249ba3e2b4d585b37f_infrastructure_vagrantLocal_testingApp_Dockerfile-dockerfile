@@ -1,4 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/CatCalZone/mcrs/3305d03639f37c47704790249ba3e2b4d585b37f/infrastructure/vagrantLocal/testingApp/Dockerfile
-FROM nginx
-

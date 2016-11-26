@@ -1,4 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/mindreframer/docker-stuff/1f04da8c979d82e89e674484e473905443f95fad/github.com/swipely/docker-api/spec/fixtures/Dockerfile
-from base
-add / /

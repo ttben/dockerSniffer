@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: tgjamin/docker-101
-#    Dockerfile: http://raw.githubusercontent.com/tgjamin/docker-101/4fa349506bafa8623585633df15c4ef589729d68/docker-compose/4/db/Dockerfile
-FROM mysql:latest
-
-RUN apt-get update && apt-get install curl -y 

@@ -1,3 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/ruicc/hello-docker-compose/91bae3b1f8a86362ddf34ee23034303fd3306995/mysql/Dockerfile
-FROM mysql:5.6

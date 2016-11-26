@@ -1,4 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/lukasmartinelli/algostat/8e96a5894b154fa13d1f83de2ba06f9b136649fe/Dockerfile
-FROM python:3-onbuild
-ENV PYTHONUNBUFFERED true

@@ -1,5 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/ralreegorganon/trivia/11b195b9015d15bf5b328d6e83167bf2a0944397/db/Dockerfile
-FROM postgres:9.4
-ADD dbsetup.sh /docker-entrypoint-initdb.d/
-

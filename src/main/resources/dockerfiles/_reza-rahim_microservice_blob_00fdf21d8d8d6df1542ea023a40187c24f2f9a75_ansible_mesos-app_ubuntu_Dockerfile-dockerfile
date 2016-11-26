@@ -1,8 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: reza-rahim/microservice
-#    Dockerfile: http://raw.githubusercontent.com/reza-rahim/microservice/00fdf21d8d8d6df1542ea023a40187c24f2f9a75/ansible/mesos-app/ubuntu/Dockerfile
-FROM ubuntu
-
-RUN apt-get update
-RUN apt-get -y install iputils-ping netcat curl iproute2 
-

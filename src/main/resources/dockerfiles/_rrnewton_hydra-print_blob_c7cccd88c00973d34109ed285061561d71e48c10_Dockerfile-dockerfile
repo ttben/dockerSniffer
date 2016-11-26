@@ -1,4 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/rrnewton/hydra-print/c7cccd88c00973d34109ed285061561d71e48c10/Dockerfile
-FROM fpco/stack-build
-RUN stack build

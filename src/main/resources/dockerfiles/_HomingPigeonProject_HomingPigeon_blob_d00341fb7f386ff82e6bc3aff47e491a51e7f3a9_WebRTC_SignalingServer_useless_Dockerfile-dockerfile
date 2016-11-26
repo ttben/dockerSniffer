@@ -1,3 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/HomingPigeonProject/HomingPigeon/d00341fb7f386ff82e6bc3aff47e491a51e7f3a9/WebRTC/SignalingServer/useless/Dockerfile
-FROM node:4-onbuild

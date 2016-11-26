@@ -1,3 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/cynipe/gh_webhook_gateway/c0990804b7bc9b938a8e2834a83673ea11244203/jenkins/Dockerfile
-FROM jenkins

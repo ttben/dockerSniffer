@@ -1,4 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/codezomb/docker/5d9045f79d6ea577d45a36edd4cc51c697ec8a36/Dockerfile
-FROM busybox:latest
-RUN echo 'hello world'

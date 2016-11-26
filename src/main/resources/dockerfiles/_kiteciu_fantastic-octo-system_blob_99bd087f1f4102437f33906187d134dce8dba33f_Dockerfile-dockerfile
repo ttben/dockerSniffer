@@ -1,8 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: kiteciu/fantastic-octo-system
-#    Dockerfile: http://raw.githubusercontent.com/kiteciu/fantastic-octo-system/99bd087f1f4102437f33906187d134dce8dba33f/Dockerfile
-FROM ubuntu:latest
-RUN apt-get update
-RUN apt-get install -y telnet
-
-CMD echo "yoo"

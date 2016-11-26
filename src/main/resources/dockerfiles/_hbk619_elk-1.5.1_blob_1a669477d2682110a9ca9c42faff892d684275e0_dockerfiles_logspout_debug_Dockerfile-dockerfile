@@ -1,5 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: hbk619/elk-1.5.1
-#    Dockerfile: http://raw.githubusercontent.com/hbk619/elk-1.5.1/1a669477d2682110a9ca9c42faff892d684275e0/dockerfiles/logspout/debug/Dockerfile
-FROM ubuntu-debootstrap
-RUN apt-get update && apt-get install -y netcat

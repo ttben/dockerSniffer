@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: madbence/viiima05-preso
-#    Dockerfile: http://raw.githubusercontent.com/madbence/viiima05-preso/2d26be4b7e3c2b3ac5f135a5d1ba66aef92d5df0/htop/Dockerfile
-FROM ubuntu
-RUN apt-get update && apt-get install htop
-CMD htop

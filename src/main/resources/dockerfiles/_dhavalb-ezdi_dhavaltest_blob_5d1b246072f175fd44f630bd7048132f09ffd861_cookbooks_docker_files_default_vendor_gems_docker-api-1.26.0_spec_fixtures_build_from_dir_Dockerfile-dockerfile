@@ -1,4 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/dhavalb-ezdi/dhavaltest/5d1b246072f175fd44f630bd7048132f09ffd861/cookbooks/docker/files/default/vendor/gems/docker-api-1.26.0/spec/fixtures/build_from_dir/Dockerfile
-FROM debian:wheezy
-ADD . /

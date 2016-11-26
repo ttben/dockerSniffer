@@ -1,5 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: sharethis-github/docker-python
-#    Dockerfile: http://raw.githubusercontent.com/sharethis-github/docker-python/6ee3ca34bf4651a31cffa82966e461c544674e0f/Dockerfile
-FROM python:3.5.2
-RUN apt-get update -y && apt-get install -y curl telnet

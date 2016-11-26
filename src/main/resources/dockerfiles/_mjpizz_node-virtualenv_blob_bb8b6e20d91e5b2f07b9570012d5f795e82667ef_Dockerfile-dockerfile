@@ -1,4 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/mjpizz/node-virtualenv/bb8b6e20d91e5b2f07b9570012d5f795e82667ef/Dockerfile
-FROM node:4.3.0
-WORKDIR /code

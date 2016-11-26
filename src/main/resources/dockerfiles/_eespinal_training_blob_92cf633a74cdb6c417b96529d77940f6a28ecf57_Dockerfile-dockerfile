@@ -1,5 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/eespinal/training/92cf633a74cdb6c417b96529d77940f6a28ecf57/Dockerfile
-FROM ubuntu
-MAINTAINER eespinal
-RUN apt-get install -y ping

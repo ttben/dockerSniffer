@@ -1,3 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/puzzle/cryptopus/78560d4f8bd7e4913f75f5a3d315da9a6dc474be/Dockerfile
-FROM puzzle/ose3-rails

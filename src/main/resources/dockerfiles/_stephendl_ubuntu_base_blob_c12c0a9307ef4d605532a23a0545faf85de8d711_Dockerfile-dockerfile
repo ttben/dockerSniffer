@@ -1,7 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: stephendl/ubuntu_base
-#    Dockerfile: http://raw.githubusercontent.com/stephendl/ubuntu_base/c12c0a9307ef4d605532a23a0545faf85de8d711/Dockerfile
-FROM ubuntu
-RUN apt-get update
-RUN apt-get -y install wget vim git curl
-

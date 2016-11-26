@@ -1,5 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: kristiehoward/test-description
-#    Dockerfile: http://raw.githubusercontent.com/kristiehoward/test-description/c1f64cd7c49b234f88d7236ba44a361aecbf7cfd/Dockerfile
-FROM ubuntu
-RUN apt-get update

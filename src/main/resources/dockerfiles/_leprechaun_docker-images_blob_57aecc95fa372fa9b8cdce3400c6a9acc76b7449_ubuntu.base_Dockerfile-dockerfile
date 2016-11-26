@@ -1,9 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: leprechaun/docker-images
-#    Dockerfile: http://raw.githubusercontent.com/leprechaun/docker-images/57aecc95fa372fa9b8cdce3400c6a9acc76b7449/ubuntu.base/Dockerfile
-FROM ubuntu:latest
-
-RUN apt-get update
-
-RUN apt-get -y install dialog
-RUN apt-get -y install vim

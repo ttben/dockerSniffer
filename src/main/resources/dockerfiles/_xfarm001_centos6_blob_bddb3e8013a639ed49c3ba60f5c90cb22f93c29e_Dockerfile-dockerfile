@@ -1,3 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/xfarm001/centos6/bddb3e8013a639ed49c3ba60f5c90cb22f93c29e/Dockerfile
-FROM centos:centos6

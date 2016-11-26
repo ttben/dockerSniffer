@@ -1,3 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/lastbackend/lastbackend/08f4ac9ccc49cadf06b138efe3a455af9ff4a447/images/context/Dockerfile
-FROM alpine

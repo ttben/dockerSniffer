@@ -1,5 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: toxaco/docker_cluster
-#    Dockerfile: http://raw.githubusercontent.com/toxaco/docker_cluster/62ea4d6ac1235470cafde9ce84f9eb935255c8f4/apps/demo/nginx/Dockerfile
-FROM nginx
-RUN apt-get update && apt-get install -y vim

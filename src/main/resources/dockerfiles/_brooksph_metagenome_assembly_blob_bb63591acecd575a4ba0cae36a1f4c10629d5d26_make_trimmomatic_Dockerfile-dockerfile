@@ -1,5 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: brooksph/metagenome_assembly
-#    Dockerfile: http://raw.githubusercontent.com/brooksph/metagenome_assembly/bb63591acecd575a4ba0cae36a1f4c10629d5d26/make_trimmomatic/Dockerfile
-FROM ubuntu:14.04
-RUN apt-get update && apt-get install -y trimmomatic 

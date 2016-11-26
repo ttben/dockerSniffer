@@ -1,9 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: kumar-utsav/HW
-#    Dockerfile: http://raw.githubusercontent.com/kumar-utsav/HW/553b4d4b5b6852702f4ebab45143e4f150dba306/HW4/Task1%20(file-io)/Dockerfile
-FROM ubuntu:14.04
-
-RUN apt-get update
-RUN apt-get install -y curl
-RUN apt-get install -y socat
-RUN echo 'Advanced Docker HW' > out.txt

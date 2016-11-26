@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/paul-m/drupalci_testbot/2ac9fda9628a502e62d182115563c76586ec77b4/containers/base/db-base/Dockerfile
-FROM drupalci/base
-MAINTAINER drupalci
-
-# No Packages right now

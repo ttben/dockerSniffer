@@ -1,4 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/ewindisch/figleaf/22127bcf0f7cbc46f8529b1667b3d65e3066e146/example/Dockerfile
-FROM ewindisch/figleaf
-RUN fig pull

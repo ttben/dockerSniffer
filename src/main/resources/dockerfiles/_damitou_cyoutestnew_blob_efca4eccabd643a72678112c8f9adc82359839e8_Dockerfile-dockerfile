@@ -1,8 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: damitou/cyoutestnew
-#    Dockerfile: http://raw.githubusercontent.com/damitou/cyoutestnew/efca4eccabd643a72678112c8f9adc82359839e8/Dockerfile
-FROM ubuntu
-RUN apt-get update
-RUN apt-get -y install nginx
-EXPOSE 80
-CMD ["nginx"]

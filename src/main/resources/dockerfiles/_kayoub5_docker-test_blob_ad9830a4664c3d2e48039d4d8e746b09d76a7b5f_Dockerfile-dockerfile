@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: kayoub5/docker-test
-#    Dockerfile: http://raw.githubusercontent.com/kayoub5/docker-test/ad9830a4664c3d2e48039d4d8e746b09d76a7b5f/Dockerfile
-FROM rarkins/nodejs
-
-RUN apt-get update && apt-get install -y  --force-yes openjdk-7-jre-headless && apt-get clean

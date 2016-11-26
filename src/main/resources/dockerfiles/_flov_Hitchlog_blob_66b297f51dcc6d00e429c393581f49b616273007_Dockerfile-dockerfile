@@ -1,4 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/flov/Hitchlog/66b297f51dcc6d00e429c393581f49b616273007/Dockerfile
-# Dockerfile
-FROM quay.io/aptible/autobuild

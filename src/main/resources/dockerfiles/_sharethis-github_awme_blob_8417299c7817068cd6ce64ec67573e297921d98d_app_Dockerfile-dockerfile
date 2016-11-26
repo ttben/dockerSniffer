@@ -1,3 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/sharethis-github/awme/8417299c7817068cd6ce64ec67573e297921d98d/app/Dockerfile
-FROM nginx

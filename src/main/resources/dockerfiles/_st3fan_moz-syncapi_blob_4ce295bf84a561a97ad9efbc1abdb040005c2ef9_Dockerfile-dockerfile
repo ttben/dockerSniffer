@@ -1,4 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/st3fan/moz-syncapi/4ce295bf84a561a97ad9efbc1abdb040005c2ef9/Dockerfile
-FROM golang:onbuild
-EXPOSE 8080

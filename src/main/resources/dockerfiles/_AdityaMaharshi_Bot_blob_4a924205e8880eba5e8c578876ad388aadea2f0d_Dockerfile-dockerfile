@@ -1,3 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/AdityaMaharshi/Bot/4a924205e8880eba5e8c578876ad388aadea2f0d/Dockerfile
-FROM node:4.2-onbuild 

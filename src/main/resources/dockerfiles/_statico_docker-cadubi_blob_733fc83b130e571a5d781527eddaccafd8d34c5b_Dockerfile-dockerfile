@@ -1,8 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: statico/docker-cadubi
-#    Dockerfile: http://raw.githubusercontent.com/statico/docker-cadubi/733fc83b130e571a5d781527eddaccafd8d34c5b/Dockerfile
-FROM ubuntu
-
-RUN apt-get update && apt-get install -y cadubi
-
-CMD ["/usr/bin/cadubi"]

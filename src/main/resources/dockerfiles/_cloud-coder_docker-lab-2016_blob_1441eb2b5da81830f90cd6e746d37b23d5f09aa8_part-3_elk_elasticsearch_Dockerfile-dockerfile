@@ -1,5 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: cloud-coder/docker-lab-2016
-#    Dockerfile: http://raw.githubusercontent.com/cloud-coder/docker-lab-2016/1441eb2b5da81830f90cd6e746d37b23d5f09aa8/part-3/elk/elasticsearch/Dockerfile
-FROM elasticsearch:2.4.0
-RUN apt-get -y update  && apt-get install -y curl nano

@@ -1,5 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: dyrnade/elk
-#    Dockerfile: http://raw.githubusercontent.com/dyrnade/elk/e1ab3820545df92f14b9b08aea700065e9ea1497/elk_docker_files/containers/logspout/debug/Dockerfile
-FROM ubuntu-debootstrap
-RUN apt-get update && apt-get install -y netcat

@@ -1,5 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: xqopen/docker-ubuntu-ssh
-#    Dockerfile: http://raw.githubusercontent.com/xqopen/docker-ubuntu-ssh/3997ac2b1c627d79cbb9fa466531408cefc6b374/Dockerfile
-FROM ubuntu:latest
-RUN apt-get update -y && apt-get install -y ssh-client

@@ -1,9 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: brooksn/walk-to
-#    Dockerfile: http://raw.githubusercontent.com/brooksn/walk-to/8bb1ad6319eed70ea373d6879710f93f50a1f9c9/Dockerfile
-FROM iojs
-
-RUN apt-get update
-RUN apt-get install -y postgis
-
-EXPOSE 3000

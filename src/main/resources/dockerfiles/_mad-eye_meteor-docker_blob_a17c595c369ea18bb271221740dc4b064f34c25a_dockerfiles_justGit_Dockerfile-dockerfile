@@ -1,7 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: mad-eye/meteor-docker
-#    Dockerfile: http://raw.githubusercontent.com/mad-eye/meteor-docker/a17c595c369ea18bb271221740dc4b064f34c25a/dockerfiles/justGit/Dockerfile
-FROM ubuntu:saucy
-MAINTAINER Mike Risse
-RUN apt-get update
-RUN apt-get install -y git

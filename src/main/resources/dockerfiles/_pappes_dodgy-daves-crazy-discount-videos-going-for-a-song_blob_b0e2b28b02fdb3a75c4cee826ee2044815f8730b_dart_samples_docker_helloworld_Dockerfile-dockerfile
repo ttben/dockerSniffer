@@ -1,3 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/pappes/dodgy-daves-crazy-discount-videos-going-for-a-song/b0e2b28b02fdb3a75c4cee826ee2044815f8730b/dart/samples/docker/helloworld/Dockerfile
-FROM google/dart-runtime

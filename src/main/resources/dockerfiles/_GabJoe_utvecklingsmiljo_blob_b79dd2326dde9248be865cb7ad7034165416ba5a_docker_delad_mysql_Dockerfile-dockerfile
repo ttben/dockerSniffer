@@ -1,8 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: GabJoe/utvecklingsmiljo
-#    Dockerfile: http://raw.githubusercontent.com/GabJoe/utvecklingsmiljo/b79dd2326dde9248be865cb7ad7034165416ba5a/docker/delad/mysql/Dockerfile
-FROM mariadb:latest
-EXPOSE 3306
-
-RUN apt-get update
-RUN apt-get install nano

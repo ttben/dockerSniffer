@@ -1,4 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/ChillingChua/network_playground/ced10ac93356878707bb8513158dea54d1eb52ab/dockerfiles/centos/Dockerfile
-FROM centos:latest
-MAINTAINER Andreas Werner

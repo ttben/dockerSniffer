@@ -1,5 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: orchesio/PhotronDevKit
-#    Dockerfile: http://raw.githubusercontent.com/orchesio/PhotronDevKit/32cc93901646481b7b4c45b35353fe705056352c/tools/kafkacat/Dockerfile
-FROM ubuntu:vivid
-RUN apt-get update && apt-get -y install tmux kafkacat

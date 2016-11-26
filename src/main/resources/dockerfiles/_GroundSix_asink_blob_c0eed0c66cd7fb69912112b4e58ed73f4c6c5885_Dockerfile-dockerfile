@@ -1,3 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/GroundSix/asink/c0eed0c66cd7fb69912112b4e58ed73f4c6c5885/Dockerfile
-FROM golang:1.4

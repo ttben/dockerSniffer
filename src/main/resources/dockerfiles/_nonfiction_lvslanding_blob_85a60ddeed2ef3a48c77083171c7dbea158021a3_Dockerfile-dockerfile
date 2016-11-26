@@ -1,9 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/nonfiction/lvslanding/85a60ddeed2ef3a48c77083171c7dbea158021a3/Dockerfile
-FROM octohost/nginx
-
-ADD . /srv/www/
-
-EXPOSE 80
-
-CMD nginx

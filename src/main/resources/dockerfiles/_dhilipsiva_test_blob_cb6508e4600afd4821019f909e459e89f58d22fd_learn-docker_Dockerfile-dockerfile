@@ -1,5 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/dhilipsiva/test/cb6508e4600afd4821019f909e459e89f58d22fd/learn-docker/Dockerfile
-FROM ubuntu
-
-CMD ls /

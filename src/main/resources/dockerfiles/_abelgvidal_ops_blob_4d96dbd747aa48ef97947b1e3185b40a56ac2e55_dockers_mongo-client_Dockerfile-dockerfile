@@ -1,9 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: abelgvidal/ops
-#    Dockerfile: http://raw.githubusercontent.com/abelgvidal/ops/4d96dbd747aa48ef97947b1e3185b40a56ac2e55/dockers/mongo-client/Dockerfile
-FROM debian:sid
-
-RUN apt-get update 
-RUN apt-get -y install mongodb-clients
-
-ENTRYPOINT ["mongo"]

@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/joeygibson/docker-minimal/b756f3d9af85c28644feb9a8321bd77d7e13d1a5/Dockerfile
-FROM scratch
-# FROM google/golang:latest
-ADD helloworld /helloworld
-CMD ["/helloworld"]

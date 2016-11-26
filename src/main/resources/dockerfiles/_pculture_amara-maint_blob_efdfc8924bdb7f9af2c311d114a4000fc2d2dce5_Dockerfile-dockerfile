@@ -1,3 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/pculture/amara-maint/efdfc8924bdb7f9af2c311d114a4000fc2d2dce5/Dockerfile
-FROM google/golang-runtime

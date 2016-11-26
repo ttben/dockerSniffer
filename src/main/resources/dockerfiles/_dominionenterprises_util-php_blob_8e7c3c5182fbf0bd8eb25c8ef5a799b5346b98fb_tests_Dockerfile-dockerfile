@@ -1,5 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/dominionenterprises/util-php/8e7c3c5182fbf0bd8eb25c8ef5a799b5346b98fb/tests/Dockerfile
-FROM nubs/phpunit
-
-CMD ["./build.php"]

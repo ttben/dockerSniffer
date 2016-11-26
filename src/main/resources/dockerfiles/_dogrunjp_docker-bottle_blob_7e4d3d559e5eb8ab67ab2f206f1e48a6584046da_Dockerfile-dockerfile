@@ -1,8 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: dogrunjp/docker-bottle
-#    Dockerfile: http://raw.githubusercontent.com/dogrunjp/docker-bottle/7e4d3d559e5eb8ab67ab2f206f1e48a6584046da/Dockerfile
-FROM ubuntu
-RUN apt-get update && \
- apt-get install -y python2.7 && apt-get install -y python-pip && \
- pip install bottle
-

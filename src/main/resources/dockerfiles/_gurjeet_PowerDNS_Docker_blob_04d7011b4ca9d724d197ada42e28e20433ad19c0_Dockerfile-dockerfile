@@ -1,5 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/gurjeet/PowerDNS_Docker/04d7011b4ca9d724d197ada42e28e20433ad19c0/Dockerfile
-FROM centos:6.4
-
-RUN yum install pdns

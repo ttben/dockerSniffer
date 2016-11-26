@@ -1,3 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/coreos/etcd-ca/c3dd5eccfb35ab3de5836e09048af74c33862a37/Dockerfile
-FROM golang:1.4-onbuild

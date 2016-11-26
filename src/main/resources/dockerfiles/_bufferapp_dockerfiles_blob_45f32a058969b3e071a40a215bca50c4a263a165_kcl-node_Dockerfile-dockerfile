@@ -1,7 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: bufferapp/dockerfiles
-#    Dockerfile: http://raw.githubusercontent.com/bufferapp/dockerfiles/45f32a058969b3e071a40a215bca50c4a263a165/kcl-node/Dockerfile
-FROM node:6.2-slim
-
-RUN apt-get update
-RUN apt-get install -y default-jre

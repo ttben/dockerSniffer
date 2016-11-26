@@ -1,5 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: sharethis-github/docker-java
-#    Dockerfile: http://raw.githubusercontent.com/sharethis-github/docker-java/033e0133b9d9566cf45f71f2e44255c5072cb308/Dockerfile
-FROM java:openjdk-7
-RUN apt-get update -y && apt-get install -y curl telnet

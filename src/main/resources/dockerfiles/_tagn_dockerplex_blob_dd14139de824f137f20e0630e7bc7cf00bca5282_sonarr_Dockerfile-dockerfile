@@ -1,8 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: tagn/dockerplex
-#    Dockerfile: http://raw.githubusercontent.com/tagn/dockerplex/dd14139de824f137f20e0630e7bc7cf00bca5282/sonarr/Dockerfile
-FROM tuxeh/sonarr
-
-USER root
-
-RUN apt-get update && apt-get install nzbdrone -y

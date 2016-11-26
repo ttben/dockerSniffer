@@ -1,4 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/gnawhleinad/curious/d1e9108662030909f732f2adecb454e2e056f870/Dockerfile
-FROM curious/node:onbuild
-

@@ -1,3 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/Dawil/ymlocker/8878378b5ebba29d6298378be002465167c05bbb/Dockerfile
-FROM ruby

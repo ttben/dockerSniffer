@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: lstephen/ootp-ai
-#    Dockerfile: http://raw.githubusercontent.com/lstephen/ootp-ai/631a7ba403542ec52cb74002c056be7da218b0e3/construi/Dockerfile
-FROM maven:3-jdk-8
-
-RUN apt-get update && apt-get -y install gnuplot

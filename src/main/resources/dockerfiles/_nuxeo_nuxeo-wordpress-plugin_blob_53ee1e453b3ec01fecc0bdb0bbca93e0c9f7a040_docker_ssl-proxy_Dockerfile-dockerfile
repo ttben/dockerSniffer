@@ -1,7 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: nuxeo/nuxeo-wordpress-plugin
-#    Dockerfile: http://raw.githubusercontent.com/nuxeo/nuxeo-wordpress-plugin/53ee1e453b3ec01fecc0bdb0bbca93e0c9f7a040/docker/ssl-proxy/Dockerfile
-FROM nginx
-
-RUN apt-get update && apt-get install ssl-cert
-

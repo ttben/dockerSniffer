@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/mattn/sonictemplate-vim/72c2b1dc64c69f95051855fb9262b2818bb8cd85/template/dockerfile/base-main.dockerfile
-FROM {{_input_:FROM_image}}
-MAINTAINER {{_input_:author}} <{{_input_:email}}>
-
-RUN {{_cursor_}}

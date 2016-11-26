@@ -1,4 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/gebner/local-docker-dns/4348a70bc91d80c5c187bc0213d9f76c4ecd4f7c/Dockerfile
-FROM tianon/rawdns
-ADD rawdns.json /etc/

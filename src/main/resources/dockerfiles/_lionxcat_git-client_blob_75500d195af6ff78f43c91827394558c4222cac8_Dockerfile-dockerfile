@@ -1,5 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: lionxcat/git-client
-#    Dockerfile: http://raw.githubusercontent.com/lionxcat/git-client/75500d195af6ff78f43c91827394558c4222cac8/Dockerfile
-FROM ubuntu:latest
-RUN apt-get -y update && apt-get install -y git

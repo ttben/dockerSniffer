@@ -1,7 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: hi-ogawa/socket-programming-basics
-#    Dockerfile: http://raw.githubusercontent.com/hi-ogawa/socket-programming-basics/3485b10b9b352be71068f8efada6a800f8d43730/Dockerfile
-FROM gcc:6.1.0
-
-RUN apt-get update && \
-    apt-get install -y man manpages-dev less netcat dnsutils

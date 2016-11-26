@@ -1,4 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/lukebarton/curriculum-vitae/9c33fa5c3a7b2673fcef93cebf481435e379a2a7/web/Dockerfile
-FROM nginx
-COPY ./src /usr/share/nginx/html

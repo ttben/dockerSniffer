@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: KimSpecht/DockerBuilds
-#    Dockerfile: http://raw.githubusercontent.com/KimSpecht/DockerBuilds/c6b9d47a8680b0d7efcad487922a9b5f2f31f611/phalcon-nginx/Dockerfile
-FROM ubuntu:latest
-
-RUN apt-get update -y && apt-get upgrade -y

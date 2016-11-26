@@ -1,7 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/iliyan-trifonov/lemp-1st/c2471730e849986a88c7b570741acf4b3f225a52/mysql/data/Dockerfile
-FROM busybox
-
-VOLUME ["/mysqldata"]
-
-CMD ["true"]

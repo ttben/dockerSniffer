@@ -1,9 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: Speedy37/docker-images
-#    Dockerfile: http://raw.githubusercontent.com/Speedy37/docker-images/53aa698117bb8003f327745f56b627609f2ee6db/redmine/Dockerfile
-FROM redmine:passenger
-
-RUN apt-get update && apt-get install -y git
-RUN apt-get update && apt-get install -y subversion
-
-

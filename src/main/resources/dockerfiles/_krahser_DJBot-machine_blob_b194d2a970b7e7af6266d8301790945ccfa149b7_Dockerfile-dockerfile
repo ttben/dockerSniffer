@@ -1,7 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: krahser/DJBot-machine
-#    Dockerfile: http://raw.githubusercontent.com/krahser/DJBot-machine/b194d2a970b7e7af6266d8301790945ccfa149b7/Dockerfile
-FROM itscaro/debian-ssh
-
-RUN apt-get update -q&& \
- apt-get install -yq python python-apt

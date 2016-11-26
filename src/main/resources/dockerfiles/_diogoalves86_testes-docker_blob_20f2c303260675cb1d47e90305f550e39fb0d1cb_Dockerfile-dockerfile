@@ -1,5 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: diogoalves86/testes-docker
-#    Dockerfile: http://raw.githubusercontent.com/diogoalves86/testes-docker/20f2c303260675cb1d47e90305f550e39fb0d1cb/Dockerfile
-FROM ubuntu:12.04
-RUN apt-get update && apt-get install -y php5 apache2

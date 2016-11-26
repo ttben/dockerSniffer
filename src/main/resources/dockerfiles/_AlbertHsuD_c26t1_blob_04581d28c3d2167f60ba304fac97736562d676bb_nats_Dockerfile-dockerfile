@@ -1,4 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/AlbertHsuD/c26t1/04581d28c3d2167f60ba304fac97736562d676bb/nats/Dockerfile
-FROM apcera/gnatsd
-ENTRYPOINT ["/gnatsd"]

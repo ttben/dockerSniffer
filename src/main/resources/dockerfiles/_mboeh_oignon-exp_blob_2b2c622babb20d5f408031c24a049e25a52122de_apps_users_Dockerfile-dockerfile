@@ -1,5 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/mboeh/oignon-exp/2b2c622babb20d5f408031c24a049e25a52122de/apps/users/Dockerfile
-FROM oignon/sinatra
-
-ADD . /app

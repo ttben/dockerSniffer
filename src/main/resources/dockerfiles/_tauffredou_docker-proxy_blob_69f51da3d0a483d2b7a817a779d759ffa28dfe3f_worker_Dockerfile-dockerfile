@@ -1,5 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: tauffredou/docker-proxy
-#    Dockerfile: http://raw.githubusercontent.com/tauffredou/docker-proxy/69f51da3d0a483d2b7a817a779d759ffa28dfe3f/worker/Dockerfile
-FROM ubuntu:trusty
-RUN apt-get update && apt-get install -y curl

@@ -1,4 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/MathiasHeld/docker/bead5687e8733b5412022cb3823add1b26563820/executor/onbuild/Dockerfile
-FROM executor/nginx
-CMD ["ls", "-al", "/tmp"]

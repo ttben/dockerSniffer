@@ -1,3 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/Vloz/YouPipe/1786c03f8284d2deeeb0eca478aef37a84ebb32e/Dockerfile
-FROM google/dart-runtime

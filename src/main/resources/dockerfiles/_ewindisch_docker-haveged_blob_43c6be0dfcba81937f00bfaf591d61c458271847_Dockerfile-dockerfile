@@ -1,7 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: ewindisch/docker-haveged
-#    Dockerfile: http://raw.githubusercontent.com/ewindisch/docker-haveged/43c6be0dfcba81937f00bfaf591d61c458271847/Dockerfile
-FROM debian:latest
-RUN apt-get update; apt-get install -qy haveged
-ENTRYPOINT ["haveged"]
-CMD ["-F1"]

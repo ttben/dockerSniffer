@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: infoslack/rails_docker_demo
-#    Dockerfile: http://raw.githubusercontent.com/infoslack/rails_docker_demo/233f8d092d71cc9d633f59b68a50bcc425337613/Dockerfile
-FROM ruby:2.2.2-onbuild
-
-RUN apt-get update && apt-get install -y nodejs postgresql-client

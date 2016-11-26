@@ -1,8 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: JimGaylard/openvpn-docker
-#    Dockerfile: http://raw.githubusercontent.com/JimGaylard/openvpn-docker/71da14a4f85d67c5c19dbe5a94032bfc30d37a61/Dockerfile
-FROM ubuntu
-
-RUN apt-get update && apt-get upgrade -y
-
-RUN apt-get install openvpn -y

@@ -1,4 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/bencevans/HNCache/3a7d8b102c0bf09405293ad92e8dd5dea2c65fec/Dockerfile
-FROM node:0.12-onbuild
-EXPOSE 3000

@@ -1,3 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/twistedstream/twistedstream-web/635983d88b37c1cb05beef45cccca80f753accc6/Dockerfile
-FROM twistedstream/iojs-bower-gulp-runtime

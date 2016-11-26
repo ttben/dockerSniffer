@@ -1,4 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/ian-bartholomew/jenkins-docker-compose/adc6c473d033743d26a0c1568f1773e4737e8b59/Dockerfile
-FROM jenkins
-

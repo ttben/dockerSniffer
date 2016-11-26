@@ -1,5 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/sipwise/docker-deb-pkg/d1fdf9f78a881f39d1466d114a1493931b5748bd/builder/parser/testfiles-negative/env_no_value/Dockerfile
-FROM busybox
-
-ENV PATH

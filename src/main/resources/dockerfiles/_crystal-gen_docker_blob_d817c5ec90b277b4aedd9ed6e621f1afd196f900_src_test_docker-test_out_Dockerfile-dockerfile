@@ -1,8 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: crystal-gen/docker
-#    Dockerfile: http://raw.githubusercontent.com/crystal-gen/docker/d817c5ec90b277b4aedd9ed6e621f1afd196f900/src/test/docker-test/out/Dockerfile
-FROM ubuntu
-
-MAINTAINER Chris Tate <chris@studiotate.com>
-
-RUN apt-get update && apt-get install php5

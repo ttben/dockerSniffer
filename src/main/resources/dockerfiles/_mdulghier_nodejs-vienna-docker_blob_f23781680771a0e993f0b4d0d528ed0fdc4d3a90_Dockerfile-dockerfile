@@ -1,3 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/mdulghier/nodejs-vienna-docker/f23781680771a0e993f0b4d0d528ed0fdc4d3a90/Dockerfile
-FROM dockerfile/nodejs-runtime

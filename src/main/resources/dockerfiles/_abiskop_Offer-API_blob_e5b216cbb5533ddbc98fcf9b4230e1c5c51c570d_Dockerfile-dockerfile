@@ -1,5 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/abiskop/Offer-API/e5b216cbb5533ddbc98fcf9b4230e1c5c51c570d/Dockerfile
-FROM mirkokiefer/node
-
-EXPOSE 10000

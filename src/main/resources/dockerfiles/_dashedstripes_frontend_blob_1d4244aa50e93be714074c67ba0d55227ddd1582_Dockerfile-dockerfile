@@ -1,7 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/dashedstripes/frontend/1d4244aa50e93be714074c67ba0d55227ddd1582/Dockerfile
-FROM node:7
-
-WORKDIR /usr/frontend
-
-EXPOSE 3030

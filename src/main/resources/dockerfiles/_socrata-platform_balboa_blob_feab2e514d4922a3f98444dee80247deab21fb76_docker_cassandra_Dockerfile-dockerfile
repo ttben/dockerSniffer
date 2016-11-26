@@ -1,5 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/socrata-platform/balboa/feab2e514d4922a3f98444dee80247deab21fb76/docker/cassandra/Dockerfile
-FROM cassandra:2
-
-COPY balboa_schema.cql /etc/

@@ -1,7 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: bgrayburn/phantomService
-#    Dockerfile: http://raw.githubusercontent.com/bgrayburn/phantomService/1b79ac3e55b22cab0f31a1b62783b48a435b6b82/Dockerfile
-FROM servebox/phantomjs:latest
-
-RUN apt-get update
-RUN apt-get install vim -y

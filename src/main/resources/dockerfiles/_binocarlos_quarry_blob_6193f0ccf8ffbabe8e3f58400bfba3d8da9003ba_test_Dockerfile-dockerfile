@@ -1,5 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/binocarlos/quarry/6193f0ccf8ffbabe8e3f58400bfba3d8da9003ba/test/Dockerfile
-FROM quarry/node
-RUN echo "test" > /etc/quarrytest
-ENTRYPOINT 

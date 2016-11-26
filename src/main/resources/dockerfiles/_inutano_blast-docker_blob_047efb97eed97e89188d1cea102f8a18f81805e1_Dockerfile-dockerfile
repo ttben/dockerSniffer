@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: inutano/blast-docker
-#    Dockerfile: http://raw.githubusercontent.com/inutano/blast-docker/047efb97eed97e89188d1cea102f8a18f81805e1/Dockerfile
-FROM dockerfile/ubuntu
-RUN apt-get update && apt-get install -y ncbi-blast+
-CMD ["bash"]

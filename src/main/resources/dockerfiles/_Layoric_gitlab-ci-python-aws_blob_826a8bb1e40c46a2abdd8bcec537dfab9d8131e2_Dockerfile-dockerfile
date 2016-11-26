@@ -1,7 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/Layoric/gitlab-ci-python-aws/826a8bb1e40c46a2abdd8bcec537dfab9d8131e2/Dockerfile
-FROM python:3.5
-RUN ["apt-get", "update", "-qq"]
-RUN ["apt-get", "install", "-y", "zip"]
-RUN ["apt-get", "install", "-y", "unzip"]
-RUN ["pip", "install", "awscli"]

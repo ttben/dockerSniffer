@@ -1,4 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/nzoschke/mixable-import/731185bb38546e7e048a7be36bbc07df50c2d2bf/Dockerfile
-FROM convox/cedar
-

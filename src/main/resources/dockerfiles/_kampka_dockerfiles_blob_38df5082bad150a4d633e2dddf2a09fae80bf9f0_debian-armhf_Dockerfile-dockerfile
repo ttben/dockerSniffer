@@ -1,5 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/kampka/dockerfiles/38df5082bad150a4d633e2dddf2a09fae80bf9f0/debian-armhf/Dockerfile
-FROM scratch
-
-ADD debian-armhf.tar.xz /

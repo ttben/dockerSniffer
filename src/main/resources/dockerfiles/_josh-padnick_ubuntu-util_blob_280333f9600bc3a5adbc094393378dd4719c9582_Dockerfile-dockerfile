@@ -1,8 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: josh-padnick/ubuntu-util
-#    Dockerfile: http://raw.githubusercontent.com/josh-padnick/ubuntu-util/280333f9600bc3a5adbc094393378dd4719c9582/Dockerfile
-FROM ubuntu:16.04
-
-RUN apt-get update &&\
-    apt-get -y upgrade &&\
-    apt-get -y install vim wget curl

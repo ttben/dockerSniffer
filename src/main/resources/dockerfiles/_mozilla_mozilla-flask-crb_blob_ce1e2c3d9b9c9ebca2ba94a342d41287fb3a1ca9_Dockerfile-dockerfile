@@ -1,3 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/mozilla/mozilla-flask-crb/ce1e2c3d9b9c9ebca2ba94a342d41287fb3a1ca9/Dockerfile
-FROM giorgos/dokku-static-site

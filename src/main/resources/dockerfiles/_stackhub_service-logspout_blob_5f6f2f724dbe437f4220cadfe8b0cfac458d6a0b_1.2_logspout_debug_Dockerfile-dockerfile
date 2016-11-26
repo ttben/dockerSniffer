@@ -1,5 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: stackhub/service-logspout
-#    Dockerfile: http://raw.githubusercontent.com/stackhub/service-logspout/5f6f2f724dbe437f4220cadfe8b0cfac458d6a0b/1.2/logspout/debug/Dockerfile
-FROM ubuntu-debootstrap
-RUN apt-get update && apt-get install -y netcat

@@ -1,5 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/Chegarra/TSR-PRAC3/974c5754022c3aed9e593f5638a32ba0c90f6222/Components/balancer/Dockerfile
-FROM tsir/baselab3
-USER root
-

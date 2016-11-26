@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: lbovet/wheezy-alsa
-#    Dockerfile: http://raw.githubusercontent.com/lbovet/wheezy-alsa/80184e7a3451256b01e47879589714fd83124dc4/Dockerfile
-FROM debian:wheezy
-
-RUN apt-get update && apt-get install -y  alsa-base alsa-utils

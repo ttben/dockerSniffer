@@ -1,5 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/JediMindtrick/hyperloop-reboot/e6de65fbd8e3dbc35508232f3b0b7463f927eb5b/global/dockerfiles/ubuntu15-base/Dockerfile
-# DOCKER-VERSION 0.10.0
-
-FROM ubuntu:15.04

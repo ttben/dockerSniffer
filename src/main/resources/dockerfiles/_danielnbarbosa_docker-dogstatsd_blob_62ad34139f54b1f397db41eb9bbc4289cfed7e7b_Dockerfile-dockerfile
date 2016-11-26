@@ -1,3 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/danielnbarbosa/docker-dogstatsd/62ad34139f54b1f397db41eb9bbc4289cfed7e7b/Dockerfile
-FROM datadog/docker-dogstatsd

@@ -1,4 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/teemow/docktris/7c69b396a996f9ccc9bac8948f3187e68170650a/game/Dockerfile
-FROM dockerfile/redis
-

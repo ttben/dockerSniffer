@@ -1,5 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/ewindisch/docker-circle/a9d92b9de367b2296842fb4a483d316936a902d2/Dockerfile
-FROM scratch
-MAINTAINER ewindisch@docker.com
-ONBUILD FROM scratch

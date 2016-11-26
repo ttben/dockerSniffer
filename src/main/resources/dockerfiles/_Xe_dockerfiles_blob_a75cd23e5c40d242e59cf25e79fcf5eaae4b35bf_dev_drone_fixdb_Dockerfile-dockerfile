@@ -1,7 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/Xe/dockerfiles/a75cd23e5c40d242e59cf25e79fcf5eaae4b35bf/dev/drone/fixdb/Dockerfile
-FROM postgres
-
-ADD fixdb.sh /
-
-CMD /fixdb.sh

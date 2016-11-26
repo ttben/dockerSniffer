@@ -1,8 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: tatums/docker-play
-#    Dockerfile: http://raw.githubusercontent.com/tatums/docker-play/8b2a66eb3f84e192685e5a3d5a02a6d54804e406/playbooks/files/docker/db/Dockerfile
-FROM postgres
-
-RUN apt-get update -qq
-RUN apt-get install -y build-essential libpq-dev
-

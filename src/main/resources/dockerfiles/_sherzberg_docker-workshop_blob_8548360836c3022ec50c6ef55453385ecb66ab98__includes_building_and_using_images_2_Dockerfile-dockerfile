@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: sherzberg/docker-workshop
-#    Dockerfile: http://raw.githubusercontent.com/sherzberg/docker-workshop/8548360836c3022ec50c6ef55453385ecb66ab98/_includes/building_and_using_images/2/Dockerfile
-FROM stackbrew/ubuntu:14.04
-RUN apt-get update
-RUN apt-get install -y cowsay

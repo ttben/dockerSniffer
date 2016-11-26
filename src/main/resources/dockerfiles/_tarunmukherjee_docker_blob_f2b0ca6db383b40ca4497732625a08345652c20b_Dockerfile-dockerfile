@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: tarunmukherjee/docker
-#    Dockerfile: http://raw.githubusercontent.com/tarunmukherjee/docker/f2b0ca6db383b40ca4497732625a08345652c20b/Dockerfile
-FROM ubuntu
-RUN apt-get update
-RUN apt-get install -y nginx

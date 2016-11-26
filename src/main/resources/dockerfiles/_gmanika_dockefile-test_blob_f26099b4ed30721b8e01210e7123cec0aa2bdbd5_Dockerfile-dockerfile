@@ -1,5 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: gmanika/dockefile-test
-#    Dockerfile: http://raw.githubusercontent.com/gmanika/dockefile-test/f26099b4ed30721b8e01210e7123cec0aa2bdbd5/Dockerfile
-FROM ubuntu:14.04
-RUN apt-get update; apt-get install -y nginx

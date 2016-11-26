@@ -1,3 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/ad2games/docker-deploy/116a23c070ee18608676c4d35317cbb1118eb1a9/config/Dockerfile
-FROM ad2games/docker-rails:latest

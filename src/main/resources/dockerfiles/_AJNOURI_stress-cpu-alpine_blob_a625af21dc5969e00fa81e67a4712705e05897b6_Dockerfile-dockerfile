@@ -1,7 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: AJNOURI/stress-cpu-alpine
-#    Dockerfile: http://raw.githubusercontent.com/AJNOURI/stress-cpu-alpine/a625af21dc5969e00fa81e67a4712705e05897b6/Dockerfile
-FROM ubuntu 
-RUN apt-get update
-RUN apt-get install stress
-CMD /usr/bin/stress --cpu 1

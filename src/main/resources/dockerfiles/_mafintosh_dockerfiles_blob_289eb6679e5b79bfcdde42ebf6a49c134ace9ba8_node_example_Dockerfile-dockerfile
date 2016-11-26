@@ -1,3 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/mafintosh/dockerfiles/289eb6679e5b79bfcdde42ebf6a49c134ace9ba8/node/example/Dockerfile
-FROM mafintosh/node:0.10.33

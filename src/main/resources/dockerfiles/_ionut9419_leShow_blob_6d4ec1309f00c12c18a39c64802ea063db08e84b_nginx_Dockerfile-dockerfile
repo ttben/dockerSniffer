@@ -1,7 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: ionut9419/leShow
-#    Dockerfile: http://raw.githubusercontent.com/ionut9419/leShow/6d4ec1309f00c12c18a39c64802ea063db08e84b/nginx/Dockerfile
-FROM nginx
-
-RUN apt-get update && apt-get install -y \
-    git

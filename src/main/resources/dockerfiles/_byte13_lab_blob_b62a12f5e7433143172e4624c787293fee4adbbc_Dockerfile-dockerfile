@@ -1,7 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: byte13/lab
-#    Dockerfile: http://raw.githubusercontent.com/byte13/lab/b62a12f5e7433143172e4624c787293fee4adbbc/Dockerfile
-FROM ubuntu:16.04
-RUN apt-get update && apt-get install htop
-
-CMD /usr/bin/htop

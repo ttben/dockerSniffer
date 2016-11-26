@@ -1,8 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: ManoMarks/desktopgis
-#    Dockerfile: http://raw.githubusercontent.com/ManoMarks/desktopgis/71627af0c24073a87ce1036b746ddf8c1ebccf5d/Dockerfile
-FROM deskor/xrdp
-RUN apt-get update
-RUN apt-get install -y gis-workstation
-
-CMD ["qgis"]]

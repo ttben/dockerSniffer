@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: lodestreams/BusyTools
-#    Dockerfile: http://raw.githubusercontent.com/lodestreams/BusyTools/4d31d3d7d55d3845ea8c26679c1d69015e37dcca/Dockerfile
-FROM dockerfile/nodejs-bower-gulp
-
-RUN apt-get update && apt-get upgrade && apt-get install git

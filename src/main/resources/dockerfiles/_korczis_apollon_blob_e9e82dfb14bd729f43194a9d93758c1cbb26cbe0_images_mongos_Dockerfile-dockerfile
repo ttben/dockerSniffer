@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/korczis/apollon/e9e82dfb14bd729f43194a9d93758c1cbb26cbe0/images/mongos/Dockerfile
-FROM korczis/mongod:latest
-
-EXPOSE 27017
-ENTRYPOINT ["usr/bin/mongos"]

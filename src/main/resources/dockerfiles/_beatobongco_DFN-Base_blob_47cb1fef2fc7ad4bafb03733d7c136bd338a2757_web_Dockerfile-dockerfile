@@ -1,3 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/beatobongco/DFN-Base/47cb1fef2fc7ad4bafb03733d7c136bd338a2757/web/Dockerfile
-FROM python:2.7-onbuild

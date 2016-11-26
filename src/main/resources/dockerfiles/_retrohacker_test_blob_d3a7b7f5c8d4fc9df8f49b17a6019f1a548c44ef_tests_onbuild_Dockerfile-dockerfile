@@ -1,5 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/retrohacker/test/d3a7b7f5c8d4fc9df8f49b17a6019f1a548c44ef/tests/onbuild/Dockerfile
-FROM iojs:1.5.1-onbuild
-
-RUN return 0

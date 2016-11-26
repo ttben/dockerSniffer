@@ -1,3 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/Ne4istb/AudioSamplerDart/8f40f69ee7738b0920769017f233a2e3b192521a/Dockerfile
-FROM google/dart-runtime

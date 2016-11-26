@@ -1,8 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: dockerparis/trusted-cross-build
-#    Dockerfile: http://raw.githubusercontent.com/dockerparis/trusted-cross-build/acf4c81d62176e22cf6e06b1a0cc0b45c84ba208/qemu-arm-static/Dockerfile
-FROM ubuntu:latest
-RUN apt-get -q update \
- && apt-get -qq -y install qemu-user-static \
- && apt-get clean
-

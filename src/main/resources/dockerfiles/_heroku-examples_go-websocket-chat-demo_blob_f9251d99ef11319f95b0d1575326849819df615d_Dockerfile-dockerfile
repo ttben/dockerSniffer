@@ -1,3 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/heroku-examples/go-websocket-chat-demo/f9251d99ef11319f95b0d1575326849819df615d/Dockerfile
-FROM heroku/go:latest

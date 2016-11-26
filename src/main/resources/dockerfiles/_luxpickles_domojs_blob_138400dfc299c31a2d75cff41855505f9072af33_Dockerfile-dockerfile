@@ -1,4 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/luxpickles/domojs/138400dfc299c31a2d75cff41855505f9072af33/Dockerfile
-FROM node:4-onbuild
-EXPOSE 8080

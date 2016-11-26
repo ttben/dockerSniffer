@@ -1,5 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/nbriar/docker_build_files/a7b4e35200078454553d924cfc726809640f1b68/rails_project/Dockerfile
-FROM nbriar/rails:onbuild
-
-

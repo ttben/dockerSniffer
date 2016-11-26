@@ -1,7 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/beardedbrew/shrt.ly/0c5de3dbac920915bc6ace6b96bdf666b94d40e0/docker/data/Dockerfile
-FROM ubuntu:14.04
-
-VOLUME /var/lib/mysql
-
-CMD ["true"]

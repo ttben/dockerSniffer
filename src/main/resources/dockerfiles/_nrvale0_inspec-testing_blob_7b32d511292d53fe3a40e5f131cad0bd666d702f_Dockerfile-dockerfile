@@ -1,7 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: nrvale0/inspec-testing
-#    Dockerfile: http://raw.githubusercontent.com/nrvale0/inspec-testing/7b32d511292d53fe3a40e5f131cad0bd666d702f/Dockerfile
-FROM ubuntu:14.04
-
-RUN apt-get update && \
-    apt-get install vim -y

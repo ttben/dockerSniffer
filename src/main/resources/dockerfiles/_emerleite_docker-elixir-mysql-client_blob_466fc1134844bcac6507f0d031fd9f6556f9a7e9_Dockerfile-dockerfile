@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: emerleite/docker-elixir-mysql-client
-#    Dockerfile: http://raw.githubusercontent.com/emerleite/docker-elixir-mysql-client/466fc1134844bcac6507f0d031fd9f6556f9a7e9/Dockerfile
-FROM elixir:latest
-RUN apt-get update
-RUN apt-get install -y mysql-client

@@ -1,8 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: fbdapp/service_debian
-#    Dockerfile: http://raw.githubusercontent.com/fbdapp/service_debian/2f0444b970fd3c86d2baed227670d3d5262a85b0/service_debian/Dockerfile
-FROM debian:jessie
-
-ENV DEBIAN_FRONTEND to noninteractive
-
-RUN apt-get update && apt-get -y dist-upgrade && apt-get install -y libuser ca-certificates && apt-get clean

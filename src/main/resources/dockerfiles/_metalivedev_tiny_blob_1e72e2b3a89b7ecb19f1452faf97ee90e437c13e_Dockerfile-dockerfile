@@ -1,4 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/metalivedev/tiny/1e72e2b3a89b7ecb19f1452faf97ee90e437c13e/Dockerfile
-FROM busybox
-RUN date; uname -a

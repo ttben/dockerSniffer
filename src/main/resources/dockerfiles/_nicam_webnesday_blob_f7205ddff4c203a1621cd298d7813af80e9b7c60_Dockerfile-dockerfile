@@ -1,7 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/nicam/webnesday/f7205ddff4c203a1621cd298d7813af80e9b7c60/Dockerfile
-FROM nginx
-
-EXPOSE 80
-
-COPY ./app /usr/share/nginx/html

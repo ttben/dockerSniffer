@@ -1,3 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/docker-java/docker-java/419900d074e6d9754dcd5c6290d93c3350bab010/src/test/resources/buildTests/FROM/privateRegistry/Dockerfile
-FROM      localhost:5000/testuser/busybox:latest

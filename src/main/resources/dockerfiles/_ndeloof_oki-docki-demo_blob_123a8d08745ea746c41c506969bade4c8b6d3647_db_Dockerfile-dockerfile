@@ -1,5 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/ndeloof/oki-docki-demo/123a8d08745ea746c41c506969bade4c8b6d3647/db/Dockerfile
-FROM mysql:5
-
-ENV FOO BAR

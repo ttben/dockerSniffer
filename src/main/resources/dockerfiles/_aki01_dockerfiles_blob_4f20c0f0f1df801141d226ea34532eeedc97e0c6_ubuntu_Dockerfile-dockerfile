@@ -1,8 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: aki01/dockerfiles
-#    Dockerfile: http://raw.githubusercontent.com/aki01/dockerfiles/4f20c0f0f1df801141d226ea34532eeedc97e0c6/ubuntu/Dockerfile
-FROM ubuntu
-
-RUN apt-get update -y
-RUN apt-get upgrade -y
-RUN apt-get install -y wget curl vim

@@ -1,3 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/dorapro/docker-official-image/b9b50fb0507ad8c28f83393cf017c29bc5872fa0/Dockerfile
-FROM scratch

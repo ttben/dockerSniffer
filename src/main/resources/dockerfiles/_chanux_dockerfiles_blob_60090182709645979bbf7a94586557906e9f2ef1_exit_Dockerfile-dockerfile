@@ -1,5 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/chanux/dockerfiles/60090182709645979bbf7a94586557906e9f2ef1/exit/Dockerfile
-FROM scratch
-COPY exit /
-CMD ["/exit"]

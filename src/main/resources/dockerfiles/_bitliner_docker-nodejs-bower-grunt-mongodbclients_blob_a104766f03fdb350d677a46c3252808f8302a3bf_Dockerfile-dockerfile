@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: bitliner/docker-nodejs-bower-grunt-mongodbclients
-#    Dockerfile: http://raw.githubusercontent.com/bitliner/docker-nodejs-bower-grunt-mongodbclients/a104766f03fdb350d677a46c3252808f8302a3bf/Dockerfile
-FROM digitallyseamless/nodejs-bower-grunt
-
-RUN apt-get update && apt-get -y install mongodb-clients

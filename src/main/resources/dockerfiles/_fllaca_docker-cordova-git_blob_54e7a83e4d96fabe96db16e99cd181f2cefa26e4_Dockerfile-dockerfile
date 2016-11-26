@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: fllaca/docker-cordova-git
-#    Dockerfile: http://raw.githubusercontent.com/fllaca/docker-cordova-git/54e7a83e4d96fabe96db16e99cd181f2cefa26e4/Dockerfile
-FROM beevelop/cordova:latest
-
-RUN apt-get update && apt-get install -y git-all

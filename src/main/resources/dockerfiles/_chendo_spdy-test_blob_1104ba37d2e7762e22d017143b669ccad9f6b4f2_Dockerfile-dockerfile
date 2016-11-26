@@ -1,4 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/chendo/spdy-test/1104ba37d2e7762e22d017143b669ccad9f6b4f2/Dockerfile
-FROM golang:onbuild
-EXPOSE 44300

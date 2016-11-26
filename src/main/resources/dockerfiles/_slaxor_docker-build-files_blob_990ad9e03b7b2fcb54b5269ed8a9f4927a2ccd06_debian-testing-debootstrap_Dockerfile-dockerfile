@@ -1,5 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/slaxor/docker-build-files/990ad9e03b7b2fcb54b5269ed8a9f4927a2ccd06/debian-testing-debootstrap/Dockerfile
-FROM 102952bc26b9
-MAINTAINER Sascha Teske <sascha.teske@gmail.com>
-

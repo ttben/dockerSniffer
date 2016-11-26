@@ -1,8 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: jessedusty/stuff-server
-#    Dockerfile: http://raw.githubusercontent.com/jessedusty/stuff-server/a500993aed4c0ac181565c0da329996bcefe45dd/Dockerfile
-FROM docteurfraise/flask-python34
-RUN apt-get update
-RUN apt-get install -y python-pip
-RUN apt-get install -y mongodb-clients
-RUN pip install pymongo

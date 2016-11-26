@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: renra/dockerfiles
-#    Dockerfile: http://raw.githubusercontent.com/renra/dockerfiles/10eea6159cea3620d12cfbaf06e6971fe7f09b02/build-essential/Dockerfile
-FROM debian:jessie
-
-RUN apt-get -qq -y update && apt-get -qq -y install build-essential

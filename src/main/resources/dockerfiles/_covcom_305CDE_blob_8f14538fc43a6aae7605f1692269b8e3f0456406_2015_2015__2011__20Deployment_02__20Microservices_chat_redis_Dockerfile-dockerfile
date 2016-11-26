@@ -1,4 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/covcom/305CDE/8f14538fc43a6aae7605f1692269b8e3f0456406/2015/2015%2011%20Deployment/02%20Microservices/chat/redis/Dockerfile
-FROM redis:3.0.3
-EXPOSE 6379

@@ -1,5 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: CloudBrewery/dockerstack
-#    Dockerfile: http://raw.githubusercontent.com/CloudBrewery/dockerstack/76a66ae78c25c101d740d4f3fea22c7e1a698dc3/test/basic/Dockerfile
-RUN apt-get update
-RUN apt-get install -y git vim

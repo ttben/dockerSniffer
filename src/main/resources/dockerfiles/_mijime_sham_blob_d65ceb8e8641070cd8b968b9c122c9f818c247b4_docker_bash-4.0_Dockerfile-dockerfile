@@ -1,8 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: mijime/sham
-#    Dockerfile: http://raw.githubusercontent.com/mijime/sham/d65ceb8e8641070cd8b968b9c122c9f818c247b4/docker/bash-4.0/Dockerfile
-FROM ko1nksm/bash:4.0
-
-RUN apt-get update \
-      && apt-get install -y git \
-      && apt-get clean

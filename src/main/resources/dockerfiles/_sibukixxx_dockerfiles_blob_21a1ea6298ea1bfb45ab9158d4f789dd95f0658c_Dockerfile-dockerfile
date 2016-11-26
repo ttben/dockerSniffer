@@ -1,3 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/sibukixxx/dockerfiles/21a1ea6298ea1bfb45ab9158d4f789dd95f0658c/Dockerfile
-FROM kenjiskywalker/dockerfile-centos-ansible

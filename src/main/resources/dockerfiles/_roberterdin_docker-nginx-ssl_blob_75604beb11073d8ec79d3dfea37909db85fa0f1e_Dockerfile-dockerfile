@@ -1,5 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: roberterdin/docker-nginx-ssl
-#    Dockerfile: http://raw.githubusercontent.com/roberterdin/docker-nginx-ssl/75604beb11073d8ec79d3dfea37909db85fa0f1e/Dockerfile
-FROM nginx 
-RUN apt-get update && apt-get dist-upgrade -y

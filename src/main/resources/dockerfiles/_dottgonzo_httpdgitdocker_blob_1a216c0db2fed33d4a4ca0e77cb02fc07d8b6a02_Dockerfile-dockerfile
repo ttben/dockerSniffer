@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: dottgonzo/httpdgitdocker
-#    Dockerfile: http://raw.githubusercontent.com/dottgonzo/httpdgitdocker/1a216c0db2fed33d4a4ca0e77cb02fc07d8b6a02/Dockerfile
-FROM httpd
-RUN apt-get update
-RUN apt-get install git -y

@@ -1,5 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/how2dock/docbook/48511f1cd5c92c0d716a23b2066caf25680a6e3c/ch02/ls/Dockerfile
-FROM ubuntu:14.04
-
-CMD ["ls"]

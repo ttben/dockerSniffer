@@ -1,7 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: heritaget/Docker
-#    Dockerfile: http://raw.githubusercontent.com/heritaget/Docker/e4f1d09063b5cd125a6c59dc8fffeb3a1111d5ed/Dockerfile
-FROM ubuntu:14.04
-RUN apt-get update
-RUN apt-get install -y vim
-RUN apt-get install -y curl

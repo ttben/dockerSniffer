@@ -1,9 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: mxns/quadratisch
-#    Dockerfile: http://raw.githubusercontent.com/mxns/quadratisch/43c3608e755492428735b1be8f37441f5a1f6047/docker/rauth/Dockerfile
-FROM quadratisch/ruby:2.3.1
-
-RUN apt-get update && \
-    apt-get install -y freeradius-utils && \
-    gem install rotp
-

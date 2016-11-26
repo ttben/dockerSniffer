@@ -1,7 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/MarkusMattinen/speedtest-server/409708687130e33e9374d7632f8d9ae4817667bf/Dockerfile
-FROM node:0.12.0-onbuild
-
-ENV PORT 80
-EXPOSE 80
-

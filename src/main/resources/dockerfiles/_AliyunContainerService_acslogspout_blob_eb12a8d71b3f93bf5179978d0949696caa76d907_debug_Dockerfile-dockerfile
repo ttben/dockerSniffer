@@ -1,5 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: AliyunContainerService/acslogspout
-#    Dockerfile: http://raw.githubusercontent.com/AliyunContainerService/acslogspout/eb12a8d71b3f93bf5179978d0949696caa76d907/debug/Dockerfile
-FROM ubuntu-debootstrap
-RUN apt-get update && apt-get install -y netcat

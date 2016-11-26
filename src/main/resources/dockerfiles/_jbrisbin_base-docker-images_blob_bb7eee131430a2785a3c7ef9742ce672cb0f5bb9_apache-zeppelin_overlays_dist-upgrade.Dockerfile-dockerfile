@@ -1,4 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: jbrisbin/base-docker-images
-#    Dockerfile: http://raw.githubusercontent.com/jbrisbin/base-docker-images/bb7eee131430a2785a3c7ef9742ce672cb0f5bb9/apache-zeppelin/overlays/dist-upgrade.Dockerfile
-RUN apt-get dist-upgrade -y

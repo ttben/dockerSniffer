@@ -1,9 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: Neoware/computer-database
-#    Dockerfile: http://raw.githubusercontent.com/Neoware/computer-database/182d8590fb88d0ee6fe5c2b5e66bedd6761705a3/docker/java-maven/Dockerfile
-FROM java:8 
-
-# Install maven
-RUN apt-get update
-RUN apt-get install -y maven
-WORKDIR /home

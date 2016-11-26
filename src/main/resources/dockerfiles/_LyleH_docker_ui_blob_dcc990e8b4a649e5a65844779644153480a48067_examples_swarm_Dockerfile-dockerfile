@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: LyleH/docker_ui
-#    Dockerfile: http://raw.githubusercontent.com/LyleH/docker_ui/dcc990e8b4a649e5a65844779644153480a48067/examples/swarm/Dockerfile
-FROM debian
-
-RUN apt-get update && apt-get install -y socat

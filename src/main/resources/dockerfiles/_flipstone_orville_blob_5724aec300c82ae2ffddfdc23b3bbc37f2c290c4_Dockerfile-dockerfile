@@ -1,9 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: flipstone/orville
-#    Dockerfile: http://raw.githubusercontent.com/flipstone/orville/5724aec300c82ae2ffddfdc23b3bbc37f2c290c4/Dockerfile
-FROM haskell:7.10.3
-
-RUN apt-get update &&\
-    apt-get install -y --no-install-recommends libpq5 libpq-dev &&\
-    apt-get clean
-

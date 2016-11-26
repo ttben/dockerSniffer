@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: progDarkCrou/sandbox
-#    Dockerfile: http://raw.githubusercontent.com/progDarkCrou/sandbox/cbbe4596c351a65c7fba1d8d8b22e8b904c746d1/docker/proj-1/Dockerfile
-FROM ubuntu
-RUN ["apt-get","update"]
-RUN ["apt-get", "install", "aptitude", "mysql-client", "-y"]

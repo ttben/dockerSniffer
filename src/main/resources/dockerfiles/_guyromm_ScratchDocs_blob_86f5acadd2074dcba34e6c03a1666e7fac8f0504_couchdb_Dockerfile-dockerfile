@@ -1,5 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: guyromm/ScratchDocs
-#    Dockerfile: http://raw.githubusercontent.com/guyromm/ScratchDocs/86f5acadd2074dcba34e6c03a1666e7fac8f0504/couchdb/Dockerfile
-FROM klaemo/couchdb
-RUN apt-get update && apt-get install -y libmozjs185-1.0

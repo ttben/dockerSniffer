@@ -1,4 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/adammck/docker-le8gxqjb5yd3bcod/a6dfdcca9d7ba574d667fbbf6a29ad50c5292b41/Dockerfile
-FROM centos:7
-RUN yum -y install git

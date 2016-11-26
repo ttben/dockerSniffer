@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: infoslack/docker-exemplos
-#    Dockerfile: http://raw.githubusercontent.com/infoslack/docker-exemplos/6e8164254888ce3392c0764c99d09bc974024aca/cap-08/TDD/Dockerfile
-FROM ubuntu:14.04
-
-RUN apt-get update && apt-get install -y nginx

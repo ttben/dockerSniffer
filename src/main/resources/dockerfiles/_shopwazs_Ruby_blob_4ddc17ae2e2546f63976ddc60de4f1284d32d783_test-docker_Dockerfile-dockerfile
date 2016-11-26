@@ -1,8 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: shopwazs/Ruby
-#    Dockerfile: http://raw.githubusercontent.com/shopwazs/Ruby/4ddc17ae2e2546f63976ddc60de4f1284d32d783/test-docker/Dockerfile
-FROM ubuntu 
-RUN apt-get update
-RUN apt-get install -y vim && apt-get install -y curl \
-                                                 vim
-ENTRYPOINT ["ping"]

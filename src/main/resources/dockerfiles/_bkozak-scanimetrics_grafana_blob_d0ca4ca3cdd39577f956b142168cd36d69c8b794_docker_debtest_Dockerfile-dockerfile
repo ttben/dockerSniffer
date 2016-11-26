@@ -1,9 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: bkozak-scanimetrics/grafana
-#    Dockerfile: http://raw.githubusercontent.com/bkozak-scanimetrics/grafana/d0ca4ca3cdd39577f956b142168cd36d69c8b794/docker/debtest/Dockerfile
-FROM debian:jessie
-
-RUN apt-get update && apt-get install -y vim
-
-ADD *.deb /tmp/
-

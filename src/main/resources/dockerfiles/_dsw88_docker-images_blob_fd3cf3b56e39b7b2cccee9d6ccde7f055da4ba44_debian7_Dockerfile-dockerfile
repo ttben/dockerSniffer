@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: dsw88/docker-images
-#    Dockerfile: http://raw.githubusercontent.com/dsw88/docker-images/fd3cf3b56e39b7b2cccee9d6ccde7f055da4ba44/debian7/Dockerfile
-FROM debian:wheezy
-
-RUN apt-get -y update && apt-get -y upgrade

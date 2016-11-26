@@ -1,7 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/decentninja/Nanoacre/95a9aa54f66172d026594c06e85bccd7fb426a48/Dockerfile
-FROM debian:latest
-EXPOSE 9000
-COPY . .
-CMD ./Nanoacre
-

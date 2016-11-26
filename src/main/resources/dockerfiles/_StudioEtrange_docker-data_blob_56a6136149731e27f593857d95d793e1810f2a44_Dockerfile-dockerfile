@@ -1,8 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/StudioEtrange/docker-data/56a6136149731e27f593857d95d793e1810f2a44/Dockerfile
-FROM busybox
-MAINTAINER StudioEtrange <nomorgan@gmail.com>
-
-VOLUME /data
-
-

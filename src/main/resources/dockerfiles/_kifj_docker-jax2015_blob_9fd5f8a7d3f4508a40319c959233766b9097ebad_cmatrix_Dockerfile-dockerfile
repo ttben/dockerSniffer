@@ -1,8 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: kifj/docker-jax2015
-#    Dockerfile: http://raw.githubusercontent.com/kifj/docker-jax2015/9fd5f8a7d3f4508a40319c959233766b9097ebad/cmatrix/Dockerfile
-FROM ubuntu
-
-RUN apt-get update && apt-get install -y cmatrix
-ENTRYPOINT [ "cmatrix" ]
-CMD [ "-C", "green" ]

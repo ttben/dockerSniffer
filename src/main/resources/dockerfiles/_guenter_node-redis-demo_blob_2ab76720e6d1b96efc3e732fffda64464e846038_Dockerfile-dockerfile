@@ -1,4 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/guenter/node-redis-demo/2ab76720e6d1b96efc3e732fffda64464e846038/Dockerfile
-FROM node:0.11-onbuild
-EXPOSE 8080

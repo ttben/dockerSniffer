@@ -1,7 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: jmarmuszewski/db-workshop-pg
-#    Dockerfile: http://raw.githubusercontent.com/jmarmuszewski/db-workshop-pg/855d33661174d34fa42506b5cf01bfeb73864225/dockerfiles/dashing/Dockerfile
-FROM ruby:1.9.3
-
-RUN apt-get update -qq
-RUN apt-get install -y nodejs

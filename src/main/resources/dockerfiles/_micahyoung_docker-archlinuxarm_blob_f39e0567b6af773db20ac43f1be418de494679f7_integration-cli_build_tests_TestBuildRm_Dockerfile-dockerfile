@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/micahyoung/docker-archlinuxarm/f39e0567b6af773db20ac43f1be418de494679f7/integration-cli/build_tests/TestBuildRm/Dockerfile
-FROM busybox
-ADD foo /
-ADD foo /
-

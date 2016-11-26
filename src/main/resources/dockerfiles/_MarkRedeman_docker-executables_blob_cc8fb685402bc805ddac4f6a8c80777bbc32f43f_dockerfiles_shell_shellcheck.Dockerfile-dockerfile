@@ -1,8 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: MarkRedeman/docker-executables
-#    Dockerfile: http://raw.githubusercontent.com/MarkRedeman/docker-executables/cc8fb685402bc805ddac4f6a8c80777bbc32f43f/dockerfiles/shell/shellcheck.Dockerfile
-FROM debian:jessie
-
-RUN apt-get update && apt-get install -y shellcheck
-
-ENTRYPOINT ["shellcheck"]

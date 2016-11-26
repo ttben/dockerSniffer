@@ -1,4 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/estani/docker/0f1ba0a785bc1f831d65f699c9c2f0c591107f5e/solr/Dockerfile
-FROM java
-

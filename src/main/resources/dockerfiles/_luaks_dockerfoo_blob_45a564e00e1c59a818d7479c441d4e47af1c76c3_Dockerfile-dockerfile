@@ -1,4 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/luaks/dockerfoo/45a564e00e1c59a818d7479c441d4e47af1c76c3/Dockerfile
-FROM alpine:3.4
-CMD /bin/echo 'foo'

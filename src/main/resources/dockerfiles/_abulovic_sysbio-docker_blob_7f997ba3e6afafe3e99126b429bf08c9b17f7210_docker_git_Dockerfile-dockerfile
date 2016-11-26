@@ -1,9 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: abulovic/sysbio-docker
-#    Dockerfile: http://raw.githubusercontent.com/abulovic/sysbio-docker/7f997ba3e6afafe3e99126b429bf08c9b17f7210/docker/git/Dockerfile
-FROM ubuntu:latest
-
-RUN apt-get update && \
-	apt-get install -y git && \
-	apt-get install -y tig && \
-	apt-get install -y vim

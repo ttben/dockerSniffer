@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: gsrajadh/Advanced-Docker
-#    Dockerfile: http://raw.githubusercontent.com/gsrajadh/Advanced-Docker/95641b53d61724a775b2e018fd0c650bebe751c9/FileIO/Second_Container/Dockerfile
-FROM ubuntu:14.04
-#install required packages
-RUN apt-get update;  apt-get -y upgrade;  apt-get install -y build-essential; apt-get install -y curl

@@ -1,5 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: sioh/dockerfiles
-#    Dockerfile: http://raw.githubusercontent.com/sioh/dockerfiles/52c55277cfe52390b6134d09d521c19a35625060/debian-latex/Dockerfile
-FROM debian:jessie
-RUN apt-get update && apt-get install -yq texlive-full biber

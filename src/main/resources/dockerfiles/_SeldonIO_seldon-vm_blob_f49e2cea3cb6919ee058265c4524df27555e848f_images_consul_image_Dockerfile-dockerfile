@@ -1,4 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/SeldonIO/seldon-vm/f49e2cea3cb6919ee058265c4524df27555e848f/images/consul_image/Dockerfile
-FROM progrium/consul
-

@@ -1,9 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: yuvaraj951/grafar
-#    Dockerfile: http://raw.githubusercontent.com/yuvaraj951/grafar/7035e3a258a3bcd526451cc7c0f595166edc974b/docker/debtest/Dockerfile
-FROM debian:jessie
-
-RUN apt-get update && apt-get install -y vim
-
-ADD *.deb /tmp/
-

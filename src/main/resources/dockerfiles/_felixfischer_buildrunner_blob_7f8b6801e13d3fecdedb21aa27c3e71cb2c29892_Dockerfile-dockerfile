@@ -1,7 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: felixfischer/buildrunner
-#    Dockerfile: http://raw.githubusercontent.com/felixfischer/buildrunner/7f8b6801e13d3fecdedb21aa27c3e71cb2c29892/Dockerfile
-FROM debian:stable
-
-RUN apt-get -yq update && \
-    apt-get -yqq install ssh git

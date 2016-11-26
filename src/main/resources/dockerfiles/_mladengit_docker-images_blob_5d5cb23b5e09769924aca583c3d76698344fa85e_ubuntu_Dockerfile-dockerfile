@@ -1,8 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: mladengit/docker-images
-#    Dockerfile: http://raw.githubusercontent.com/mladengit/docker-images/5d5cb23b5e09769924aca583c3d76698344fa85e/ubuntu/Dockerfile
-FROM ubuntu:16.04
-
-RUN apt-get update && apt-get install -y \
-  mysql-client \
-  redis-tools

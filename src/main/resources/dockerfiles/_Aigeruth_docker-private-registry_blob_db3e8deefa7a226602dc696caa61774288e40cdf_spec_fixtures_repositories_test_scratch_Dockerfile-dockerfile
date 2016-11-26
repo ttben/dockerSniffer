@@ -1,4 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/Aigeruth/docker-private-registry/db3e8deefa7a226602dc696caa61774288e40cdf/spec/fixtures/repositories/test/scratch/Dockerfile
-FROM scratch
-MAINTAINER User <test@example.com>

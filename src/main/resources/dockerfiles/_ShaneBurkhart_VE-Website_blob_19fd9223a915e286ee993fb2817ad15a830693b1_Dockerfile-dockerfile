@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/ShaneBurkhart/VE-Website/19fd9223a915e286ee993fb2817ad15a830693b1/Dockerfile
-FROM php:apache
-
-RUN a2enmod rewrite
-

@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: mikkel-busch/BitBucketImage
-#    Dockerfile: http://raw.githubusercontent.com/mikkel-busch/BitBucketImage/89fd30c40eecf7e44d47092e27357d14d3b217fd/Dockerfile
-FROM microsoft/dotnet:onbuild
-
-RUN apt-get update && apt-get install -y git && apt-get install -y zip && apt-get install -y curl

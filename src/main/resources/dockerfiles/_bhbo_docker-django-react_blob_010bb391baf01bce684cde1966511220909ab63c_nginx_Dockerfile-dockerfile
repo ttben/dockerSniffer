@@ -1,4 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/bhbo/docker-django-react/010bb391baf01bce684cde1966511220909ab63c/nginx/Dockerfile
-FROM nginx
-ADD nginx.conf /etc/nginx/

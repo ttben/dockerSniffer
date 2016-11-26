@@ -1,3 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/fsufitch/codebox/b4e6dfda5184479890d56dc6ec7e081bf159093c/src/codebox/sandbox/dockerdir/Dockerfile
-FROM ubuntu

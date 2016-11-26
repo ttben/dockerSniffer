@@ -1,8 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: CancerCollaboratory/dockstore-tool-samtools-view
-#    Dockerfile: http://raw.githubusercontent.com/CancerCollaboratory/dockstore-tool-samtools-view/1e238cd71791b742742e036297883a9a4632d6cc/Dockerfile
-FROM ubuntu:16.10
-
-RUN  apt-get update \
-  && apt-get install -y samtools
-

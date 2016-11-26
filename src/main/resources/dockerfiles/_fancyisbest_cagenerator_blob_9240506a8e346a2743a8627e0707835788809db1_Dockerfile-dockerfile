@@ -1,9 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: fancyisbest/cagenerator
-#    Dockerfile: http://raw.githubusercontent.com/fancyisbest/cagenerator/9240506a8e346a2743a8627e0707835788809db1/Dockerfile
-FROM ubuntu
-
-RUN apt-get update && \
-    apt-get install openssl
-ADD generate /opt/
-CMD /opt/generate

@@ -1,3 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/rafael/docker-rails-toy/b80bd7790e394e5033490436c7bc064a97e1e184/Dockerfile
-FROM rails

@@ -1,5 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/michielbdejong/mailtrap/c696d6c5163b14bc738af96cc9e2c0cad4f43472/Dockerfile
-FROM node:0.10-onbuild
-
-EXPOSE 25

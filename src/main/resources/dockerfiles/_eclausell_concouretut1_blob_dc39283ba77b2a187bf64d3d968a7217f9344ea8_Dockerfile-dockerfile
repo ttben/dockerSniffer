@@ -1,9 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: eclausell/concouretut1
-#    Dockerfile: http://raw.githubusercontent.com/eclausell/concouretut1/dc39283ba77b2a187bf64d3d968a7217f9344ea8/Dockerfile
-FROM ubuntu:latest
-
-RUN \
-  apt-get update && \
-  apt-get install -y golang
-

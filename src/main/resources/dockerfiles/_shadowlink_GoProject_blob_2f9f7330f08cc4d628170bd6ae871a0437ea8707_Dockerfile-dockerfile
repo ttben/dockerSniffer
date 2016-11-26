@@ -1,4 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/shadowlink/GoProject/2f9f7330f08cc4d628170bd6ae871a0437ea8707/Dockerfile
-FROM meteorhacks/meteord
-MAINTAINER Víctor Manuel González Mira

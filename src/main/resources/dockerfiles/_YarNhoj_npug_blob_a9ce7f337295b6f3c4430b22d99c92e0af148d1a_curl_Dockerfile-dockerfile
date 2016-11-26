@@ -1,8 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: YarNhoj/npug
-#    Dockerfile: http://raw.githubusercontent.com/YarNhoj/npug/a9ce7f337295b6f3c4430b22d99c92e0af148d1a/curl/Dockerfile
-FROM debian:jessie
-
-RUN apt-get update &&\
-    apt-get install -y curl\
-    && apt-get clean

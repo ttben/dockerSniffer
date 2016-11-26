@@ -1,3 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/hibohiboo/develop/f6c66b4df25975be7c2030cfbad4cf37f8fb333f/tutorial/lesson/node/Dockerfile
-FROM node:7.1.0

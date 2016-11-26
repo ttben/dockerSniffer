@@ -1,7 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/paulb896/servers-with-docker/1e52db38e2179eddd1b79a36b813c5b827044130/bower-server/Dockerfile
-# Bower server
-# FROM dockerfile/nodejs-bower-grunt
-FROM node
-
-WORKDIR /tmp

@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: fanwsp/docker
-#    Dockerfile: http://raw.githubusercontent.com/fanwsp/docker/0e0ed5d0c086df89ab2e4b7cc68b4a1c726875ed/nginx/Dockerfile
-FROM nginx:1.8
-
-RUN apt-get update && apt-get install vim curl -y

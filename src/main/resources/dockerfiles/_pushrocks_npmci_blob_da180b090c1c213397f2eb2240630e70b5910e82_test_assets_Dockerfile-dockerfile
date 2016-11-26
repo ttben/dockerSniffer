@@ -1,5 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: pushrocks/npmci
-#    Dockerfile: http://raw.githubusercontent.com/pushrocks/npmci/da180b090c1c213397f2eb2240630e70b5910e82/test/assets/Dockerfile
-FROM ubuntu
-RUN apt-get update

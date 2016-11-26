@@ -1,7 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/atbaker/hypermasher/ccbc5adb3ac51d8e488214e712c35492b030e75e/Dockerfile
-FROM node:0.10-onbuild
-
-ENV PORT 80
-
-EXPOSE 80

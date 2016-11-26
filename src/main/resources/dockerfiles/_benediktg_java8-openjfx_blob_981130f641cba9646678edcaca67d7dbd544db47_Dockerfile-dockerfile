@@ -1,8 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: benediktg/java8-openjfx
-#    Dockerfile: http://raw.githubusercontent.com/benediktg/java8-openjfx/981130f641cba9646678edcaca67d7dbd544db47/Dockerfile
-FROM openjdk:8-jdk
-
-RUN apt-get update && \
-    apt-get upgrade -y && \
-    apt-get install -y -t jessie-backports openjfx

@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: UQComputingSociety/subject-guide
-#    Dockerfile: http://raw.githubusercontent.com/UQComputingSociety/subject-guide/af5f2ebaade3df218033a5b9f803a033effc4fde/Dockerfile
-FROM ubuntu:xenial
-RUN apt-get update
-RUN apt-get install -y make texlive-full

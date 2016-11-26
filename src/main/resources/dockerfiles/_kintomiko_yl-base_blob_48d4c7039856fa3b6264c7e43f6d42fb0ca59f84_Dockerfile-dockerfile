@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: kintomiko/yl-base
-#    Dockerfile: http://raw.githubusercontent.com/kintomiko/yl-base/48d4c7039856fa3b6264c7e43f6d42fb0ca59f84/Dockerfile
-FROM ubuntu:trusty
-
-RUN apt-get update && apt-get install -y curl

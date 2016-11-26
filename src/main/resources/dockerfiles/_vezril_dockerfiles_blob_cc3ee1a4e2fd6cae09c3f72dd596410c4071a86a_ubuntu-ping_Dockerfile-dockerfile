@@ -1,5 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: vezril/dockerfiles
-#    Dockerfile: http://raw.githubusercontent.com/vezril/dockerfiles/cc3ee1a4e2fd6cae09c3f72dd596410c4071a86a/ubuntu-ping/Dockerfile
-FROM ubuntu:latest
-RUN apt-get -y update && apt-get install -y iputils-ping

@@ -1,3 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/and9000/ci-jenkins-repo/9f6d4048369cdfc499648c48dcb8fdd8f81a2f47/registry/Dockerfile
-FROM registry:2

@@ -1,9 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: Kinmarui/docker_atlassian
-#    Dockerfile: http://raw.githubusercontent.com/Kinmarui/docker_atlassian/c9976bd5e0b280e317949f8df5703e3249f4e69e/nuget/Dockerfile
-FROM kinmarui/atlassian-msbuild:latest
-
-RUN apt-get update \
-	&& apt-get install -y nuget \
-	&& apt-get purge 
-

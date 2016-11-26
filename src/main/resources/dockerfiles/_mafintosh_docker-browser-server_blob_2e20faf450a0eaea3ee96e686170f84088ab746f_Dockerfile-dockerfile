@@ -1,3 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/mafintosh/docker-browser-server/2e20faf450a0eaea3ee96e686170f84088ab746f/Dockerfile
-from mafintosh/node:0.10.32

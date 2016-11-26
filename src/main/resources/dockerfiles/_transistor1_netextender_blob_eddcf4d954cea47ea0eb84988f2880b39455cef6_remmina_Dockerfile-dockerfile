@@ -1,9 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: transistor1/netextender
-#    Dockerfile: http://raw.githubusercontent.com/transistor1/netextender/eddcf4d954cea47ea0eb84988f2880b39455cef6/remmina/Dockerfile
-FROM transistor1/netextender
-
-RUN apt-get update && apt-get install -y remmina
-
-ADD ./supervisord.conf /etc/
-

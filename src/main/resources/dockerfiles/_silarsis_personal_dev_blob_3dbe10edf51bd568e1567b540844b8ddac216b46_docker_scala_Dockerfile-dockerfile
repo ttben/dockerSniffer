@@ -1,5 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/silarsis/personal_dev/3dbe10edf51bd568e1567b540844b8ddac216b46/docker/scala/Dockerfile
-FROM lukasz/docker-scala
-VOLUME /opt/source
-CMD ['sbt']

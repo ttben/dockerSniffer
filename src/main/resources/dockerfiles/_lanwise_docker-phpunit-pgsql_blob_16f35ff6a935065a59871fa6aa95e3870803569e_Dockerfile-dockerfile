@@ -1,5 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: lanwise/docker-phpunit-pgsql
-#    Dockerfile: http://raw.githubusercontent.com/lanwise/docker-phpunit-pgsql/16f35ff6a935065a59871fa6aa95e3870803569e/Dockerfile
-FROM phpunit/phpunit:5.0.3
-RUN apt-get update && apt-get install -y php5-pgsql

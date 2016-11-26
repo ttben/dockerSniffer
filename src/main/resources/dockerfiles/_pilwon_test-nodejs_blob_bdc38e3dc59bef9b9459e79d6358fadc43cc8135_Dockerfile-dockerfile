@@ -1,3 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/pilwon/test-nodejs/bdc38e3dc59bef9b9459e79d6358fadc43cc8135/Dockerfile
-FROM dockerfile/nodejs-runtime

@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: chantra/atc_docker_demo
-#    Dockerfile: http://raw.githubusercontent.com/chantra/atc_docker_demo/23f674642b983e6b71df61651548fb819e2755c7/iperf/Dockerfile
-FROM ubuntu:latest
-RUN apt-get update && apt-get install iperf
-CMD iperf -s

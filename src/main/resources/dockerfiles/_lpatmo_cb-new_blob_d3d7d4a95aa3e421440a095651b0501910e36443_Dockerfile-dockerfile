@@ -1,3 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/lpatmo/cb-new/d3d7d4a95aa3e421440a095651b0501910e36443/Dockerfile
-FROM meteorhacks/meteord:onbuild

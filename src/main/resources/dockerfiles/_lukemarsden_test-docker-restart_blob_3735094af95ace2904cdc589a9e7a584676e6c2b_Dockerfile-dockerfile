@@ -1,5 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/lukemarsden/test-docker-restart/3735094af95ace2904cdc589a9e7a584676e6c2b/Dockerfile
-FROM busybox
-ADD file /file
-RUN sh

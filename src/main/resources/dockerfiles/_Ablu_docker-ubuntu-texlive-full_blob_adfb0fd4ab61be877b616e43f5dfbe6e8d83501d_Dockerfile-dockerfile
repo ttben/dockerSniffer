@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: Ablu/docker-ubuntu-texlive-full
-#    Dockerfile: http://raw.githubusercontent.com/Ablu/docker-ubuntu-texlive-full/adfb0fd4ab61be877b616e43f5dfbe6e8d83501d/Dockerfile
-FROM ubuntu
-RUN apt-get update
-RUN apt-get install -y texlive-full make imagemagick inkscape

@@ -1,8 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: iketheadore/monero_rpc_dockerfile
-#    Dockerfile: http://raw.githubusercontent.com/iketheadore/monero_rpc_dockerfile/5cf40dd6d2393103060eb454997fee0dab217ffb/boost1.58/Dockerfile
-FROM ubuntu:latest
-
-RUN apt-get update && apt-get install -y \
-		build-essential \
-		libboost-all-dev

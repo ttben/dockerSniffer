@@ -1,3 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/athieriot/audiotime-load/7bc3abfe87cb1dcd7751f5806f949fadcd34216c/Dockerfile
-FROM golang:1.4-onbuild

@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: armhf-docker-library/mongo
-#    Dockerfile: http://raw.githubusercontent.com/armhf-docker-library/mongo/c5d1d575168559b3575aeca83b8ecd3f15f5b81c/2.4.10/Dockerfile
-FROM armhfbuild/debian:jessie
-
-RUN apt-get update && apt-get install -y mongodb

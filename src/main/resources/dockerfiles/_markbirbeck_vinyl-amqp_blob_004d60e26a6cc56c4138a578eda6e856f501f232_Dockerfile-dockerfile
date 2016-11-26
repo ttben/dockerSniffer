@@ -1,3 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/markbirbeck/vinyl-amqp/004d60e26a6cc56c4138a578eda6e856f501f232/Dockerfile
-FROM node:4-onbuild

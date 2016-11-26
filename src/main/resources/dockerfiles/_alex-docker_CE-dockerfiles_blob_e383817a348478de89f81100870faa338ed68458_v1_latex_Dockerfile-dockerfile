@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: alex-docker/CE-dockerfiles
-#    Dockerfile: http://raw.githubusercontent.com/alex-docker/CE-dockerfiles/e383817a348478de89f81100870faa338ed68458/v1/latex/Dockerfile
-FROM debian:jessie
-
-RUN apt-get update && apt-get install -y texlive-full

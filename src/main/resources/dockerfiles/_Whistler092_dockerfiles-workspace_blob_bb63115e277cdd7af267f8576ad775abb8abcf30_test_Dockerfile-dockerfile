@@ -1,8 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: Whistler092/dockerfiles-workspace
-#    Dockerfile: http://raw.githubusercontent.com/Whistler092/dockerfiles-workspace/bb63115e277cdd7af267f8576ad775abb8abcf30/test/Dockerfile
-FROM ubuntu:14.04
-RUN apt-get update && apt-get install -y
-RUN apt-get install -y curl vim
-RUN apt-get install -y git
-RUN apt-get install -y nano

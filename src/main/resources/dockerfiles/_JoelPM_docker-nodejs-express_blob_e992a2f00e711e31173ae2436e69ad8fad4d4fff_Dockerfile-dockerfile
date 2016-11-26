@@ -1,3 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/JoelPM/docker-nodejs-express/e992a2f00e711e31173ae2436e69ad8fad4d4fff/Dockerfile
-FROM joelpm/baseimage-nodejs-runtime

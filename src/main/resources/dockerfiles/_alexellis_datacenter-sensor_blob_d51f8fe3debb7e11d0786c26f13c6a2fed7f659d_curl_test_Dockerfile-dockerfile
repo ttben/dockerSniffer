@@ -1,9 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: alexellis/datacenter-sensor
-#    Dockerfile: http://raw.githubusercontent.com/alexellis/datacenter-sensor/d51f8fe3debb7e11d0786c26f13c6a2fed7f659d/curl_test/Dockerfile
-FROM resin/rpi-raspbian
-
-RUN apt-get -qy update && \
-    apt-get -qy install curl
-
-CMD ["curl"]

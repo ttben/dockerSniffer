@@ -1,5 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/drupalci/drupalsouth2015/64efac6b4095997c9466fc4a0824ae915182714a/Dockerfile
-FROM nginx
-
-ADD . /usr/share/nginx/html

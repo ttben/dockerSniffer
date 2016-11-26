@@ -1,8 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: wbwangk/nginx
-#    Dockerfile: http://raw.githubusercontent.com/wbwangk/nginx/a216e8b55b51a699a78a2265609588dba724715d/Dockerfile
-FROM nginx
-RUN apt-get update
-RUN apt-get upgrade
-RUN apt-get -y install curl
-RUN apt-get -y install dnsutils

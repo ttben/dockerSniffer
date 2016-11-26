@@ -1,7 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: nirmeshk/DevOps
-#    Dockerfile: http://raw.githubusercontent.com/nirmeshk/DevOps/1616012ea9d73b9a725e2ba542ea18f283423962/HW/HW_4/part_1/second/Dockerfile
-FROM ubuntu:trusty
-RUN apt-get update
-RUN apt-get install -y curl
-

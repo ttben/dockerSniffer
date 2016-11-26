@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: sebglazebrook/debian-pkg-repo
-#    Dockerfile: http://raw.githubusercontent.com/sebglazebrook/debian-pkg-repo/73b0c613a0d31eb88a9d20b73094c1b29e71ce94/Dockerfile
-FROM debian:jessie
-
-RUN apt-get update && apt-get --yes install reprepro

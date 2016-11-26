@@ -1,7 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: ChristopherBiscardi/docker-hub-webhook
-#    Dockerfile: http://raw.githubusercontent.com/ChristopherBiscardi/docker-hub-webhook/18e88ed48ff23e8099084fd346800f7ab01bfec0/Dockerfile
-FROM ubuntu
-
-RUN apt-get update
-RUN apt-get install wget -y

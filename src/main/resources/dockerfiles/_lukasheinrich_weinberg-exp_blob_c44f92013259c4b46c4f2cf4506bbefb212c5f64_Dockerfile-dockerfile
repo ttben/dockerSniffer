@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: lukasheinrich/weinberg-exp
-#    Dockerfile: http://raw.githubusercontent.com/lukasheinrich/weinberg-exp/c44f92013259c4b46c4f2cf4506bbefb212c5f64/Dockerfile
-FROM python:2.7
-RUN pip install pylhe jsonlines
-RUN apt-get update && apt-get install -y gettext

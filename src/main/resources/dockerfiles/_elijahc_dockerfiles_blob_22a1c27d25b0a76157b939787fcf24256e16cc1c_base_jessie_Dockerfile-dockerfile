@@ -1,9 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: elijahc/dockerfiles
-#    Dockerfile: http://raw.githubusercontent.com/elijahc/dockerfiles/22a1c27d25b0a76157b939787fcf24256e16cc1c/base/jessie/Dockerfile
-FROM debian:jessie
-
-RUN apt-get update && apt-get install -qy \
-    curl \
-    vim \
-    git

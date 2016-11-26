@@ -1,5 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/featurist/proxy-backend/45df8089d507b74db594cf9d86b75ada9180e296/Dockerfile
-FROM node:0.12.0-onbuild
-
-EXPOSE 80

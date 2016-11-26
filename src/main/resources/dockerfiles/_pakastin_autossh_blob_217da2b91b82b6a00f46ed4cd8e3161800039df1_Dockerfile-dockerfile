@@ -1,7 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: pakastin/autossh
-#    Dockerfile: http://raw.githubusercontent.com/pakastin/autossh/217da2b91b82b6a00f46ed4cd8e3161800039df1/Dockerfile
-FROM ubuntu:trusty
-
-RUN apt-get update
-RUN apt-get -y install autossh

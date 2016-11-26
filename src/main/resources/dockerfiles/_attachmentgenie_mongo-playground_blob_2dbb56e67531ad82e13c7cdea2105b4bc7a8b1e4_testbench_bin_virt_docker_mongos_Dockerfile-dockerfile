@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/attachmentgenie/mongo-playground/2dbb56e67531ad82e13c7cdea2105b4bc7a8b1e4/testbench/bin/virt/docker/mongos/Dockerfile
-FROM mongo:2.6
-
-EXPOSE 27017
-ENTRYPOINT ["mongos"]

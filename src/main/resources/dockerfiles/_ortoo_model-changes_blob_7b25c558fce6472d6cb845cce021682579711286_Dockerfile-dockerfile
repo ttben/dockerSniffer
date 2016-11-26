@@ -1,3 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/ortoo/model-changes/7b25c558fce6472d6cb845cce021682579711286/Dockerfile
-FROM quay.io/ortoo/event-function-runner

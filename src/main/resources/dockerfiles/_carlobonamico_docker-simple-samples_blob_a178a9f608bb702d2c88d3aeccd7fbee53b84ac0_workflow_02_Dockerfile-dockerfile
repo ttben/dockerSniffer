@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/carlobonamico/docker-simple-samples/a178a9f608bb702d2c88d3aeccd7fbee53b84ac0/workflow/02/Dockerfile
-FROM tomcat:7
-MAINTAINER carlobonamico
-
-CMD ["catalina.sh","run"]

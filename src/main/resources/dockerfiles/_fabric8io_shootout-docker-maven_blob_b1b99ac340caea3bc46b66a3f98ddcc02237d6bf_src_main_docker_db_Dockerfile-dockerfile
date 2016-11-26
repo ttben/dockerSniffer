@@ -1,3 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/fabric8io/shootout-docker-maven/b1b99ac340caea3bc46b66a3f98ddcc02237d6bf/src/main/docker/db/Dockerfile
-FROM postgres:8

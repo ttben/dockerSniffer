@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: ben--/tesht
-#    Dockerfile: http://raw.githubusercontent.com/ben--/tesht/f3ef0e14adbdfb812f8b52722856c4a1cc842afd/do/test-docker/Dockerfile
-FROM ubuntu:trusty-20150814
-
-#RUN apt-get update && apt-get install -y --no-install-recommends \

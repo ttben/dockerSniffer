@@ -1,8 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: TNRIS/docker-node-mapnik
-#    Dockerfile: http://raw.githubusercontent.com/TNRIS/docker-node-mapnik/47b15e725bfc52fce6ab8c5851992c8410492439/Dockerfile
-FROM node:0.10
-
-RUN apt-get update && apt-get install -y gdal-bin libmapnik-dev
-
-

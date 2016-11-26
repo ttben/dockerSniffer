@@ -1,7 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: KostyaSha/yet-another-docker-plugin
-#    Dockerfile: http://raw.githubusercontent.com/KostyaSha/yet-another-docker-plugin/6853301c885447ca31648d6cfa4861e6e272bf16/yet-another-docker-plugin/src/test/resources/docker/Dockerfile
-FROM java:openjdk-8u66-jdk
-RUN apt-get update
-RUN apt-get install -y git maven
-

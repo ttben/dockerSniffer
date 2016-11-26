@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: tony-waters/dockerfiles
-#    Dockerfile: http://raw.githubusercontent.com/tony-waters/dockerfiles/d52168e4e37ca545d5a11229294a79577c2037d2/spring-boot-libreoffice/Dockerfile
-FROM sctrcdr/spring-boot-web:1.1
-
-RUN apt-get -y update && apt-get install -y libreoffice-common

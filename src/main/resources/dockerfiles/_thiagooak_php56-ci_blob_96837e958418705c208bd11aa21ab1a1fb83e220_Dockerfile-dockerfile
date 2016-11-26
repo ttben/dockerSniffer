@@ -1,9 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: thiagooak/php56-ci
-#    Dockerfile: http://raw.githubusercontent.com/thiagooak/php56-ci/96837e958418705c208bd11aa21ab1a1fb83e220/Dockerfile
-FROM php:5.6
-
-RUN apt-get update
-RUN apt-get install unzip -y
-RUN apt-get install git -y
-RUN apt-get install libxml2-dev -y

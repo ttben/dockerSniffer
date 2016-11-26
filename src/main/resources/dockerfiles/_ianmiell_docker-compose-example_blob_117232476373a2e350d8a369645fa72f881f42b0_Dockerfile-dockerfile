@@ -1,7 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: ianmiell/docker-compose-example
-#    Dockerfile: http://raw.githubusercontent.com/ianmiell/docker-compose-example/117232476373a2e350d8a369645fa72f881f42b0/Dockerfile
-FROM ubuntu
-RUN apt-get update
-RUN apt-get -y install rlwrap sqlite socat
-EXPOSE 12345

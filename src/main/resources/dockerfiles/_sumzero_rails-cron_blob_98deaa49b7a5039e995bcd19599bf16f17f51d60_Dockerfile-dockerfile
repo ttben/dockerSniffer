@@ -1,7 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: sumzero/rails-cron
-#    Dockerfile: http://raw.githubusercontent.com/sumzero/rails-cron/98deaa49b7a5039e995bcd19599bf16f17f51d60/Dockerfile
-FROM rails:latest
-
-RUN apt-get update
-RUN apt-get install -y cron

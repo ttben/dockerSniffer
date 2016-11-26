@@ -1,5 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/facundobatista/kilink/0555a4b135eea89a596cb1d1aa58a44792cc3f8d/Dockerfile
-FROM python:2-onbuild
-
-CMD ["./run"]

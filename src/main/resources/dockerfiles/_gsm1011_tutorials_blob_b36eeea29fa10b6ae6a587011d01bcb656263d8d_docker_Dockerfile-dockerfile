@@ -1,8 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: gsm1011/tutorials
-#    Dockerfile: http://raw.githubusercontent.com/gsm1011/tutorials/b36eeea29fa10b6ae6a587011d01bcb656263d8d/docker/Dockerfile
-FROM java:8
-
-RUN \
-    apt-get update && \
-    apt-get -y install awscli

@@ -1,5 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/dininski/CodeExecutionServer/6961c318050dd725ca8a38ca84fc61523afc5dbb/Dockerfiles/base/Dockerfile
-FROM ubuntu
-
-MAINTAINER Vasil Dininski

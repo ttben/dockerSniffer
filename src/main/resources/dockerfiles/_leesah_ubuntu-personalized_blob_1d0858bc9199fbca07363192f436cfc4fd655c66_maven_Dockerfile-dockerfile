@@ -1,8 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: leesah/ubuntu-personalized
-#    Dockerfile: http://raw.githubusercontent.com/leesah/ubuntu-personalized/1d0858bc9199fbca07363192f436cfc4fd655c66/maven/Dockerfile
-FROM leesah/u:latest
-
-RUN sudo apt-get update \
- && sudo apt-get install -y maven
- 

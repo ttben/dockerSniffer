@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: benashford/devdocker
-#    Dockerfile: http://raw.githubusercontent.com/benashford/devdocker/16ffd80ca2f27d79ec0fbe8631603ca5cb008f25/python/3.5/Dockerfile
-FROM devbox
-
-RUN apt-get -y update && apt-get -y install python3.5

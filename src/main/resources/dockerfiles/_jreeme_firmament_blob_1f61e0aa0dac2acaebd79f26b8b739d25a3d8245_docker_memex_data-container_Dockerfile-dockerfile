@@ -1,5 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/jreeme/firmament/1f61e0aa0dac2acaebd79f26b8b739d25a3d8245/docker/memex/data-container/Dockerfile
-FROM jreeme/data-container:1.1
-
-CMD ["/bin/bash"]

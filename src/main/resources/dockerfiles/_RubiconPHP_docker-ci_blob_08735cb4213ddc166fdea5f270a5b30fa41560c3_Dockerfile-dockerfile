@@ -1,9 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: RubiconPHP/docker-ci
-#    Dockerfile: http://raw.githubusercontent.com/RubiconPHP/docker-ci/08735cb4213ddc166fdea5f270a5b30fa41560c3/Dockerfile
-FROM php:5.6-apache
-
-RUN apt-get update
-RUN apt-get install -y git-core
-RUN apt-get install -y zlib1g-dev
-RUN docker-php-ext-install zip

@@ -1,4 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/EFForg/phantom-of-the-capitol/4123d01de4144f91f31ed145293499426566eed2/docker/db/Dockerfile
-FROM mysql:5.7
-ADD ./entrypoint.sh /

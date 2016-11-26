@@ -1,4 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/ganguera/docker/84e970cc8aba497f0ccc1b3e84148cab6969c6aa/frontend-02/wordpress/Dockerfile
-FROM orchardup/php5
-ADD . /code

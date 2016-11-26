@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/rbucker/scratch-web/443be15cf223080ddd88a99aa2226db7ba85a18d/Dockerfile
-from busybox
-add web /web
-
-CMD ["/web"]

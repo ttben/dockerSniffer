@@ -1,7 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: GoodDingo/dockercon_autotest
-#    Dockerfile: http://raw.githubusercontent.com/GoodDingo/dockercon_autotest/f920aa23040aa23c94133c4eecc1f495a483320f/Dockerfile
-FROM ubuntu:14.04
-MAINTAINER Mira Hedl
-
-RUN apt-get update && apt-get install -y tree

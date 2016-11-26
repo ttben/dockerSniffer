@@ -1,4 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/whitel/lists-stacks-queues-bos-python/70826942a06a7e367350bf1f4d15fd985356b5f5/src/Dockerfile
-FROM langdon/ldw-preso
-

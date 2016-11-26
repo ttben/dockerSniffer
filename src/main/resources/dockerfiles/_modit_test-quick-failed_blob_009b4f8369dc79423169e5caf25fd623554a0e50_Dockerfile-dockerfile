@@ -1,4 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/modit/test-quick-failed/009b4f8369dc79423169e5caf25fd623554a0e50/Dockerfile
-FROM base:latest
-RUN invalidcommand

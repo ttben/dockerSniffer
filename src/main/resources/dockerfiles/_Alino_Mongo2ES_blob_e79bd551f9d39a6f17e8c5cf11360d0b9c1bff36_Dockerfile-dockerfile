@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: Alino/Mongo2ES
-#    Dockerfile: http://raw.githubusercontent.com/Alino/Mongo2ES/e79bd551f9d39a6f17e8c5cf11360d0b9c1bff36/Dockerfile
-FROM alino/meteord:devbuild
-RUN apt-get update
-RUN apt-get install -y vim nano

@@ -1,5 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: dtmooreiv/devopsHW4
-#    Dockerfile: http://raw.githubusercontent.com/dtmooreiv/devopsHW4/843b920c1e4d871e9a45fdb9dde9d1fe88a995ee/fileIO/curlContainer/Dockerfile
-FROM ubuntu:trusty
-RUN apt-get update && apt-get install -y curl

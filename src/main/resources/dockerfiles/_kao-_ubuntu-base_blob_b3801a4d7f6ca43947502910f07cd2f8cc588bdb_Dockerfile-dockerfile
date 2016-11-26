@@ -1,4 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/kao-/ubuntu-base/b3801a4d7f6ca43947502910f07cd2f8cc588bdb/Dockerfile
-from ubuntu
-CMD /sbin/init

@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/thejsj/mlp/41c581ffc07219ff9186643fd7319da5a22032e4/mysql/Dockerfile
-FROM tutum/mysql:5.5
-MAINTAINER thejsj
-
-EXPOSE 3306

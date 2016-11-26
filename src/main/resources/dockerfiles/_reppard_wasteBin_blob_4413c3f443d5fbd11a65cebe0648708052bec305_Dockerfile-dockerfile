@@ -1,3 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/reppard/wasteBin/4413c3f443d5fbd11a65cebe0648708052bec305/Dockerfile
-FROM rails:latest

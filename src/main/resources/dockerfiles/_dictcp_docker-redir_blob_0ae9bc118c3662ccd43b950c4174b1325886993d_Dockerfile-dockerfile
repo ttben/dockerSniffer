@@ -1,8 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: dictcp/docker-redir
-#    Dockerfile: http://raw.githubusercontent.com/dictcp/docker-redir/0ae9bc118c3662ccd43b950c4174b1325886993d/Dockerfile
-FROM debian:8
-
-RUN apt-get update \
-    && apt-get -y install redir
-

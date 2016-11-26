@@ -1,9 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: joonjeong/tizen-port
-#    Dockerfile: http://raw.githubusercontent.com/joonjeong/tizen-port/167cef6a3e1d67871c601971f8fb6f4ec673cad2/docker/package-builder/Dockerfile
-FROM ubuntu:14.04
-
-RUN apt-get update
-RUN apt-get install -y qemu-user-static
-
-

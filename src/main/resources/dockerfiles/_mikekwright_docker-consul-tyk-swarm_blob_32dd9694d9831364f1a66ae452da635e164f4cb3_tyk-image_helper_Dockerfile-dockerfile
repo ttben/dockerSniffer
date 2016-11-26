@@ -1,8 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: mikekwright/docker-consul-tyk-swarm
-#    Dockerfile: http://raw.githubusercontent.com/mikekwright/docker-consul-tyk-swarm/32dd9694d9831364f1a66ae452da635e164f4cb3/tyk-image/helper/Dockerfile
-FROM debian:latest
-
-RUN apt-get update && \
-    apt-get install -y curl dnsutils python
-

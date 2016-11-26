@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: waitingkuo/docker-node
-#    Dockerfile: http://raw.githubusercontent.com/waitingkuo/docker-node/14ebf76e2f969787372f97724f460c6467f6455c/Dockerfile
-FROM node
-RUN apt-get update -y
-RUN apt-get upgrade -y node

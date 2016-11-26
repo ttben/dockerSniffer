@@ -1,9 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: airin12/IOSR
-#    Dockerfile: http://raw.githubusercontent.com/airin12/IOSR/963425cda13d812a1cb8670bc0832c2f99d9a61b/grafana/docker/debtest/Dockerfile
-FROM debian:jessie
-
-RUN apt-get update && apt-get install -y vim
-
-ADD *.deb /tmp/
-

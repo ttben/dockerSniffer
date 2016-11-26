@@ -1,5 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: rkhozinov/redis-lab
-#    Dockerfile: http://raw.githubusercontent.com/rkhozinov/redis-lab/f3c29fc83c042b08c03f5840b70644ab3881a1d6/redis/Dockerfile
-FROM        ubuntu:14.04
-RUN         apt-get update && apt-get install -y redis-server

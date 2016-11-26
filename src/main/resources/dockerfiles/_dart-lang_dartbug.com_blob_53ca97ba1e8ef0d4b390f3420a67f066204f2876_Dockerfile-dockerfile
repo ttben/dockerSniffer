@@ -1,3 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/dart-lang/dartbug.com/53ca97ba1e8ef0d4b390f3420a67f066204f2876/Dockerfile
-FROM google/dart-runtime

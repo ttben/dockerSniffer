@@ -1,7 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: timhudson/pugholdit
-#    Dockerfile: http://raw.githubusercontent.com/timhudson/pugholdit/7f7f9265b617946a1fe35d839675aec7093bd4e1/Dockerfile
-FROM iojs:onbuild
-RUN apt-get update
-RUN apt-get install graphicsmagick -y
-EXPOSE 1515

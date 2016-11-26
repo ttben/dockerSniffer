@@ -1,5 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: abhishekgaurav1/dockerfiles
-#    Dockerfile: http://raw.githubusercontent.com/abhishekgaurav1/dockerfiles/f2d41c6a8fb7cf315f9fcafdd41fbf992a4a10fb/Dockerfile
-FROM ubuntu
-RUN apt-get update

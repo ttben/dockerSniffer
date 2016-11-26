@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: johncming/build-emacs-config
-#    Dockerfile: http://raw.githubusercontent.com/johncming/build-emacs-config/b8ee0f87c679ba8580833681a6d75518b4d139c9/Dockerfile
-FROM gcc
-
-RUN apt-get update && apt-get install -y emacs24-nox

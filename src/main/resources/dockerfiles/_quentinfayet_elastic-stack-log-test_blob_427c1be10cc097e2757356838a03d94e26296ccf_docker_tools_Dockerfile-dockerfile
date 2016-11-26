@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: quentinfayet/elastic-stack-log-test
-#    Dockerfile: http://raw.githubusercontent.com/quentinfayet/elastic-stack-log-test/427c1be10cc097e2757356838a03d94e26296ccf/docker/tools/Dockerfile
-FROM ubuntu
-
-RUN apt-get update && apt-get install -y siege

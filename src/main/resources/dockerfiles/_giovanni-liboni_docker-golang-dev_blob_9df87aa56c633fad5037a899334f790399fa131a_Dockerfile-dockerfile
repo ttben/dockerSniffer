@@ -1,7 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: giovanni-liboni/docker-golang-dev
-#    Dockerfile: http://raw.githubusercontent.com/giovanni-liboni/docker-golang-dev/9df87aa56c633fad5037a899334f790399fa131a/Dockerfile
-FROM golang:1.7
-
-RUN apt-get update && apt-get upgrade -y && \
-    apt-get install -y postgresql-client

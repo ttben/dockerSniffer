@@ -1,4 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/piccaso/docker-0xff-null/23ca7bc808b4f84eaea43dbb782ea566e4e619a7/Dockerfile
-FROM scratch
-ADD null.tar /

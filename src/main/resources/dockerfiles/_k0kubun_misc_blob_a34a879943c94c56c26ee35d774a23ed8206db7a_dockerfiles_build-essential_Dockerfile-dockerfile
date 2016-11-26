@@ -1,7 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: k0kubun/misc
-#    Dockerfile: http://raw.githubusercontent.com/k0kubun/misc/a34a879943c94c56c26ee35d774a23ed8206db7a/dockerfiles/build-essential/Dockerfile
-FROM ubuntu:xenial
-MAINTAINER k0kubun
-
-RUN apt-get update && apt-get install -y git build-essential

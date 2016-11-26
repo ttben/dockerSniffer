@@ -1,5 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/burnettk/url-shortener/a4e898967de84ebfb68bc0c064594d4232629015/Dockerfile
-FROM seapy/rails-nginx-unicorn
-
-EXPOSE 80

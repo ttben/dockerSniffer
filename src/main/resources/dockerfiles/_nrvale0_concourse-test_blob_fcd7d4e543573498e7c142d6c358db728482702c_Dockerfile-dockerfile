@@ -1,8 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: nrvale0/concourse-test
-#    Dockerfile: http://raw.githubusercontent.com/nrvale0/concourse-test/fcd7d4e543573498e7c142d6c358db728482702c/Dockerfile
-FROM ubuntu:latest
-
-RUN \
-  apt-get update && \
-  apt-get install -y golang

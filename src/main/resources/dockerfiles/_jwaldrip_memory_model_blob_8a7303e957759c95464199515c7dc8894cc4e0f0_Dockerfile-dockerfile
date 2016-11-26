@@ -1,5 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/jwaldrip/memory_model/8a7303e957759c95464199515c7dc8894cc4e0f0/Dockerfile
-FROM ruby:latest
-ADD . .
-RUN bundle install

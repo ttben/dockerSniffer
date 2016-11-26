@@ -1,7 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: rgarbi/docker_hammer
-#    Dockerfile: http://raw.githubusercontent.com/rgarbi/docker_hammer/e61f6ba563b7e789a7c0d3c7210dfbe8dd2c92a8/Dockerfile
-FROM busybox
-
-RUN apt-get update
-RUN apt-get install parallel

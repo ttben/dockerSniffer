@@ -1,7 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/merlin83/minimal-docker/d861771e4c5195f6a9b52501a1c64919da53b6b3/Dockerfile
-FROM scratch
-
-MAINTAINER merlin83
-
-ADD rootfs.tar /

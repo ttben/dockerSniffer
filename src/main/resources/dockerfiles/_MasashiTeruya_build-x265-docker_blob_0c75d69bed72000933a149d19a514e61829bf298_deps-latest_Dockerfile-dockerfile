@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: MasashiTeruya/build-x265-docker
-#    Dockerfile: http://raw.githubusercontent.com/MasashiTeruya/build-x265-docker/0c75d69bed72000933a149d19a514e61829bf298/deps-latest/Dockerfile
-FROM teruya/build-x265:deps
-
-RUN apt-get update && apt-get install -y mercurial

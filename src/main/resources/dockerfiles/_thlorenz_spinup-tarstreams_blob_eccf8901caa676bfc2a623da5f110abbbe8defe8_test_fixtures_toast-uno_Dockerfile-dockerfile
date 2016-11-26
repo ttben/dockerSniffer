@@ -1,4 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/thlorenz/spinup-tarstreams/eccf8901caa676bfc2a623da5f110abbbe8defe8/test/fixtures/toast-uno/Dockerfile
-from    dockerfile/nodejs
-add     . /src

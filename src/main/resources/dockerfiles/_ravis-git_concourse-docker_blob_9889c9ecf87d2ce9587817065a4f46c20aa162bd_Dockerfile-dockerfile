@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: ravis-git/concourse-docker
-#    Dockerfile: http://raw.githubusercontent.com/ravis-git/concourse-docker/9889c9ecf87d2ce9587817065a4f46c20aa162bd/Dockerfile
-FROM alpine
-RUN apt-get update && apt-get install openjdk-8-jdk
-RUN apt-get install bash

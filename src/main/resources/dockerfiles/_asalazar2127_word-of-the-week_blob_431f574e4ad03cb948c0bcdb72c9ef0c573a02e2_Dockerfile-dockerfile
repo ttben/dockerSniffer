@@ -1,4 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/asalazar2127/word-of-the-week/431f574e4ad03cb948c0bcdb72c9ef0c573a02e2/Dockerfile
-from iojs:2.0.0-slim
-WORKDIR /src

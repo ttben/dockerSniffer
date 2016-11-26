@@ -1,9 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: ChrisEdwards/docker-tpp
-#    Dockerfile: http://raw.githubusercontent.com/ChrisEdwards/docker-tpp/30e5a5e0ff35d578c65104ed1f166417bbd993e8/Dockerfile
-FROM ubuntu
-
-RUN apt-get update
-RUN apt-get install -y tpp figlet
-
-CMD ["/bin/bash"]

@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: rhels/devops
-#    Dockerfile: http://raw.githubusercontent.com/rhels/devops/9f0c6d2d87c78e2533c47d1f543b66e0a6ee88d9/day5/Dockerfile
-FROM debian:jessie
-
-RUN apt-get update && apt-get -y install default-jdk curl git

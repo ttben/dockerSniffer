@@ -1,5 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/circleci/docker/cdea3fec0d54fe1dbb85d64092f8041c4e8727ed/builder/dockerfile/parser/testfiles-negative/env_no_value/Dockerfile
-FROM busybox
-
-ENV PATH

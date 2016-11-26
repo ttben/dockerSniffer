@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/alexpreynolds/cubemaker/164d781b39c01ef957192df7d64aa416950ad68a/cubemaker-viz-proxy/Dockerfile
-FROM node:5-onbuild
-
-EXPOSE 443
-

@@ -1,3 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/waltzofpearls/shorten-api-express/798b75eb0c9371be0a5aaf8bd55f701b96d6b5d4/docker/mongo/Dockerfile
-FROM mongo:latest

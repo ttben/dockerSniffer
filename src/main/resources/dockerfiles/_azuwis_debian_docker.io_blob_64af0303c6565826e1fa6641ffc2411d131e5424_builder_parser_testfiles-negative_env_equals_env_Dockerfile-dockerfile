@@ -1,5 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/azuwis/debian_docker.io/64af0303c6565826e1fa6641ffc2411d131e5424/builder/parser/testfiles-negative/env_equals_env/Dockerfile
-FROM busybox
-
-ENV PATH=PATH

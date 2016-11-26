@@ -1,4 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/bramk/playground/c729eaf1245db7fe4cbaf342f07936f9ed2f7131/node-agent/Dockerfile
-FROM playground/base:latest
-ADD . /tmp/

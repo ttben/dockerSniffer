@@ -1,3 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/rodrigobraga/gardd/6f371b3850024027b41f1b61c74df784418b8cb9/containers/web/Dockerfile
-FROM python:3.6-onbuild

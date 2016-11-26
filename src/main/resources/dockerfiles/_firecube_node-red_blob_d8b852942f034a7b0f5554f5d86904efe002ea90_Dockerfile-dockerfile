@@ -1,3 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/firecube/node-red/d8b852942f034a7b0f5554f5d86904efe002ea90/Dockerfile
-FROM nodered/node-red-docker:rpi

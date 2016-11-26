@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: zembutsu/sakura-cloud-hands-on
-#    Dockerfile: http://raw.githubusercontent.com/zembutsu/sakura-cloud-hands-on/577192aa5f566194f14d82c1eb23fbad91af5c72/myimage/Dockerfile
-FROM ubuntu
-RUN apt-get update
-RUN apt-get install -y wget

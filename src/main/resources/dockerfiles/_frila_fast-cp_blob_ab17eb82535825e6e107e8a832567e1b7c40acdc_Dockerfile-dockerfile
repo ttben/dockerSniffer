@@ -1,8 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: frila/fast-cp
-#    Dockerfile: http://raw.githubusercontent.com/frila/fast-cp/ab17eb82535825e6e107e8a832567e1b7c40acdc/Dockerfile
-FROM ubuntu:latest
-
-RUN apt-get update -y
-
-RUN apt-get install -y g++ make

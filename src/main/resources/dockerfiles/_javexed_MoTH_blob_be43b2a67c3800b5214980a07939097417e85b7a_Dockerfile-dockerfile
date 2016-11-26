@@ -1,7 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: javexed/MoTH
-#    Dockerfile: http://raw.githubusercontent.com/javexed/MoTH/be43b2a67c3800b5214980a07939097417e85b7a/Dockerfile
-FROM ruby
-RUN apt-get update -y
-RUN apt-get install -y nano
-ADD ./client.rb ./

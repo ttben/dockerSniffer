@@ -1,7 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: vraja0106/test-repo
-#    Dockerfile: http://raw.githubusercontent.com/vraja0106/test-repo/ddb7bd0ea0793e42b4ff83dcf444340b0f0b2e64/Dockerfile
-FROM ubuntu:latest
-
-RUN apt-get update && apt-get install openjdk-7-jdk
-RUN apt-get update && apt-get install cvs

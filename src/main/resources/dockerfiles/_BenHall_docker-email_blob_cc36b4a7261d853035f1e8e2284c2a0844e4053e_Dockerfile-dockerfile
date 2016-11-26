@@ -1,4 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/BenHall/docker-email/cc36b4a7261d853035f1e8e2284c2a0844e4053e/Dockerfile
-FROM node:0.10.34-onbuild
-EXPOSE 3000

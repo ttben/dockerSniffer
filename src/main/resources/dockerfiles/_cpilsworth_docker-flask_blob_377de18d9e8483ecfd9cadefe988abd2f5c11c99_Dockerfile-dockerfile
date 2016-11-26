@@ -1,3 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/cpilsworth/docker-flask/377de18d9e8483ecfd9cadefe988abd2f5c11c99/Dockerfile
-FROM google/python-runtime

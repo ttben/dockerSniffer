@@ -1,4 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/ita2014-docker/joad-stack-nginx/e057fcc0c6c4b49a092bdec030f926da0ce7bab0/Dockerfile
-FROM nginx
-ONBUILD COPY . /usr/share/nginx/html

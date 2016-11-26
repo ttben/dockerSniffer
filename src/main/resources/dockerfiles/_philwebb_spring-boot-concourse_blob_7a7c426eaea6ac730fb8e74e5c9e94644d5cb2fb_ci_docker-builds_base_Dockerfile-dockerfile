@@ -1,8 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: philwebb/spring-boot-concourse
-#    Dockerfile: http://raw.githubusercontent.com/philwebb/spring-boot-concourse/7a7c426eaea6ac730fb8e74e5c9e94644d5cb2fb/ci/docker-builds/base/Dockerfile
-FROM java:8-jdk
-
-RUN \
-apt-get update && \
-apt-get install -y git

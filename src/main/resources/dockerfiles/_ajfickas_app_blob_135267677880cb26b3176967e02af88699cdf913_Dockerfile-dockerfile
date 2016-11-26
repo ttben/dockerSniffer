@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/ajfickas/app/135267677880cb26b3176967e02af88699cdf913/Dockerfile
-FROM node:0.12.0
-
-ADD . /code
-WORKDIR /code

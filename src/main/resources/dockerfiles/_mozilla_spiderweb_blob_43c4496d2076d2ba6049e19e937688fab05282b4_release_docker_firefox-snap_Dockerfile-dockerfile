@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: mozilla/spiderweb
-#    Dockerfile: http://raw.githubusercontent.com/mozilla/spiderweb/43c4496d2076d2ba6049e19e937688fab05282b4/release/docker/firefox-snap/Dockerfile
-FROM ubuntu:16.04
-
-RUN apt-get update && apt-get install -qy snapcraft bzip2 curl && apt-get clean

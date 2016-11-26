@@ -1,3 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/thebillkidy/Adly.io/eaaa4e155f10209cae160d548953b25bb04c53a1/docker/nodejs/Dockerfile
-FROM google/nodejs-runtime

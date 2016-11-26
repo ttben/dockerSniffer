@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: yched/varnish_test
-#    Dockerfile: http://raw.githubusercontent.com/yched/varnish_test/f91a5ff801d3b7d985f072d3ca624cfb7237d72e/.docker/machines/cli/Dockerfile
-FROM socketwench/drupal-cli
-
-RUN apt-get update && apt-get install vim -yq

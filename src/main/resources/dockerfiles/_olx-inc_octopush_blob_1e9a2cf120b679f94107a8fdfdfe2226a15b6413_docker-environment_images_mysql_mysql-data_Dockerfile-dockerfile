@@ -1,3 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/olx-inc/octopush/1e9a2cf120b679f94107a8fdfdfe2226a15b6413/docker-environment/images/mysql/mysql-data/Dockerfile
-FROM busybox

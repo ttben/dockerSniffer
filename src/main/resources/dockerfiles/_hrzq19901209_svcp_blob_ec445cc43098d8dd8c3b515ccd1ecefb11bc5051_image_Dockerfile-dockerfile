@@ -1,3 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/hrzq19901209/svcp/ec445cc43098d8dd8c3b515ccd1ecefb11bc5051/image/Dockerfile
-FROM ubuntu

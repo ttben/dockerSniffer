@@ -1,3 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/otiai10/gosseract/2930c0d0b0a2646d4c7f2a248bf8e0552edf8b41/Dockerfile
-FROM otiai10/ocrserver

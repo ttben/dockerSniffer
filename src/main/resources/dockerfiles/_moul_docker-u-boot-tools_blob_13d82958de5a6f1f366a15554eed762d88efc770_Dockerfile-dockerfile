@@ -1,8 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: moul/docker-u-boot-tools
-#    Dockerfile: http://raw.githubusercontent.com/moul/docker-u-boot-tools/13d82958de5a6f1f366a15554eed762d88efc770/Dockerfile
-FROM ubuntu:latest
-RUN apt-get update \
- && apt-get upgrade -y -q \
- && apt-get install -y -q u-boot-tools \
- && apt-get clean

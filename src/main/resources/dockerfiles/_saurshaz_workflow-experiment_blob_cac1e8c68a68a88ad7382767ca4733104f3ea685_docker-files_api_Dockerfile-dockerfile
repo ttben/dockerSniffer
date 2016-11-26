@@ -1,8 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: saurshaz/workflow-experiment
-#    Dockerfile: http://raw.githubusercontent.com/saurshaz/workflow-experiment/cac1e8c68a68a88ad7382767ca4733104f3ea685/docker-files/api/Dockerfile
-FROM node:latest
-EXPOSE 3000
-
-RUN apt-get update
-RUN apt-get install -y build-essential

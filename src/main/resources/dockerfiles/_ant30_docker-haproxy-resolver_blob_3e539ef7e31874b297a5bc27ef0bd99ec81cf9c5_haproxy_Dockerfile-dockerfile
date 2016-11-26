@@ -1,8 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: ant30/docker-haproxy-resolver
-#    Dockerfile: http://raw.githubusercontent.com/ant30/docker-haproxy-resolver/3e539ef7e31874b297a5bc27ef0bd99ec81cf9c5/haproxy/Dockerfile
-FROM haproxy:1.6.4
-
-RUN apt-get update && apt-get install strace
-
-

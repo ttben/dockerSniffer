@@ -1,3 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/seiji/rails4-template/efabc6a953d0d88078f4deb33f7d2ab35cc774bf/templates/Dockerfile
-FROM rails:onbuild

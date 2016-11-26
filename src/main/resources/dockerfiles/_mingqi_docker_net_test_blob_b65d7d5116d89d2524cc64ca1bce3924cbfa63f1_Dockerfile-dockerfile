@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: mingqi/docker_net_test
-#    Dockerfile: http://raw.githubusercontent.com/mingqi/docker_net_test/b65d7d5116d89d2524cc64ca1bce3924cbfa63f1/Dockerfile
-FROM ubuntu:14.04
-RUN apt-get update
-RUN apt-get install net-tools

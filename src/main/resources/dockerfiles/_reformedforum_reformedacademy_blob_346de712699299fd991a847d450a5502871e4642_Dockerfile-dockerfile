@@ -1,7 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/reformedforum/reformedacademy/346de712699299fd991a847d450a5502871e4642/Dockerfile
-FROM mysql
-
-COPY media.sql /docker-entrypoint-initdb.d
-
-CMD ["mysqld"]

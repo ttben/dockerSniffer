@@ -1,8 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: UKHomeOffice/docker-landscaper-server
-#    Dockerfile: http://raw.githubusercontent.com/UKHomeOffice/docker-landscaper-server/9a4a37086011e79b05e0b50e1d1ee66e46167c36/plpostgres/Dockerfile
-FROM postgres:9.4
-
-RUN apt-get update
-RUN apt-get install -fy postgresql-plpython-9.4 postgresql-9.4-debversion 
-

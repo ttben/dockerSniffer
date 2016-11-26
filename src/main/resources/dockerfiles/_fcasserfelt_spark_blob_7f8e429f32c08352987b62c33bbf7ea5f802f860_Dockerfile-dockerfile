@@ -1,4 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/fcasserfelt/spark/7f8e429f32c08352987b62c33bbf7ea5f802f860/Dockerfile
-FROM golang:onbuild
-EXPOSE 3000

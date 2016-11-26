@@ -1,4 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/zhgwenming/docker-io/86f5a0b98087acb0cca97cebd8b7fe039cd0c2f0/docker-io/integration-cli/build_tests/TestBuildWithInaccessibleFilesInContext/inaccessibledirectory/Dockerfile
-FROM busybox
-ADD . /foo/

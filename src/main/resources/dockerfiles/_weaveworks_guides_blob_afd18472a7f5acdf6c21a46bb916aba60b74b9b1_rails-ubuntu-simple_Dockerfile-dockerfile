@@ -1,5 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: weaveworks/guides
-#    Dockerfile: http://raw.githubusercontent.com/weaveworks/guides/afd18472a7f5acdf6c21a46bb916aba60b74b9b1/rails-ubuntu-simple/Dockerfile
-FROM rails:onbuild
-RUN apt-get update -qq && apt-get install -y build-essential libpq-dev

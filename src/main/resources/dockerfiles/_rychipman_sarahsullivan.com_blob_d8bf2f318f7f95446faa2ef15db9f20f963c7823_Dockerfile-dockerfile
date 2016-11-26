@@ -1,3 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/rychipman/sarahsullivan.com/d8bf2f318f7f95446faa2ef15db9f20f963c7823/Dockerfile
-FROM rychipman/jekyll-base

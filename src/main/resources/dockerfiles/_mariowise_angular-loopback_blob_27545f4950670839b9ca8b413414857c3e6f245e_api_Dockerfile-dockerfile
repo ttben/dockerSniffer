@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: mariowise/angular-loopback
-#    Dockerfile: http://raw.githubusercontent.com/mariowise/angular-loopback/27545f4950670839b9ca8b413414857c3e6f245e/api/Dockerfile
-FROM ubuntu
-RUN apt-get update
-RUN apt-get install -y nodejs npm git git-core

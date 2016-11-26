@@ -1,9 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: pamtrak06/dbpamtrak06
-#    Dockerfile: http://raw.githubusercontent.com/pamtrak06/dbpamtrak06/f3fd0b63df5aaa4643dfc3379596ca9769affe62/ubuntu16.04-degree/build/Dockerfile
-FROM pamtrak06/ubuntu16.04-jdk8
-
-RUN apt-get update && \
-    apt-get install -y wget unzip
-
-ADD 

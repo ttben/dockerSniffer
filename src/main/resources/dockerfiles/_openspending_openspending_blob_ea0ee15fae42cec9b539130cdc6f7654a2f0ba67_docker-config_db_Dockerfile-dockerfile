@@ -1,3 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/openspending/openspending/ea0ee15fae42cec9b539130cdc6f7654a2f0ba67/docker-config/db/Dockerfile
-FROM postgres

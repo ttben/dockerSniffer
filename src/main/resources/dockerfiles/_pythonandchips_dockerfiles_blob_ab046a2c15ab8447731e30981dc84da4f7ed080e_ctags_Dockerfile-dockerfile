@@ -1,8 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: pythonandchips/dockerfiles
-#    Dockerfile: http://raw.githubusercontent.com/pythonandchips/dockerfiles/ab046a2c15ab8447731e30981dc84da4f7ed080e/ctags/Dockerfile
-FROM debian:sid
-
-RUN apt-get update && apt-get install -y exuberant-ctags
-
-ENTRYPOINT "ctags"

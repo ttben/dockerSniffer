@@ -1,3 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/cchaudier/dockerfiles/f7ff6ed5a5e00f3c38d789c012742a288acc71b3/data/Dockerfile
-FROM tianon/true

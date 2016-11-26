@@ -1,3 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/mrjonny2/slack-fixtures-scores-bot/9b727c0829b72d66bb95d888275e38933bdead01/Dockerfile
-FROM node:6.7-onbuild

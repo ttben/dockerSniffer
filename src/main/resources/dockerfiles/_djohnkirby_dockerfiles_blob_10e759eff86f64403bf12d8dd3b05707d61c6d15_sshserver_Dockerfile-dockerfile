@@ -1,8 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: djohnkirby/dockerfiles
-#    Dockerfile: http://raw.githubusercontent.com/djohnkirby/dockerfiles/10e759eff86f64403bf12d8dd3b05707d61c6d15/sshserver/Dockerfile
-FROM ubuntu:14.04
-
-RUN apt-get update
-RUN apt-get -y upgrade
-RUN apt-get -y install openssh-server

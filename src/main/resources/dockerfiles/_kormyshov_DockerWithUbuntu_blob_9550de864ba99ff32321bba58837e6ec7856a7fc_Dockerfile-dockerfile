@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: kormyshov/DockerWithUbuntu
-#    Dockerfile: http://raw.githubusercontent.com/kormyshov/DockerWithUbuntu/9550de864ba99ff32321bba58837e6ec7856a7fc/Dockerfile
-FROM ubuntu:latest
-
-RUN apt-get update && apt-get install curl git

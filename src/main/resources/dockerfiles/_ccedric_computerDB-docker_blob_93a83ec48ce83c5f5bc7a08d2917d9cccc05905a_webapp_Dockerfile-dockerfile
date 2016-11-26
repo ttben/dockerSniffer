@@ -1,9 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: ccedric/computerDB-docker
-#    Dockerfile: http://raw.githubusercontent.com/ccedric/computerDB-docker/93a83ec48ce83c5f5bc7a08d2917d9cccc05905a/webapp/Dockerfile
-FROM tomcat:8-jre8
-
-USER root
-
-RUN apt-get update && \
-    apt-get install -y mysql-client

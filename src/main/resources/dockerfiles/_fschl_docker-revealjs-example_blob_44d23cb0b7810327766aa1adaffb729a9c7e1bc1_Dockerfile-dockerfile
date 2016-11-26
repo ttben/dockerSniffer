@@ -1,3 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/fschl/docker-revealjs-example/44d23cb0b7810327766aa1adaffb729a9c7e1bc1/Dockerfile
-FROM fschl/revealjs:onbuild

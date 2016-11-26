@@ -1,3 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/rackerlabs/peril/38f4b9cddcf13a2605eb2c7e86846fafe01edb0a/Dockerfile
-FROM ruby:2.1.4-onbuild

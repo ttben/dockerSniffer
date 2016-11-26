@@ -1,7 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: PixelSpirit/ComputerDatabase
-#    Dockerfile: http://raw.githubusercontent.com/PixelSpirit/ComputerDatabase/3feff9bc1dd0ff42f2b23781b21656dc96b45b95/Dockers/maven/Dockerfile
-FROM mikeneck/jdk8
-
-RUN apt-get update 
-RUN apt-get install -y maven git

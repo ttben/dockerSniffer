@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: rranshous/droplet_tools
-#    Dockerfile: http://raw.githubusercontent.com/rranshous/droplet_tools/5a6cd7b1687ee5050520ee44cba5f67fe6591e9c/dockerfiles/curl/Dockerfile
-FROM ubuntu
-RUN apt-get update && apt-get install -y curl
-CMD /bin/bash

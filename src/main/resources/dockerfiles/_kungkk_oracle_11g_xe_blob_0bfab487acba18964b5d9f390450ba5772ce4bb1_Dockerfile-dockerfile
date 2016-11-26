@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: kungkk/oracle_11g_xe
-#    Dockerfile: http://raw.githubusercontent.com/kungkk/oracle_11g_xe/0bfab487acba18964b5d9f390450ba5772ce4bb1/Dockerfile
-FROM	ubuntu:14.04.4
-RUN apt-get update
-RUN	apt-get install -y zip unzip

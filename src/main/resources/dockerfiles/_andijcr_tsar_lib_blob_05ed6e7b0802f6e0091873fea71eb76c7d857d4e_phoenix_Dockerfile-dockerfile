@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: andijcr/tsar_lib
-#    Dockerfile: http://raw.githubusercontent.com/andijcr/tsar_lib/05ed6e7b0802f6e0091873fea71eb76c7d857d4e/phoenix/Dockerfile
-FROM adgico/clang-3.6.2
-
-RUN apt-get update && apt-get install -y cmake && apt-get clean

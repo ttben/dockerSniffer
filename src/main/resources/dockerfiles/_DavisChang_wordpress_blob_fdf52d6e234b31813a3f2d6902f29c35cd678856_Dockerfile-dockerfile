@@ -1,7 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: DavisChang/wordpress
-#    Dockerfile: http://raw.githubusercontent.com/DavisChang/wordpress/fdf52d6e234b31813a3f2d6902f29c35cd678856/Dockerfile
-FROM  wordpress:4.5.2-apache
-
-RUN apt-get -y update && apt-get install -y vim
-

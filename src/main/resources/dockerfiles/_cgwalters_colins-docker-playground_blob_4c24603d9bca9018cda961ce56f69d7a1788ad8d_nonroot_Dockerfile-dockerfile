@@ -1,4 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/cgwalters/colins-docker-playground/4c24603d9bca9018cda961ce56f69d7a1788ad8d/nonroot/Dockerfile
-FROM fedora:20
-USER nobody

@@ -1,5 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: VISIONAI/docker-vmx-server-node
-#    Dockerfile: http://raw.githubusercontent.com/VISIONAI/docker-vmx-server-node/edc1d4d53adbe267f44beb322301c87873f079ec/Dockerfile
-FROM ubuntu
-RUN apt-get update && apt-get -y install libxext6 libxt6 curl libxmu6

@@ -1,7 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: NPolikurov/remote_debug
-#    Dockerfile: http://raw.githubusercontent.com/NPolikurov/remote_debug/6bb7329754958f92f296dea11a3f36f70d9f85fa/Dockerfile
-FROM debian
-MAINTAINER Nikolai 
-RUN apt-get update && apt-get -y install python
-EXPOSE 8888

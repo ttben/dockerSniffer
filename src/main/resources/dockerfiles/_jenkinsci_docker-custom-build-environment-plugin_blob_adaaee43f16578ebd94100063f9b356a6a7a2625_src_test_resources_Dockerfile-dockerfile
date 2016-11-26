@@ -1,3 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/jenkinsci/docker-custom-build-environment-plugin/adaaee43f16578ebd94100063f9b356a6a7a2625/src/test/resources/Dockerfile
-FROM ubuntu:14.04

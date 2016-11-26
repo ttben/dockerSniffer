@@ -1,3 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/marcells/node-build-monitor/72e324b6124ff4b2879b702b38d9443d95c61ea7/docker/Dockerfile
-FROM marcells/node-build-monitor

@@ -1,3 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/pfeilbr/go-playground/4d3da2100494e52e0c1a6da1ba5826b6ab1b7b93/hello/Dockerfile
-FROM golang:1.6-onbuild

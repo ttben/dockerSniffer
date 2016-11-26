@@ -1,7 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: ChristopherBiscardi/superhuman-registry
-#    Dockerfile: http://raw.githubusercontent.com/ChristopherBiscardi/superhuman-registry/26e3556da39b07f9f512dc7c157956e67b4ff465/Dockerfile
-FROM haskell:8
-
-RUN apt-get update && \
-    apt-get install libpq-dev -y

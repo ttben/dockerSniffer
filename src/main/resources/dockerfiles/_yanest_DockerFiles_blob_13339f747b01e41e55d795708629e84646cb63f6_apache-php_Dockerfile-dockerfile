@@ -1,4 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/yanest/DockerFiles/13339f747b01e41e55d795708629e84646cb63f6/apache-php/Dockerfile
-FROM eboraas/apache-php
-

@@ -1,5 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/iharh/centos6/b0c95b202a06c288bba091608d5090ed339a542f/Dockerfile
-FROM centos:centos6
-MAINTAINER Ihar Hancharenka
-

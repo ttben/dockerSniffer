@@ -1,9 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: dankydoo/docker-demo
-#    Dockerfile: http://raw.githubusercontent.com/dankydoo/docker-demo/c504ea3fbb4fba85d6bec1b1e9a23ec5299e0c5d/node-base/Dockerfile
-FROM node
-
-MAINTAINER BOOF
-
-RUN apt-get update
-RUN apt-get install vim -y

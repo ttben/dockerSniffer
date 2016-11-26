@@ -1,8 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: raphiz/drone-php
-#    Dockerfile: http://raw.githubusercontent.com/raphiz/drone-php/e3521d15206d572c19853502f900fc2731946eb6/5.4.33-minimal/Dockerfile
-FROM php:5.4.33
-
-# Install git
-RUN apt-get update -yqq
-RUN apt-get install git -yqq

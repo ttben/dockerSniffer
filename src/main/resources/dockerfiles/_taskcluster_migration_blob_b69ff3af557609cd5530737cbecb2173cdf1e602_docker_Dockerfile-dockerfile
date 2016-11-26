@@ -1,7 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: taskcluster/migration
-#    Dockerfile: http://raw.githubusercontent.com/taskcluster/migration/b69ff3af557609cd5530737cbecb2173cdf1e602/docker/Dockerfile
-FROM python:2.7
-
-RUN apt-get update
-RUN apt-get install -y python-dev graphviz git

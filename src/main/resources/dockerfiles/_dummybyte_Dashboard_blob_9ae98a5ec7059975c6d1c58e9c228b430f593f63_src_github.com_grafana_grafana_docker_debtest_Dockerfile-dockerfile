@@ -1,9 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: dummybyte/Dashboard
-#    Dockerfile: http://raw.githubusercontent.com/dummybyte/Dashboard/9ae98a5ec7059975c6d1c58e9c228b430f593f63/src/github.com/grafana/grafana/docker/debtest/Dockerfile
-FROM debian:jessie
-
-RUN apt-get update && apt-get install -y vim
-
-ADD *.deb /tmp/
-

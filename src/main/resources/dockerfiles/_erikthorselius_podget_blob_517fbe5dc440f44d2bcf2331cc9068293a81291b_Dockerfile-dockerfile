@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: erikthorselius/podget
-#    Dockerfile: http://raw.githubusercontent.com/erikthorselius/podget/517fbe5dc440f44d2bcf2331cc9068293a81291b/Dockerfile
-FROM ubuntu:xenial
-RUN apt-get update && apt-get install -y podget
-ENTRYPOINT ["/usr/bin/podget"]

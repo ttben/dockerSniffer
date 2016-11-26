@@ -1,3 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/gummadic/Docker-Nginx-Flask/d24c8f9a78bb3f29fdd9cfce464445b8036af3b4/auth/Dockerfile
-FROM python:3.4-onbuild

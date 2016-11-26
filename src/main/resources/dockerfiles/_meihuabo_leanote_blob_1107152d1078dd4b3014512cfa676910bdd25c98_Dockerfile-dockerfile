@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: meihuabo/leanote
-#    Dockerfile: http://raw.githubusercontent.com/meihuabo/leanote/1107152d1078dd4b3014512cfa676910bdd25c98/Dockerfile
-FROM ubuntu:14.04
-
-RUN apt-get update && apt-get upgrade && apt-get install wget -y

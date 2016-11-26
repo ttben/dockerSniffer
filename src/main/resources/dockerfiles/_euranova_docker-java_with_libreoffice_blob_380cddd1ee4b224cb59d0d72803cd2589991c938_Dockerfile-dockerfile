@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: euranova/docker-java_with_libreoffice
-#    Dockerfile: http://raw.githubusercontent.com/euranova/docker-java_with_libreoffice/380cddd1ee4b224cb59d0d72803cd2589991c938/Dockerfile
-FROM java:8-jre
-
-RUN apt-get update && apt-get install -y libreoffice

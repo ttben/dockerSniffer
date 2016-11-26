@@ -1,4 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/WillAbides/docker-test/21c0f55ac85e3cccca4997497bed3f4134bb59af/Dockerfile
-FROM centos:centos6
-

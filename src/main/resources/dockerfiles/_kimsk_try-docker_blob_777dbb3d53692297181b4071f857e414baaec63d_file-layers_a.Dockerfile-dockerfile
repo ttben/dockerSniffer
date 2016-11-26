@@ -1,7 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: kimsk/try-docker
-#    Dockerfile: http://raw.githubusercontent.com/kimsk/try-docker/777dbb3d53692297181b4071f857e414baaec63d/file-layers/a.Dockerfile
-FROM ubuntu
-RUN apt-get update
-RUN apt-get install -y apache2
-RUN touch /opt/a.txt

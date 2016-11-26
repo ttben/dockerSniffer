@@ -1,7 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: jrthebuilder/learning_code
-#    Dockerfile: http://raw.githubusercontent.com/jrthebuilder/learning_code/a257d0986ffa6dd3d5d9df9dc676f1c00b4302ea/Dockerfile
-FROM phusion/baseimage
-
-RUN apt-get update
-RUN apt-get install -y python

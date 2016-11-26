@@ -1,4 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/timlinux/docker-tutorial/6bbead0f5def0ae60c3237d8d1fa98c5a585257e/Dockerfile
-FROM ubuntu:14.04
-CMD echo "Hello world"

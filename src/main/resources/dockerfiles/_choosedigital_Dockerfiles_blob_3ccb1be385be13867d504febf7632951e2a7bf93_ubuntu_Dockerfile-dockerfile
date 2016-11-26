@@ -1,8 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: choosedigital/Dockerfiles
-#    Dockerfile: http://raw.githubusercontent.com/choosedigital/Dockerfiles/3ccb1be385be13867d504febf7632951e2a7bf93/ubuntu/Dockerfile
-FROM ubuntu:latest
-
-RUN apt-get update
-RUN apt-get -y install python-software-properties curl wget unzip software-properties-common
-RUN apt-get clean && apt-get autoremove

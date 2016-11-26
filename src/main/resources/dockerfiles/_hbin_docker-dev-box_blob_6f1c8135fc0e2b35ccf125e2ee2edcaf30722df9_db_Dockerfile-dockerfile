@@ -1,3 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/hbin/docker-dev-box/6f1c8135fc0e2b35ccf125e2ee2edcaf30722df9/db/Dockerfile
-FROM postgres:latest

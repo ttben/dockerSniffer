@@ -1,5 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/JasonGiedymin/Holobot/926305de865ad2e47c9775e1811dd490ebd3f484/scripts/dockerfiles/docker-registry/Dockerfile
-# docker-registry
-
-from samalba/docker-registry

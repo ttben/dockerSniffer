@@ -1,4 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/jiatower/docker-images/2bc75c094d1338e7b6cf96fff751b2b05e502091/node/Dockerfile
-FROM node:0.12
-EXPOSE 3000

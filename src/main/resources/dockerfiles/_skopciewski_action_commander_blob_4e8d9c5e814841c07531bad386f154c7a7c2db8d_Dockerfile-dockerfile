@@ -1,5 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/skopciewski/action_commander/4e8d9c5e814841c07531bad386f154c7a7c2db8d/Dockerfile
-FROM skopciewski/gemdev:onbuild
-
-CMD ["sh"]

@@ -1,3 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/okstyr/okibin/a08c856977c74ff1c44d5e871a37082b5ea81f52/mybuild-tests/withdotdockerfile/dotdock-test.dockerfile
-FROM oki/ubuntu-td

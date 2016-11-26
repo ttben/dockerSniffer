@@ -1,4 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/yikaus/docker-alpine-base/b40909a83c95534b2f87165bf83eae0b91a75ff4/Dockerfile
-FROM scratch
-ADD rootfs.tar.xz /

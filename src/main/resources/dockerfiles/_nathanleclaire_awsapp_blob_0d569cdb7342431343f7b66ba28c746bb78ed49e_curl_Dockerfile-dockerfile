@@ -1,9 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: nathanleclaire/awsapp
-#    Dockerfile: http://raw.githubusercontent.com/nathanleclaire/awsapp/0d569cdb7342431343f7b66ba28c746bb78ed49e/curl/Dockerfile
-from ubuntu:14.04
-
-run apt-get update && \
-    apt-get install -y curl
-
-cmd ["curl"]

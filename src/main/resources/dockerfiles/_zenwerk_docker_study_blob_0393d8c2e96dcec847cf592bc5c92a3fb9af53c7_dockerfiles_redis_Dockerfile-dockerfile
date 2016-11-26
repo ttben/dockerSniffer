@@ -1,3 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/zenwerk/docker_study/0393d8c2e96dcec847cf592bc5c92a3fb9af53c7/dockerfiles/redis/Dockerfile
-FROM redis

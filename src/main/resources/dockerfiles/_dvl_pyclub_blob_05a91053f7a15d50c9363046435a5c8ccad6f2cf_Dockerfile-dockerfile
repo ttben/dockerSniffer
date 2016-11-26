@@ -1,3 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/dvl/pyclub/05a91053f7a15d50c9363046435a5c8ccad6f2cf/Dockerfile
-FROM django:python3-onbuild

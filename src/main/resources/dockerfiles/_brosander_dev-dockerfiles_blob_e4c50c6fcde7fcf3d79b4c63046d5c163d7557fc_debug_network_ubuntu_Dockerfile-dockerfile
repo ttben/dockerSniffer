@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: brosander/dev-dockerfiles
-#    Dockerfile: http://raw.githubusercontent.com/brosander/dev-dockerfiles/e4c50c6fcde7fcf3d79b4c63046d5c163d7557fc/debug/network/ubuntu/Dockerfile
-from ubuntu
-run apt-get update
-run apt-get install -y dnsutils inetutils-ping ssh-client

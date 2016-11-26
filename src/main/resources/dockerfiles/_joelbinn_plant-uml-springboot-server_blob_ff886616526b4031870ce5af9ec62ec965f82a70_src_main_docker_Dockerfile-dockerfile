@@ -1,7 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: joelbinn/plant-uml-springboot-server
-#    Dockerfile: http://raw.githubusercontent.com/joelbinn/plant-uml-springboot-server/ff886616526b4031870ce5af9ec62ec965f82a70/src/main/docker/Dockerfile
-FROM openjdk:8
-
-RUN apt-get update && apt-get install -y \
-  graphviz

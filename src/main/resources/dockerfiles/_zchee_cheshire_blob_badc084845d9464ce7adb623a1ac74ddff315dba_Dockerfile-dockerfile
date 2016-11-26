@@ -1,3 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/zchee/cheshire/badc084845d9464ce7adb623a1ac74ddff315dba/Dockerfile
-FROM zchee/rubymine:nightly

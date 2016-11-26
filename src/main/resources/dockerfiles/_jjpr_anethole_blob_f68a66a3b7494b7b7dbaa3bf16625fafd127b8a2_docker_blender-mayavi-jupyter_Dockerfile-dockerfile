@@ -1,9 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: jjpr/anethole
-#    Dockerfile: http://raw.githubusercontent.com/jjpr/anethole/f68a66a3b7494b7b7dbaa3bf16625fafd127b8a2/docker/blender-mayavi-jupyter/Dockerfile
-FROM jjpr/mayavi-jupyter:latest
-
-RUN apt-get update && \
-    apt-get install -y \
-    blender
-

@@ -1,5 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/gerryyang/mac-utils/22f6fd9a3d34671f6d38a472bb2c0ca7540981ab/tools/docker/DIY_Dockerfile/Dockerfile
-FROM ubuntu
-
-RUN touch hello.txt

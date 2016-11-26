@@ -1,5 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: maestro-tech/ELK-stack
-#    Dockerfile: http://raw.githubusercontent.com/maestro-tech/ELK-stack/9f6d7e0f8ff1d44feabdd1c22dcb8118371d5f81/base-images/logspout/debug/Dockerfile
-FROM ubuntu-debootstrap
-RUN apt-get update && apt-get install -y netcat

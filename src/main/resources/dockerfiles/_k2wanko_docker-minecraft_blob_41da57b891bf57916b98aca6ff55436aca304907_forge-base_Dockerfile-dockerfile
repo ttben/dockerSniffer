@@ -1,5 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/k2wanko/docker-minecraft/41da57b891bf57916b98aca6ff55436aca304907/forge-base/Dockerfile
-FROM k2wanko/minecraft:base
-
-COPY ./scripts /scripts

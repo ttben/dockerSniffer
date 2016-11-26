@@ -1,8 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: maniankara/stackoverflow
-#    Dockerfile: http://raw.githubusercontent.com/maniankara/stackoverflow/0042421bd42b5667ba4671fcfb711c0e5192c5e0/docker-ansible-jenkins/Dockerfile
-FROM jenkins
-USER root
-RUN apt-get update
-RUN apt-get install -y ansible
-USER jenkins

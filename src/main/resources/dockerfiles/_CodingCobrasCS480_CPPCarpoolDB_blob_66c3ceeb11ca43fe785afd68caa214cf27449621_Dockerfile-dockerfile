@@ -1,5 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/CodingCobrasCS480/CPPCarpoolDB/66c3ceeb11ca43fe785afd68caa214cf27449621/Dockerfile
-FROM postgres:9.6.0
-
-COPY scripts /scripts

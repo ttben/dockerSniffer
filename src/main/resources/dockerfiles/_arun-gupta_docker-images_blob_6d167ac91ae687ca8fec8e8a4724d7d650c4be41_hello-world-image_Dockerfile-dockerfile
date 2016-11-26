@@ -1,5 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/arun-gupta/docker-images/6d167ac91ae687ca8fec8e8a4724d7d650c4be41/hello-world-image/Dockerfile
-FROM ubuntu
-
-CMD ["/bin/echo", "hello world"]

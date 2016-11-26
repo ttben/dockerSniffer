@@ -1,3 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/kevinsimper/node-js-fig-docker-example/85c2f19d4301640f5757a4e64e4ee913abf683b5/Dockerfile
-FROM node:0.10.33

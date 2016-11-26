@@ -1,7 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: chunxiao369/chunxiao-code
-#    Dockerfile: http://raw.githubusercontent.com/chunxiao369/chunxiao-code/9da270645d20afa559b78e006a1d8a075c8756c5/docker/net/Dockerfile
-FROM ubuntu-net2:latest
-RUN apt-get -y update && apt-get install -y iproute
-RUN apt-get install -y iputils-ping
-RUN apt-get install -y curl

@@ -1,5 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: danysousa/pingLite
-#    Dockerfile: http://raw.githubusercontent.com/danysousa/pingLite/4b2371153f22903de09545a87a77a8bcfe0ef2f3/Dockerfile
-FROM debian:7
-RUN apt-get -y update && apt-get -y install build-essential git

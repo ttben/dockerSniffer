@@ -1,9 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: aviatadocker/gam-node
-#    Dockerfile: http://raw.githubusercontent.com/aviatadocker/gam-node/859345bf62ae641202a9a7f0adf1f67896b47a20/Dockerfile
-FROM node:5.6.0
-
-RUN apt-get update
-RUN apt-get -y install apt-utils
-RUN apt-get -y install build-essential
-

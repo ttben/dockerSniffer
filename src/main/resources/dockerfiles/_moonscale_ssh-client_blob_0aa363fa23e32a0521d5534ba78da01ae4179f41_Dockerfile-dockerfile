@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: moonscale/ssh-client
-#    Dockerfile: http://raw.githubusercontent.com/moonscale/ssh-client/0aa363fa23e32a0521d5534ba78da01ae4179f41/Dockerfile
-FROM debian:jessie
-
-RUN apt-get update && apt-get install openssh-client -y

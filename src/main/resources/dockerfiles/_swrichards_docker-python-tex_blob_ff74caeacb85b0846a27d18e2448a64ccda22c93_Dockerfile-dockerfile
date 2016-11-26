@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: swrichards/docker-python-tex
-#    Dockerfile: http://raw.githubusercontent.com/swrichards/docker-python-tex/ff74caeacb85b0846a27d18e2448a64ccda22c93/Dockerfile
-FROM python:2.7
-RUN apt-get update -y
-RUN apt-get install -y pandoc texlive-full curl

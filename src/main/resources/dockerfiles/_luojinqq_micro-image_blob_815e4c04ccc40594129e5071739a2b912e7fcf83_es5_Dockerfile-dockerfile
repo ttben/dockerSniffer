@@ -1,5 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: luojinqq/micro-image
-#    Dockerfile: http://raw.githubusercontent.com/luojinqq/micro-image/815e4c04ccc40594129e5071739a2b912e7fcf83/es5/Dockerfile
-FROM elasticsearch:5
-RUN apt-get update && apt-get install -y git vim

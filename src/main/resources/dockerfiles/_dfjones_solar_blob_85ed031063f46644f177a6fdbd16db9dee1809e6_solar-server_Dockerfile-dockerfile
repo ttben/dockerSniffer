@@ -1,4 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/dfjones/solar/85ed031063f46644f177a6fdbd16db9dee1809e6/solar-server/Dockerfile
-FROM golang:1.5-onbuild
-EXPOSE 3000

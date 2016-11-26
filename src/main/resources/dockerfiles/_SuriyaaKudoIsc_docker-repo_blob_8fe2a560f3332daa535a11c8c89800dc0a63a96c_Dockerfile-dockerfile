@@ -1,5 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/SuriyaaKudoIsc/docker-repo/8fe2a560f3332daa535a11c8c89800dc0a63a96c/Dockerfile
-FROM scratch
-COPY hello /
-CMD ["/hello"]

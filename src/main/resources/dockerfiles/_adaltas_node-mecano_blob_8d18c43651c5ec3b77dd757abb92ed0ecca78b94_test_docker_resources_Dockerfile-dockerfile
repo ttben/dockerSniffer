@@ -1,4 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/adaltas/node-mecano/8d18c43651c5ec3b77dd757abb92ed0ecca78b94/test/docker/resources/Dockerfile
-FROM scratch
-CMD ['echo "hello world from CWD"']

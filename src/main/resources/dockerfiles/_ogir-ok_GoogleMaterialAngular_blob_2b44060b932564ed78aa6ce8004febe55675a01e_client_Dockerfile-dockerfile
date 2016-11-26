@@ -1,4 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/ogir-ok/GoogleMaterialAngular/2b44060b932564ed78aa6ce8004febe55675a01e/client/Dockerfile
- FROM node
- RUN npm install -g gulp

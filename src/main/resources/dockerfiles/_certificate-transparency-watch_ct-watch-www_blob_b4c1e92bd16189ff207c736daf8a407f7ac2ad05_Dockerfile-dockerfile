@@ -1,4 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/certificate-transparency-watch/ct-watch-www/b4c1e92bd16189ff207c736daf8a407f7ac2ad05/Dockerfile
-FROM nginx
-COPY app /usr/share/nginx/html/

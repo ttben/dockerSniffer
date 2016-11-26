@@ -1,5 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/rcsavage/CloudMgmtKubernetes/e20f597b295881c98adde4f530c0fb1b10dc58b7/build/pause/Dockerfile
-FROM scratch
-ADD pause /
-ENTRYPOINT ["/pause"]

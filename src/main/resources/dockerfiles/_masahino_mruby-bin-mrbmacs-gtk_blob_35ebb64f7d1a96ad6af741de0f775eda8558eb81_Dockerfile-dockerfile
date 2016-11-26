@@ -1,5 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: masahino/mruby-bin-mrbmacs-gtk
-#    Dockerfile: http://raw.githubusercontent.com/masahino/mruby-bin-mrbmacs-gtk/35ebb64f7d1a96ad6af741de0f775eda8558eb81/Dockerfile
-FROM hone/mruby-cli
-RUN apt-get update && apt-get install -y unzip wget

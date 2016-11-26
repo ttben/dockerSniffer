@@ -1,7 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: egnoriega/myinfo
-#    Dockerfile: http://raw.githubusercontent.com/egnoriega/myinfo/ccf2bda07271344489406171cbc57958ae317689/Dockerfile
-FROM ubuntu
-RUN apt-get update && apt-get install wget
-
-MAINTAINER EGN

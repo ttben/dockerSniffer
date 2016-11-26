@@ -1,5 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/senecajs/seneca-redis-pubsub-transport/ba023f6730521df65698b1cfe593849b9b3e31d6/docker/Dockerfile
-FROM redis
-
-EXPOSE 6379

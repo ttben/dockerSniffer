@@ -1,7 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: salomvary/openstreetmap-docker
-#    Dockerfile: http://raw.githubusercontent.com/salomvary/openstreetmap-docker/72905953c71dfdc8108178df8bc465832482b702/database/Dockerfile
-FROM postgres
-
-RUN apt-get update \
-	&& apt-get install -y --no-install-recommends postgresql-9.4-postgis-2.1

@@ -1,5 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: GROG/docker-pdflatex
-#    Dockerfile: http://raw.githubusercontent.com/GROG/docker-pdflatex/1d6e05283fc6dbd3e813b0714757fe5cfbd1c98a/Dockerfile
-FROM debian:jessie
-RUN apt-get update && apt-get install -y build-essential texlive-full

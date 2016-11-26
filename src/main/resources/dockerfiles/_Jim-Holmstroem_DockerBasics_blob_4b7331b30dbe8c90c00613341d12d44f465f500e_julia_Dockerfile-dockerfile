@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: Jim-Holmstroem/DockerBasics
-#    Dockerfile: http://raw.githubusercontent.com/Jim-Holmstroem/DockerBasics/4b7331b30dbe8c90c00613341d12d44f465f500e/julia/Dockerfile
-FROM julia
-
-RUN apt-get update && apt-get install --assume-yes git

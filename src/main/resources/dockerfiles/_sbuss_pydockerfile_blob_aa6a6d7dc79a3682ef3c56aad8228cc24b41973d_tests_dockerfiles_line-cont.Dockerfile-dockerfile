@@ -1,9 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: sbuss/pydockerfile
-#    Dockerfile: http://raw.githubusercontent.com/sbuss/pydockerfile/aa6a6d7dc79a3682ef3c56aad8228cc24b41973d/tests/dockerfiles/line-cont.Dockerfile
-FROM ubuntu
-RUN apt-get update && \
-    apt-get install -y \
-        python \
-        python-pip
-CMD bash

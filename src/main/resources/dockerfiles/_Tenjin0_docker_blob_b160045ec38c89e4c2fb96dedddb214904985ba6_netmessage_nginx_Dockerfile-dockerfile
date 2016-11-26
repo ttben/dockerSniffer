@@ -1,9 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: Tenjin0/docker
-#    Dockerfile: http://raw.githubusercontent.com/Tenjin0/docker/b160045ec38c89e4c2fb96dedddb214904985ba6/netmessage_nginx/Dockerfile
-FROM nginx
-RUN apt-get update && \
-    apt-get install -y --force-yes \
-    vim \
-    curl
-EXPOSE 80

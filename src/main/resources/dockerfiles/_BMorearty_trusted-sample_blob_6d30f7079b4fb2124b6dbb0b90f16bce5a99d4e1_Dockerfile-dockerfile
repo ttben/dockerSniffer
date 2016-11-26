@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/BMorearty/trusted-sample/6d30f7079b4fb2124b6dbb0b90f16bce5a99d4e1/Dockerfile
-# This is a trusted build.
-FROM ubuntu
-CMD ls
-

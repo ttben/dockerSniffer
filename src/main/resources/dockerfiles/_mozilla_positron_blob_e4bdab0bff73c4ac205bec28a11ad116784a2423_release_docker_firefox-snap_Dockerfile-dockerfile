@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: mozilla/positron
-#    Dockerfile: http://raw.githubusercontent.com/mozilla/positron/e4bdab0bff73c4ac205bec28a11ad116784a2423/release/docker/firefox-snap/Dockerfile
-FROM ubuntu:16.04
-
-RUN apt-get update && apt-get install -qy snapcraft bzip2 curl && apt-get clean

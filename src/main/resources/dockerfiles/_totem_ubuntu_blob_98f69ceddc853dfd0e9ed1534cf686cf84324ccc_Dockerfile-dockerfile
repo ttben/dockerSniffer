@@ -1,4 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/totem/ubuntu/98f69ceddc853dfd0e9ed1534cf686cf84324ccc/Dockerfile
-FROM scratch
-ADD raring.tar.gz /

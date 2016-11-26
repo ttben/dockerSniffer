@@ -1,3 +1,0 @@
-#  Dockerfile retrieved from:
-#    Dockerfile: http://raw.githubusercontent.com/synclio/socketio-chat/bcec52c05a99435699de8b8ee5411a4b9f30c560/Dockerfile
-FROM google/nodejs-runtime

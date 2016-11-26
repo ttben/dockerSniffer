@@ -1,8 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: medvekoma/docker-cassandra
-#    Dockerfile: http://raw.githubusercontent.com/medvekoma/docker-cassandra/d5c16a720358ce6a103d8cbb3b9124455acbbff2/image/Dockerfile
-FROM cassandra:3.9
-
-COPY bin/* /demo/
-RUN apt-get update && apt-get install -y jq
-

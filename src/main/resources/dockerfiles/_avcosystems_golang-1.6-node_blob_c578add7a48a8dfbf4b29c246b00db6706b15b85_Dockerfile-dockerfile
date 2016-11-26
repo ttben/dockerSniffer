@@ -1,9 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: avcosystems/golang-1.6-node
-#    Dockerfile: http://raw.githubusercontent.com/avcosystems/golang-1.6-node/c578add7a48a8dfbf4b29c246b00db6706b15b85/Dockerfile
-FROM golang:1.6
-RUN apt-get update
-RUN apt-get install -y git python
-
-RUN curl -sL https://deb.nodesource.com/setup_4.x | bash -
-RUN apt-get install -y nodejs

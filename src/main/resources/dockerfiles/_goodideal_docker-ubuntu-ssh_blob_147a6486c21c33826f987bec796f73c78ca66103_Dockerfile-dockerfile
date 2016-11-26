@@ -1,5 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: goodideal/docker-ubuntu-ssh
-#    Dockerfile: http://raw.githubusercontent.com/goodideal/docker-ubuntu-ssh/147a6486c21c33826f987bec796f73c78ca66103/Dockerfile
-FROM ubuntu:latest
-RUN apt-get update -y && apt-get install -y ssh-client curl

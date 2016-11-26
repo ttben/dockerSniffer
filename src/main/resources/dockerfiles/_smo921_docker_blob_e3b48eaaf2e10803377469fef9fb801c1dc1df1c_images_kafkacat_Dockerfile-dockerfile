@@ -1,7 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: smo921/docker
-#    Dockerfile: http://raw.githubusercontent.com/smo921/docker/e3b48eaaf2e10803377469fef9fb801c1dc1df1c/images/kafkacat/Dockerfile
-FROM debian:jessie
-
-RUN apt-get update && apt-get -y install kafkacat
-

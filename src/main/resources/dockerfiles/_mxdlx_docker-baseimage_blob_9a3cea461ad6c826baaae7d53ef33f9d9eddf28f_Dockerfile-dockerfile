@@ -1,9 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: mxdlx/docker-baseimage
-#    Dockerfile: http://raw.githubusercontent.com/mxdlx/docker-baseimage/9a3cea461ad6c826baaae7d53ef33f9d9eddf28f/Dockerfile
-FROM phusion/baseimage:0.9.18
-MAINTAINER aaraujo@protonmail.ch
-
-ENV DEBIAN_FRONTEND noninteractive
-
-RUN apt-get update && apt-get -y upgrade && apt-get -y dist-upgrade && apt-get autoremove && apt-get clean && apt-get autoclean

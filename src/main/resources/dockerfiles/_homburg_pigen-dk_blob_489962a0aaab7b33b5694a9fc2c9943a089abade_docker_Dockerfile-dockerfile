@@ -1,6 +1,0 @@
-#  Dockerfile retrieved from:
-#    Repository: homburg/pigen-dk
-#    Dockerfile: http://raw.githubusercontent.com/homburg/pigen-dk/489962a0aaab7b33b5694a9fc2c9943a089abade/docker/Dockerfile
-FROM php:5.4-fpm
-
-RUN apt-get update && apt-get install
