@@ -1,5 +1,6 @@
 package fr.unice.i3s.sparks.docker.core.commands;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -11,7 +12,7 @@ public class ShellCommand extends Command {
     }
 
     public ShellCommand(String... body) {
-        this.body = Arrays.asList(body);
+        this.body = new ArrayList<>(Arrays.asList(body));
     }
 
     public List<String> getBody() {

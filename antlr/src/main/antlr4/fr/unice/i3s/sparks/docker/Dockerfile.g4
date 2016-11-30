@@ -2,37 +2,35 @@ grammar Dockerfile;
 
 dockerfile: ((COMMENT | command))+ EOF;
 
-COMMENT
-    :   ( '#' ~[\r\n]* '\r'? '\n'
-        | '/*' .*? '*/'
-        ) -> skip
-    ;
+COMMENT :   ( '#' ~[\r\n]* '\r'? '\n') -> skip ;
+WS : ((' ' | '\t')+) -> skip;
 
 command: one_line | run;
 one_line: (from | env | entrypoint | maintainer | workdir | add | copy | expose) (NEWLINE);
 
-from: FROM ANYKEYS;
-maintainer: MAINTAINER ANYKEYS ANYKEYS;
+from: FROM NOTNEWLINE;
 
-env: (ENV key '=' LETTER+);
-key: (LETTER | NUMBER)+;
-value: (LETTER | NUMBER)+;
+maintainer: MAINTAINER NOTNEWLINE+;
 
-entrypoint: ENTRYPOINT ANYKEYS;
+env: (ENV envBody);
+envBody: (LETTER | NUMBER)+ '=' (LETTER | NUMBER)+;
 
-workdir: WORKDIR ANYKEYS;
+entrypoint: ENTRYPOINT NOTNEWLINE+;
+
+workdir: WORKDIR NOTNEWLINE+;
 
 add: ADD .*?;
 
 copy: COPY src dest;
-src: ANYKEYS | '.';
-dest: ANYKEYS | '.';
+src: NOTNEWLINE;
+dest: NOTNEWLINE;
 
 expose: EXPOSE NUMBER;
 
-run: RUN body NEWLINE;
-body: shellCmd (SHELLAND shellCmd)* ;
-shellCmd: ANYKEYS+;
+run: RUN body;
+body: shellCmd | shellCmd SHELLAND shellCmd;
+shellCmd: NOTNEWLINEBCKSLASH '\\' NEWLINE | NOTNEWLINEBCKSLASH;
+NOTNEWLINEBCKSLASH: ~[\r\n\\];
 
 SHARP: '#';
 FROM: [fF][rR][oO][mM];
@@ -48,7 +46,6 @@ EXPOSE: [eE][xX][pP][oO][sS][eE];
 
 NUMBER: [0-9];
 LETTER: [a-zA-Z];
-ANYKEYS: (LETTER | NUMBER | ':' | '_' | '-' | '/' | '|' | '"' | '=' | '*' | '\\' | '\'' | '+' | ']' | '[' | '{' | '}' | ';' | '!' | '~' | '.' | '–' | '$' | '<' | '>' | '@' | ',')+;
 
 NEWLINE: ('\n' | '\r')+;
-WS : ((' ' | '\t')+) -> skip;
+NOTNEWLINE: ~[\r\n];

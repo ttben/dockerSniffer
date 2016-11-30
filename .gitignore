@@ -15,3 +15,4 @@ target/
 .idea
 *.iml
 src/main/resources/dockerfiles/*
+src/main/resources/countTrivial.sh

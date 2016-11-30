@@ -53,8 +53,8 @@ public class AntLRDockerListener extends DockerfileBaseListener {
 
     @Override
     public void visitErrorNode(ErrorNode node) {
-        System.out.println("loooo");
-        System.out.println(node);
+        System.err.println("ERROR PARSING FILE");
+       // System.out.println(node);
         //super.visitErrorNode(node);
     }
 

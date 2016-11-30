@@ -1,21 +1,16 @@
 package fr.unice.i3s.sparks.docker.analyser;
 
-import fr.unice.i3s.sparks.docker.DockerfileLexer;
-import fr.unice.i3s.sparks.docker.DockerfileParser;
-import fr.unice.i3s.sparks.docker.core.commands.COPYCommand;
+import fr.unice.i3s.sparks.docker.core.commands.Install;
+import fr.unice.i3s.sparks.docker.core.commands.NonParsedCommand;
 import fr.unice.i3s.sparks.docker.core.commands.RUNCommand;
+import fr.unice.i3s.sparks.docker.core.commands.Update;
 import fr.unice.i3s.sparks.docker.core.conflicts.Enricher;
 import fr.unice.i3s.sparks.docker.core.conflicts.MalFormedImageException;
 import fr.unice.i3s.sparks.docker.core.conflicts.run.RUNConflict;
 import fr.unice.i3s.sparks.docker.core.conflicts.run.RUNConflictSniffer;
 import fr.unice.i3s.sparks.docker.core.model.Dockerfile;
-import fr.unice.i3s.sparks.docker.grammar.AntLRDockerListener;
-import org.antlr.v4.runtime.ANTLRInputStream;
-import org.antlr.v4.runtime.CommonTokenStream;
-import org.antlr.v4.runtime.tree.ParseTreeWalker;
-import org.apache.commons.io.FileUtils;
+import fr.unice.i3s.sparks.docker.grammar.DockerFileParser;
 
-import java.io.Console;
 import java.io.File;
 import java.io.FilenameFilter;
 import java.io.IOException;
@@ -26,132 +21,100 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) throws MalFormedImageException, IOException {
+        analyseDockerfiles();
+    }
 
+    private static void analyseDockerfiles() throws IOException {
         List<Dockerfile> dockerfiles = new ArrayList<>();
         List<RUNConflict> conflicts = new ArrayList<>();
 
 
-        FilenameFilter textFilter = new FilenameFilter() {
-            public boolean accept(File dir, String name) {
-                String lowercaseName = name.toLowerCase();
-                if (lowercaseName.endsWith("-dockerfile")) {
-                    return true;
-                } else {
-                    return false;
-                }
-            }
+        FilenameFilter textFilter = (dir, name) -> {
+            String lowercaseName = name.toLowerCase();
+            return lowercaseName.endsWith("-dockerfile");
         };
 
         String folderThatContainsDockerfiles = "./src/main/resources/dockerfiles";
         File folder = new File(folderThatContainsDockerfiles);
 
         File[] files = folder.listFiles(textFilter);
-        int nbOfDockerFilesThatContainsRunInstallOrUpdate = 0;
-        int nbOfDockerFilesThatContainsRun = 0;
-        int nbOfDockerFilesThatContainsCopy = 0;
-        int nbOfTrivialDockerfiles = 0;
-        int trivialThreshold = 2;
+
 
         for (File f : files) {
             System.out.println("Handling file:" + f.getAbsolutePath());
-            List<String> strings = FileUtils.readLines(f, "utf-8");
 
-            String sentence = "";
+            Dockerfile dockerfile = DockerFileParser.parse(f);
+            Dockerfile enrichedDockerfile = Enricher.enrich(dockerfile);
+            dockerfiles.add(enrichedDockerfile);
+        }
 
-            for (String s : strings) {
-                sentence += s + "\n";
-            }
+        List<Dockerfile> trivialDockerfiles = new ArrayList<>();
+        List<Dockerfile> dockerfilesWithRUN = new ArrayList<>();
+        List<Dockerfile> dockerfilesWithUpdateInstall = new ArrayList<>();
 
-            // Get our lexer
-            DockerfileLexer lexer = new DockerfileLexer(new ANTLRInputStream(sentence));
+        int trivialThreshold = 2;
 
-            // Get a list of matched tokens
-            CommonTokenStream tokens = new CommonTokenStream(lexer);
+        int nbNonParsed = 0;
 
-            // Pass the tokens to the parser
-            DockerfileParser parser = new DockerfileParser(tokens);
-
-            // Specify our entry point
-            DockerfileParser.DockerfileContext drinkSentenceContext = parser.dockerfile();
-
-            // Walk it and attach our listener
-            ParseTreeWalker walker = new ParseTreeWalker();
-            AntLRDockerListener listener = new AntLRDockerListener();
-
-            walker.walk(listener, drinkSentenceContext);
-
-            Dockerfile dockerfile = listener.getDockerfile();
-
-            if(dockerfile.getListOfCommand().size() <= trivialThreshold) {
-                System.out.println(dockerfile.getListOfCommand().size());
-                System.out.println(dockerfile);
-                waitForEnter("Press enter");
-                nbOfTrivialDockerfiles++;
+        for (Dockerfile dockerfile : dockerfiles) {
+            if (dockerfile.getListOfCommand().size() < trivialThreshold) {
+                trivialDockerfiles.add(dockerfile);
             }
 
             if (dockerfile.contains(RUNCommand.class)) {
-                nbOfDockerFilesThatContainsRun++;
+                dockerfilesWithRUN.add(dockerfile);
             }
 
-            if(dockerfile.contains(COPYCommand.class)) {
-                nbOfDockerFilesThatContainsCopy++;
+            if (dockerfile.deepContains(Install.class) || dockerfile.deepContains(Update.class)) {
+                dockerfilesWithUpdateInstall.add(dockerfile);
             }
 
-            Dockerfile enrichedDockerfile = Enricher.enrich(dockerfile);
-            dockerfiles.add(enrichedDockerfile);
+            if (dockerfile.contains(NonParsedCommand.class)) {
+                nbNonParsed += dockerfile.howMuch(NonParsedCommand.class);
+            }
 
-            //System.err.println(enrichedDockerfile);
 
-            /*
             RUNConflictSniffer runConflictSniffer = new RUNConflictSniffer();
-            RUNConflict conflict = runConflictSniffer.conflict(enrichedDockerfile);
+            RUNConflict conflict = runConflictSniffer.conflict(dockerfile);
 
             if (conflict != null) {
-                nbOfDockerFilesThatContainsRunInstallOrUpdate++;
+                //nbOfDockerFilesThatContainsRunInstallOrUpdate++;
                 if (!conflict.isEmpty()) {
                     conflicts.add(conflict);
                 }
             }
-            */
-        }
-        DecimalFormat df = new DecimalFormat("#.####");
-        df.setRoundingMode(RoundingMode.CEILING);
 
+        }
+
+
+        System.out.println("-------------------------------------");
         System.out.println(files.length + " dockerfiles handled.");
         System.out.println(dockerfiles.size() + " dockerfiles parsed into model.");
+        System.out.println(nbNonParsed + " commands non parsed");
+        System.out.println("-------------------------------------\n");
+
         System.out.println(conflicts.size() + " run conflicts found.");
 
-        double percentageOfTrivialDockerfile = (nbOfTrivialDockerfiles * 100.0) / (double) dockerfiles.size();
-        System.out.println(df.format(percentageOfTrivialDockerfile) + "% of files are trivial(" + nbOfTrivialDockerfiles + ")");
+        System.out.println("-------------------------------------");
 
-        double percentageOfDockerfileQWithRun = (nbOfDockerFilesThatContainsRun * 100.0) / (double) dockerfiles.size();
-        System.out.println(df.format(percentageOfDockerfileQWithRun) + "% of files contained a RUN command (" + nbOfDockerFilesThatContainsRun + ")");
+        percentageOf(trivialDockerfiles.size(), dockerfiles.size(), "of files are trivial");
+        System.out.println();
 
-        double percentageOfDockerfileWithCOPY = (nbOfDockerFilesThatContainsCopy * 100.0) / (double) dockerfiles.size();
-        System.out.println(df.format(percentageOfDockerfileWithCOPY) + "% of files contained a COPY command (" + nbOfDockerFilesThatContainsCopy + ")");
+        int datasetWihoutTrivial = dockerfiles.size() - trivialDockerfiles.size();
 
-        double percentageOfDockerfileQWithRunInstallOrUpdate = (nbOfDockerFilesThatContainsRunInstallOrUpdate * 100.0) / (double) dockerfiles.size();
-        System.out.println(df.format(percentageOfDockerfileQWithRunInstallOrUpdate) + "% of files contained a RUN command that update or install (" + nbOfDockerFilesThatContainsRunInstallOrUpdate + ")");
-
-        double percentageRunSniffedOnDockerfileThatContainsRunInstallOrUpdate = (conflicts.size() * 100.0) / (double) nbOfDockerFilesThatContainsRun;
-        System.out.println(df.format(percentageRunSniffedOnDockerfileThatContainsRunInstallOrUpdate) + "% of files that contains a RUN command  and have a RUN issue (" + nbOfDockerFilesThatContainsRun + ")");
-
-        double percentageRunSniffedOnDockerfileThatContainsRum = (conflicts.size() * 100.0) / (double) nbOfDockerFilesThatContainsRunInstallOrUpdate;
-        System.out.println(df.format(percentageRunSniffedOnDockerfileThatContainsRum) + "% of files that contains a RUN command (that update or install) and have a RUN issue (" + nbOfDockerFilesThatContainsRunInstallOrUpdate + ")");
-
-        double percentageRunSniffed = (conflicts.size() * 100.0) / (double) dockerfiles.size();
-        System.out.println(df.format(percentageRunSniffed) + "% of files contained a RUN issue (" + conflicts.size() + ")");
+        percentageOf(dockerfilesWithRUN.size(), datasetWihoutTrivial, "of files contained a RUN command");
+        percentageOf(dockerfilesWithUpdateInstall.size(), datasetWihoutTrivial, "of files contained a RUN command that update or install");
+        System.out.println();
+        percentageOf(conflicts.size(), datasetWihoutTrivial, "of files contained a RUN issue ");
+        percentageOf(conflicts.size(), dockerfilesWithRUN.size(), "of files contained a RUN command  and have a RUN issue ");
+        percentageOf(conflicts.size(), dockerfilesWithUpdateInstall.size(), "of files that contains a RUN command (that update or install) and have a RUN issue");
     }
 
-    public static void waitForEnter(String message, Object... args) {
-        Console c = System.console();
-        if (c != null) {
-            // printf-like arguments
-            if (message != null)
-                c.format(message, args);
-            c.format("\nPress ENTER to proceed.\n");
-            c.readLine();
+    private static void percentageOf(int thiz, int overThis, String msg) {
+        DecimalFormat df = new DecimalFormat("#.##");
+        df.setRoundingMode(RoundingMode.CEILING);
 
-        }
+        double percentage = ((double) thiz * 100) / ((double) overThis);
+        System.out.println(df.format(percentage) + "% " + msg + " (" + thiz + "/" + overThis + ")");
     }
 }

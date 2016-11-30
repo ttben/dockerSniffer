@@ -4,11 +4,12 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class COPYCommand extends Command {
+public class CMDCommand extends Command{
 
-    private final List body;
+    private final List<String> body;
 
-    public COPYCommand(String... body) {
+    public CMDCommand(String[] body) {
         this.body = new ArrayList<>(Arrays.asList(body));
     }
+
 }
