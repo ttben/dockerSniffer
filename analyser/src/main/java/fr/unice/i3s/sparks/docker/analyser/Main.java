@@ -53,7 +53,7 @@ public class Main {
         List<Dockerfile> dockerfilesWithUpdateInstall = new ArrayList<>();
 
         int trivialThreshold = 2;
-
+        int nbOfDockerfilesInConflict = 0;
         int nbNonParsed = 0;
 
         for (Dockerfile dockerfile : dockerfiles) {
@@ -80,6 +80,7 @@ public class Main {
             if (conflict != null) {
                 //nbOfDockerFilesThatContainsRunInstallOrUpdate++;
                 if (!conflict.isEmpty()) {
+                    nbOfDockerfilesInConflict++;
                     conflicts.add(conflict);
                 }
             }
@@ -95,7 +96,7 @@ public class Main {
         percentageOf(trivialDockerfiles.size(), dockerfiles.size(), "of files are trivial");
         System.out.println();
 
-        System.out.println(conflicts.size() + " run conflicts found.");
+        System.out.println(conflicts.size() + " run conflicts found spread on "+ nbOfDockerfilesInConflict+ " different dockerfiles.");
 
         System.out.println("--------------------------------------------------------------------------");
 
@@ -105,9 +106,9 @@ public class Main {
         percentageOf(dockerfilesWithRUN.size(), datasetWihoutTrivial, "of files contained a RUN command");
         percentageOf(dockerfilesWithUpdateInstall.size(), datasetWihoutTrivial, "of files contained a RUN command that update or install");
         System.out.println();
-        percentageOf(conflicts.size(), datasetWihoutTrivial, "of files contained a RUN issue ");
-        percentageOf(conflicts.size(), dockerfilesWithRUN.size(), "of files contained a RUN command and have a RUN issue ");
-        percentageOf(conflicts.size(), dockerfilesWithUpdateInstall.size(), "of files that contains a RUN command (that update or install) and have a RUN issue");
+        percentageOf(nbOfDockerfilesInConflict, datasetWihoutTrivial, "of files contained a RUN issue ");
+        percentageOf(nbOfDockerfilesInConflict, dockerfilesWithRUN.size(), "of files contained a RUN command and have a RUN issue ");
+        percentageOf(nbOfDockerfilesInConflict, dockerfilesWithUpdateInstall.size(), "of files that contains a RUN command (that update or install) and have a RUN issue");
     }
 
     private static void percentageOf(int thiz, int overThis, String msg) {
