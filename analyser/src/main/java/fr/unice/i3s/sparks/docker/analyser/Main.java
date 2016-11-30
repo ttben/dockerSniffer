@@ -92,13 +92,13 @@ public class Main {
         System.out.println(dockerfiles.size() + " dockerfiles parsed into model.");
         System.out.println(nbNonParsed + " commands non parsed");
         System.out.println("-------------------------------------\n");
+        percentageOf(trivialDockerfiles.size(), dockerfiles.size(), "of files are trivial");
+        System.out.println();
 
         System.out.println(conflicts.size() + " run conflicts found.");
 
-        System.out.println("-------------------------------------");
+        System.out.println("--------------------------------------------------------------------------");
 
-        percentageOf(trivialDockerfiles.size(), dockerfiles.size(), "of files are trivial");
-        System.out.println();
 
         int datasetWihoutTrivial = dockerfiles.size() - trivialDockerfiles.size();
 
@@ -106,7 +106,7 @@ public class Main {
         percentageOf(dockerfilesWithUpdateInstall.size(), datasetWihoutTrivial, "of files contained a RUN command that update or install");
         System.out.println();
         percentageOf(conflicts.size(), datasetWihoutTrivial, "of files contained a RUN issue ");
-        percentageOf(conflicts.size(), dockerfilesWithRUN.size(), "of files contained a RUN command  and have a RUN issue ");
+        percentageOf(conflicts.size(), dockerfilesWithRUN.size(), "of files contained a RUN command and have a RUN issue ");
         percentageOf(conflicts.size(), dockerfilesWithUpdateInstall.size(), "of files that contains a RUN command (that update or install) and have a RUN issue");
     }
 
