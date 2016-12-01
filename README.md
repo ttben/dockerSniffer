@@ -1,3 +1,8 @@
+# Description
+
+This project allows one to fetch dockerfiles from the raw github API and analyse them.
+It is splitted into maven submodules data, core, analyser that match the differents aspects of such requirements.
+
 # Collecting of dockerfiles
 
 ## DockerHub
