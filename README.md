@@ -3,6 +3,17 @@
 This project allows one to fetch dockerfiles from the raw github API and analyse them.
 It is splitted into maven submodules data, core, analyser that match the differents aspects of such requirements.
 
+# Link to dockerfiles of Fig.7
+
+In our paper, we present an real example of a dockerfile hierarchy in Fig.7. We extracted the presented dockerfiles from the following url:
+
+- User's dockerfile: https://github.com/adarshbhat/docker-wr-jenkins/blob/1ad4a923af289963da1676cb9588fbc8442fd2aa/Dockerfile
+- Official jenkin's dockerfile: https://github.com/jenkinsci/docker/blob/5d9a559059b4fb487a8ee6c511f68b43cfe82732/Dockerfile
+- Official openJDK's dockerfile: https://github.com/docker-library/openjdk/blob/e6e9cf8b21516ba764189916d35be57486203c95/8-jdk/Dockerfile
+- Official jessie-scm's dockerfile: https://github.com/docker-library/buildpack-deps/blob/1845b3f918f69b4c97912b0d4d68a5658458e84f/jessie/scm/Dockerfile
+- Official jessie-curl's dockerfile: https://github.com/docker-library/buildpack-deps/blob/a0a59c61102e8b079d568db69368fb89421f75f2/jessie/curl/Dockerfile
+- Official debian's dockerfile: https://github.com/tianon/docker-brew-debian/blob/2c836bc53feb12f70a07dacaa6256d4d66624f38/jessie/Dockerfile
+
 # Collecting of dockerfiles
 
 ## DockerHub
