@@ -9,7 +9,6 @@ import fr.unice.i3s.sparks.docker.core.conflicts.MalFormedImageException;
 import fr.unice.i3s.sparks.docker.core.conflicts.run.RUNConflict;
 import fr.unice.i3s.sparks.docker.core.conflicts.run.RUNConflictSniffer;
 import fr.unice.i3s.sparks.docker.core.model.Dockerfile;
-import fr.unice.i3s.sparks.docker.grammar.DockerFileParser;
 
 import java.io.File;
 import java.io.FilenameFilter;
@@ -20,11 +19,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
-    public static void main(String[] args) throws MalFormedImageException, IOException {
+    public static void main(String[] args) throws MalFormedImageException, IOException, InterruptedException {
         analyseDockerfiles();
     }
 
     private static void analyseDockerfiles() throws IOException {
+
         List<Dockerfile> dockerfiles = new ArrayList<>();
         List<RUNConflict> conflicts = new ArrayList<>();
 
@@ -34,19 +34,21 @@ public class Main {
             return lowercaseName.endsWith("-dockerfile");
         };
 
-        String folderThatContainsDockerfiles = "./src/main/resources/dockerfiles";
+
+        String folderThatContainsDockerfiles = "/Users/benjaminbenni/Downloads/dockerfiles_26-11-16/";
         File folder = new File(folderThatContainsDockerfiles);
 
         File[] files = folder.listFiles(textFilter);
 
 
         for (File f : files) {
-            System.out.println("Handling file:" + f.getAbsolutePath());
+            //System.out.println("Handling file:" + f.getAbsolutePath());
 
             Dockerfile dockerfile = DockerFileParser.parse(f);
             Dockerfile enrichedDockerfile = Enricher.enrich(dockerfile);
             dockerfiles.add(enrichedDockerfile);
         }
+
 
         List<Dockerfile> trivialDockerfiles = new ArrayList<>();
         List<Dockerfile> dockerfilesWithRUN = new ArrayList<>();
@@ -87,7 +89,7 @@ public class Main {
 
         }
 
-
+        /*
         System.out.println("-------------------------------------");
         System.out.println(files.length + " dockerfiles handled.");
         System.out.println(dockerfiles.size() + " dockerfiles parsed into model.");
@@ -96,7 +98,7 @@ public class Main {
         percentageOf(trivialDockerfiles.size(), dockerfiles.size(), "of files are trivial");
         System.out.println();
 
-        System.out.println(conflicts.size() + " run conflicts found spread on "+ nbOfDockerfilesInConflict+ " different dockerfiles.");
+        System.out.println(conflicts.size() + " run conflicts found spread on " + nbOfDockerfilesInConflict + " different dockerfiles.");
 
         System.out.println("--------------------------------------------------------------------------");
 
@@ -109,6 +111,7 @@ public class Main {
         percentageOf(nbOfDockerfilesInConflict, datasetWihoutTrivial, "of files contained a RUN issue ");
         percentageOf(nbOfDockerfilesInConflict, dockerfilesWithRUN.size(), "of files contained a RUN command and have a RUN issue ");
         percentageOf(nbOfDockerfilesInConflict, dockerfilesWithUpdateInstall.size(), "of files that contains a RUN command (that update or install) and have a RUN issue");
+        */
     }
 
     private static void percentageOf(int thiz, int overThis, String msg) {

@@ -1,6 +1,5 @@
-package fr.unice.i3s.sparks.docker.grammar;
+package fr.unice.i3s.sparks.docker.analyser;
 
-import edu.emory.mathcs.backport.java.util.Arrays;
 import fr.unice.i3s.sparks.docker.core.commands.*;
 import fr.unice.i3s.sparks.docker.core.model.Dockerfile;
 import fr.unice.i3s.sparks.docker.core.model.ImageID;
@@ -8,14 +7,13 @@ import fr.unice.i3s.sparks.docker.core.model.ImageID;
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
+import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.ListIterator;
-import java.util.NoSuchElementException;
+import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class DockerFileParser {
 
@@ -41,7 +39,9 @@ public class DockerFileParser {
     public static final Pattern RUN_END_MULTILINE = Pattern.compile("([^\\\\\n])+");
 
     public static Dockerfile parse(File file) throws IOException {
-        ArrayList<String> lines = Files.lines(Paths.get(file.getAbsolutePath())).collect(Collectors.toCollection(ArrayList::new));
+        Path path = Paths.get(file.getAbsolutePath());
+        Stream<String> fileLines = Files.lines(path);
+        ArrayList<String> lines = fileLines.collect(Collectors.toCollection(ArrayList::new));
 
         Dockerfile result = new Dockerfile();
 
@@ -211,12 +211,13 @@ public class DockerFileParser {
 
                 result.addCommand(new NonParsedCommand(line));
             } catch (NoSuchElementException | IndexOutOfBoundsException e) {
-                System.err.println("Parse error on file:" + file.getAbsolutePath());
+                //System.err.println("Parse error on file:" + file.getAbsolutePath());
                 result.addCommand(new NonParsedCommand(line));
 
             }
         }
 
+        fileLines.close();
 
         return result;
     }
@@ -241,10 +242,8 @@ public class DockerFileParser {
     public static void main(String[] args) {
 
         Matcher m = ENV_PATTERN.matcher("ENV PATH=PATH");
-        System.out.println(m.matches());
 
         m = ENV_PATTERN.matcher("ENV PATH :PATH");
-        System.out.println(m.matches());
 
         /*
         String s = "FROM haskell:7.8.4\n" +
