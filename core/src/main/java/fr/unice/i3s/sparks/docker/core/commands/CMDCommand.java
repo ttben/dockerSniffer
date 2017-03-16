@@ -12,4 +12,7 @@ public class CMDCommand extends Command{
         this.body = new ArrayList<>(Arrays.asList(body));
     }
 
+    public List<String> getBody() {
+        return body;
+    }
 }

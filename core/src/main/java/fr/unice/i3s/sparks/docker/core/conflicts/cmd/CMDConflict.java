@@ -1,6 +1,7 @@
 package fr.unice.i3s.sparks.docker.core.conflicts.cmd;
 
 import fr.unice.i3s.sparks.docker.core.commands.CMDCommand;
+import javafx.util.Pair;
 
 import java.util.LinkedList;
 
@@ -10,6 +11,11 @@ public class CMDConflict {
     public CMDConflict(LinkedList<CMDCommand> conflictingCMDCommand) {
 
         this.conflictingCMDCommand = conflictingCMDCommand;
+    }
+
+    public CMDConflict(Pair pair) {
+        this.conflictingCMDCommand.add((CMDCommand) pair.getKey());
+        this.conflictingCMDCommand.add((CMDCommand) pair.getValue());
     }
 
     public LinkedList<CMDCommand> getConflictingCMDCommand() {
