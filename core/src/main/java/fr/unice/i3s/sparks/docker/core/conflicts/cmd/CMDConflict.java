@@ -6,7 +6,7 @@ import javafx.util.Pair;
 import java.util.LinkedList;
 
 public class CMDConflict {
-    private LinkedList<CMDCommand> conflictingCMDCommand;
+    private LinkedList<CMDCommand> conflictingCMDCommand = new LinkedList<>();
 
     public CMDConflict(LinkedList<CMDCommand> conflictingCMDCommand) {
 
@@ -27,8 +27,23 @@ public class CMDConflict {
     }
 
     @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        CMDConflict that = (CMDConflict) o;
+
+        return conflictingCMDCommand != null ? conflictingCMDCommand.equals(that.conflictingCMDCommand) : that.conflictingCMDCommand == null;
+    }
+
+    @Override
+    public int hashCode() {
+        return conflictingCMDCommand != null ? conflictingCMDCommand.hashCode() : 0;
+    }
+
+    @Override
     public String toString() {
-        final StringBuffer sb = new StringBuffer("CMDCommand{");
+        final StringBuffer sb = new StringBuffer("CMDConflict{");
         sb.append("conflictingCMDCommand=").append(conflictingCMDCommand);
         sb.append('}');
         return sb.toString();
