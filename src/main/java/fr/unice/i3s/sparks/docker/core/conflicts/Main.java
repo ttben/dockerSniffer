@@ -68,7 +68,7 @@ public class Main {
                 dockerfilesWithRUN.add(dockerfile);
             }
 
-            if (dockerfile.deepContains(AptInstall.class) || dockerfile.deepContains(AptUpdate.class)) {
+            if (dockerfile.deepContains(AptInstall.class) && dockerfile.deepContains(AptUpdate.class)) {
                 dockerfilesWithUpdateInstall.add(dockerfile);
             }
 
