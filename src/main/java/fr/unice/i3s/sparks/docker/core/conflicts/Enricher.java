@@ -8,22 +8,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Enricher {
-    public static List<Dockerfile> enrich(List<Dockerfile> dockerfiles) {
-        List<Dockerfile> result = new ArrayList<>();
-
-        List<Command> newListOfCommand = new ArrayList<Command>();
-
-        for (Dockerfile dockerfile : dockerfiles) {
-
-            newListOfCommand = analyseDockerFile(dockerfile);
-
-            Dockerfile newDockerfile = new Dockerfile(newListOfCommand);
-            result.add(newDockerfile);
-        }
-
-        return result;
-    }
-
     private static List<Command> analyseDockerFile(Dockerfile dockerfile) {
         List<Command> newListOfCommand;
         newListOfCommand = new ArrayList<>();
@@ -40,12 +24,21 @@ public class Enricher {
 
             RUNCommand newRunCommand = new RUNCommand();
             for (ShellCommand shellCommand : body) {
-                if (shellCommand.getBody().contains("install")) {
-                    Install install = new Install(shellCommand.getBody());
-                    newRunCommand.add(install);
-                } else if (shellCommand.getBody().contains("update")) {
-                    Update update = new Update(shellCommand.getBody());
-                    newRunCommand.add(update);
+                if (shellCommand.getBody().contains("install") && shellCommand.getBody().contains("apt-get")) {
+                    AptInstall aptInstall = new AptInstall(shellCommand.getBody());
+                    newRunCommand.add(aptInstall);
+                } else if (shellCommand.getBody().contains("update") && shellCommand.getBody().contains("apt-get")) {
+                    AptUpdate aptUpdate = new AptUpdate(shellCommand.getBody());
+                    newRunCommand.add(aptUpdate);
+                } else if (shellCommand.getBody().contains("mkdir")) {
+                    FolderCreation folderCreation = new FolderCreation(shellCommand.getBody());
+                    newRunCommand.add(folderCreation);
+                } else if (shellCommand.getBody().contains("install") && shellCommand.getBody().contains("pip")) {
+                    PipInstall pipInstall = new PipInstall(shellCommand.getBody());
+                    newRunCommand.add(pipInstall);
+                } else if (shellCommand.getBody().contains("install") && shellCommand.getBody().contains("yum")) {
+                    YumInstall yumInstall = new YumInstall(shellCommand.getBody());
+                    newRunCommand.add(yumInstall);
                 } else {
                     newRunCommand.add(shellCommand);
                 }
@@ -57,6 +50,7 @@ public class Enricher {
 
     public static Dockerfile enrich(Dockerfile dockerfile) {
         List<Command> commands = analyseDockerFile(dockerfile);
-        return new Dockerfile(commands);
+        Dockerfile dockerfile1 = new Dockerfile(commands, dockerfile.getSourcefIle());
+        return dockerfile1;
     }
 }
