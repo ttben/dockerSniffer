@@ -1,23 +1,18 @@
 package fr.unice.i3s.sparks.docker.core.conflicts;
 
-import fr.unice.i3s.sparks.docker.core.conflicts.Enricher;
-import fr.unice.i3s.sparks.docker.core.conflicts.MalFormedImageException;
 import fr.unice.i3s.sparks.docker.core.conflicts.run.RUNConflict;
 import fr.unice.i3s.sparks.docker.core.conflicts.run.RUNConflictSniffer;
 import fr.unice.i3s.sparks.docker.core.model.dockerfile.Dockerfile;
 import fr.unice.i3s.sparks.docker.core.model.dockerfile.analyser.DockerFileParser;
-import fr.unice.i3s.sparks.docker.core.model.dockerfile.commands.Install;
-import fr.unice.i3s.sparks.docker.core.model.dockerfile.commands.NonParsedCommand;
-import fr.unice.i3s.sparks.docker.core.model.dockerfile.commands.RUNCommand;
-import fr.unice.i3s.sparks.docker.core.model.dockerfile.commands.Update;
+import fr.unice.i3s.sparks.docker.core.model.dockerfile.commands.*;
 
 import java.io.File;
 import java.io.FilenameFilter;
 import java.io.IOException;
 import java.math.RoundingMode;
 import java.text.DecimalFormat;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
+import java.util.stream.Collectors;
 
 public class Main {
     public static void main(String[] args) throws MalFormedImageException, IOException, InterruptedException {
@@ -36,7 +31,7 @@ public class Main {
         };
 
 
-        String folderThatContainsDockerfiles = "/Users/benjaminbenni/Downloads/dockerfiles_26-11-16/";
+        String folderThatContainsDockerfiles = "/Users/benjaminbenni/Work/merger/src/main/resources/dockerfiles/";
         File folder = new File(folderThatContainsDockerfiles);
 
         File[] files = folder.listFiles(textFilter);
@@ -90,13 +85,14 @@ public class Main {
 
         }
 
-        /*
+
         System.out.println("-------------------------------------");
         System.out.println(files.length + " dockerfiles handled.");
         System.out.println(dockerfiles.size() + " dockerfiles parsed into model.");
         System.out.println(nbNonParsed + " commands non parsed");
         System.out.println("-------------------------------------\n");
         percentageOf(trivialDockerfiles.size(), dockerfiles.size(), "of files are trivial");
+        System.out.println(dockerfiles.size() - trivialDockerfiles.size() + " non-trivial files remain.");
         System.out.println();
 
         System.out.println(conflicts.size() + " run conflicts found spread on " + nbOfDockerfilesInConflict + " different dockerfiles.");
@@ -112,8 +108,54 @@ public class Main {
         percentageOf(nbOfDockerfilesInConflict, datasetWihoutTrivial, "of files contained a RUN issue ");
         percentageOf(nbOfDockerfilesInConflict, dockerfilesWithRUN.size(), "of files contained a RUN command and have a RUN issue ");
         percentageOf(nbOfDockerfilesInConflict, dockerfilesWithUpdateInstall.size(), "of files that contains a RUN command (that update or install) and have a RUN issue");
-        */
+
+        Map<Class, Integer> repartitionsOfCommands = new HashMap<>();
+
+        for (Dockerfile dockerfile : dockerfiles) {
+            computeRepartitionsOfCommands(FROMCommand.class, repartitionsOfCommands, dockerfile);
+            computeRepartitionsOfCommands(RUNCommand.class, repartitionsOfCommands, dockerfile);
+            computeRepartitionsOfCommands(ADDCommand.class, repartitionsOfCommands, dockerfile);
+            computeRepartitionsOfCommands(COPYCommand.class, repartitionsOfCommands, dockerfile);
+            computeRepartitionsOfCommands(ENTRYPointCommand.class, repartitionsOfCommands, dockerfile);
+            computeRepartitionsOfCommands(WORKDIRCommand.class, repartitionsOfCommands, dockerfile);
+            computeRepartitionsOfCommands(VOLUMECommand.class, repartitionsOfCommands, dockerfile);
+            computeRepartitionsOfCommands(CMDCommand.class, repartitionsOfCommands, dockerfile);
+            computeRepartitionsOfCommands(EXPOSECommand.class, repartitionsOfCommands, dockerfile);
+            computeRepartitionsOfCommands(ENVCommand.class, repartitionsOfCommands, dockerfile);
+            computeRepartitionsOfCommands(MAINTAINERCommand.class, repartitionsOfCommands, dockerfile);
+            computeRepartitionsOfCommands(USERCommand.class, repartitionsOfCommands, dockerfile);
+        }
+
+        printRepartition(sortByValue(repartitionsOfCommands));
     }
+
+    private static void printRepartition(Map<Class, Integer> repartitionsOfCommands) {
+        for(Map.Entry<Class, Integer> entry : repartitionsOfCommands.entrySet()) {
+            System.out.println("-" + entry.getKey().getSimpleName() + ":" + entry.getValue());
+        }
+    }
+
+    public static <K, V extends Comparable<? super V>> Map<K, V> sortByValue(Map<K, V> map) {
+        return map.entrySet()
+                .stream()
+                .sorted(Map.Entry.comparingByValue(Collections.reverseOrder()))
+                .collect(Collectors.toMap(
+                        Map.Entry::getKey,
+                        Map.Entry::getValue,
+                        (e1, e2) -> e1,
+                        LinkedHashMap::new
+                ));
+    }
+
+    private static void computeRepartitionsOfCommands(Class clazz, Map<Class, Integer> repartitionsOfCommands, Dockerfile dockerfile) {
+        int command = dockerfile.howMuch(clazz);
+        if (repartitionsOfCommands.containsKey(clazz)) {
+            repartitionsOfCommands.put(clazz, command + repartitionsOfCommands.get(clazz));
+        } else {
+            repartitionsOfCommands.put(clazz, command);
+        }
+    }
+
 
     private static void percentageOf(int thiz, int overThis, String msg) {
         DecimalFormat df = new DecimalFormat("#.##");
