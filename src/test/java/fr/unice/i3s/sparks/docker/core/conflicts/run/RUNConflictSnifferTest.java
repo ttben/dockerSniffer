@@ -66,7 +66,7 @@ public class RUNConflictSnifferTest {
         Dockerfile dockerfile = new Dockerfile(
                 new FROMCommand(new ImageID("anImageID")),
                 new ENVCommand("aKey", "aValue"),
-                new RUNCommand(new Update("apt-get", "-y", "update"))
+                new RUNCommand(new AptUpdate("apt-get", "-y", "update"))
         );
 
         return dockerfile;
@@ -76,7 +76,7 @@ public class RUNConflictSnifferTest {
         Dockerfile dockerfile = new Dockerfile(
                 new FROMCommand(new ImageID("anImageID")),
                 new ENVCommand("aKey", "aValue"),
-                new RUNCommand(new Update("apt-get", "-y", "update")),
+                new RUNCommand(new AptUpdate("apt-get", "-y", "update")),
                 new RUNCommand(new ShellCommand("python", "--f", "pouet"))
         );
 
@@ -87,8 +87,8 @@ public class RUNConflictSnifferTest {
         Dockerfile dockerfile = new Dockerfile(
                 new FROMCommand(new ImageID("anImageID")),
                 new ENVCommand("aKey", "aValue"),
-                new RUNCommand(new Update("apt-get", "-y", "update")),
-                new RUNCommand(new Install("apt-get", "install", "java"))
+                new RUNCommand(new AptUpdate("apt-get", "-y", "update")),
+                new RUNCommand(new AptInstall("apt-get", "install", "java"))
         );
 
         return dockerfile;
@@ -98,7 +98,7 @@ public class RUNConflictSnifferTest {
         Dockerfile dockerfile = new Dockerfile(
                 new FROMCommand(new ImageID("anImageID")),
                 new ENVCommand("aKey", "aValue"),
-                new RUNCommand(new Update("apt-get", "-y", "update"), new Install("apt-get", "install", "java")),
+                new RUNCommand(new AptUpdate("apt-get", "-y", "update"), new AptInstall("apt-get", "install", "java")),
                 new ENVCommand("anotherKey", "anotherVAlue")
         );
 

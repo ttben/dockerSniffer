@@ -34,7 +34,7 @@ public class RUNConflictSniffer {
         for (RUNCommand runCommand : remainingList) {
             List<ShellCommand> body = runCommand.getBody();
             for (ShellCommand shellCommand : body) {
-                if (shellCommand instanceof Install) {
+                if (shellCommand instanceof AptInstall) {
                     conflictingRUNCommand.add(runCommand);
                 }
             }
@@ -65,7 +65,7 @@ public class RUNConflictSniffer {
             for (int j = 0; j < body.size(); j++) {
                 ShellCommand shellCommand = body.get(j);
                 //System.err.println(shellCommand);
-                if (shellCommand instanceof Update) {
+                if (shellCommand instanceof AptUpdate) {
                     index = i;
                     return index;
                 }

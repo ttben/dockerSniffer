@@ -31,7 +31,7 @@ public class Main {
         };
 
 
-        String folderThatContainsDockerfiles = "/Users/benjaminbenni/Work/merger/src/main/resources/dockerfiles/";
+        String folderThatContainsDockerfiles = "/Users/benjaminbenni/Work/PhD/src/main/resources/dockerfiles/";
         File folder = new File(folderThatContainsDockerfiles);
 
         File[] files = folder.listFiles(textFilter);
@@ -54,7 +54,12 @@ public class Main {
         int nbOfDockerfilesInConflict = 0;
         int nbNonParsed = 0;
 
+        // fixme
+        List<List<RunIssue1.Issue>> issues = new ArrayList<>();
+        List<List<List<OptimMultipleRun.Issue>>> optim1 = new ArrayList<>();
+
         for (Dockerfile dockerfile : dockerfiles) {
+            System.out.println(dockerfile.getSourcefIle());
             if (dockerfile.getListOfCommand().size() < trivialThreshold) {
                 trivialDockerfiles.add(dockerfile);
             }
@@ -63,7 +68,7 @@ public class Main {
                 dockerfilesWithRUN.add(dockerfile);
             }
 
-            if (dockerfile.deepContains(Install.class) || dockerfile.deepContains(Update.class)) {
+            if (dockerfile.deepContains(AptInstall.class) || dockerfile.deepContains(AptUpdate.class)) {
                 dockerfilesWithUpdateInstall.add(dockerfile);
             }
 
@@ -74,6 +79,19 @@ public class Main {
 
             RUNConflictSniffer runConflictSniffer = new RUNConflictSniffer();
             RUNConflict conflict = runConflictSniffer.conflict(dockerfile);
+
+            RunIssue1 runIssue1 = new RunIssue1();
+            List<RunIssue1.Issue> apply = runIssue1.apply(dockerfile);
+            if(!apply.isEmpty()) {
+                issues.add(apply);
+            }
+
+
+            OptimMultipleRun optim1Issue = new OptimMultipleRun();
+            List<List<OptimMultipleRun.Issue>> optim1IssueApplied = optim1Issue.apply(dockerfile);
+            if(!optim1IssueApplied.isEmpty()) {
+                optim1.add(optim1IssueApplied);
+            }
 
             if (conflict != null) {
                 //nbOfDockerFilesThatContainsRunInstallOrUpdate++;
@@ -124,9 +142,53 @@ public class Main {
             computeRepartitionsOfCommands(ENVCommand.class, repartitionsOfCommands, dockerfile);
             computeRepartitionsOfCommands(MAINTAINERCommand.class, repartitionsOfCommands, dockerfile);
             computeRepartitionsOfCommands(USERCommand.class, repartitionsOfCommands, dockerfile);
+            computeRepartitionsOfCommands(NonParsedCommand.class, repartitionsOfCommands, dockerfile);
         }
 
         printRepartition(sortByValue(repartitionsOfCommands));
+
+
+        int totalNbOfCommands = 0;
+        for (Integer i : repartitionsOfCommands.values()) {
+            totalNbOfCommands += i;
+        }
+        System.out.println("Total => " + totalNbOfCommands);
+
+
+        int expectedTotalNbOfCommands = 0;
+        for (Dockerfile dockerfile : dockerfiles) {
+            expectedTotalNbOfCommands += dockerfile.getListOfCommand().size();
+        }
+        System.out.println("Expected? total => " + expectedTotalNbOfCommands);
+
+        int total = 0;
+        for(List<RunIssue1.Issue> issues1 : issues) {
+            total += issues1.size();
+        }
+
+        repartitionsOfCommands = new HashMap<>();
+
+        for (Dockerfile dockerfile : dockerfiles) {
+
+            computeRepartitionsOfCommands(AptInstall.class, repartitionsOfCommands, dockerfile);
+            computeRepartitionsOfCommands(AptUpdate.class, repartitionsOfCommands, dockerfile);
+            computeRepartitionsOfCommands(PipInstall.class, repartitionsOfCommands, dockerfile);
+            computeRepartitionsOfCommands(YumInstall.class, repartitionsOfCommands, dockerfile);
+
+        }
+
+        printRepartition(sortByValue(repartitionsOfCommands));
+
+        System.out.println("\nTotal install without update command on same layer:" + total + " on " + issues.size() + " different dockerfiles");
+
+        total = 0;
+        for(List<List<OptimMultipleRun.Issue>> issues1 : optim1) {
+            for (List<OptimMultipleRun.Issue> issues2 : issues1) {
+                total += issues2.size();
+            }
+        }
+
+        System.out.println("Total mergeable RUN:" + total + " on " + optim1.size() + " different dockerfiles");
     }
 
     private static void printRepartition(Map<Class, Integer> repartitionsOfCommands) {
