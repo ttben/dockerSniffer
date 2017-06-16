@@ -1,7 +1,9 @@
 package fr.unice.i3s.sparks.docker.core.conflicts;
 
 import fr.unice.i3s.sparks.docker.core.model.dockerfile.Dockerfile;
-import fr.unice.i3s.sparks.docker.core.model.dockerfile.commands.*;
+import fr.unice.i3s.sparks.docker.core.model.dockerfile.commands.Command;
+import fr.unice.i3s.sparks.docker.core.model.dockerfile.commands.RUNCommand;
+import fr.unice.i3s.sparks.docker.core.model.dockerfile.commands.ShellCommand;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,27 +11,60 @@ import java.util.ListIterator;
 
 public class OptimMultipleRun {
     public List<List<Issue>> apply(Dockerfile dockerfile) {
-        List<List<OptimMultipleRun.Issue>> issues = new ArrayList<>();
-
         List<Command> listOfCommand = dockerfile.getListOfCommand();
-
+        List<List<OptimMultipleRun.Issue>> issuesFound = new ArrayList<>();
         ListIterator<Command> commandListIterator = listOfCommand.listIterator();
+
+        List<Issue> localMerge = new ArrayList<>();
         while (commandListIterator.hasNext()) {
             Command current = commandListIterator.next();
 
+            if (!(current instanceof RUNCommand)) {
+                issuesFound.add(localMerge);
+                localMerge = new ArrayList<>();
+                continue;
+            }
+
+            RUNCommand currentRunCommand = (RUNCommand) current;
+
+            if (commandListIterator.hasNext()) {
+                Command next = commandListIterator.next();
+                if (next instanceof RUNCommand) {
+                    RUNCommand nextRunCommand = (RUNCommand) next;
+
+                    localMerge.add(new Issue(dockerfile, nextRunCommand));
+
+                    // merge next into current
+                    List<ShellCommand> body = nextRunCommand.getBody();
+                    currentRunCommand.getBody().addAll(body);
+
+                    // delete next
+                    commandListIterator.remove();
+                    current = commandListIterator.previous();
+                }
+            }
+
+            /*
+            //  List that contains the local mergeable RUN commands
             List<Issue> newIssue = new ArrayList<>();
-            while(current instanceof RUNCommand) {
+            while (current instanceof RUNCommand) {
+                //  Add new mergeable command to issue
                 Issue currentIssue = new Issue(dockerfile, (RUNCommand) current);
                 newIssue.add(currentIssue);
-                if(commandListIterator.hasNext())
-                  current = commandListIterator.next();
-                else break;
+                if (commandListIterator.hasNext()) {
+                    current = commandListIterator.next();
+                } else break;
             }
 
             if (newIssue.size() > 1) {
-                issues.add(newIssue);
+                issuesFound.add(newIssue);
                 current = commandListIterator.previous();
             }
+            */
+        }
+
+        if (!localMerge.isEmpty()) {
+            issuesFound.add(localMerge);
         }
 
         /*
@@ -65,7 +100,7 @@ public class OptimMultipleRun {
 
         }
 */
-        return issues;
+        return issuesFound;
     }
 
     public class Issue {
