@@ -1,6 +1,10 @@
 package fr.unice.i3s.sparks.docker.core.conflicts;
+import static java.util.Comparator.comparingInt;
+import static java.util.Map.Entry.comparingByValue;
+import static java.util.stream.Collectors.toMap;
 
 import fr.unice.i3s.sparks.docker.core.conflicts.run.RUNConflict;
+import fr.unice.i3s.sparks.docker.core.model.ImageID;
 import fr.unice.i3s.sparks.docker.core.model.dockerfile.Dockerfile;
 import fr.unice.i3s.sparks.docker.core.model.dockerfile.analyser.DockerFileParser;
 import fr.unice.i3s.sparks.docker.core.model.dockerfile.commands.*;
@@ -13,12 +17,14 @@ import java.text.DecimalFormat;
 import java.util.*;
 import java.util.stream.Collectors;
 
+import static java.util.Comparator.comparingInt;
+
 public class Main {
     public static void main(String[] args) throws MalFormedImageException, IOException, InterruptedException {
-        analyseDockerfiles();
+        new Main().analyseDockerfiles();
     }
 
-    private static void analyseDockerfiles() throws IOException {
+    private void analyseDockerfiles() throws IOException {
 
         List<Dockerfile> dockerfiles = new ArrayList<>();
         List<RUNConflict> conflicts = new ArrayList<>();
@@ -56,6 +62,37 @@ public class Main {
         fixAndOptimise(dockerfiles, conflicts);
 
         computeStatistics(dockerfiles);
+
+        Map<String, List<FROMCommand>> index = new HashMap();
+
+        buildIndex("node",index, dockerfiles);
+        buildIndex("ubuntu",index, dockerfiles);
+        buildIndex("debian",index, dockerfiles);
+        buildIndex("busybox",index, dockerfiles);
+        buildIndex("redis",index, dockerfiles);
+        buildIndex("alpine",index, dockerfiles);
+        buildIndex("mysql",index, dockerfiles);
+        buildIndex("mongo",index, dockerfiles);
+        buildIndex("elasticsarch",index, dockerfiles);
+        buildIndex("logstash",index, dockerfiles);
+        buildIndex("postgres",index, dockerfiles);
+        buildIndex("httpd",index, dockerfiles);
+        buildIndex("wordpress",index, dockerfiles);
+        buildIndex("centos",index, dockerfiles);
+        buildIndex("ruby",index, dockerfiles);
+        buildIndex("memcached",index, dockerfiles);
+        buildIndex("python",index, dockerfiles);
+        buildIndex("php",index, dockerfiles);
+        buildIndex("jenkins",index, dockerfiles);
+        buildIndex("golang",index, dockerfiles);
+        buildIndex("java",index, dockerfiles);
+        buildIndex("rabbitmq",index, dockerfiles);
+        buildIndex("mariadb",index, dockerfiles);
+        buildIndex("kibana",index, dockerfiles);
+
+        for(Map.Entry<String, List<FROMCommand>> stringListEntry : index.entrySet()) {
+            System.out.println(stringListEntry.getKey() + " " + stringListEntry.getValue().size());
+        }
 
         /*
         System.out.println(conflicts.size() + " run conflicts found spread on " + nbOfDockerfilesInConflict + " different dockerfiles.");
@@ -111,6 +148,24 @@ public class Main {
         System.out.println("Total mergeable RUN:" + total + " on " + optim1.size() + " different clusters, on " + dockerfileSet.size() + " different dockerfiles");
 
         */
+
+
+    }
+
+
+
+    private static void buildIndex(String from, Map<String, List<FROMCommand>> index, List<Dockerfile> dockerfiles) {
+        index.put(from, new ArrayList<>());
+
+        for (Dockerfile dockerfile : dockerfiles) {
+            Command command = dockerfile.getListOfCommand().get(0);
+            if (command instanceof FROMCommand) {
+                ImageID parent = ((FROMCommand) command).getParent();
+                if (parent.toString().startsWith(from)) {
+                    index.get(from).add((FROMCommand) command);
+                }
+            }
+        }
     }
 
     private static void fixAndOptimise(List<Dockerfile> dockerfiles, List<RUNConflict> conflicts) {
@@ -132,7 +187,7 @@ public class Main {
         int gain = 0;
         for (List<List<OptimMultipleRun.Issue>> dockerfileClusters : optim1) {
             for (List<OptimMultipleRun.Issue> localMerge : dockerfileClusters) {
-                gain += localMerge.size() ;
+                gain += localMerge.size();
             }
         }
 
@@ -266,7 +321,7 @@ public class Main {
     public static <K, V extends Comparable<? super V>> Map<K, V> sortByValue(Map<K, V> map) {
         return map.entrySet()
                 .stream()
-                .sorted(Map.Entry.comparingByValue(Collections.reverseOrder()))
+                .sorted(comparingByValue(Collections.reverseOrder()))
                 .collect(Collectors.toMap(
                         Map.Entry::getKey,
                         Map.Entry::getValue,
