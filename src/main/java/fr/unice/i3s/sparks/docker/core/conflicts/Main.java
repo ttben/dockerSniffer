@@ -1,5 +1,4 @@
 package fr.unice.i3s.sparks.docker.core.conflicts;
-import static java.util.Comparator.comparingInt;
 import static java.util.Map.Entry.comparingByValue;
 import static java.util.stream.Collectors.toMap;
 
@@ -16,8 +15,6 @@ import java.math.RoundingMode;
 import java.text.DecimalFormat;
 import java.util.*;
 import java.util.stream.Collectors;
-
-import static java.util.Comparator.comparingInt;
 
 public class Main {
     public static void main(String[] args) throws MalFormedImageException, IOException, InterruptedException {
@@ -91,7 +88,7 @@ public class Main {
         buildIndex("kibana",index, dockerfiles);
 
         for(Map.Entry<String, List<FROMCommand>> stringListEntry : index.entrySet()) {
-            System.out.println(stringListEntry.getKey() + " " + stringListEntry.getValue().size());
+            //System.out.println(stringListEntry.getKey() + " " + stringListEntry.getValue().size());
         }
 
         /*
@@ -283,6 +280,9 @@ public class Main {
 
 
         System.out.println("--------------------------------------------------------------------------");
+
+        List<Dockerfile> extract = extract(NonParsedCommand.class, dockerfiles);
+        System.out.println();
     }
 
     private static List<Dockerfile> filterTrivialDockerfiles(List<Dockerfile> dockerfiles) {
@@ -337,6 +337,19 @@ public class Main {
         } else {
             repartitionsOfCommands.put(clazz, command);
         }
+    }
+
+    private static List<Dockerfile> extract(Class clazz, List<Dockerfile> dockerfiles) {
+        List<Dockerfile> result = new ArrayList<>();
+
+        for (Dockerfile dockerfile : dockerfiles) {
+            int command = dockerfile.howMuch(clazz);
+            if (command > 0) {
+                result.add(dockerfile);
+            }
+        }
+
+        return result;
     }
 
 
