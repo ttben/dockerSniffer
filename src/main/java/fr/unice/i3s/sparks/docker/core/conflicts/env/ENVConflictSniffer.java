@@ -14,6 +14,7 @@ public class ENVConflictSniffer {
 
     public static ENVConflictMap conflict(List<Image> images) {
 
+        /*
         Stream<Image> imageStream = images.stream();
 
         imageStream
@@ -59,5 +60,8 @@ public class ENVConflictSniffer {
         ENVConflictMap envConflictMap = new ENVConflictMap(conflictMap);
 
         return envConflictMap;
+        */
+
+        return null;
     }
 }

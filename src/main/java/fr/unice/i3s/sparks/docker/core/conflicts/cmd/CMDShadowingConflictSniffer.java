@@ -9,7 +9,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class CMDConflictSniffer {
+public class CMDShadowingConflictSniffer {
 
     public static List<CMDConflict> conflict(List<Dockerfile> images) {
 
@@ -40,7 +40,7 @@ public class CMDConflictSniffer {
         CMDCommand node1 = new CMDCommand(anotherDockerfile, "node");
         anotherDockerfile.addCommand(node1);
 
-        List<CMDConflict> conflict = CMDConflictSniffer.conflict(Arrays.asList(aDockerfile, anotherDockerfile));
+        List<CMDConflict> conflict = CMDShadowingConflictSniffer.conflict(Arrays.asList(aDockerfile, anotherDockerfile));
         System.out.println(conflict);
     }
 }

@@ -5,7 +5,7 @@ import static java.util.stream.Collectors.toMap;
 import fr.unice.i3s.sparks.docker.core.conflicts.run.RUNConflict;
 import fr.unice.i3s.sparks.docker.core.model.ImageID;
 import fr.unice.i3s.sparks.docker.core.model.dockerfile.Dockerfile;
-import fr.unice.i3s.sparks.docker.core.model.dockerfile.analyser.DockerFileParser;
+import fr.unice.i3s.sparks.docker.core.model.dockerfile.parser.DockerFileParser;
 import fr.unice.i3s.sparks.docker.core.model.dockerfile.commands.*;
 
 import java.io.File;

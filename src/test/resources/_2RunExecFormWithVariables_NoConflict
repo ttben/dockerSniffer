@@ -1,0 +1,3 @@
+FROM a
+RUN /bin/sh echo $HOME
+RUN ["/bin/sh", "echo", "$HOME"]

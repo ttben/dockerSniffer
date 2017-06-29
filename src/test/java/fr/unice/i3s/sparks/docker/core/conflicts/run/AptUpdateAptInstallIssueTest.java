@@ -4,7 +4,7 @@ package fr.unice.i3s.sparks.docker.core.conflicts.run;
 import fr.unice.i3s.sparks.docker.core.conflicts.Enricher;
 import fr.unice.i3s.sparks.docker.core.conflicts.RunIssue1;
 import fr.unice.i3s.sparks.docker.core.model.dockerfile.Dockerfile;
-import fr.unice.i3s.sparks.docker.core.model.dockerfile.analyser.DockerFileParser;
+import fr.unice.i3s.sparks.docker.core.model.dockerfile.parser.DockerFileParser;
 import org.junit.Test;
 
 import java.io.File;

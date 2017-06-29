@@ -1,0 +1,2 @@
+WORKDIR /user
+FROM lol:lol
