@@ -155,7 +155,7 @@ public class Main {
         index.put(from, new ArrayList<>());
 
         for (Dockerfile dockerfile : dockerfiles) {
-            Command command = dockerfile.getListOfCommand().get(0);
+            Command command = dockerfile.getActions().get(0);
             if (command instanceof FROMCommand) {
                 ImageID parent = ((FROMCommand) command).getParent();
                 if (parent.toString().startsWith(from)) {
@@ -215,13 +215,13 @@ public class Main {
         List<Dockerfile> dockerfilesWithUpdateInstall = new ArrayList<>();
 
         for (Dockerfile dockerfile : dockerfiles) {
-            //System.out.println(dockerfile.getSourcefIle());
+            //System.out.println(dockerfile.getSourceFile());
 
             if (dockerfile.contains(RUNCommand.class)) {
                 dockerfilesWithRUN.add(dockerfile);
             }
 
-            if (dockerfile.deepContains(AptInstall.class) && dockerfile.deepContains(AptUpdate.class)) {
+            if (dockerfile.contains(AptInstall.class) && dockerfile.contains(AptUpdate.class)) {
                 dockerfilesWithUpdateInstall.add(dockerfile);
             }
         }
@@ -261,7 +261,7 @@ public class Main {
 
         int expectedTotalNbOfCommands = 0;
         for (Dockerfile dockerfile : dockerfiles) {
-            expectedTotalNbOfCommands += dockerfile.getListOfCommand().size();
+            expectedTotalNbOfCommands += dockerfile.getActions().size();
         }
         System.out.println("Expected? total => " + expectedTotalNbOfCommands);
 
@@ -294,7 +294,7 @@ public class Main {
         while (dockerfileListIterator.hasNext()) {
             Dockerfile dockerfile = dockerfileListIterator.next();
 
-            if (dockerfile.getListOfCommand().size() < trivialThreshold) {
+            if (dockerfile.getActions().size() < trivialThreshold) {
                 trivialDockerfiles.add(dockerfile);
                 dockerfileListIterator.remove();
             }
@@ -302,8 +302,8 @@ public class Main {
 
         /*
         for (Dockerfile dockerfile : dockerfiles) {
-            System.out.println(dockerfile.getSourcefIle());
-            if (dockerfile.getListOfCommand().size() < trivialThreshold) {
+            System.out.println(dockerfile.getSourceFile());
+            if (dockerfile.getActions().size() < trivialThreshold) {
                 trivialDockerfiles.add(dockerfile);
             }
         }

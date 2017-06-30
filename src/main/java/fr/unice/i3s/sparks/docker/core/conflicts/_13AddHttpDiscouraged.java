@@ -12,7 +12,7 @@ public class _13AddHttpDiscouraged {
     public static List<Command> conflict(Dockerfile dockerfile) {
         List<Command> result = new ArrayList<>();
 
-        ArrayList<ADDCommand> addCommands = dockerfile.getListOfCommand()
+        ArrayList<ADDCommand> addCommands = dockerfile.getActions()
                 .stream()
                 .filter(c -> c instanceof ADDCommand)
                 .map(ADDCommand.class::cast)

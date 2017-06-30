@@ -12,7 +12,7 @@ import java.util.stream.Collectors;
 
 public class COPYConflict {
     public void conflict(Dockerfile dockerFiles) {
-        ArrayList<Command> collect = dockerFiles.getListOfCommand()
+        ArrayList<Command> collect = dockerFiles.getActions()
                 .stream().filter(c -> c instanceof COPYCommand).collect(Collectors.toCollection(ArrayList::new));
         System.out.println(collect.size() + " copy command found!");
 

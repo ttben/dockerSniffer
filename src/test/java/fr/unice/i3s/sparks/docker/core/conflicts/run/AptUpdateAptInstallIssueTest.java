@@ -25,10 +25,10 @@ public class AptUpdateAptInstallIssueTest {
         List<RunIssue1.Issue> apply = r.apply(parse);
 
         assertEquals(2, apply.size());
-        assertSame(apply.get(0).getRunCommand(), parse.getListOfCommand().get(2));
-        assertSame(apply.get(1).getRunCommand(), parse.getListOfCommand().get(3));
+        assertSame(apply.get(0).getRunCommand(), parse.getActions().get(2));
+        assertSame(apply.get(1).getRunCommand(), parse.getActions().get(3));
 
-        System.out.println(parse.getListOfCommand().get(2));
-        System.out.println(parse.getListOfCommand().get(3));
+        System.out.println(parse.getActions().get(2));
+        System.out.println(parse.getActions().get(3));
     }
 }

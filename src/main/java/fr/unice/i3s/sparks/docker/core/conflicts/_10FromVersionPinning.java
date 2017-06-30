@@ -4,7 +4,6 @@ import fr.unice.i3s.sparks.docker.core.model.ImageID;
 import fr.unice.i3s.sparks.docker.core.model.dockerfile.Dockerfile;
 import fr.unice.i3s.sparks.docker.core.model.dockerfile.commands.Command;
 import fr.unice.i3s.sparks.docker.core.model.dockerfile.commands.FROMCommand;
-import fr.unice.i3s.sparks.docker.core.model.dockerfile.commands.WORKDIRCommand;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,7 +14,7 @@ public class _10FromVersionPinning {
     public static List<Command> conflict(Dockerfile dockerfile) {
         List<Command> result = new ArrayList<>();
 
-        ArrayList<FROMCommand> fromCommands = dockerfile.getListOfCommand()
+        ArrayList<FROMCommand> fromCommands = dockerfile.getActions()
                 .stream()
                 .filter(c -> c instanceof FROMCommand)
                 .map(FROMCommand.class::cast)

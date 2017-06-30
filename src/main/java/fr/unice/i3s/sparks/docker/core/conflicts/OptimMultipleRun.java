@@ -11,7 +11,7 @@ import java.util.ListIterator;
 
 public class OptimMultipleRun {
     public List<List<Issue>> apply(Dockerfile dockerfile) {
-        List<Command> listOfCommand = dockerfile.getListOfCommand();
+        List<Command> listOfCommand = dockerfile.getActions();
         List<List<OptimMultipleRun.Issue>> issuesFound = new ArrayList<>();
         ListIterator<Command> commandListIterator = listOfCommand.listIterator();
 

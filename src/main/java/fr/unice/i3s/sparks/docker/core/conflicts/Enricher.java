@@ -11,7 +11,7 @@ public class Enricher {
     private static List<Command> analyseDockerFile(Dockerfile dockerfile) {
         List<Command> newListOfCommand;
         newListOfCommand = new ArrayList<>();
-        List<Command> listOfRunCommand = dockerfile.getListOfCommand();
+        List<Command> listOfRunCommand = dockerfile.getActions();
 
         for (Command command : listOfRunCommand) {
             if (!(command instanceof RUNCommand)) {
@@ -50,7 +50,7 @@ public class Enricher {
 
     public static Dockerfile enrich(Dockerfile dockerfile) {
         List<Command> commands = analyseDockerFile(dockerfile);
-        Dockerfile dockerfile1 = new Dockerfile(commands, dockerfile.getSourcefIle());
+        Dockerfile dockerfile1 = new Dockerfile(commands, dockerfile.getSourceFile());
         return dockerfile1;
     }
 }

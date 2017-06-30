@@ -15,7 +15,7 @@ public class RunIssue1 {
     public List<Issue> apply(Dockerfile dockerfile) {
         List<Issue> issues = new ArrayList<>();
 
-        ArrayList<RUNCommand> runCommands = dockerfile.getListOfCommand()
+        ArrayList<RUNCommand> runCommands = dockerfile.getActions()
                 .stream()
                 .filter(c -> c instanceof RUNCommand)
                 .map(RUNCommand.class::cast)

@@ -12,7 +12,7 @@ public class _14UserRoot {
     public static List<Command> conflict(Dockerfile dockerfile) {
         List<Command> result = new ArrayList<>();
 
-        ArrayList<USERCommand> addCommands = dockerfile.getListOfCommand()
+        ArrayList<USERCommand> addCommands = dockerfile.getActions()
                 .stream()
                 .filter(c -> c instanceof USERCommand)
                 .map(USERCommand.class::cast)

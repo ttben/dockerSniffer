@@ -14,7 +14,7 @@ public class _6MergeableLabel {
     public static List<List<Command>> conflict(Dockerfile dockerfile) {
         List<List<Command>> result = new ArrayList<>();
 
-        List<Command> listOfCommand = dockerfile.getListOfCommand();
+        List<Command> listOfCommand = dockerfile.getActions();
 
         ListIterator<Command> commandListIterator = listOfCommand.listIterator();
 

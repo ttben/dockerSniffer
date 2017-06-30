@@ -17,8 +17,8 @@ public class _3MultipleCMDTest {
         Dockerfile aDockerfile = new Dockerfile();
         CMDCommand node = new CMDCommand(aDockerfile, "node");
         CMDCommand node1 = new CMDCommand(aDockerfile, "node");
-        aDockerfile.addCommand(node);
-        aDockerfile.addCommand(node1);
+        aDockerfile.add(node);
+        aDockerfile.add(node1);
 
         assertTrue(_3MultipleCMD.conflict(aDockerfile));
     }
@@ -27,7 +27,7 @@ public class _3MultipleCMDTest {
     public void shouldNotYieldWarning() {
         Dockerfile aDockerfile = new Dockerfile();
         CMDCommand node = new CMDCommand(aDockerfile, "node");
-        aDockerfile.addCommand(node);
+        aDockerfile.add(node);
 
         assertFalse(_3MultipleCMD.conflict(aDockerfile));
     }

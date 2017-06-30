@@ -12,7 +12,7 @@ public class _16WorkdirAbsolutePath {
     public static List<Command> conflict(Dockerfile dockerfile) {
 
 
-        ArrayList<WORKDIRCommand> workdirCommands = dockerfile.getListOfCommand()
+        ArrayList<WORKDIRCommand> workdirCommands = dockerfile.getActions()
                 .stream()
                 .filter(c -> c instanceof WORKDIRCommand)
                 .map(WORKDIRCommand.class::cast)

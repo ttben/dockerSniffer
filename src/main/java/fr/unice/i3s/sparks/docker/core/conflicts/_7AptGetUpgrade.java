@@ -14,7 +14,7 @@ public class _7AptGetUpgrade {
 
         List<Command> result = new ArrayList<>();
 
-        ArrayList<RUNCommand> runCommands = dockerFiles.getListOfCommand()
+        ArrayList<RUNCommand> runCommands = dockerFiles.getActions()
                 .stream()
                 .filter(c -> c instanceof RUNCommand)
                 .map(RUNCommand.class::cast)

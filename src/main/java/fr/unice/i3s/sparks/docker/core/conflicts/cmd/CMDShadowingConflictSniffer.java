@@ -14,7 +14,7 @@ public class CMDShadowingConflictSniffer {
     public static List<CMDConflict> conflict(List<Dockerfile> images) {
 
         List<CMDCommand> collect = StreamEx.of(images)
-                .map(Dockerfile::getListOfCommand)
+                .map(Dockerfile::getActions)
                 .flatMap(List::stream)
                 .select(CMDCommand.class)
                 .collect(Collectors.toList());
@@ -34,11 +34,11 @@ public class CMDShadowingConflictSniffer {
     public static void main(String[] args) {
         Dockerfile aDockerfile = new Dockerfile();
         CMDCommand node = new CMDCommand(aDockerfile, "node");
-        aDockerfile.addCommand(node);
+        aDockerfile.add(node);
 
         Dockerfile anotherDockerfile = new Dockerfile();
         CMDCommand node1 = new CMDCommand(anotherDockerfile, "node");
-        anotherDockerfile.addCommand(node1);
+        anotherDockerfile.add(node1);
 
         List<CMDConflict> conflict = CMDShadowingConflictSniffer.conflict(Arrays.asList(aDockerfile, anotherDockerfile));
         System.out.println(conflict);

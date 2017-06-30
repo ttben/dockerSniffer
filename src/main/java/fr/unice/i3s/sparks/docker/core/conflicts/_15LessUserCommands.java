@@ -14,7 +14,7 @@ public class _15LessUserCommands {
     public static List<Command> conflict(Dockerfile dockerfile) {
         int nbOfUserCommands = dockerfile.howMuch(USERCommand.class);
         if (nbOfUserCommands > THRESHOLD) {
-            return  dockerfile.getListOfCommand()
+            return  dockerfile.getActions()
                     .stream()
                     .filter(c -> c instanceof USERCommand)
                     .map(USERCommand.class::cast)

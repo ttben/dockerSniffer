@@ -20,7 +20,7 @@ public class _12AddDiscouraged {
             return new ArrayList<>();
         }
 
-        return  dockerfile.getListOfCommand()
+        return  dockerfile.getActions()
                 .stream()
                 .filter(c -> c instanceof ADDCommand)
                 .map(ADDCommand.class::cast)

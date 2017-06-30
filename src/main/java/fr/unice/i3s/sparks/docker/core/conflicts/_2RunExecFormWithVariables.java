@@ -12,7 +12,7 @@ import java.util.stream.Collectors;
 
 public class _2RunExecFormWithVariables {
     public static List<Command> conflict(Dockerfile dockerfile) {
-        ArrayList<RUNCommand> runCommands = dockerfile.getListOfCommand()
+        ArrayList<RUNCommand> runCommands = dockerfile.getActions()
                 .stream()
                 .filter(c -> c instanceof RUNCommand)
                 .map(RUNCommand.class::cast)

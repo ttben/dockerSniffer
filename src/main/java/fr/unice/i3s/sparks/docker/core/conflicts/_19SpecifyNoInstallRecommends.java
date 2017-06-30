@@ -12,7 +12,7 @@ public class _19SpecifyNoInstallRecommends {
 
     public static <T extends Command> List<T> lol(Dockerfile dockerfile) {
         Class<T> l = null;
-        List<T> listOfCommand = (List<T>) dockerfile.getListOfCommand();
+        List<T> listOfCommand = (List<T>) dockerfile.getActions();
         List<T> collect = new ArrayList<>();
         for (T t : listOfCommand) {
             if (l.isInstance(t)) {
@@ -25,7 +25,7 @@ public class _19SpecifyNoInstallRecommends {
 
     public static List<Command> conflict(Dockerfile dockerfile) {
         ArrayList<RUNCommand> runCommands =
-                dockerfile.getListOfCommand()
+                dockerfile.getActions()
                         .stream()
                         .filter(c -> c instanceof RUNCommand)
                         .map(RUNCommand.class::cast)

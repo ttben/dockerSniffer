@@ -15,7 +15,7 @@ import java.util.stream.Collectors;
 public class _8AlwaysUpdateAndInstallOnSameCommand {
     public RUNConflict conflict(Dockerfile dockerFiles) {
 
-        ArrayList<RUNCommand> runCommands = dockerFiles.getListOfCommand()
+        ArrayList<RUNCommand> runCommands = dockerFiles.getActions()
                 .stream()
                 .filter(c -> c instanceof RUNCommand)
                 .map(RUNCommand.class::cast)
