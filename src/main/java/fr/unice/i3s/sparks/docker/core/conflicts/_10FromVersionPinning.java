@@ -23,7 +23,7 @@ public class _10FromVersionPinning {
         for (FROMCommand fromCommand : fromCommands) {
             String body = fromCommand.getParent().getDigest();
             String bodyLowerCase = body.trim().toLowerCase();
-            if (bodyLowerCase.contains(":")) {
+            if (bodyLowerCase.contains(":") && bodyLowerCase.split(":").length > 2) {   // cover ubuntu:'
                 if (bodyLowerCase.split(":")[1].toLowerCase().equals("latest")) {
                     result.add(fromCommand);
                 }

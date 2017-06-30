@@ -13,7 +13,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class _8AlwaysUpdateAndInstallOnSameCommand {
-    public RUNConflict conflict(Dockerfile dockerFiles) {
+    public static RUNConflict conflict(Dockerfile dockerFiles) {
 
         ArrayList<RUNCommand> runCommands = dockerFiles.getActions()
                 .stream()
@@ -54,7 +54,7 @@ public class _8AlwaysUpdateAndInstallOnSameCommand {
         return runConflict;
     }
 
-    private int findFirstUpdate(ArrayList<RUNCommand> runCommands) {
+    private static int findFirstUpdate(ArrayList<RUNCommand> runCommands) {
         //System.err.println("Find first update...");
         int index = -1;
         for (int i = 0; i < runCommands.size(); i++) {
