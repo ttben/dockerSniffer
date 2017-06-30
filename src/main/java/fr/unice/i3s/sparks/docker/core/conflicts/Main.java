@@ -1,20 +1,22 @@
 package fr.unice.i3s.sparks.docker.core.conflicts;
-import static java.util.Map.Entry.comparingByValue;
-import static java.util.stream.Collectors.toMap;
 
 import fr.unice.i3s.sparks.docker.core.conflicts.run.RUNConflict;
 import fr.unice.i3s.sparks.docker.core.model.ImageID;
 import fr.unice.i3s.sparks.docker.core.model.dockerfile.Dockerfile;
-import fr.unice.i3s.sparks.docker.core.model.dockerfile.parser.DockerFileParser;
 import fr.unice.i3s.sparks.docker.core.model.dockerfile.commands.*;
+import fr.unice.i3s.sparks.docker.core.model.dockerfile.parser.DockerFileParser;
 
 import java.io.File;
 import java.io.FilenameFilter;
 import java.io.IOException;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 import java.math.RoundingMode;
 import java.text.DecimalFormat;
 import java.util.*;
 import java.util.stream.Collectors;
+
+import static java.util.Map.Entry.comparingByValue;
 
 public class Main {
     public static void main(String[] args) throws MalFormedImageException, IOException, InterruptedException {
@@ -41,7 +43,6 @@ public class Main {
 
         for (File f : files) {
             //System.out.println("Handling file:" + f.getAbsolutePath());
-
             Dockerfile dockerfile = DockerFileParser.parse(f);
             Dockerfile enrichedDockerfile = Enricher.enrich(dockerfile);
             dockerfiles.add(enrichedDockerfile);
@@ -60,95 +61,143 @@ public class Main {
 
         computeStatistics(dockerfiles);
 
+
+        int nbDkf_1 = 0;
+        for (Dockerfile dockerfile : dockerfiles) {
+            boolean conflict = _1FromFirst.conflict(dockerfile);
+            if (conflict) {
+                nbDkf_1++;
+            }
+        }
+
+        System.out.printf("G_1FromFirst:\n\tDKF:%s\n", nbDkf_1);
+
+        displayApplicationOnDataSet(_2RunExecFormWithVariables.class, dockerfiles);
+
+        int nbDkf_3 = 0;
+        for (Dockerfile dockerfile : dockerfiles) {
+            boolean conflict = _3MultipleCMD.conflict(dockerfile);
+            if (conflict) {
+                nbDkf_3++;
+            }
+        }
+
+        System.out.printf("G_3MultipleCMD\n\t:DKF:%s\n", nbDkf_3);
+
+
+        displayApplicationOnDataSet(_5CmdExecFormWithVariables.class, dockerfiles);
+
+        int nbDkf_6 = 0;
+        int nbDkC_6 = 0;
+        for (Dockerfile dockerfile : dockerfiles) {
+            List<List<Command>> conflict = _6MergeableLabel.conflict(dockerfile);
+            if (!conflict.isEmpty()) {
+                nbDkf_6++;
+
+                for (List<Command> cluster : conflict) {
+                    nbDkC_6 += cluster.size() - 1;
+                }
+
+            }
+        }
+
+        System.out.printf("G_6MergeableLabel:\n\tDKF:%s, \tDKC:%s\n", nbDkf_6, nbDkC_6);
+
+
+        displayApplicationOnDataSet(_7AptGetUpgrade.class, dockerfiles);
+
+
+
+        int nbDkf_8 = 0;
+        int nbDkC_8 = 0;
+        for (Dockerfile dockerfile : dockerfiles) {
+            RUNConflict conflict = _8AlwaysUpdateAndInstallOnSameCommand.conflict(dockerfile);
+            if (conflict != null && !conflict.isEmpty()) {
+                nbDkf_8++;
+                nbDkC_8 += conflict.getConflictingRUNCommand().size();
+            }
+        }
+
+        System.out.printf("G_8AlwaysUpdateAndInstallOnSameCommand:\n\tDKF:%s, \tDKC:%s\n", nbDkf_8, nbDkC_8);
+
+
+
+        displayApplicationOnDataSet(_9PackageInstallationVersionPinning.class, dockerfiles);
+        displayApplicationOnDataSet(_10FromVersionPinning.class, dockerfiles);
+        displayApplicationOnDataSet(_12AddDiscouraged.class, dockerfiles);
+        displayApplicationOnDataSet(_13AddHttpDiscouraged.class, dockerfiles);
+        displayApplicationOnDataSet(_14UserRoot.class, dockerfiles);
+        displayApplicationOnDataSet(_15LessUserCommands.class, dockerfiles);
+        displayApplicationOnDataSet(_16WorkdirAbsolutePath.class, dockerfiles);
+        displayApplicationOnDataSet(_17CdInRunCommand.class, dockerfiles);
+        displayApplicationOnDataSet(_18OrderPackageInstallation.class, dockerfiles);
+        displayApplicationOnDataSet(_19SpecifyNoInstallRecommends.class, dockerfiles);
+
+
+
         Map<String, List<FROMCommand>> index = new HashMap();
 
-        buildIndex("node",index, dockerfiles);
-        buildIndex("ubuntu",index, dockerfiles);
-        buildIndex("debian",index, dockerfiles);
-        buildIndex("busybox",index, dockerfiles);
-        buildIndex("redis",index, dockerfiles);
-        buildIndex("alpine",index, dockerfiles);
-        buildIndex("mysql",index, dockerfiles);
-        buildIndex("mongo",index, dockerfiles);
-        buildIndex("elasticsarch",index, dockerfiles);
-        buildIndex("logstash",index, dockerfiles);
-        buildIndex("postgres",index, dockerfiles);
-        buildIndex("httpd",index, dockerfiles);
-        buildIndex("wordpress",index, dockerfiles);
-        buildIndex("centos",index, dockerfiles);
-        buildIndex("ruby",index, dockerfiles);
-        buildIndex("memcached",index, dockerfiles);
-        buildIndex("python",index, dockerfiles);
-        buildIndex("php",index, dockerfiles);
-        buildIndex("jenkins",index, dockerfiles);
-        buildIndex("golang",index, dockerfiles);
-        buildIndex("java",index, dockerfiles);
-        buildIndex("rabbitmq",index, dockerfiles);
-        buildIndex("mariadb",index, dockerfiles);
-        buildIndex("kibana",index, dockerfiles);
+        buildIndex("node", index, dockerfiles);
+        buildIndex("ubuntu", index, dockerfiles);
+        buildIndex("debian", index, dockerfiles);
+        buildIndex("busybox", index, dockerfiles);
+        buildIndex("redis", index, dockerfiles);
+        buildIndex("alpine", index, dockerfiles);
+        buildIndex("mysql", index, dockerfiles);
+        buildIndex("mongo", index, dockerfiles);
+        buildIndex("elasticsarch", index, dockerfiles);
+        buildIndex("logstash", index, dockerfiles);
+        buildIndex("postgres", index, dockerfiles);
+        buildIndex("httpd", index, dockerfiles);
+        buildIndex("wordpress", index, dockerfiles);
+        buildIndex("centos", index, dockerfiles);
+        buildIndex("ruby", index, dockerfiles);
+        buildIndex("memcached", index, dockerfiles);
+        buildIndex("python", index, dockerfiles);
+        buildIndex("php", index, dockerfiles);
+        buildIndex("jenkins", index, dockerfiles);
+        buildIndex("golang", index, dockerfiles);
+        buildIndex("java", index, dockerfiles);
+        buildIndex("rabbitmq", index, dockerfiles);
+        buildIndex("mariadb", index, dockerfiles);
+        buildIndex("kibana", index, dockerfiles);
 
-        for(Map.Entry<String, List<FROMCommand>> stringListEntry : index.entrySet()) {
+        for (Map.Entry<String, List<FROMCommand>> stringListEntry : index.entrySet()) {
             //System.out.println(stringListEntry.getKey() + " " + stringListEntry.getValue().size());
         }
 
-        /*
-        System.out.println(conflicts.size() + " run conflicts found spread on " + nbOfDockerfilesInConflict + " different dockerfiles.");
-
-        System.out.println("--------------------------------------------------------------------------");
-
-
-        int datasetWihoutTrivial = dockerfiles.size() - trivialDockerfiles.size();
-
-        percentageOf(dockerfilesWithRUN.size(), datasetWihoutTrivial, "of files contained a RUN command");
-        percentageOf(dockerfilesWithUpdateInstall.size(), datasetWihoutTrivial, "of files contained a RUN command that update or install");
-        System.out.println();
-        percentageOf(nbOfDockerfilesInConflict, datasetWihoutTrivial, "of files contained a RUN issue ");
-        percentageOf(nbOfDockerfilesInConflict, dockerfilesWithRUN.size(), "of files contained a RUN command and have a RUN issue ");
-        percentageOf(nbOfDockerfilesInConflict, dockerfilesWithUpdateInstall.size(), "of files that contains a RUN command (that update or install) and have a RUN issue");
-
-
-
-        int total = 0;
-        for(List<RunIssue1.Issue> issues1 : issues) {
-            total += issues1.size();
-        }
-
-        repartitionsOfCommands = new HashMap<>();
-
-        for (Dockerfile dockerfile : dockerfiles) {
-
-            computeRepartitionsOfCommands(AptInstall.class, repartitionsOfCommands, dockerfile);
-            computeRepartitionsOfCommands(AptUpdate.class, repartitionsOfCommands, dockerfile);
-            computeRepartitionsOfCommands(PipInstall.class, repartitionsOfCommands, dockerfile);
-            computeRepartitionsOfCommands(YumInstall.class, repartitionsOfCommands, dockerfile);
-
-        }
-
-        printRepartition(sortByValue(repartitionsOfCommands));
-
-        System.out.println("\nTotal install without update command on same layer:" + total + " on " + issues.size() + " different dockerfiles");
-
-        total = 0;
-        for(List<List<OptimMultipleRun.Issue>> issues1 : optim1) {
-            for (List<OptimMultipleRun.Issue> issues2 : issues1) {
-                total += issues2.size();
-            }
-        }
-
-        Set<Dockerfile> dockerfileSet = new HashSet<>();
-        for(List<List<OptimMultipleRun.Issue>> issues1 : optim1) {
-            for (List<OptimMultipleRun.Issue> issues2 : issues1) {
-                dockerfileSet.add(issues2.get(0).getDockerfile());
-            }
-        }
-
-        System.out.println("Total mergeable RUN:" + total + " on " + optim1.size() + " different clusters, on " + dockerfileSet.size() + " different dockerfiles");
-
-        */
 
 
     }
 
+    private void displayApplicationOnDataSet(Class clazz, List<Dockerfile> dockerfiles) {
+
+        int nbDkf = 0;
+        int nbDkC = 0;
+
+        for (Dockerfile dockerfile : dockerfiles) {
+            List<Command> conflict = invokeConflictMethod(clazz, dockerfile);
+            if (!conflict.isEmpty()) {
+                nbDkf++;
+                nbDkC += conflict.size();
+            }
+        }
+
+        System.out.printf("G"+ clazz.getSimpleName() + ":\n\tDKF:%s,\tDKC:%s\n", nbDkf, nbDkC);
+
+    }
+
+    private List<Command> invokeConflictMethod(Class clazz, Dockerfile dockerfile) {
+        Object invoke = null;
+        try {
+            Method conflict = clazz.getMethod("conflict", Dockerfile.class);
+            invoke = conflict.invoke(null, dockerfile);
+            return (List<Command>) invoke;
+        } catch (IllegalAccessException | InvocationTargetException | NoSuchMethodException e) {
+            e.printStackTrace();
+        }
+        return new ArrayList<>();
+    }
 
 
     private static void buildIndex(String from, Map<String, List<FROMCommand>> index, List<Dockerfile> dockerfiles) {
@@ -246,6 +295,8 @@ public class Main {
             computeRepartitionsOfCommands(ENVCommand.class, repartitionsOfCommands, dockerfile);
             computeRepartitionsOfCommands(MAINTAINERCommand.class, repartitionsOfCommands, dockerfile);
             computeRepartitionsOfCommands(USERCommand.class, repartitionsOfCommands, dockerfile);
+            computeRepartitionsOfCommands(LABELCommand.class, repartitionsOfCommands, dockerfile);
+            computeRepartitionsOfCommands(ARGCommand.class, repartitionsOfCommands, dockerfile);
             computeRepartitionsOfCommands(NonParsedCommand.class, repartitionsOfCommands, dockerfile);
         }
 
