@@ -19,6 +19,9 @@ import java.util.stream.Collectors;
 import static java.util.Map.Entry.comparingByValue;
 
 public class Main {
+
+    public static final String PATH_TO_DKF = "/Users/benjaminbenni/Work/PhD/src/main/resources/dockerfiles/";
+
     public static void main(String[] args) throws MalFormedImageException, IOException, InterruptedException {
         new Main().analyseDockerfiles();
     }
@@ -35,7 +38,7 @@ public class Main {
         };
 
 
-        String folderThatContainsDockerfiles = "/Users/benjaminbenni/Work/PhD/src/main/resources/dockerfiles/";
+        String folderThatContainsDockerfiles = PATH_TO_DKF;
         File folder = new File(folderThatContainsDockerfiles);
 
         File[] files = folder.listFiles(textFilter);
@@ -51,9 +54,9 @@ public class Main {
         int nbDkF = dockerfiles.size();
         List<Dockerfile> trivialDockerfiles = filterTrivialDockerfiles(dockerfiles);
 
-        System.out.println(nbDkF + "  files.");
+        //System.out.println(nbDkF + "  files.");
         percentageOf(trivialDockerfiles.size(), nbDkF, "of files are trivial");
-        System.out.println(dockerfiles.size() + " non-trivial files remain.");
+        //System.out.println(dockerfiles.size() + " non-trivial files remain.");
 
         computeStatistics(dockerfiles);
 
@@ -70,7 +73,7 @@ public class Main {
             }
         }
 
-        System.out.printf("G_1FromFirst:\n\tDKF:%s\n", nbDkf_1);
+        //System.out.printf("G_1FromFirst:\n\tDKF:%s\n", nbDkf_1);
 
         displayApplicationOnDataSet(_2RunExecFormWithVariables.class, dockerfiles);
 
@@ -82,7 +85,7 @@ public class Main {
             }
         }
 
-        System.out.printf("G_3MultipleCMD\n\t:DKF:%s\n", nbDkf_3);
+        //System.out.printf("G_3MultipleCMD\n\t:DKF:%s\n", nbDkf_3);
 
 
         displayApplicationOnDataSet(_5CmdExecFormWithVariables.class, dockerfiles);
@@ -101,7 +104,7 @@ public class Main {
             }
         }
 
-        System.out.printf("G_6MergeableLabel:\n\tDKF:%s, \tDKC:%s\n", nbDkf_6, nbDkC_6);
+        //System.out.printf("G_6MergeableLabel:\n\tDKF:%s, \tDKC:%s\n", nbDkf_6, nbDkC_6);
 
 
         displayApplicationOnDataSet(_7AptGetUpgrade.class, dockerfiles);
@@ -118,7 +121,7 @@ public class Main {
             }
         }
 
-        System.out.printf("G_8AlwaysUpdateAndInstallOnSameCommand:\n\tDKF:%s, \tDKC:%s\n", nbDkf_8, nbDkC_8);
+        //System.out.printf("G_8AlwaysUpdateAndInstallOnSameCommand:\n\tDKF:%s, \tDKC:%s\n", nbDkf_8, nbDkC_8);
 
 
 
@@ -183,7 +186,7 @@ public class Main {
             }
         }
 
-        System.out.printf("G"+ clazz.getSimpleName() + ":\n\tDKF:%s,\tDKC:%s\n", nbDkf, nbDkC);
+        // System.out.printf("G"+ clazz.getSimpleName() + ":\n\tDKF:%s,\tDKC:%s\n", nbDkf, nbDkC);
 
     }
 
@@ -237,7 +240,7 @@ public class Main {
             }
         }
 
-        System.out.println("Rule: merge contiguous run.\n\t-> Number of run commands that can be deleted (by merge operation): " + gain + " commands.");
+        // System.out.println("Rule: merge contiguous run.\n\t-> Number of run commands that can be deleted (by merge operation): " + gain + " commands.");
     }
 
     private static void fixSemanticGapIssue(List<Dockerfile> dockerfiles) {
@@ -256,7 +259,7 @@ public class Main {
             nbOfIssues += dockerfileClusters.size();
 
         }
-        System.out.println("Rule: run semantic gap.\n\t-> Number of run commands that have r.s.g. issue : " + nbOfIssues + " commands over " + issues.size() + " dockerfiles.");
+        // System.out.println("Rule: run semantic gap.\n\t-> Number of run commands that have r.s.g. issue : " + nbOfIssues + " commands over " + issues.size() + " dockerfiles.");
     }
 
     private static void computeStatistics(List<Dockerfile> dockerfiles) {
@@ -276,8 +279,8 @@ public class Main {
         }
 
 
-        System.out.println("-------------------------------------");
-        System.out.println(dockerfiles.size() + " dockerfiles parsed into model.");
+        // System.out.println("-------------------------------------");
+        // System.out.println(dockerfiles.size() + " dockerfiles parsed into model.");
 
 
         Map<Class, Integer> repartitionsOfCommands = new HashMap<>();
@@ -307,14 +310,14 @@ public class Main {
         for (Integer i : repartitionsOfCommands.values()) {
             totalNbOfCommands += i;
         }
-        System.out.println("Total => " + totalNbOfCommands);
+        //System.out.println("Total => " + totalNbOfCommands);
 
 
         int expectedTotalNbOfCommands = 0;
         for (Dockerfile dockerfile : dockerfiles) {
             expectedTotalNbOfCommands += dockerfile.getActions().size();
         }
-        System.out.println("Expected? total => " + expectedTotalNbOfCommands);
+        //System.out.println("Expected? total => " + expectedTotalNbOfCommands);
 
         repartitionsOfCommands = new HashMap<>();
 
@@ -330,10 +333,10 @@ public class Main {
         printRepartition(sortByValue(repartitionsOfCommands));
 
 
-        System.out.println("--------------------------------------------------------------------------");
+       // System.out.println("--------------------------------------------------------------------------");
 
         List<Dockerfile> extract = extract(NonParsedCommand.class, dockerfiles);
-        System.out.println();
+        //System.out.println();
     }
 
     private static List<Dockerfile> filterTrivialDockerfiles(List<Dockerfile> dockerfiles) {
@@ -365,7 +368,7 @@ public class Main {
 
     private static void printRepartition(Map<Class, Integer> repartitionsOfCommands) {
         for (Map.Entry<Class, Integer> entry : repartitionsOfCommands.entrySet()) {
-            System.out.println("-" + entry.getKey().getSimpleName() + ":" + entry.getValue());
+            //System.out.println("-" + entry.getKey().getSimpleName() + ":" + entry.getValue());
         }
     }
 
@@ -409,6 +412,6 @@ public class Main {
         df.setRoundingMode(RoundingMode.CEILING);
 
         double percentage = ((double) thiz * 100) / ((double) overThis);
-        System.out.println(df.format(percentage) + "% " + msg + " (" + thiz + "/" + overThis + ")");
+        //System.out.println(df.format(percentage) + "% " + msg + " (" + thiz + "/" + overThis + ")");
     }
 }
