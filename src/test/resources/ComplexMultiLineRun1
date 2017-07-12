@@ -1,0 +1,6 @@
+RUN apt-get upgrade \
+    && apt-get install a b\
+    c\
+    d\
+    && echo 'done' && \
+    echo 'over'
