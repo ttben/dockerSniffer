@@ -12,6 +12,8 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.stream.Collectors;
 
+// FIXME this is broken, this is not the proper way to do this
+// FIXME see RunIssue1
 public class _8AlwaysUpdateAndInstallOnSameCommand {
     public static RUNConflict conflict(Dockerfile dockerFiles) {
 

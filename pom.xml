@@ -30,6 +30,11 @@
             <artifactId>dockermodel</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
+        <dependency>
+            <groupId>fr.uca.i3s.sparks.composition.PhD</groupId>
+            <artifactId>r-generation</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
 
     </dependencies>
 

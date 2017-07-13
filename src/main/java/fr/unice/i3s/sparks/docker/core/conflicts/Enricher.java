@@ -1,6 +1,7 @@
 package fr.unice.i3s.sparks.docker.core.conflicts;
 
 
+import fr.unice.i3s.sparks.docker.core.conflicts.tags.*;
 import fr.unice.i3s.sparks.docker.core.model.dockerfile.Dockerfile;
 import fr.unice.i3s.sparks.docker.core.model.dockerfile.commands.*;
 
@@ -28,20 +29,28 @@ public class Enricher {
             while (shellCommandListIterator.hasNext()) {
                 ShellCommand shellCommand = shellCommandListIterator.next();
                 if (shellCommand.getBody().contains("install") && shellCommand.getBody().contains("apt-get")) {
-                    AptInstall aptInstall = new AptInstall(shellCommand.getBody());
-                    newRunCommand.add(aptInstall);
-                } else if (shellCommand.getBody().contains("upgrade") && shellCommand.getBody().contains("apt-get")) {
-                    AptUpdate aptUpdate = new AptUpdate(shellCommand.getBody());
-                    newRunCommand.add(aptUpdate);
-                } else if (shellCommand.getBody().contains("mkdir")) {
-                    FolderCreation folderCreation = new FolderCreation(shellCommand.getBody());
-                    newRunCommand.add(folderCreation);
-                } else if (shellCommand.getBody().contains("install") && shellCommand.getBody().contains("pip")) {
-                    PipInstall pipInstall = new PipInstall(shellCommand.getBody());
-                    newRunCommand.add(pipInstall);
-                } else if (shellCommand.getBody().contains("install") && shellCommand.getBody().contains("yum")) {
-                    YumInstall yumInstall = new YumInstall(shellCommand.getBody());
-                    newRunCommand.add(yumInstall);
+                    Tag aptInstallTag = new AptInstallTag();
+                    shellCommand.addTag(aptInstallTag);
+                }
+
+                if (shellCommand.getBody().contains("upgrade") && shellCommand.getBody().contains("apt-get")) {
+                    Tag updateTag = new AptUpdateTag();
+                    shellCommand.addTag(updateTag);
+                }
+
+                if (shellCommand.getBody().contains("mkdir")) {
+                    FolderCreationTag folderCreationTag = new FolderCreationTag();
+                    shellCommand.addTag(folderCreationTag);
+                }
+
+                if (shellCommand.getBody().contains("install") && shellCommand.getBody().contains("pip")) {
+                    PipInstallTag pipInstallTag = new PipInstallTag();
+                    shellCommand.addTag(pipInstallTag);
+                }
+
+                if (shellCommand.getBody().contains("install") && shellCommand.getBody().contains("yum")) {
+                    YumTag yumTag = new YumTag();
+                    shellCommand.addTag(yumTag);
                 } else {
                     newRunCommand.add(shellCommand);
                 }

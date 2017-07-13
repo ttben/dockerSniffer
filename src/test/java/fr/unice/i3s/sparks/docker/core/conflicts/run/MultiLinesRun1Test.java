@@ -1,6 +1,8 @@
 package fr.unice.i3s.sparks.docker.core.conflicts.run;
 
 import fr.unice.i3s.sparks.docker.core.conflicts.Enricher;
+import fr.unice.i3s.sparks.docker.core.conflicts.tags.AptInstallTag;
+import fr.unice.i3s.sparks.docker.core.conflicts.tags.AptUpdateTag;
 import fr.unice.i3s.sparks.docker.core.model.dockerfile.Dockerfile;
 import fr.unice.i3s.sparks.docker.core.model.dockerfile.commands.*;
 import fr.unice.i3s.sparks.docker.core.model.dockerfile.parser.DockerFileParser;
@@ -8,8 +10,10 @@ import org.junit.Test;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.List;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 public class MultiLinesRun1Test {
     @Test
@@ -30,7 +34,12 @@ public class MultiLinesRun1Test {
         assertEquals(0, result.howMuch(CMDCommand.class));
         assertEquals(0, result.howMuch(ONBUILDCommand.class));
         assertEquals(4, result.howMuch(ShellCommand.class));
-        assertEquals(1, result.howMuch(AptInstall.class));
-        assertEquals(1, result.howMuch(AptUpdate.class));
+
+        List<RUNCommand> actionsOfType = result.getActionsOfType(RUNCommand.class);
+        int nbOfUpdate = 0 , nbOfInstall = 0;
+
+        RUNCommand runCommand = actionsOfType.get(0);
+        assertTrue(runCommand.containsTag(AptInstallTag.class));
+        assertTrue(runCommand.containsTag(AptUpdateTag.class));
     }
 }

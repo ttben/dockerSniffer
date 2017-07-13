@@ -1,5 +1,7 @@
 package fr.unice.i3s.sparks.docker.core.conflicts;
 
+import fr.unice.i3s.sparks.docker.core.conflicts.tags.AptInstallTag;
+import fr.unice.i3s.sparks.docker.core.conflicts.tags.AptUpdateTag;
 import fr.unice.i3s.sparks.docker.core.model.dockerfile.Dockerfile;
 import fr.unice.i3s.sparks.docker.core.model.dockerfile.commands.AptInstall;
 import fr.unice.i3s.sparks.docker.core.model.dockerfile.commands.RUNCommand;
@@ -11,7 +13,6 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class RunIssue1 {
-
     public List<Issue> apply(Dockerfile dockerfile) {
         List<Issue> issues = new ArrayList<>();
 
@@ -28,10 +29,10 @@ public class RunIssue1 {
 
             List<ShellCommand> body = runCommand.getBody();
             for (ShellCommand shellCommand : body) {
-                if (shellCommand instanceof AptInstall) {
+                if (shellCommand.containsTag(AptInstallTag.class)) {
                     install=true;
                 }
-                if(shellCommand instanceof AptUpdate) {
+                if (shellCommand.containsTag(AptUpdateTag.class)) {
                     update = true;
                 }
             }
@@ -40,7 +41,7 @@ public class RunIssue1 {
 
             if(flawed) {
                 issues.add(new Issue(dockerfile, runCommand));
-                runCommand.getBody().add(0, new AptUpdate("apt-get", "update"));
+                //runCommand.getBody().add(0, new AptUpdate("apt-get", "update"));
             }
         }
 
