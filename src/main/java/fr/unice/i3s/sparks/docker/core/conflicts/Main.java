@@ -24,7 +24,7 @@ import java.util.stream.Collectors;
 import static java.util.Map.Entry.comparingByValue;
 
 public class Main {
-    public static boolean SILENT = false;
+    public static boolean SILENT = true;
 
     public static final String PATH_TO_DKF = "/Users/benjaminbenni/Work/PhD/src/main/resources/dockerfiles/";
 
@@ -56,43 +56,43 @@ public class Main {
         Preprocessor<Dockerfile> trivialFilter = new TrivialDkfPreprocessor();
         dockerfiles = trivialFilter.apply(dockerfiles);
 
-        System.out.println(dockerfiles.size());
+        if (!SILENT) System.out.println(dockerfiles.size());
 
         Map<Check, Map<Dockerfile, Object>> apply = new Executor().apply(dockerfiles, Arrays.asList(_1, _2, _3, _5, _6, _7, _8, _9, _10, _12, _13, _14, _15, _16, _17, _18, _19));
 
 
-        System.out.println(getNumberOf(_1, apply));
-        System.out.println(getNumberOf(_2, apply));
-        System.out.println(getDeepNumberOf(_2, apply));
-        System.out.println(getNumberOf(_3, apply));
-        System.out.println(getNumberOf(_5, apply));
-        System.out.println(getDeepNumberOf(_5, apply));
-        System.out.println(getNumberOf(_6, apply));
-        System.out.println(getDeepNumberOf(_6, apply));
-        System.out.println(getNumberOf(_7, apply));
-        System.out.println(getDeepNumberOf(_7, apply));
-        System.out.println(getNumberOf(_8, apply));
-        System.out.println(getDeepNumberOf(_8, apply));
-        System.out.println(getNumberOf(_9, apply));
-        System.out.println(getDeepNumberOf(_9, apply));
-        System.out.println(getNumberOf(_10, apply));
-        System.out.println(getDeepNumberOf(_10, apply));
-        System.out.println(getNumberOf(_12, apply));
-        System.out.println(getDeepNumberOf(_12, apply));
-        System.out.println(getNumberOf(_13, apply));
-        System.out.println(getDeepNumberOf(_13, apply));
-        System.out.println(getNumberOf(_14, apply));
-        System.out.println(getDeepNumberOf(_14, apply));
-        System.out.println(getNumberOf(_15, apply));
-        System.out.println(getDeepNumberOf(_15, apply));
-        System.out.println(getNumberOf(_16, apply));
-        System.out.println(getDeepNumberOf(_16, apply));
-        System.out.println(getNumberOf(_17, apply));
-        System.out.println(getDeepNumberOf(_17, apply));
-        System.out.println(getNumberOf(_18, apply));
-        System.out.println(getDeepNumberOf(_18, apply));
-        System.out.println(getNumberOf(_19, apply));
-        System.out.println(getDeepNumberOf(_19, apply));
+        if (!SILENT) System.out.println(getNumberOf(_1, apply));
+        if (!SILENT) System.out.println(getNumberOf(_2, apply));
+        if (!SILENT) System.out.println(getDeepNumberOf(_2, apply));
+        if (!SILENT) System.out.println(getNumberOf(_3, apply));
+        if (!SILENT) System.out.println(getNumberOf(_5, apply));
+        if (!SILENT) System.out.println(getDeepNumberOf(_5, apply));
+        if (!SILENT) System.out.println(getNumberOf(_6, apply));
+        if (!SILENT) System.out.println(getDeepNumberOf(_6, apply));
+        if (!SILENT) System.out.println(getNumberOf(_7, apply));
+        if (!SILENT) System.out.println(getDeepNumberOf(_7, apply));
+        if (!SILENT) System.out.println(getNumberOf(_8, apply));
+        if (!SILENT) System.out.println(getDeepNumberOf(_8, apply));
+        if (!SILENT) System.out.println(getNumberOf(_9, apply));
+        if (!SILENT) System.out.println(getDeepNumberOf(_9, apply));
+        if (!SILENT) System.out.println(getNumberOf(_10, apply));
+        if (!SILENT) System.out.println(getDeepNumberOf(_10, apply));
+        if (!SILENT) System.out.println(getNumberOf(_12, apply));
+        if (!SILENT) System.out.println(getDeepNumberOf(_12, apply));
+        if (!SILENT) System.out.println(getNumberOf(_13, apply));
+        if (!SILENT) System.out.println(getDeepNumberOf(_13, apply));
+        if (!SILENT) System.out.println(getNumberOf(_14, apply));
+        if (!SILENT) System.out.println(getDeepNumberOf(_14, apply));
+        if (!SILENT) System.out.println(getNumberOf(_15, apply));
+        if (!SILENT) System.out.println(getDeepNumberOf(_15, apply));
+        if (!SILENT) System.out.println(getNumberOf(_16, apply));
+        if (!SILENT) System.out.println(getDeepNumberOf(_16, apply));
+        if (!SILENT) System.out.println(getNumberOf(_17, apply));
+        if (!SILENT) System.out.println(getDeepNumberOf(_17, apply));
+        if (!SILENT) System.out.println(getNumberOf(_18, apply));
+        if (!SILENT) System.out.println(getDeepNumberOf(_18, apply));
+        if (!SILENT) System.out.println(getNumberOf(_19, apply));
+        if (!SILENT) System.out.println(getDeepNumberOf(_19, apply));
 
         List<RUNConflict> conflicts = new ArrayList<>();
 
@@ -102,6 +102,7 @@ public class Main {
     }
 
     private static int getNumberOf(Check check, Map<Check, Map<Dockerfile, Object>> apply) {
+        if (!SILENT) System.out.println(check.getClass().getSimpleName());
         if (apply.containsKey(check)) {
             return apply.get(check).size();
         }
@@ -111,6 +112,8 @@ public class Main {
 
 
     private static int getDeepNumberOf(Check check, Map<Check, Map<Dockerfile, Object>> apply) {
+        if (!SILENT) System.out.println(check.getClass().getSimpleName());
+
         Map<Dockerfile, Object> target = apply.get(check);
         int nb = 0;
         for (Object o : target.values()) {
@@ -142,7 +145,7 @@ public class Main {
         if (!SILENT) {
             System.out.println(nbDkF + "  files.");
             percentageOf(trivialDockerfiles.size(), nbDkF, "of files are trivial");
-            System.out.println(dockerfiles.size() + " non-trivial files remain.");
+            if (!SILENT) System.out.println(dockerfiles.size() + " non-trivial files remain.");
         }
 
 
@@ -456,6 +459,21 @@ public class Main {
 
         List<Dockerfile> extract = extract(NonParsedCommand.class, dockerfiles);
         //System.out.println();
+
+        int nbInstallApt = 0;
+        for (Dockerfile dockerfile : dockerfiles) {
+            List<RUNCommand> actionsOfType = dockerfile.getActionsOfType(RUNCommand.class);
+            for (RUNCommand runCommand : actionsOfType) {
+                List<ShellCommand> body = runCommand.getBody();
+                for (ShellCommand shellCommand : body) {
+                    if (shellCommand.containsTag(AptInstallTag.class)) {
+                        nbInstallApt++;
+                    }
+                }
+            }
+        }
+
+        if (!SILENT) System.out.println("InstallAPT:" + nbInstallApt);
     }
 
 
