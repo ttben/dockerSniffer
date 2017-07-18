@@ -3,6 +3,7 @@ package fr.unice.i3s.sparks.docker.core.conflicts;
 
 import fr.unice.i3s.sparks.docker.core.conflicts.tags.*;
 import fr.unice.i3s.sparks.docker.core.model.dockerfile.Dockerfile;
+import fr.unice.i3s.sparks.docker.core.model.dockerfile.Tag;
 import fr.unice.i3s.sparks.docker.core.model.dockerfile.commands.*;
 
 import java.util.ArrayList;
@@ -31,26 +32,31 @@ public class Enricher {
                 if (shellCommand.getBody().contains("install") && shellCommand.getBody().contains("apt-get")) {
                     Tag aptInstallTag = new AptInstallTag();
                     shellCommand.addTag(aptInstallTag);
+                    runCommand.addTag(aptInstallTag);
                 }
 
-                if (shellCommand.getBody().contains("upgrade") && shellCommand.getBody().contains("apt-get")) {
+                if (shellCommand.getBody().contains("update") && shellCommand.getBody().contains("apt-get")) {
                     Tag updateTag = new AptUpdateTag();
                     shellCommand.addTag(updateTag);
+                    runCommand.addTag(updateTag);
                 }
 
                 if (shellCommand.getBody().contains("mkdir")) {
                     FolderCreationTag folderCreationTag = new FolderCreationTag();
                     shellCommand.addTag(folderCreationTag);
+                    runCommand.addTag(folderCreationTag);
                 }
 
                 if (shellCommand.getBody().contains("install") && shellCommand.getBody().contains("pip")) {
                     PipInstallTag pipInstallTag = new PipInstallTag();
                     shellCommand.addTag(pipInstallTag);
+                    runCommand.addTag(pipInstallTag);
                 }
 
                 if (shellCommand.getBody().contains("install") && shellCommand.getBody().contains("yum")) {
                     YumTag yumTag = new YumTag();
                     shellCommand.addTag(yumTag);
+                    runCommand.addTag(yumTag);
                 } else {
                     newRunCommand.add(shellCommand);
                 }

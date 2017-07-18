@@ -1,16 +1,19 @@
 package fr.unice.i3s.sparks.docker.core.conflicts;
 
+import fr.uca.i3s.sparks.composition.metamodel.Check;
 import fr.unice.i3s.sparks.docker.core.model.ImageID;
 import fr.unice.i3s.sparks.docker.core.model.dockerfile.Dockerfile;
 import fr.unice.i3s.sparks.docker.core.model.dockerfile.commands.*;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
-public class _2RunExecFormWithVariables {
+public class _2RunExecFormWithVariables extends Check<Dockerfile, List<Command>> {
     public static List<Command> conflict(Dockerfile dockerfile) {
         ArrayList<RUNCommand> runCommands = dockerfile.getActions()
                 .stream()
@@ -71,5 +74,20 @@ public class _2RunExecFormWithVariables {
 
         conflict = _2RunExecFormWithVariables.conflict(dockerfile);
         System.out.println(conflict);
+    }
+
+
+    @Override
+    public Map<Dockerfile, List<Command>> apply(List<Dockerfile> dockerfiles) {
+        Map<Dockerfile, List<Command>> result = new HashMap<>();
+
+        for (Dockerfile dockerfile : dockerfiles) {
+            List<Command> conflict = conflict(dockerfile);
+            if (!conflict.isEmpty()) {
+                result.put(dockerfile, conflict);
+            }
+        }
+
+        return result;
     }
 }

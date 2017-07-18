@@ -1,5 +1,5 @@
 FROM toto
-RUN apt-get upgrade
+RUN apt-get update
 RUN apt-get install X
 RUN apt-get install Y
-RUN apt-get upgrade && apt-get install Z
+RUN apt-get update && apt-get install Z

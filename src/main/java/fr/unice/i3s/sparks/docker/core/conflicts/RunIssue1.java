@@ -3,10 +3,8 @@ package fr.unice.i3s.sparks.docker.core.conflicts;
 import fr.unice.i3s.sparks.docker.core.conflicts.tags.AptInstallTag;
 import fr.unice.i3s.sparks.docker.core.conflicts.tags.AptUpdateTag;
 import fr.unice.i3s.sparks.docker.core.model.dockerfile.Dockerfile;
-import fr.unice.i3s.sparks.docker.core.model.dockerfile.commands.AptInstall;
 import fr.unice.i3s.sparks.docker.core.model.dockerfile.commands.RUNCommand;
 import fr.unice.i3s.sparks.docker.core.model.dockerfile.commands.ShellCommand;
-import fr.unice.i3s.sparks.docker.core.model.dockerfile.commands.AptUpdate;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,16 +1,13 @@
 package fr.unice.i3s.sparks.docker.core.conflicts;
 
-import fr.unice.i3s.sparks.docker.core.model.ImageID;
+import fr.uca.i3s.sparks.composition.metamodel.Check;
 import fr.unice.i3s.sparks.docker.core.model.dockerfile.Dockerfile;
 import fr.unice.i3s.sparks.docker.core.model.dockerfile.commands.Command;
-import fr.unice.i3s.sparks.docker.core.model.dockerfile.commands.FROMCommand;
 import fr.unice.i3s.sparks.docker.core.model.dockerfile.commands.LABELCommand;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.ListIterator;
+import java.util.*;
 
-public class _6MergeableLabel {
+public class _6MergeableLabel extends Check<Dockerfile, List<List<Command>>> {
     public static List<List<Command>> conflict(Dockerfile dockerfile) {
         List<List<Command>> result = new ArrayList<>();
 
@@ -26,7 +23,7 @@ public class _6MergeableLabel {
                 currentCommand = commandListIterator.next();
             }
 
-            if(currentCommand instanceof LABELCommand) {
+            if (currentCommand instanceof LABELCommand) {
                 currentCluster.add(currentCommand);
             }
 
@@ -39,9 +36,18 @@ public class _6MergeableLabel {
         return result;
     }
 
-    public static void main(String[] args) {
-        Dockerfile dockerfile = new Dockerfile(new LABELCommand("a"), new FROMCommand(new ImageID("a")), new LABELCommand("b"));
-        List<List<Command>> conflict = _6MergeableLabel.conflict(dockerfile);
-        System.out.println(conflict);
+    @Override
+    public Map<Dockerfile, List<List<Command>>> apply(List<Dockerfile> dockerfiles) {
+        Map<Dockerfile, List<List<Command>>> result = new HashMap<>();
+
+        for (Dockerfile dockerfile : dockerfiles) {
+            List<List<Command>> conflict = conflict(dockerfile);
+            if (!conflict.isEmpty()) {
+                result.put(dockerfile, conflict);
+            }
+        }
+
+        return result;
+
     }
 }

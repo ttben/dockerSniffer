@@ -1,14 +1,17 @@
 package fr.unice.i3s.sparks.docker.core.conflicts;
 
+import fr.uca.i3s.sparks.composition.metamodel.Check;
 import fr.unice.i3s.sparks.docker.core.model.ImageID;
 import fr.unice.i3s.sparks.docker.core.model.dockerfile.Dockerfile;
 import fr.unice.i3s.sparks.docker.core.model.dockerfile.commands.*;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.stream.Collectors;
 
-public class _13AddHttpDiscouraged {
+public class _13AddHttpDiscouraged extends Check<Dockerfile, List<Command>> {
     public static List<Command> conflict(Dockerfile dockerfile) {
         List<Command> result = new ArrayList<>();
 
@@ -29,15 +32,17 @@ public class _13AddHttpDiscouraged {
         return result;
     }
 
-    public static void main(String[] args) {
-        Dockerfile dockerfile = new Dockerfile(
-                new FROMCommand(new ImageID("a")),
-                new ENVCommand("e", "e"),
-                new ADDCommand("htp", "/lol"),
-                new ADDCommand("https://www.lol.com")
-        );
+    @Override
+    public Map<Dockerfile, List<Command>> apply(List<Dockerfile> dockerfiles) {
+        Map<Dockerfile, List<Command>> result = new HashMap<>();
 
-        List<Command> conflict = _13AddHttpDiscouraged.conflict(dockerfile);
-        System.out.println(conflict);
+        for (Dockerfile dockerfile : dockerfiles) {
+            List<Command> conflict = conflict(dockerfile);
+            if (!conflict.isEmpty()) {
+                result.put(dockerfile, conflict);
+            }
+        }
+
+        return result;
     }
 }

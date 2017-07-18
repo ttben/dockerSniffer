@@ -1,15 +1,15 @@
 package fr.unice.i3s.sparks.docker.core.conflicts;
 
+import fr.uca.i3s.sparks.composition.metamodel.Check;
+import fr.unice.i3s.sparks.docker.core.conflicts.tags.AptInstallTag;
 import fr.unice.i3s.sparks.docker.core.model.ImageID;
 import fr.unice.i3s.sparks.docker.core.model.dockerfile.Dockerfile;
 import fr.unice.i3s.sparks.docker.core.model.dockerfile.commands.*;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.ListIterator;
+import java.util.*;
 import java.util.stream.Collectors;
 
-public class _9PackageInstallationVersionPinning {
+public class _9PackageInstallationVersionPinning extends Check<Dockerfile, List<Command>> {
     public static List<Command> conflict(Dockerfile dockerfile) {
         ArrayList<RUNCommand> runCommands = dockerfile.getActions()
                 .stream()
@@ -20,9 +20,13 @@ public class _9PackageInstallationVersionPinning {
         List<Command> result = new ArrayList<>();
 
         for (RUNCommand runCommand : runCommands) {
+            if (!runCommand.containsTag(AptInstallTag.class)) {
+                continue;
+            }
+
             for (ShellCommand shellCommand : runCommand.getBody()) {
 
-                if (shellCommand instanceof AptInstall) {
+                if (shellCommand.containsTag(AptInstallTag.class)) {
                     List<String> body = shellCommand.getBody();
                     ListIterator<String> stringListIterator = body.listIterator();
 
@@ -52,39 +56,17 @@ public class _9PackageInstallationVersionPinning {
         return result;
     }
 
-    public static void main(String[] args) {
-        Dockerfile dockerfile = new Dockerfile(
-                new FROMCommand(new ImageID("a")),
-                new RUNCommand(new AptInstall("apt-get", "install", "-y", "ruby:203"))
-        );
+    @Override
+    public Map<Dockerfile, List<Command>> apply(List<Dockerfile> dockerfiles) {
+        Map<Dockerfile, List<Command>> result = new HashMap<>();
 
-        List<Command> conflict = _9PackageInstallationVersionPinning.conflict(dockerfile);
-        System.out.println(conflict);
+        for (Dockerfile dockerfile : dockerfiles) {
+            List<Command> conflict = conflict(dockerfile);
+            if (!conflict.isEmpty()) {
+                result.put(dockerfile, conflict);
+            }
+        }
 
-        dockerfile = new Dockerfile(
-                new FROMCommand(new ImageID("a")),
-                new RUNCommand(new AptInstall("apt-get", "install", "-y", "ruby"))
-        );
-
-        conflict = _9PackageInstallationVersionPinning.conflict(dockerfile);
-        System.out.println(conflict);
-
-        dockerfile = new Dockerfile(
-                new FROMCommand(new ImageID("a")),
-                new RUNCommand(new AptInstall("apt-get", "install", "ruby"))
-        );
-
-        conflict = _9PackageInstallationVersionPinning.conflict(dockerfile);
-        System.out.println(conflict);
-
-        dockerfile = new Dockerfile(
-                new FROMCommand(new ImageID("a")),
-                new RUNCommand(new AptInstall("apt-get", "install", "ruby:4"))
-        );
-
-        conflict = _9PackageInstallationVersionPinning.conflict(dockerfile);
-        System.out.println(conflict);
-
-
+        return result;
     }
 }

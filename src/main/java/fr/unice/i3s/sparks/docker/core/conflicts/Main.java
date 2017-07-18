@@ -1,8 +1,11 @@
 package fr.unice.i3s.sparks.docker.core.conflicts;
 
 import fr.uca.i3s.sparks.composition.metamodel.Action;
+import fr.uca.i3s.sparks.composition.metamodel.Check;
 import fr.unice.i3s.sparks.composition.rgeneration.Generator;
 import fr.unice.i3s.sparks.docker.core.conflicts.run.RUNConflict;
+import fr.unice.i3s.sparks.docker.core.conflicts.tags.AptInstallTag;
+import fr.unice.i3s.sparks.docker.core.conflicts.tags.AptUpdateTag;
 import fr.unice.i3s.sparks.docker.core.model.ImageID;
 import fr.unice.i3s.sparks.docker.core.model.dockerfile.Dockerfile;
 import fr.unice.i3s.sparks.docker.core.model.dockerfile.commands.*;
@@ -21,38 +24,117 @@ import java.util.stream.Collectors;
 import static java.util.Map.Entry.comparingByValue;
 
 public class Main {
-    private static boolean SILENT = false;
+    public static boolean SILENT = false;
 
     public static final String PATH_TO_DKF = "/Users/benjaminbenni/Work/PhD/src/main/resources/dockerfiles/";
 
     public static void main(String[] args) throws MalFormedImageException, IOException, InterruptedException {
-        new Main().analyseDockerfiles();
+        oups();
+        //new Main().analyseDockerfiles();
     }
 
-    private void analyseDockerfiles() throws IOException {
+    private static void oups() throws IOException {
+        Check<Dockerfile, Boolean> _1 = new _1FromFirst();
+        Check<Dockerfile, List<Command>> _2 = new _2RunExecFormWithVariables();
+        Check<Dockerfile, Boolean> _3 = new _3MultipleCMD();
+        Check<Dockerfile, List<Command>> _5 = new _5CmdExecFormWithVariables();
+        Check<Dockerfile, List<List<Command>>> _6 = new _6MergeableLabel();
+        Check<Dockerfile, List<Command>> _7 = new _7AptGetUpgrade();
+        Check<Dockerfile, List<RunIssue1.Issue>> _8 = new _8AlwaysUpdateAndInstallOnSameCommand();
+        Check<Dockerfile, List<Command>> _9 = new _9PackageInstallationVersionPinning();
+        Check<Dockerfile, List<Command>> _10 = new _10FromVersionPinning();
+        Check<Dockerfile, List<Command>> _12 = new _12AddDiscouraged();
+        Check<Dockerfile, List<Command>> _13 = new _13AddHttpDiscouraged();
+        Check<Dockerfile, List<Command>> _14 = new _14UserRoot();
+        Check<Dockerfile, List<Command>> _15 = new _15LessUserCommands();
+        Check<Dockerfile, List<Command>> _16 = new _16WorkdirAbsolutePath();
+        Check<Dockerfile, List<Command>> _17 = new _17CdInRunCommand();
+        Check<Dockerfile, List<Command>> _18 = new _18OrderPackageInstallation();
+        Check<Dockerfile, List<Command>> _19 = new _19SpecifyNoInstallRecommends();
 
-        List<Dockerfile> dockerfiles = new ArrayList<>();
+        List<Dockerfile> dockerfiles = loadDockerfiles();
+        Preprocessor<Dockerfile> trivialFilter = new TrivialDkfPreprocessor();
+        dockerfiles = trivialFilter.apply(dockerfiles);
+
+        System.out.println(dockerfiles.size());
+
+        Map<Check, Map<Dockerfile, Object>> apply = new Executor().apply(dockerfiles, Arrays.asList(_1, _2, _3, _5, _6, _7, _8, _9, _10, _12, _13, _14, _15, _16, _17, _18, _19));
+
+
+        System.out.println(getNumberOf(_1, apply));
+        System.out.println(getNumberOf(_2, apply));
+        System.out.println(getDeepNumberOf(_2, apply));
+        System.out.println(getNumberOf(_3, apply));
+        System.out.println(getNumberOf(_5, apply));
+        System.out.println(getDeepNumberOf(_5, apply));
+        System.out.println(getNumberOf(_6, apply));
+        System.out.println(getDeepNumberOf(_6, apply));
+        System.out.println(getNumberOf(_7, apply));
+        System.out.println(getDeepNumberOf(_7, apply));
+        System.out.println(getNumberOf(_8, apply));
+        System.out.println(getDeepNumberOf(_8, apply));
+        System.out.println(getNumberOf(_9, apply));
+        System.out.println(getDeepNumberOf(_9, apply));
+        System.out.println(getNumberOf(_10, apply));
+        System.out.println(getDeepNumberOf(_10, apply));
+        System.out.println(getNumberOf(_12, apply));
+        System.out.println(getDeepNumberOf(_12, apply));
+        System.out.println(getNumberOf(_13, apply));
+        System.out.println(getDeepNumberOf(_13, apply));
+        System.out.println(getNumberOf(_14, apply));
+        System.out.println(getDeepNumberOf(_14, apply));
+        System.out.println(getNumberOf(_15, apply));
+        System.out.println(getDeepNumberOf(_15, apply));
+        System.out.println(getNumberOf(_16, apply));
+        System.out.println(getDeepNumberOf(_16, apply));
+        System.out.println(getNumberOf(_17, apply));
+        System.out.println(getDeepNumberOf(_17, apply));
+        System.out.println(getNumberOf(_18, apply));
+        System.out.println(getDeepNumberOf(_18, apply));
+        System.out.println(getNumberOf(_19, apply));
+        System.out.println(getDeepNumberOf(_19, apply));
+
         List<RUNConflict> conflicts = new ArrayList<>();
 
+        computeStatistics(dockerfiles);
+        fixAndOptimise(dockerfiles, conflicts);
+        computeStatistics(dockerfiles);
+    }
 
-        FilenameFilter textFilter = (dir, name) -> {
-            String lowercaseName = name.toLowerCase();
-            return lowercaseName.endsWith("-dockerfile");
-        };
-
-
-        String folderThatContainsDockerfiles = PATH_TO_DKF;
-        File folder = new File(folderThatContainsDockerfiles);
-
-        File[] files = folder.listFiles(textFilter);
-
-
-        for (File f : files) {
-            //System.out.println("Handling file:" + f.getAbsolutePath());
-            Dockerfile dockerfile = DockerFileParser.parse(f);
-            Dockerfile enrichedDockerfile = Enricher.enrich(dockerfile);
-            dockerfiles.add(enrichedDockerfile);
+    private static int getNumberOf(Check check, Map<Check, Map<Dockerfile, Object>> apply) {
+        if (apply.containsKey(check)) {
+            return apply.get(check).size();
         }
+
+        return 0;
+    }
+
+
+    private static int getDeepNumberOf(Check check, Map<Check, Map<Dockerfile, Object>> apply) {
+        Map<Dockerfile, Object> target = apply.get(check);
+        int nb = 0;
+        for (Object o : target.values()) {
+            if (o instanceof List) {
+                if (((List) o).get(0) instanceof List) {
+                    List<List> t = (List<List>) o;
+                    for (List z : t) {
+                        nb += z.size() - 1;
+                    }
+                } else {
+                    nb += ((List) o).size();
+                }
+            }
+        }
+
+        return nb;
+    }
+
+    /*
+    private void analyseDockerfiles() throws IOException {
+
+        List<RUNConflict> conflicts = new ArrayList<>();
+
+        List<Dockerfile> dockerfiles = loadDockerfiles();
 
         int nbDkF = dockerfiles.size();
         List<Dockerfile> trivialDockerfiles = filterTrivialDockerfiles(dockerfiles);
@@ -63,12 +145,18 @@ public class Main {
             System.out.println(dockerfiles.size() + " non-trivial files remain.");
         }
 
-        computeStatistics(dockerfiles);
-        //fixAndOptimise(dockerfiles, conflicts);
-       // computeStatistics(dockerfiles);
 
-
+        Check<Dockerfile, Boolean> _1 = new _1FromFirst();
         int nbDkf_1 = 0;
+        for (Dockerfile dockerfile : dockerfiles) {
+            boolean conflict = _1.apply(dockerfile);
+            if (conflict) {
+                nbDkf_1++;
+            }
+        }
+        if (!SILENT) System.out.printf("!!G_1FromFirst:\n\tDKF:%s\n", nbDkf_1);
+
+        nbDkf_1 = 0;
         for (Dockerfile dockerfile : dockerfiles) {
             boolean conflict = _1FromFirst.conflict(dockerfile);
             if (conflict) {
@@ -112,19 +200,18 @@ public class Main {
 
         displayApplicationOnDataSet(_7AptGetUpgrade.class, dockerfiles);
 
-
-
         int nbDkf_8 = 0;
         int nbDkC_8 = 0;
         for (Dockerfile dockerfile : dockerfiles) {
-            RUNConflict conflict = _8AlwaysUpdateAndInstallOnSameCommand.conflict(dockerfile);
+            List<RunIssue1.Issue> conflict = _8AlwaysUpdateAndInstallOnSameCommand.conflict(dockerfile);
             if (conflict != null && !conflict.isEmpty()) {
                 nbDkf_8++;
-                nbDkC_8 += conflict.getConflictingRUNCommand().size();
+                nbDkC_8 += conflict.size();
             }
         }
 
-        if (!SILENT) System.out.printf("G_8AlwaysUpdateAndInstallOnSameCommand:\n\tDKF:%s, \tDKC:%s\n", nbDkf_8, nbDkC_8);
+        if (!SILENT)
+            System.out.printf("G_8AlwaysUpdateAndInstallOnSameCommand:\n\tDKF:%s, \tDKC:%s\n", nbDkf_8, nbDkC_8);
 
         displayApplicationOnDataSet(_9PackageInstallationVersionPinning.class, dockerfiles);
         displayApplicationOnDataSet(_10FromVersionPinning.class, dockerfiles);
@@ -136,7 +223,6 @@ public class Main {
         displayApplicationOnDataSet(_17CdInRunCommand.class, dockerfiles);
         displayApplicationOnDataSet(_18OrderPackageInstallation.class, dockerfiles);
         displayApplicationOnDataSet(_19SpecifyNoInstallRecommends.class, dockerfiles);
-
 
 
         Map<String, List<FROMCommand>> index = new HashMap();
@@ -170,8 +256,41 @@ public class Main {
             if (!SILENT) System.out.println(stringListEntry.getKey() + " " + stringListEntry.getValue().size());
         }
 
+        List<RUNConflict> conflicts = new ArrayList<>();
+
+        computeStatistics(dockerfiles);
+        fixAndOptimise(dockerfiles, conflicts);
+        computeStatistics(dockerfiles);
+    }
+    */
+    private static List<Dockerfile> loadDockerfiles() throws IOException {
+        File[] files = getFiles();
+        return buildDockerfiles(files);
+    }
+
+    private static List<Dockerfile> buildDockerfiles(File[] files) throws IOException {
+        List<Dockerfile> dockerfiles = new ArrayList<>();
+        for (File f : files) {
+            //System.out.println("Handling file:" + f.getAbsolutePath());
+            Dockerfile dockerfile = DockerFileParser.parse(f);
+            Dockerfile enrichedDockerfile = Enricher.enrich(dockerfile);
+            dockerfiles.add(enrichedDockerfile);
+        }
+
+        return dockerfiles;
+    }
+
+    private static File[] getFiles() {
+        FilenameFilter textFilter = (dir, name) -> {
+            String lowercaseName = name.toLowerCase();
+            return lowercaseName.endsWith("-dockerfile");
+        };
 
 
+        String folderThatContainsDockerfiles = PATH_TO_DKF;
+        File folder = new File(folderThatContainsDockerfiles);
+
+        return folder.listFiles(textFilter);
     }
 
     private void displayApplicationOnDataSet(Class clazz, List<Dockerfile> dockerfiles) {
@@ -187,7 +306,7 @@ public class Main {
             }
         }
 
-        if (!SILENT) System.out.printf("G"+ clazz.getSimpleName() + ":\n\tDKF:%s,\tDKC:%s\n", nbDkf, nbDkC);
+        if (!SILENT) System.out.printf("G" + clazz.getSimpleName() + ":\n\tDKF:%s,\tDKC:%s\n", nbDkf, nbDkC);
 
     }
 
@@ -241,7 +360,8 @@ public class Main {
             }
         }
 
-        if (!SILENT)  System.out.println("Rule: merge contiguous run.\n\t-> Number of run commands that can be deleted (by merge operation): " + gain + " commands.");
+        if (!SILENT)
+            System.out.println("Rule: merge contiguous run.\n\t-> Number of run commands that can be deleted (by merge operation): " + gain + " commands.");
     }
 
     private static void fixSemanticGapIssue(List<Dockerfile> dockerfiles) {
@@ -259,8 +379,10 @@ public class Main {
         for (List<RunIssue1.Issue> dockerfileClusters : issues) {
             nbOfIssues += dockerfileClusters.size();
         }
-        if (!SILENT) System.out.println("Rule: run semantic gap.\n\t-> Number of run commands that have r.s.g. issue : " + nbOfIssues + " commands over " + issues.size() + " dockerfiles.");
+        if (!SILENT)
+            System.out.println("Rule: run semantic gap.\n\t-> Number of run commands that have r.s.g. issue : " + nbOfIssues + " commands over " + issues.size() + " dockerfiles.");
     }
+
 
     private static void computeStatistics(List<Dockerfile> dockerfiles) {
         List<Dockerfile> dockerfilesWithRUN = new ArrayList<>();
@@ -273,7 +395,7 @@ public class Main {
                 dockerfilesWithRUN.add(dockerfile);
             }
 
-            if (dockerfile.contains(AptInstall.class) && dockerfile.contains(AptUpdate.class)) {
+            if (dockerfile.containsTag(AptInstallTag.class) && dockerfile.containsTag(AptUpdateTag.class)) {
                 dockerfilesWithUpdateInstall.add(dockerfile);
             }
         }
@@ -306,7 +428,8 @@ public class Main {
 
         printRepartition(sortByValue(repartitionsOfCommands));
         if (!SILENT) System.out.println(Generator.generatePieChart(repartitionsOfCommands));
-        if (!SILENT) System.out.println(Generator.generateBarChart(repartitionsOfCommands, "Command type", "Number of commands", "Repartitions of commands type"));
+        if (!SILENT)
+            System.out.println(Generator.generateBarChart(repartitionsOfCommands, "Command type", "Number of commands", "Repartitions of commands type"));
 
         int totalNbOfCommands = 0;
         for (Integer i : repartitionsOfCommands.values()) {
@@ -326,15 +449,6 @@ public class Main {
 
         repartitionsOfCommands = new HashMap<>();
 
-        for (Dockerfile dockerfile : dockerfiles) {
-
-            computeRepartitionsOfCommands(AptInstall.class, repartitionsOfCommands, dockerfile);
-            computeRepartitionsOfCommands(AptUpdate.class, repartitionsOfCommands, dockerfile);
-            computeRepartitionsOfCommands(PipInstall.class, repartitionsOfCommands, dockerfile);
-            computeRepartitionsOfCommands(YumInstall.class, repartitionsOfCommands, dockerfile);
-
-        }
-
         printRepartition(sortByValue(repartitionsOfCommands));
 
 
@@ -343,6 +457,7 @@ public class Main {
         List<Dockerfile> extract = extract(NonParsedCommand.class, dockerfiles);
         //System.out.println();
     }
+
 
     private static List<Dockerfile> filterTrivialDockerfiles(List<Dockerfile> dockerfiles) {
         int trivialThreshold = 2;
@@ -359,14 +474,6 @@ public class Main {
             }
         }
 
-        /*
-        for (Dockerfile dockerfile : dockerfiles) {
-            System.out.println(dockerfile.getSourceFile());
-            if (dockerfile.getActions().size() < trivialThreshold) {
-                trivialDockerfiles.add(dockerfile);
-            }
-        }
-        */
 
         return trivialDockerfiles;
     }
@@ -412,7 +519,7 @@ public class Main {
     }
 
 
-    private static void percentageOf(int thiz, int overThis, String msg) {
+    public static void percentageOf(int thiz, int overThis, String msg) {
         DecimalFormat df = new DecimalFormat("#.##");
         df.setRoundingMode(RoundingMode.CEILING);
 
