@@ -21,9 +21,8 @@ public class _1FromFirst extends Check<Dockerfile, Boolean> {
 
         for (Dockerfile dockerfile : dockerfiles) {
             Boolean conflict = conflict(dockerfile);
-            if (conflict) {
-                result.put(dockerfile, conflict);
-            }
+            //    result.put(dockerfile, conflict);
+
         }
 
         return result;

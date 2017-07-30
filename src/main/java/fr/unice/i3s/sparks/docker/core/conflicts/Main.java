@@ -24,16 +24,88 @@ import java.util.stream.Collectors;
 import static java.util.Map.Entry.comparingByValue;
 
 public class Main {
-    public static boolean SILENT = true;
+    public static int ITER = 500;
+    public static int DKF = 20000;
+    public static boolean SILENT = false;
 
     public static final String PATH_TO_DKF = "/Users/benjaminbenni/Work/PhD/src/main/resources/dockerfiles/";
 
-    public static void main(String[] args) throws MalFormedImageException, IOException, InterruptedException {
-        oups();
+    public static List<Dockerfile> main() throws MalFormedImageException, IOException, InterruptedException {
+        return oups();
         //new Main().analyseDockerfiles();
     }
 
-    private static void oups() throws IOException {
+    public static void main(String[] args) throws IOException {
+        List<Dockerfile> dockerfiles = loadDockerfiles();
+
+        int nbF = 0, nbC = 0;
+
+        for (Dockerfile dockerfile : dockerfiles) {
+            int howMuchNonParse = dockerfile.howMuch(NonParsedCommand.class);
+            if (howMuchNonParse > 0) {
+                nbF++;
+                nbC += howMuchNonParse;
+            }
+        }
+
+        System.out.println(nbF + " " + nbC);
+
+        oups();
+
+        /*
+        List<Long> times = new ArrayList<>();
+        for (int i = 0; i < ITER; i++) {
+
+            List<Dockerfile> dkf = createDKF();
+            long before = System.currentTimeMillis();
+            Map<Check, Map<Dockerfile, Object>> apply = new Executor().apply(dkf, Arrays.asList(new _7AptGetUpgrade()));
+
+            long after = System.currentTimeMillis();
+
+            times.add(after - before);
+        }
+
+        OptionalDouble average = times.stream().mapToLong(a -> a).average();
+        System.out.println("\n"+average.getAsDouble());
+        */
+    }
+
+    private static List<Dockerfile> createDKF() {
+        List<Dockerfile> result = new ArrayList<>();
+
+        for( int i = 0 ; i < DKF ; i++) {
+            result.add(new Dockerfile(
+                    new RUNCommand(new ShellCommand("apet-get", "updegrade")),
+                    new RUNCommand(new ShellCommand("apet-get", "updegrade")),
+                    new RUNCommand(new ShellCommand("apet-get", "updegrade")),
+                    new RUNCommand(new ShellCommand("apet-get", "updegrade")),
+                    new RUNCommand(new ShellCommand("apt-get", "upgrade")),
+                    new RUNCommand(new ShellCommand("apt-get", "upgrade")),
+                    new RUNCommand(new ShellCommand("apt-get", "upgrade")),
+                    new RUNCommand(new ShellCommand("apt-get", "upgrade")),
+                    new RUNCommand(new ShellCommand("apt-get", "upgrade")),
+                    new RUNCommand(new ShellCommand("apt-get", "upgrade")),
+                    new RUNCommand(new ShellCommand("apt-get", "upgrade")),
+                    new RUNCommand(new ShellCommand("apt-get", "upgrade")),
+                    new RUNCommand(new ShellCommand("apt-get", "upgrade")),
+                    new RUNCommand(new ShellCommand("apt-get", "upgrade")),
+                    new RUNCommand(new ShellCommand("apt-get", "upgrade")),
+                    new RUNCommand(new ShellCommand("apt-get", "upgrade")),
+                    new RUNCommand(new ShellCommand("apt-get", "upgrade")),
+                    new RUNCommand(new ShellCommand("apt-get", "upgrade")),
+                    new RUNCommand(new ShellCommand("apt-get", "upgrade")),
+                    new RUNCommand(new ShellCommand("apet-get", "updegrade")),
+                    new RUNCommand(new ShellCommand("apet-get", "updegrade")),
+                    new RUNCommand(new ShellCommand("apet-get", "updegrade")),
+                    new RUNCommand(new ShellCommand("apet-get", "updegrade")),
+                    new RUNCommand(new ShellCommand("apet-get", "updegrade"))
+            ));
+        }
+
+        return result;
+    }
+
+    public static Map<Check, Map<Dockerfile, Object>> benchmarkEntry(List<Dockerfile> dockerfiles) throws IOException {
         Check<Dockerfile, Boolean> _1 = new _1FromFirst();
         Check<Dockerfile, List<Command>> _2 = new _2RunExecFormWithVariables();
         Check<Dockerfile, Boolean> _3 = new _3MultipleCMD();
@@ -52,9 +124,40 @@ public class Main {
         Check<Dockerfile, List<Command>> _18 = new _18OrderPackageInstallation();
         Check<Dockerfile, List<Command>> _19 = new _19SpecifyNoInstallRecommends();
 
+        Map<Check, Map<Dockerfile, Object>> apply = new Executor().apply(dockerfiles, Arrays.asList(_1, _2, _3, _5, _6, _7, _8, _9, _10, _12, _13, _14, _15, _16, _17, _18, _19));
+
+        List<RUNConflict> conflicts = new ArrayList<>();
+
+        computeStatistics(dockerfiles);
+        fixAndOptimise(dockerfiles, conflicts);
+        computeStatistics(dockerfiles);
+
+        return apply;
+    }
+
+
+    private static List<Dockerfile> oups() throws IOException {
         List<Dockerfile> dockerfiles = loadDockerfiles();
         Preprocessor<Dockerfile> trivialFilter = new TrivialDkfPreprocessor();
         dockerfiles = trivialFilter.apply(dockerfiles);
+
+        Check<Dockerfile, Boolean> _1 = new _1FromFirst();
+        Check<Dockerfile, List<Command>> _2 = new _2RunExecFormWithVariables();
+        Check<Dockerfile, Boolean> _3 = new _3MultipleCMD();
+        Check<Dockerfile, List<Command>> _5 = new _5CmdExecFormWithVariables();
+        Check<Dockerfile, List<List<Command>>> _6 = new _6MergeableLabel();
+        Check<Dockerfile, List<Command>> _7 = new _7AptGetUpgrade();
+        Check<Dockerfile, List<RunIssue1.Issue>> _8 = new _8AlwaysUpdateAndInstallOnSameCommand();
+        Check<Dockerfile, List<Command>> _9 = new _9PackageInstallationVersionPinning();
+        Check<Dockerfile, List<Command>> _10 = new _10FromVersionPinning();
+        Check<Dockerfile, List<Command>> _12 = new _12AddDiscouraged();
+        Check<Dockerfile, List<Command>> _13 = new _13AddHttpDiscouraged();
+        Check<Dockerfile, List<Command>> _14 = new _14UserRoot();
+        Check<Dockerfile, List<Command>> _15 = new _15LessUserCommands();
+        Check<Dockerfile, List<Command>> _16 = new _16WorkdirAbsolutePath();
+        Check<Dockerfile, List<Command>> _17 = new _17CdInRunCommand();
+        Check<Dockerfile, List<Command>> _18 = new _18OrderPackageInstallation();
+        Check<Dockerfile, List<Command>> _19 = new _19SpecifyNoInstallRecommends();
 
         if (!SILENT) System.out.println(dockerfiles.size());
 
@@ -99,6 +202,8 @@ public class Main {
         computeStatistics(dockerfiles);
         fixAndOptimise(dockerfiles, conflicts);
         computeStatistics(dockerfiles);
+
+        return dockerfiles;
     }
 
     private static int getNumberOf(Check check, Map<Check, Map<Dockerfile, Object>> apply) {
@@ -266,9 +371,15 @@ public class Main {
         computeStatistics(dockerfiles);
     }
     */
-    private static List<Dockerfile> loadDockerfiles() throws IOException {
+    public static List<Dockerfile> loadDockerfiles() {
         File[] files = getFiles();
-        return buildDockerfiles(files);
+        try {
+            return buildDockerfiles(files);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        return new ArrayList<>();
     }
 
     private static List<Dockerfile> buildDockerfiles(File[] files) throws IOException {
@@ -283,7 +394,7 @@ public class Main {
         return dockerfiles;
     }
 
-    private static File[] getFiles() {
+    public static File[] getFiles() {
         FilenameFilter textFilter = (dir, name) -> {
             String lowercaseName = name.toLowerCase();
             return lowercaseName.endsWith("-dockerfile");
